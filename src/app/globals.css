@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +23,776 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+}
+
+.site-navbar {
+  animation: nav-drop 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  background: #ffd400;
+  border-radius: 999px;
+  bottom: 7px;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  width: calc(100% - 28px);
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.program-heading,
+.program-highlights,
+.program-cta,
+.about-eyebrow,
+.about-copy,
+.trust-heading,
+.trust-photo,
+.foundation-sticky,
+.infra-eyebrow,
+.infra-heading,
+.contact-panel,
+.contact-visual,
+.admission-heading,
+.admission-eligibility,
+.admission-cta,
+.gallery-heading,
+.site-footer {
+  animation: rise-fade 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.trust-photo {
+  animation-delay: 140ms;
+}
+
+.program-highlights {
+  animation-delay: 120ms;
+}
+
+.program-card,
+.about-card,
+.trust-card,
+.foundation-image-card,
+.foundation-point,
+.infra-card,
+.contact-detail,
+.admission-step,
+.admission-date-card,
+.gallery-card {
+  animation: card-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  transform-origin: center bottom;
+}
+
+.program-card::after,
+.trust-card::after,
+.foundation-image-card::after,
+.infra-card::after,
+.gallery-card::after {
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.34) 48%,
+    transparent 72%
+  );
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-120%);
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1), opacity 300ms ease;
+}
+
+.program-card:hover::after,
+.trust-card:hover::after,
+.foundation-image-card:hover::after,
+.infra-card:hover::after,
+.gallery-card:hover::after {
+  opacity: 1;
+  transform: translateX(120%);
+}
+
+.trust-card {
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1), filter 450ms ease;
+}
+
+.trust-card:hover {
+  filter: saturate(1.08);
+  transform: translateY(-12px);
+}
+
+.trust-icon {
+  animation: icon-drift 4.5s ease-in-out infinite;
+}
+
+.trust-card:nth-child(2n) .trust-icon {
+  animation-delay: -1.2s;
+}
+
+.trust-card:nth-child(3n) .trust-icon {
+  animation-delay: -2.1s;
+}
+
+.about-copy {
+  text-wrap: balance;
+}
+
+.about-highlight {
+  background: linear-gradient(180deg, transparent 48%, rgba(5, 185, 130, 0.18) 48%);
+  box-decoration-break: clone;
+  padding: 0 0.12em;
+}
+
+.about-shape {
+  display: inline-block;
+  height: 0.82em;
+  margin: 0 0.08em;
+  vertical-align: -0.08em;
+  width: 0.82em;
+}
+
+.about-hourglass {
+  clip-path: polygon(0 0, 100% 0, 62% 50%, 100% 100%, 0 100%, 38% 50%);
+}
+
+.about-circle {
+  border-radius: 999px;
+}
+
+.about-card {
+  animation-name: about-card-in;
+  transition: transform 480ms cubic-bezier(0.22, 1, 0.36, 1), background 480ms ease;
+}
+
+.about-card:hover {
+  background: #ffffff;
+  transform: translateY(-12px);
+}
+
+.foundation-image-card {
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.foundation-image-card:hover {
+  transform: translateX(-12px);
+}
+
+.foundation-image-card::after {
+  border-radius: 0 0 42px 0;
+  overflow: hidden;
+}
+
+.foundation-label {
+  box-shadow: 0 24px 60px rgba(5, 34, 74, 0.08);
+}
+
+.foundation-plus {
+  box-shadow: 0 24px 60px rgba(5, 34, 74, 0.12);
+}
+
+.foundation-plus-core {
+  animation: icon-drift 4.2s ease-in-out infinite;
+}
+
+.foundation-orbit {
+  background:
+    repeating-radial-gradient(
+      circle,
+      rgba(64, 244, 244, 0.92) 0 1px,
+      transparent 1px 7px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(64, 244, 244, 0.9) 0deg 5deg,
+      transparent 5deg 10deg
+    );
+  animation: orbit-spin 12s linear infinite;
+  mix-blend-mode: multiply;
+}
+
+.infra-heading {
+  animation-delay: 120ms;
+}
+
+.infra-card {
+  filter: saturate(0.95);
+  min-width: 0;
+}
+
+.infra-card:hover,
+.infra-card:focus {
+  filter: saturate(1.12);
+}
+
+.infra-card h3 {
+  text-shadow: 0 18px 38px rgba(0, 0, 0, 0.36);
+}
+
+.infra-card::after {
+  z-index: 1;
+}
+
+.infra-card > * {
+  z-index: 2;
+}
+
+.contact-section {
+  view-timeline-name: --contact-section;
+  view-timeline-axis: block;
+}
+
+.contact-visual {
+  animation-name: contact-slide-left;
+  animation-timeline: --contact-section;
+  animation-range: entry 8% cover 36%;
+}
+
+.contact-panel {
+  animation-name: contact-slide-right;
+  animation-timeline: --contact-section;
+  animation-range: entry 10% cover 38%;
+}
+
+.contact-badge {
+  animation: badge-pulse 4.2s ease-in-out infinite;
+}
+
+.contact-cta {
+  box-shadow: 0 22px 55px rgba(5, 34, 74, 0.18);
+}
+
+.contact-detail {
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1), background 420ms ease;
+}
+
+.contact-detail:hover {
+  background: #f5f8fb;
+  transform: translateX(10px);
+}
+
+.admission-date-card {
+  animation-name: admission-pop;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1), background 450ms ease;
+}
+
+.admission-date-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-10px);
+}
+
+.admission-step {
+  animation-name: admission-step-in;
+  overflow: hidden;
+  transition: transform 460ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.admission-step::after {
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(9, 108, 232, 0.13) 48%,
+    transparent 72%
+  );
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-120%);
+  transition: transform 760ms cubic-bezier(0.22, 1, 0.36, 1), opacity 300ms ease;
+}
+
+.admission-step:hover {
+  transform: translateX(14px);
+}
+
+.admission-step:hover::after {
+  opacity: 1;
+  transform: translateX(120%);
+}
+
+.admission-eligibility {
+  animation-delay: 180ms;
+}
+
+.admission-cta {
+  animation-delay: 260ms;
+}
+
+.gallery-card {
+  animation-name: gallery-pop;
+  box-shadow: 0 26px 70px rgba(5, 34, 74, 0.12);
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), filter 520ms ease;
+}
+
+.gallery-card:hover {
+  filter: saturate(1.1);
+  transform: translateY(-12px) scale(1.015);
+}
+
+.gallery-card::after {
+  z-index: 1;
+}
+
+.gallery-card > * {
+  z-index: 2;
+}
+
+.site-footer {
+  animation-delay: 180ms;
+}
+
+@supports (animation-timeline: view()) {
+  .about-section {
+    view-timeline-name: --about-section;
+    view-timeline-axis: block;
+  }
+
+  .learning-journey-section {
+    view-timeline-name: --learning-section;
+    view-timeline-axis: block;
+  }
+
+  .trust-section {
+    view-timeline-name: --trust-section;
+    view-timeline-axis: block;
+  }
+
+  .foundation-section {
+    view-timeline-name: --foundation-section;
+    view-timeline-axis: block;
+  }
+
+  .infrastructure-section {
+    view-timeline-name: --infra-section;
+    view-timeline-axis: block;
+  }
+
+  .admission-section {
+    view-timeline-name: --admission-section;
+    view-timeline-axis: block;
+  }
+
+  .gallery-section {
+    view-timeline-name: --gallery-section;
+    view-timeline-axis: block;
+  }
+
+  .about-copy {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 12% cover 42%;
+    animation-timeline: --about-section;
+  }
+
+  .about-card {
+    animation: section-tilt-up both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 22% cover 50%;
+    animation-timeline: --about-section;
+  }
+
+  .about-shape {
+    animation: shape-spin both linear;
+    animation-range: entry 16% cover 64%;
+    animation-timeline: --about-section;
+  }
+
+  .program-heading {
+    animation: section-zoom-title both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 8% cover 34%;
+    animation-timeline: --learning-section;
+  }
+
+  .program-card:nth-child(odd) {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 18% cover 48%;
+    animation-timeline: --learning-section;
+  }
+
+  .program-card:nth-child(even) {
+    animation: section-slide-right both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 18% cover 48%;
+    animation-timeline: --learning-section;
+  }
+
+  .program-cta {
+    animation: section-rise-bounce both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 45% cover 70%;
+    animation-timeline: --learning-section;
+  }
+
+  .trust-heading {
+    animation: section-zoom-title both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 8% cover 34%;
+    animation-timeline: --trust-section;
+  }
+
+  .trust-photo {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 14% cover 46%;
+    animation-timeline: --trust-section;
+  }
+
+  .trust-card {
+    animation: section-card-swing both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 16% cover 52%;
+    animation-timeline: --trust-section;
+  }
+
+  .foundation-sticky {
+    animation: none;
+  }
+
+  .foundation-point {
+    animation: none;
+  }
+
+  .foundation-image-card {
+    animation: none;
+  }
+
+  .infra-eyebrow,
+  .infra-heading {
+    animation: section-zoom-title both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 10% cover 34%;
+    animation-timeline: --infra-section;
+  }
+
+  .infra-card:nth-child(odd) {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 18% cover 48%;
+    animation-timeline: --infra-section;
+  }
+
+  .infra-card:nth-child(even) {
+    animation: section-slide-right both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 18% cover 48%;
+    animation-timeline: --infra-section;
+  }
+
+  .contact-detail {
+    animation: section-slide-right both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 20% cover 48%;
+    animation-timeline: --contact-section;
+  }
+
+  .admission-heading {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 8% cover 34%;
+    animation-timeline: --admission-section;
+  }
+
+  .admission-date-card {
+    animation: section-rise-bounce both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 16% cover 42%;
+    animation-timeline: --admission-section;
+  }
+
+  .admission-step {
+    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 12% cover 46%;
+    animation-timeline: view(block);
+  }
+
+  .admission-eligibility {
+    animation: section-card-swing both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 16% cover 52%;
+    animation-timeline: --admission-section;
+  }
+
+  .gallery-heading {
+    animation: section-zoom-title both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 8% cover 34%;
+    animation-timeline: --gallery-section;
+  }
+
+  .gallery-card {
+    animation: gallery-scroll-pop both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 8% cover 46%;
+    animation-timeline: view(block);
+  }
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+}
+
+@keyframes rise-fade {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes card-rise {
+  from {
+    opacity: 0;
+    transform: translateY(44px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes about-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(34px) rotateX(7deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+@keyframes icon-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  45% {
+    transform: translate3d(8px, -10px, 0) rotate(-2deg);
+  }
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes contact-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-70px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes contact-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(70px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes badge-pulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  45% {
+    transform: translateY(-10px) scale(1.04);
+  }
+}
+
+@keyframes admission-pop {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes admission-step-in {
+  from {
+    opacity: 0;
+    transform: translateX(-46px) rotateY(-8deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+@keyframes gallery-pop {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes section-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-92px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes section-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(92px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes section-tilt-up {
+  from {
+    opacity: 0;
+    transform: perspective(900px) rotateX(14deg) translateY(56px);
+  }
+
+  to {
+    opacity: 1;
+    transform: perspective(900px) rotateX(0deg) translateY(0);
+  }
+}
+
+@keyframes section-zoom-title {
+  from {
+    opacity: 0;
+    transform: translateY(42px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes section-card-swing {
+  from {
+    opacity: 0;
+    transform: translateY(68px) rotate(-4deg) scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes section-rise-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(54px) scale(0.9);
+  }
+
+  72% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes image-scroll-lift {
+  from {
+    opacity: 0.45;
+    transform: translateX(80px) translateY(56px) scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes gallery-scroll-pop {
+  from {
+    opacity: 0;
+    transform: translateY(80px) rotate(2deg) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shape-spin {
+  from {
+    transform: rotate(-180deg) scale(0.6);
+  }
+
+  to {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
 }
