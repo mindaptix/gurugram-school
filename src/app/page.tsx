@@ -244,12 +244,6 @@ const galleryItems = [
     image:
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1500&q=85",
   },
-  {
-    title: "Clubs & Activities",
-    label: "Leadership Beyond Books",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=85",
-  },
 ];
 
 const navLinks = [
@@ -274,6 +268,7 @@ export default function Home() {
   const activeSlide = 0;
   const [activeInfrastructure, setActiveInfrastructure] = useState(2);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [learningAtDpsOpacity, setLearningAtDpsOpacity] = useState(1);
   const trustRailRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -306,6 +301,33 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const section = document.getElementById("learning-at-dps-section");
+
+    if (!section) {
+      return;
+    }
+
+    const updateHeadingVisibility = () => {
+      const rect = section.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const startPoint = viewportHeight * 0.22;
+      const fadeDistance = Math.min(viewportHeight * 0.6, 500);
+      const progress = Math.max(0, Math.min(1, (startPoint - rect.top) / fadeDistance));
+
+      setLearningAtDpsOpacity(Math.max(0, 1 - progress));
+    };
+
+    updateHeadingVisibility();
+    window.addEventListener("scroll", updateHeadingVisibility, { passive: true });
+    window.addEventListener("resize", updateHeadingVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", updateHeadingVisibility);
+      window.removeEventListener("resize", updateHeadingVisibility);
+    };
   }, []);
 
   const scrollTrustRail = (direction: "prev" | "next") => {
@@ -356,27 +378,27 @@ export default function Home() {
           </div>
 
           <div className="border-b border-[#d2ccbb] bg-[#fffdf7] shadow-[0_2px_0_rgba(0,0,0,0.12)]">
-            <div className="mx-auto flex h-[104px] max-w-[1900px] items-center justify-between gap-5 pl-3 pr-8 text-[#121827]">
-              <a href="#" className="relative h-[90px] w-[350px] shrink-0 md:w-[430px]">
+            <div className="mx-auto flex min-h-[104px] max-w-[1900px] flex-wrap items-center justify-between gap-3 px-3 py-3 text-[#121827] sm:px-4 md:px-6 lg:flex-nowrap lg:gap-3 lg:px-8 lg:py-0">
+              <a href="#" className="relative h-[78px] w-[220px] shrink-0 sm:h-[84px] sm:w-[280px] md:h-[88px] md:w-[320px] lg:h-[90px] lg:w-[330px] xl:w-[380px]">
                 <Image
                   src="/logo11.png"
                   alt="Delhi Public School SPR Gurugram logo"
                   fill
-                  sizes="430px"
+                  sizes="380px"
                   className="object-contain"
                   priority
                 />
               </a>
 
               <nav
-                className="hidden min-w-0 flex-1 items-center justify-center gap-4 xl:flex 2xl:gap-6"
+                className="hidden min-w-0 flex-1 items-center justify-center gap-1 xl:flex 2xl:gap-3"
                 aria-label="Primary navigation"
               >
                 {navLinks.map(([label, href]) => (
                   <a
                     key={label}
                     href={href}
-                    className="nav-link whitespace-nowrap px-1.5 py-1 text-[10.24px] font-black uppercase tracking-[0.12em] text-[#111827] transition hover:text-[#006b37]"
+                    className="nav-link whitespace-nowrap px-1.5 py-1 text-[9.5px] font-black uppercase tracking-[0.12em] text-[#111827] transition hover:text-[#006b37] sm:text-[10px] lg:text-[10.24px]"
                   >
                     {label}
                   </a>
@@ -385,7 +407,7 @@ export default function Home() {
 
               <a
                 href="#tour"
-                className="inline-flex h-[40px] shrink-0 items-center justify-center rounded-full bg-[#1b3b22] px-5 text-[12px] font-black uppercase tracking-[0.1em] text-white shadow-[0_18px_38px_rgba(27,59,34,0.24)] transition hover:bg-[#006b37] 2xl:px-6"
+                className="ml-auto inline-flex h-[40px] shrink-0 items-center justify-center rounded-full bg-[#1b3b22] px-3 text-[11px] font-black uppercase tracking-[0.1em] text-white shadow-[0_18px_38px_rgba(27,59,34,0.24)] transition hover:bg-[#006b37] sm:px-4 sm:text-[11.5px] lg:px-4 xl:px-5 2xl:px-6"
               >
                 Schedule A Visit
               </a>
@@ -782,16 +804,22 @@ export default function Home() {
           className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
         >
           <div className="absolute left-0 top-0 h-[14px] w-[58%] bg-[#05b982]" />
-          <div className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-36 sm:px-8 lg:px-14">
+          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-36 sm:px-8 lg:px-14">
             <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
               <div className="infra-story-wordmark min-w-0 pt-2">
-                <div className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
+                <div
+                  className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] transition-all duration-300 ease-out max-lg:text-[42px] max-md:text-[34px]"
+                  style={{ opacity: learningAtDpsOpacity, transform: `translateY(${(1 - learningAtDpsOpacity) * 40}px)` }}
+                >
                   Learning at
+                </div>
+                <div
+                  className="mt-14 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] transition-all duration-300 ease-out max-xl:text-[144px] max-lg:mt-10 max-lg:text-[118px] max-md:text-[88px]"
+                  style={{ opacity: learningAtDpsOpacity, transform: `translateY(${(1 - learningAtDpsOpacity) * 40}px)` }}
+                >
+                  DPS
+                </div>
               </div>
-              <div className="mt-14 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-10 max-lg:text-[118px] max-md:text-[88px]">
-                DPS
-              </div>
-            </div>
 
             <div className="infra-story-copy relative lg:pt-8">
               <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#7a7a7a] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
@@ -874,10 +902,10 @@ export default function Home() {
           className="drone-tour-section relative isolate overflow-hidden bg-white px-0 py-0 text-[#05224a]"
         >
           <div className="mx-auto max-w-none">
-            <div className="drone-tour-layout grid lg:grid-cols-[0.95fr_1.05fr]">
-              <div className="drone-tour-left relative bg-white">
-                <div className="drone-tour-video-stack">
-                  <div className="drone-tour-video-shell relative h-[360px] overflow-hidden bg-[#05224a] shadow-[0_24px_70px_rgba(5,34,74,0.12)] md:h-[460px] lg:h-[620px]">
+            <div className="drone-tour-layout grid lg:grid-cols-[0.98fr_1.02fr] lg:items-stretch">
+              <div className="drone-tour-left relative flex h-full bg-white">
+                <div className="drone-tour-video-stack flex h-full w-full flex-col">
+                  <div className="drone-tour-video-shell relative h-[360px] overflow-hidden bg-[#05224a] shadow-[0_24px_70px_rgba(5,34,74,0.12)] transition-all duration-700 ease-out md:h-[460px] lg:h-[620px] lg:min-h-[620px]">
                     <video
                       className="h-full w-full object-cover"
                       autoPlay
@@ -897,10 +925,10 @@ export default function Home() {
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#041728]/26 via-transparent to-white/18" />
                   </div>
 
-                  <div className="px-6 py-10 md:px-10 lg:px-[92px] lg:py-14">
+                  <div className="px-6 py-10 md:px-10 lg:px-[92px] lg:py-12">
                     <a
                       href="#tour"
-                      className="inline-flex min-h-[58px] items-center justify-center rounded-[18px] border border-[#c51647]/55 bg-white px-8 text-[14px] font-black uppercase tracking-[0.18em] text-[#c51647] transition hover:-translate-y-1 hover:border-[#c51647] hover:bg-[#c51647] hover:text-white"
+                      className="inline-flex min-h-[58px] items-center justify-center rounded-[18px] border border-[#c51647]/55 bg-white px-8 text-[14px] font-black uppercase tracking-[0.18em] text-[#c51647] transition duration-500 ease-out hover:-translate-y-1 hover:border-[#c51647] hover:bg-[#c51647] hover:text-white"
                     >
                       Explore DPS Gurugram
                     </a>
@@ -908,9 +936,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="drone-tour-right relative -ml-px">
-                <div className="drone-tour-intro relative bg-white px-6 py-8 md:px-10 lg:min-h-[310px] lg:px-[72px] lg:py-6">
-                  <div className="relative h-[104px] w-[280px] md:w-[320px] lg:h-[118px] lg:w-[380px]">
+              <div className="drone-tour-right relative flex h-full flex-col bg-white lg:-ml-px">
+                <div className="drone-tour-intro relative bg-white px-4 py-8 transition-all duration-700 ease-out md:px-6 lg:min-h-[320px] lg:px-8 lg:py-10 lg:pt-12">
+                  <div className="relative ml-2 h-[104px] w-[280px] md:w-[320px] lg:ml-4 lg:h-[118px] lg:w-[380px]">
                     <Image
                       src="/logo11.png"
                       alt="Delhi Public School Gurugram logo"
@@ -920,24 +948,20 @@ export default function Home() {
                     />
                   </div>
 
-                  <p className="mt-8 text-[15px] font-black uppercase leading-none tracking-[0.28em] text-[#003b73] max-sm:text-[12px]">
+                  <p className="ml-2 mt-8 text-[15px] font-black uppercase leading-none tracking-[0.28em] text-[#003b73] max-sm:text-[12px]">
                     A Unique Location
                   </p>
-                  <h2 className="mt-6 text-[54px] font-medium leading-[0.96] tracking-normal text-[#0a3b68] max-xl:text-[52px] max-md:text-[42px]">
+                  <h2 className="ml-2 mt-6 text-[54px] font-medium leading-[0.96] tracking-normal text-[#0a3b68] max-xl:text-[52px] max-md:text-[42px]">
                     DPS Gurugram
                   </h2>
                 </div>
 
-                <div className="drone-tour-line absolute left-[-8%] top-[248px] hidden h-px w-[22%] bg-[#c51647] lg:block">
-                  <span className="absolute -left-2 -top-2 h-4 w-4 rounded-full bg-[#c51647]" />
-                </div>
-
-                <div className="drone-tour-map relative overflow-hidden bg-white px-6 py-6 md:px-10 lg:min-h-[360px] lg:px-[72px] lg:py-8">
-                  <div className="relative overflow-hidden">
+                <div className="drone-tour-map relative flex-1 overflow-hidden bg-white px-0 py-6 transition-all duration-700 ease-out md:px-0 lg:py-8">
+                  <div className="relative h-full overflow-hidden rounded-[28px] border border-[#e8edf3] shadow-[0_24px_80px_rgba(5,34,74,0.12)]">
                     <iframe
                       title="DPS Gurugram location map"
                       src="https://www.google.com/maps?q=Sector%2068%2C%20Gurugram-122101&output=embed"
-                      className="h-[260px] w-full border-0 md:h-[300px] lg:h-[320px]"
+                      className="h-[300px] w-full border-0 md:h-[360px] lg:h-full lg:min-h-[520px]"
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                     />
@@ -948,34 +972,47 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="admissions"
+      <section
+        id="admissions"
         className="admission-section relative isolate overflow-hidden bg-[#05224a] px-5 py-24 text-white sm:px-8 lg:px-[74px] lg:py-32"
       >
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_20%,rgba(255,212,0,0.22),transparent_28%),radial-gradient(circle_at_78%_12%,rgba(9,108,232,0.34),transparent_32%),linear-gradient(135deg,#05224a_0%,#07182d_62%,#003b73_100%)]" />
         <div className="absolute left-0 top-0 h-2 w-full bg-[#ffd400]" />
+        <div className="absolute right-[-120px] top-[-120px] h-72 w-72 rounded-full border-[44px] border-white/10" />
+        <div className="absolute bottom-[-80px] left-[-60px] h-48 w-48 rounded-full border-[32px] border-[#ffd400]/20" />
 
         <div className="mx-auto max-w-[1680px]">
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <div className="admission-heading">
+          <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-end">
+            <div className="admission-heading max-w-[760px]">
               <p className="text-[20px] font-black uppercase leading-none tracking-[0.28em] text-[#ffd400] max-sm:text-sm">
                 Admissions 2026-27
               </p>
-              <h2 className="mt-8 text-[78px] font-black leading-none tracking-normal text-white max-xl:text-6xl max-md:text-5xl">
+              <h2 className="mt-8 text-[68px] font-black leading-[0.95] tracking-normal text-white max-xl:text-6xl max-md:text-5xl">
                 Admissions Open for Nursery to Class 12
               </h2>
-              <p className="mt-8 max-w-[680px] text-xl font-semibold leading-8 text-white/78">
-                A clear, guided admission journey for families seeking strong
-                academics, holistic development, and a trusted CBSE school
-                environment.
+              <p className="mt-8 text-xl font-semibold leading-8 text-white/78">
+                A premium, guided admission journey for families seeking academic strength,
+                holistic growth, and a trusted CBSE learning environment.
               </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-black uppercase tracking-[0.2em] text-[#ffd400] backdrop-blur">
+                  CBSE Curriculum
+                </span>
+                <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-black uppercase tracking-[0.2em] text-white/90 backdrop-blur">
+                  Holistic Growth
+                </span>
+                <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-black uppercase tracking-[0.2em] text-white/90 backdrop-blur">
+                  Future Ready
+                </span>
+              </div>
             </div>
 
             <div className="admission-dates grid gap-4 sm:grid-cols-3">
               {importantDates.map(([label, value], index) => (
                 <div
                   key={label}
-                  className="admission-date-card bg-white/10 p-6 backdrop-blur"
+                  className="admission-date-card rounded-[24px] border border-white/15 bg-white/10 p-6 shadow-[0_24px_70px_rgba(0,0,0,0.18)] backdrop-blur"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <p className="text-xs font-black uppercase tracking-[0.24em] text-[#ffd400]">
@@ -989,13 +1026,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="mt-16 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="admission-timeline relative grid gap-5">
-              <div className="absolute left-[38px] top-8 hidden h-[calc(100%-4rem)] w-px bg-white/25 sm:block" />
+              <div className="absolute left-[38px] top-8 hidden h-[calc(100%-4rem)] w-px bg-white/20 sm:block" />
               {admissionSteps.map((step, index) => (
                 <article
                   key={step}
-                  className="admission-step group relative grid gap-5 bg-white p-6 text-[#05224a] shadow-2xl shadow-black/10 sm:grid-cols-[76px_1fr]"
+                  className="admission-step group relative grid gap-5 rounded-[24px] border border-white/10 bg-white p-6 text-[#05224a] shadow-[0_24px_70px_rgba(0,0,0,0.16)] sm:grid-cols-[76px_1fr]"
                   style={{ animationDelay: `${index * 120}ms` }}
                 >
                   <div className="relative z-10 grid h-16 w-16 place-items-center rounded-full bg-[#ffd400] text-2xl font-black text-[#05224a] transition group-hover:rotate-12 group-hover:scale-110">
@@ -1005,7 +1042,7 @@ export default function Home() {
                     <p className="text-sm font-black uppercase tracking-[0.22em] text-[#096ce8]">
                       Step {index + 1}
                     </p>
-                    <h3 className="mt-3 text-3xl font-black leading-tight tracking-normal">
+                    <h3 className="mt-3 text-2xl font-black leading-tight tracking-normal sm:text-3xl">
                       {step}
                     </h3>
                   </div>
@@ -1013,23 +1050,24 @@ export default function Home() {
               ))}
             </div>
 
-            <aside className="admission-eligibility relative overflow-hidden bg-[#ffd400] p-8 text-[#05224a] lg:p-10">
+            <aside className="admission-eligibility relative overflow-hidden rounded-[30px] border border-[#ffd400]/40 bg-[#ffd400] p-8 text-[#05224a] shadow-[0_30px_90px_rgba(0,0,0,0.16)] lg:p-10">
               <div className="absolute right-[-72px] top-[-72px] h-48 w-48 rounded-full border-[34px] border-[#05224a]/12" />
-              <h3 className="relative text-4xl font-black uppercase leading-tight tracking-normal">
+              <div className="absolute bottom-6 right-6 h-24 w-24 rounded-full bg-white/30 blur-2xl" />
+              <h3 className="relative text-3xl font-black uppercase leading-tight tracking-normal sm:text-4xl">
                 Eligibility Criteria
               </h3>
               <div className="relative mt-8 grid gap-5">
                 {[
                   "Nursery admission as per age norms for the academic session.",
-                  "Class 1 to 9 admission based on previous school records and interaction.",
-                  "Class 11 admission based on stream preference, aptitude, and Class 10 performance.",
-                  "Documents required: birth certificate, transfer certificate, report card, photographs, and address proof.",
+                  "Classes 1 to 9 based on previous school records and interaction.",
+                  "Class 11 based on stream preference, aptitude, and Class 10 performance.",
+                  "Documents required: birth certificate, transfer certificate, report card, and address proof.",
                 ].map((item) => (
-                  <div key={item} className="flex gap-4">
+                  <div key={item} className="flex gap-4 rounded-2xl bg-white/45 p-3">
                     <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#05224a] text-lg font-light text-white">
                       +
                     </span>
-                    <p className="text-lg font-bold leading-7">{item}</p>
+                    <p className="text-base font-bold leading-7 sm:text-lg">{item}</p>
                   </div>
                 ))}
               </div>
