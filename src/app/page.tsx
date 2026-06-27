@@ -259,7 +259,7 @@ const navLinks = [
   ["Campus", "#infrastructure"],
   ["Admissions", "#admissions"],
   ["Insights", "#gallery"],
-  ["Connect", "#contact"],
+    ["Connect", "#tour"],
 ];
 
 const announcementItems = [
@@ -356,13 +356,13 @@ export default function Home() {
           </div>
 
           <div className="border-b border-[#d2ccbb] bg-[#fffdf7] shadow-[0_2px_0_rgba(0,0,0,0.12)]">
-            <div className="mx-auto flex h-[96px] max-w-[1900px] items-center justify-between gap-5 pl-3 pr-8 text-[#121827]">
-              <a href="#" className="relative h-[84px] w-[320px] shrink-0 md:w-[390px]">
+            <div className="mx-auto flex h-[104px] max-w-[1900px] items-center justify-between gap-5 pl-3 pr-8 text-[#121827]">
+              <a href="#" className="relative h-[90px] w-[350px] shrink-0 md:w-[430px]">
                 <Image
                   src="/logo11.png"
                   alt="Delhi Public School SPR Gurugram logo"
                   fill
-                  sizes="390px"
+                  sizes="430px"
                   className="object-contain"
                   priority
                 />
@@ -384,7 +384,7 @@ export default function Home() {
               </nav>
 
               <a
-                href="#contact"
+                href="#tour"
                 className="inline-flex h-[40px] shrink-0 items-center justify-center rounded-full bg-[#1b3b22] px-5 text-[12px] font-black uppercase tracking-[0.1em] text-white shadow-[0_18px_38px_rgba(27,59,34,0.24)] transition hover:bg-[#006b37] 2xl:px-6"
               >
                 Schedule A Visit
@@ -782,7 +782,7 @@ export default function Home() {
           className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
         >
           <div className="absolute left-0 top-0 h-[14px] w-[58%] bg-[#05b982]" />
-          <div className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-24 sm:px-8 lg:px-14">
+          <div className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-36 sm:px-8 lg:px-14">
             <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
               <div className="infra-story-wordmark min-w-0 pt-2">
                 <div className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
@@ -811,7 +811,7 @@ export default function Home() {
           </div>
         </div>
 
-          <div className="infra-accordion relative z-10 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-16 max-lg:h-auto max-lg:flex-col">
+            <div className="infra-accordion relative z-10 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-8 max-lg:h-auto max-lg:flex-col">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 
@@ -836,9 +836,9 @@ export default function Home() {
                 <div className="relative flex h-full flex-col justify-between p-6 lg:p-7">
                   <h3
                     className={`max-w-[520px] text-[30px] font-black leading-tight tracking-normal transition duration-500 max-lg:text-3xl ${
-                      isActive
-                        ? "translate-y-[355px] text-[56px] max-xl:text-5xl max-lg:translate-y-0"
-                        : "translate-y-0"
+                        isActive
+                          ? "translate-y-[225px] text-[56px] max-xl:text-5xl max-lg:translate-y-0"
+                          : "translate-y-0"
                     }`}
                   >
                     {item.title}
@@ -869,123 +869,15 @@ export default function Home() {
 
       </section>
 
-      <section
-        id="contact"
-        className="contact-section relative isolate overflow-hidden bg-[#f7f9fb] px-5 py-24 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-32"
-      >
-        <div
-          className="absolute inset-0 -z-10 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#05224a 1px, transparent 1px), linear-gradient(90deg, #05224a 1px, transparent 1px)",
-            backgroundSize: "54px 54px",
-          }}
-        />
-
-        <div className="mx-auto grid max-w-[1680px] gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-0">
-          <div className="contact-visual relative min-h-[650px] overflow-visible bg-white max-lg:min-h-[540px]">
-            <div
-              className="absolute left-0 top-[88px] h-[430px] w-[78%] overflow-hidden max-lg:w-full"
-            >
-              <div
-                className="h-full w-full bg-cover bg-center transition duration-700 hover:scale-105"
-                style={{
-                  backgroundImage:
-                    "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=85)",
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#05224a]/32 via-transparent to-transparent" />
-            </div>
-
-            <div className="contact-badge absolute right-[12%] top-[88px] grid h-32 w-32 place-items-center rounded-full bg-[#b20d3a] shadow-2xl shadow-[#05224a]/15 max-lg:right-8">
-              <div className="relative h-20 w-20 overflow-hidden rounded-full bg-white">
-                <Image
-                  src="/logo11.png"
-                  alt="Delhi Public School Gurugram logo"
-                  fill
-                  sizes="80px"
-                  className="object-contain p-2"
-                />
-              </div>
-            </div>
-
-            <div className="absolute left-[48%] top-[298px] hidden h-px w-[37%] bg-[#b20d3a] lg:block">
-              <span className="absolute -left-2 -top-2 h-4 w-4 rounded-full bg-[#b20d3a]" />
-            </div>
-
-            <div className="absolute bottom-0 right-0 h-[310px] w-[64%] overflow-hidden bg-[#102f45] max-lg:left-0 max-lg:w-full">
-              <iframe
-                title="Gurugram campus map"
-                src="https://www.google.com/maps?q=Gurugram%2C%20Haryana%2C%20India&output=embed"
-                className="h-full w-full border-0 opacity-85 grayscale"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-[#05224a]/25 mix-blend-multiply" />
-              <span className="absolute left-[54%] top-[46%] rounded-full bg-[#b20d3a] px-4 py-2 text-sm font-black uppercase tracking-[0.18em] text-white">
-                Gurugram
-              </span>
-            </div>
-          </div>
-
-          <div className="contact-panel relative bg-white px-8 py-12 shadow-2xl shadow-[#05224a]/8 sm:px-12 lg:px-16 lg:py-20">
-            <p className="text-[18px] font-black uppercase leading-none tracking-[0.28em] text-[#003b73] max-sm:text-sm">
-              Location & Contact
-            </p>
-            <h2 className="mt-8 text-[78px] font-black leading-none tracking-normal text-[#05224a] max-xl:text-6xl max-md:text-5xl">
-              Visit Our Campus
-            </h2>
-            <p className="mt-7 max-w-[650px] text-lg font-semibold leading-8 text-[#516177]">
-              Plan a school visit, explore the campus environment, and meet our
-              admissions team in Gurugram.
-            </p>
-
-            <div className="mt-10 grid gap-4">
-              {[
-                ["Address", "Delhi Public School, Gurugram, Haryana, India"],
-                ["Contact", "+91 98765 43210"],
-                ["Email", "admissions@dpsgurugram.edu.in"],
-                ["Office Hours", "Monday - Saturday, 8:30 AM - 3:30 PM"],
-              ].map(([label, value], index) => (
-                <div
-                  key={label}
-                  className="contact-detail flex gap-5 border-t border-[#d9e1ea] py-5"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#ffd400] text-xl font-black text-[#05224a]">
-                    {index + 1}
-                  </span>
-                  <div>
-                    <p className="text-sm font-black uppercase tracking-[0.22em] text-[#096ce8]">
-                      {label}
-                    </p>
-                    <p className="mt-2 text-xl font-bold leading-7 text-[#05224a]">
-                      {value}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <a
-              href="#apply"
-              className="contact-cta mt-8 inline-flex min-h-[64px] items-center justify-center rounded-full bg-[#05224a] px-9 text-[15px] font-black uppercase tracking-[0.24em] text-white transition hover:-translate-y-1 hover:bg-[#ffd400] hover:text-[#05224a]"
-            >
-              Book A Campus Visit <span className="ml-5 text-2xl">&#8594;</span>
-            </a>
-          </div>
-        </div>
-        </section>
-
         <section
           id="tour"
-          className="drone-tour-section relative isolate overflow-hidden bg-white px-5 py-10 text-[#05224a] sm:px-8 lg:min-h-[170vh] lg:px-[74px] lg:py-14"
+          className="drone-tour-section relative isolate overflow-hidden bg-white px-0 py-0 text-[#05224a]"
         >
-          <div className="mx-auto max-w-[1720px]">
-            <div className="drone-tour-layout grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
-              <div className="drone-tour-left relative">
-                <div className="drone-tour-video-stack lg:sticky lg:top-6">
-                  <div className="drone-tour-video-shell relative h-[420px] overflow-hidden bg-[#05224a] max-md:h-[320px] lg:h-[86vh]">
+          <div className="mx-auto max-w-none">
+            <div className="drone-tour-layout grid lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="drone-tour-left relative bg-white">
+                <div className="drone-tour-video-stack">
+                  <div className="drone-tour-video-shell relative h-[360px] overflow-hidden bg-[#05224a] shadow-[0_24px_70px_rgba(5,34,74,0.12)] md:h-[460px] lg:h-[620px]">
                     <video
                       className="h-full w-full object-cover"
                       autoPlay
@@ -1002,19 +894,54 @@ export default function Home() {
                       />
                       Your browser does not support the video tag.
                     </video>
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#041728]/26 via-transparent to-white/18" />
+                  </div>
+
+                  <div className="px-6 py-10 md:px-10 lg:px-[92px] lg:py-14">
+                    <a
+                      href="#tour"
+                      className="inline-flex min-h-[58px] items-center justify-center rounded-[18px] border border-[#c51647]/55 bg-white px-8 text-[14px] font-black uppercase tracking-[0.18em] text-[#c51647] transition hover:-translate-y-1 hover:border-[#c51647] hover:bg-[#c51647] hover:text-white"
+                    >
+                      Explore DPS Gurugram
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className="drone-tour-right relative">
-                <div className="drone-tour-map relative overflow-hidden bg-white lg:min-h-[150vh]">
-                  <iframe
-                    title="DPS Gurugram location map"
-                    src="https://www.google.com/maps?q=Gurugram%2C%20Haryana%2C%20India&output=embed"
-                    className="h-[420px] w-full border-0 max-md:h-[320px] lg:sticky lg:top-6 lg:h-[86vh]"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+              <div className="drone-tour-right relative -ml-px">
+                <div className="drone-tour-intro relative bg-white px-6 py-8 md:px-10 lg:min-h-[310px] lg:px-[72px] lg:py-6">
+                  <div className="relative h-[104px] w-[280px] md:w-[320px] lg:h-[118px] lg:w-[380px]">
+                    <Image
+                      src="/logo11.png"
+                      alt="Delhi Public School Gurugram logo"
+                      fill
+                      sizes="380px"
+                      className="object-contain object-left"
+                    />
+                  </div>
+
+                  <p className="mt-8 text-[15px] font-black uppercase leading-none tracking-[0.28em] text-[#003b73] max-sm:text-[12px]">
+                    A Unique Location
+                  </p>
+                  <h2 className="mt-6 text-[54px] font-medium leading-[0.96] tracking-normal text-[#0a3b68] max-xl:text-[52px] max-md:text-[42px]">
+                    DPS Gurugram
+                  </h2>
+                </div>
+
+                <div className="drone-tour-line absolute left-[-8%] top-[248px] hidden h-px w-[22%] bg-[#c51647] lg:block">
+                  <span className="absolute -left-2 -top-2 h-4 w-4 rounded-full bg-[#c51647]" />
+                </div>
+
+                <div className="drone-tour-map relative overflow-hidden bg-white px-6 py-6 md:px-10 lg:min-h-[360px] lg:px-[72px] lg:py-8">
+                  <div className="relative overflow-hidden">
+                    <iframe
+                      title="DPS Gurugram location map"
+                      src="https://www.google.com/maps?q=Sector%2068%2C%20Gurugram-122101&output=embed"
+                      className="h-[260px] w-full border-0 md:h-[300px] lg:h-[320px]"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1123,7 +1050,7 @@ export default function Home() {
               Download Prospectus
             </a>
             <a
-              href="#contact"
+              href="#tour"
               className="inline-flex min-h-[64px] items-center justify-center rounded-full bg-white/12 px-9 text-[15px] font-black uppercase tracking-[0.24em] text-white backdrop-blur transition hover:-translate-y-1 hover:bg-[#096ce8]"
             >
               Enquire Now
@@ -1218,7 +1145,7 @@ export default function Home() {
                 ["Programs", "#academics"],
                 ["Infrastructure", "#infrastructure"],
                 ["Admissions", "#admissions"],
-                ["Contact", "#contact"],
+                ["Contact", "#tour"],
               ].map(([label, href]) => (
                 <a key={label} href={href} className="transition hover:text-[#ffd400]">
                   {label}

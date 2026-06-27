@@ -679,20 +679,20 @@ html {
 
 @keyframes drone-video-grow {
   0% {
-    opacity: 0.94;
-    transform: translateY(18px) scale(0.82);
-    border-radius: 24px;
+    opacity: 0.96;
+    transform: translateY(16px) scale(0.94);
+    border-radius: 18px;
   }
 
   42% {
     opacity: 1;
-    transform: translateY(0) scale(0.92);
-    border-radius: 18px;
+    transform: translateY(0) scale(0.98);
+    border-radius: 12px;
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1.08);
+    transform: translateY(0) scale(1.05);
     border-radius: 0;
   }
 }
