@@ -29,60 +29,64 @@ const academicPrograms = [
     image:
       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85",
   },
-  {
-    title: "High School",
-    classes: "Grade 10 - 12",
-    image:
-      "https://images.unsplash.com/photo-1577896852618-9f29b3fcb9d6?auto=format&fit=crop&w=1400&q=85",
-  },
-];
+    {
+      title: "High School",
+      classes: "Grade 10 - 12",
+      image:
+        "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=85",
+    },
+  ];
 
-const programCardThemes = [
-  {
-    shell: "bg-transparent",
-    bottom: "bg-[#07233e]/88",
-    bottomHeight: "group-hover:h-[76%]",
-    bottomText: "text-white",
-    label: "text-white/90",
-    arrow: "text-white",
-    accent: "",
-    accentPositions: [],
-    imageOverlay: "bg-gradient-to-t from-[#08233e]/92 via-[#08233e]/58 to-transparent",
-  },
-  {
-    shell: "bg-transparent",
-    bottom: "bg-[#07233e]/88",
-    bottomHeight: "group-hover:h-[76%]",
-    bottomText: "text-white",
-    label: "text-white/90",
-    arrow: "text-white",
-    accent: "",
-    accentPositions: [],
-    imageOverlay: "bg-gradient-to-t from-[#08233e]/92 via-[#08233e]/58 to-transparent",
-  },
-  {
-    shell: "bg-transparent",
-    bottom: "bg-[#07233e]/88",
-    bottomHeight: "group-hover:h-[76%]",
-    bottomText: "text-white",
-    label: "text-white/90",
-    arrow: "text-white",
-    accent: "",
-    accentPositions: [],
-    imageOverlay: "bg-gradient-to-t from-[#08233e]/92 via-[#08233e]/58 to-transparent",
-  },
-  {
-    shell: "bg-transparent",
-    bottom: "bg-[#07233e]/88",
-    bottomHeight: "group-hover:h-[74%]",
-    bottomText: "text-white",
-    label: "text-white/90",
-    arrow: "text-white",
-    accent: "",
-    accentPositions: [],
-    imageOverlay: "bg-gradient-to-t from-[#08233e]/92 via-[#08233e]/58 to-transparent",
-  },
-];
+  const programCardThemes = [
+    {
+      shell: "bg-transparent",
+      bottom: "bg-transparent group-hover:bg-[#f25aa2]",
+      bottomHeight: "group-hover:h-full",
+      bottomText: "text-white group-hover:text-[#07233e]",
+      label: "text-white/90 group-hover:text-[#07233e]",
+      arrow: "text-white group-hover:text-[#07233e]",
+      accent: "bg-[#ffc94d]",
+      accentShape: "petal",
+      accentPositions: [],
+      imageOverlay: "bg-gradient-to-t from-[#08233e]/46 via-[#08233e]/18 to-transparent",
+    },
+    {
+      shell: "bg-transparent",
+      bottom: "bg-transparent group-hover:bg-[#19c37d]",
+      bottomHeight: "group-hover:h-full",
+      bottomText: "text-white group-hover:text-[#07233e]",
+      label: "text-white/90 group-hover:text-[#07233e]",
+      arrow: "text-white group-hover:text-[#07233e]",
+      accent: "bg-[#ffd45c]",
+      accentShape: "diamond",
+      accentPositions: [],
+      imageOverlay: "bg-gradient-to-t from-[#08233e]/46 via-[#08233e]/18 to-transparent",
+    },
+    {
+      shell: "bg-transparent",
+      bottom: "bg-transparent group-hover:bg-[#ffd45c]",
+      bottomHeight: "group-hover:h-full",
+      bottomText: "text-white group-hover:text-[#07233e]",
+      label: "text-white/90 group-hover:text-[#07233e]",
+      arrow: "text-white group-hover:text-[#07233e]",
+      accent: "bg-[#19c37d]",
+      accentShape: "spark",
+      accentPositions: [],
+      imageOverlay: "bg-gradient-to-t from-[#08233e]/46 via-[#08233e]/18 to-transparent",
+    },
+    {
+      shell: "bg-transparent",
+      bottom: "bg-transparent group-hover:bg-[#55c7ff]",
+      bottomHeight: "group-hover:h-full",
+      bottomText: "text-white group-hover:text-[#07233e]",
+      label: "text-white/90 group-hover:text-[#07233e]",
+      arrow: "text-white group-hover:text-[#07233e]",
+      accent: "bg-[#ffd45c]",
+      accentShape: "arc",
+      accentPositions: [],
+      imageOverlay: "bg-gradient-to-t from-[#08233e]/46 via-[#08233e]/18 to-transparent",
+    },
+  ];
 
 const trustPoints = [
   {
@@ -503,49 +507,80 @@ export default function Home() {
         </div>
       </section>
 
-            <section
-        id="academics"
-        className="learning-journey-section relative isolate overflow-hidden bg-white px-5 pb-0 pt-4 text-[#003b73] sm:px-8 lg:px-[74px]"
-      >
-        <div className="absolute inset-x-0 bottom-0 h-[34%] bg-[#096ce8]" />
+        <section
+          id="academics"
+          className="learning-journey-section relative isolate overflow-hidden bg-[#096ce8] px-5 pb-14 pt-4 text-[#003b73] sm:px-8 lg:px-[74px] lg:pb-16"
+        >
+          <div className="absolute inset-x-0 top-0 h-[250px] bg-white max-lg:h-[290px] max-md:h-[235px]" />
         <div className="mx-auto max-w-[1920px]">
           <div className="program-heading mx-auto text-center">
-            <p className="text-[18px] font-black uppercase leading-none tracking-[0.26em] text-[#003b73] max-sm:text-[12px]">
-              From Preschool To Grade 12
-            </p>
-            <h2 className="mt-7 text-[72px] font-black leading-none tracking-normal text-[#003b73] max-xl:text-6xl max-md:text-4xl">
-              Our Learning Journey
-            </h2>
+              <p className="text-[18px] font-black uppercase leading-none tracking-[0.26em] text-[#05b982] max-sm:text-[12px]">
+                From Preschool To Grade 12
+              </p>
+              <h2 className="mt-7 text-[72px] font-black leading-none tracking-normal text-[#111111] max-xl:text-6xl max-md:text-4xl">
+                Our Learning Journey
+              </h2>
           </div>
 
-          <div className="program-grid mt-[94px] grid gap-2 md:grid-cols-2 xl:grid-cols-4">
+          <div className="program-grid relative z-10 mt-[94px] grid gap-2 md:grid-cols-2 xl:grid-cols-4">
             {academicPrograms.map((program, index) => (
               <article
                 key={program.title}
-                className={`program-card group relative min-h-[590px] overflow-hidden text-white transition duration-700 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(5,34,74,0.18)] ${programCardThemes[index].shell}`}
+                  className={`program-card group relative min-h-[500px] overflow-hidden text-white transition duration-700 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(5,34,74,0.18)] ${programCardThemes[index].shell}`}
                 style={{ animationDelay: `${index * 120}ms` }}
-              >
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition duration-700 ease-out group-hover:scale-105"
-                  style={{ backgroundImage: `url(${program.image})` }}
-                />
-                <div className={`absolute inset-0 transition duration-700 ease-out group-hover:opacity-0 ${programCardThemes[index].imageOverlay}`} />
-                <div className={`absolute inset-x-0 bottom-0 h-[38%] ${programCardThemes[index].bottom}`} />
+                >
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition duration-700 ease-out group-hover:scale-105"
+                    style={{ backgroundImage: `url(${program.image})` }}
+                  />
+                  <div className={`absolute inset-0 transition duration-700 ease-out group-hover:opacity-20 ${programCardThemes[index].imageOverlay}`} />
+                  <div className={`absolute right-4 top-4 z-[1] h-28 w-28 translate-x-7 -translate-y-7 opacity-0 transition-all duration-700 ease-out group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100`}>
+                    {programCardThemes[index].accentShape === "petal" && (
+                      <>
+                        <div className={`absolute left-1/2 top-0 h-14 w-14 -translate-x-1/2 rounded-t-full ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-1/2 bottom-0 h-14 w-14 -translate-x-1/2 rounded-b-full ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-0 top-1/2 h-14 w-14 -translate-y-1/2 rounded-l-full ${programCardThemes[index].accent}`} />
+                        <div className={`absolute right-0 top-1/2 h-14 w-14 -translate-y-1/2 rounded-r-full ${programCardThemes[index].accent}`} />
+                      </>
+                    )}
+                    {programCardThemes[index].accentShape === "diamond" && (
+                      <>
+                        <div className={`absolute left-1 top-1 h-12 w-12 rotate-45 rounded-[12px] ${programCardThemes[index].accent}`} />
+                        <div className={`absolute right-1 top-1 h-12 w-12 rotate-45 rounded-[12px] ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-1/2 top-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-[12px] ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-1/2 bottom-1 h-12 w-12 -translate-x-1/2 rotate-45 rounded-[12px] ${programCardThemes[index].accent}`} />
+                      </>
+                    )}
+                    {programCardThemes[index].accentShape === "spark" && (
+                      <>
+                        <div className={`absolute left-1/2 top-0 h-28 w-10 -translate-x-1/2 rounded-full ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-0 top-1/2 h-10 w-28 -translate-y-1/2 rounded-full ${programCardThemes[index].accent}`} />
+                        <div className={`absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/20`} />
+                      </>
+                    )}
+                    {programCardThemes[index].accentShape === "arc" && (
+                      <>
+                        <div className={`absolute right-0 top-0 h-28 w-28 rounded-bl-[92px] ${programCardThemes[index].accent}`} />
+                        <div className="absolute right-[26px] top-[26px] h-12 w-12 rounded-full bg-white/18" />
+                      </>
+                    )}
+                  </div>
+                  <div className={`absolute inset-x-0 bottom-0 h-[38%] transition-all duration-700 ease-out ${programCardThemes[index].bottom} ${programCardThemes[index].bottomHeight}`} />
 
-                <div className="relative flex h-full min-h-[590px] flex-col justify-end px-[38px] pb-[34px]">
-                  <h3 className="max-w-[300px] whitespace-nowrap text-[24px] font-medium leading-[1.18] tracking-normal text-white transition duration-700 max-lg:max-w-full max-lg:whitespace-normal">
-                    {program.title}
-                  </h3>
-                  <div className="mt-5 flex items-center justify-between gap-6">
-                    <p className="whitespace-nowrap text-[12px] font-normal uppercase leading-none tracking-[0.16em] text-white/90 transition duration-700">
-                      {program.classes}
-                    </p>
-                    <a
-                      href="#apply"
-                      className="inline-flex h-12 w-12 shrink-0 items-center justify-center text-[42px] font-light leading-none text-white transition duration-700 group-hover:translate-x-2"
-                      aria-label={`Explore ${program.title}`}
-                    >
-                      &#8594;
+                  <div className="relative flex h-full min-h-[500px] flex-col justify-end px-[38px] pb-[34px]">
+                    <h3 className={`max-w-[300px] whitespace-nowrap text-[24px] font-medium leading-[1.18] tracking-normal transition duration-700 max-lg:max-w-full max-lg:whitespace-normal ${programCardThemes[index].bottomText}`}>
+                      {program.title}
+                    </h3>
+                    <div className="mt-5 flex items-center justify-between gap-6">
+                      <p className={`whitespace-nowrap text-[12px] font-normal uppercase leading-none tracking-[0.16em] transition duration-700 ${programCardThemes[index].label}`}>
+                        {program.classes}
+                      </p>
+                      <a
+                        href="#apply"
+                        className={`inline-flex h-12 w-12 shrink-0 items-center justify-center text-[42px] font-light leading-none transition duration-700 group-hover:translate-x-2 ${programCardThemes[index].arrow}`}
+                        aria-label={`Explore ${program.title}`}
+                      >
+                        &#8594;
                     </a>
                   </div>
                 </div>
@@ -742,11 +777,41 @@ export default function Home() {
 
       </section>
 
-      <section
-        id="infrastructure"
-        className="infrastructure-section relative isolate overflow-hidden bg-white pb-10 pt-8 text-white"
-      >
-        <div className="infra-accordion mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white max-lg:h-auto max-lg:flex-col">
+        <section
+          id="infrastructure"
+          className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
+        >
+          <div className="absolute left-0 top-0 h-[14px] w-[58%] bg-[#05b982]" />
+          <div className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-24 sm:px-8 lg:px-14">
+            <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <div className="infra-story-wordmark min-w-0 pt-2">
+                <div className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
+                  Learning at
+              </div>
+              <div className="mt-14 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-10 max-lg:text-[118px] max-md:text-[88px]">
+                DPS
+              </div>
+            </div>
+
+            <div className="infra-story-copy relative lg:pt-8">
+              <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#7a7a7a] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
+                Every child learns differently and our aim is to provide
+                students with the opportunities, experiences, and pathways that
+                best suit their abilities, interests, and aspirations.
+              </p>
+              <p className="mt-8 max-w-[680px] text-[18px] font-medium leading-9 text-[#7a7a7a] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
+                Our approach to teaching and learning is based on a Learning
+                Principles framework that acts as a guide for both our students
+                and teachers. In addition to ensuring a robust academic
+                program, they reflect our focus on social and emotional
+                learning and our belief in the importance of student voice and
+                choice in their own learning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+          <div className="infra-accordion relative z-10 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-16 max-lg:h-auto max-lg:flex-col">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 
@@ -802,16 +867,6 @@ export default function Home() {
           })}
         </div>
 
-        <div className="mx-auto -mt-10 max-w-[1720px] px-5 sm:px-8 lg:px-14">
-          <div className="infra-heading mx-auto w-fit rounded-[32px] bg-white/95 px-6 py-4 text-center shadow-[0_20px_60px_rgba(5,34,74,0.10)] ring-1 ring-[#e2ebf3] backdrop-blur-md">
-            <p className="text-[16px] font-black uppercase leading-none tracking-[0.28em] text-[#05b982] max-sm:text-sm">
-              Campus Designed For Learning
-            </p>
-            <h2 className="mt-3 whitespace-nowrap text-[50px] font-bold leading-none tracking-normal text-[#111111] max-xl:text-5xl max-lg:whitespace-normal max-md:text-4xl">
-              World-Class School <span className="text-[#05b982]">Infrastructure</span>
-            </h2>
-          </div>
-        </div>
       </section>
 
       <section
@@ -920,10 +975,54 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+        </section>
 
-      <section
-        id="admissions"
+        <section
+          id="tour"
+          className="drone-tour-section relative isolate overflow-hidden bg-white px-5 py-10 text-[#05224a] sm:px-8 lg:min-h-[170vh] lg:px-[74px] lg:py-14"
+        >
+          <div className="mx-auto max-w-[1720px]">
+            <div className="drone-tour-layout grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
+              <div className="drone-tour-left relative">
+                <div className="drone-tour-video-stack lg:sticky lg:top-6">
+                  <div className="drone-tour-video-shell relative h-[420px] overflow-hidden bg-[#05224a] max-md:h-[320px] lg:h-[86vh]">
+                    <video
+                      className="h-full w-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+                      aria-label="Drone tour of DPS Gurugram campus"
+                    >
+                      <source
+                        src="https://samplelib.com/lib/preview/mp4/sample-20s.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+
+              <div className="drone-tour-right relative">
+                <div className="drone-tour-map relative overflow-hidden bg-white lg:min-h-[150vh]">
+                  <iframe
+                    title="DPS Gurugram location map"
+                    src="https://www.google.com/maps?q=Gurugram%2C%20Haryana%2C%20India&output=embed"
+                    className="h-[420px] w-full border-0 max-md:h-[320px] lg:sticky lg:top-6 lg:h-[86vh]"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="admissions"
         className="admission-section relative isolate overflow-hidden bg-[#05224a] px-5 py-24 text-white sm:px-8 lg:px-[74px] lg:py-32"
       >
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_20%,rgba(255,212,0,0.22),transparent_28%),radial-gradient(circle_at_78%_12%,rgba(9,108,232,0.34),transparent_32%),linear-gradient(135deg,#05224a_0%,#07182d_62%,#003b73_100%)]" />
@@ -1153,5 +1252,7 @@ export default function Home() {
     </main>
   );
 }
+
+
 
 
