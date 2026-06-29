@@ -249,13 +249,14 @@ export const galleryItems = [
 ];
 
 export const navLinks = [
-  ["Our Vision", "#about"],
-  ["Learning Journey", "#academics"],
-  ["The Child We Nurture", "#foundation"],
-  ["Campus", "#infrastructure"],
-  ["Admissions", "#admissions"],
-  ["Insights", "#gallery"],
-  ["Connect", "#tour"],
+  ["Our Vision", "/our-vision"],
+  ["Founding Story", "/founding-story"],
+  ["Learning Journey", "/#academics"],
+  ["The Child We Nurture", "/the-child-we-nurture"],
+  ["Campus", "/#infrastructure"],
+  ["Admissions", "/#admissions"],
+  ["Insights", "/#gallery"],
+  ["Connect", "/#tour"],
 ];
 
 export const announcementItems = [

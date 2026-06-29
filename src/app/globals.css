@@ -484,6 +484,12 @@ html {
   will-change: transform, opacity;
 }
 
+.infra-story-wordmark {
+  position: relative;
+  will-change: transform;
+  z-index: 1;
+}
+
 .drone-tour-video-shell,
 .drone-tour-intro,
 .drone-tour-map {
@@ -491,7 +497,9 @@ html {
 }
 
 .infra-accordion {
+  isolation: isolate;
   position: relative;
+  z-index: 20;
 }
 
 .contact-section {
@@ -942,20 +950,18 @@ html {
   }
 
   .infra-story {
-    animation: infra-story-flow both cubic-bezier(0.18, 0.88, 0.24, 1);
-    animation-range: entry 0% cover 92%;
-    animation-timeline: --infra-section;
+    animation: none;
   }
 
   .infra-story-wordmark {
-    animation: infra-wordmark-drop both cubic-bezier(0.16, 0.9, 0.22, 1);
-    animation-range: entry 0% cover 66%;
+    animation: infra-heading-unified both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 35% cover 82%;
     animation-timeline: --infra-section;
   }
 
   .infra-story-copy {
     animation: infra-copy-settle both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 4% cover 46%;
+    animation-range: entry 4% cover 40%;
     animation-timeline: --infra-section;
   }
 
@@ -1685,35 +1691,26 @@ html {
 
 @keyframes infra-story-flow {
   0% {
-    opacity: 0.12;
-    transform: translate3d(-34px, -24px, 0) scale(0.98);
-  }
-
-  28% {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
   }
 
   100% {
-    opacity: 0.96;
-    transform: translate3d(0, 176px, 0) scale(0.985);
+    opacity: 1;
+    transform: translate3d(0, 40px, 0) scale(1);
   }
 }
 
-@keyframes infra-wordmark-drop {
-  0% {
-    opacity: 0;
-    transform: translate3d(-160px, -18px, 0) scale(0.9);
-  }
-
-  44% {
+@keyframes infra-heading-unified {
+  0%,
+  45% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, 74px, 0) scale(1);
+    transform: translate3d(0, 88px, 0);
   }
 }
 
@@ -1729,8 +1726,8 @@ html {
   }
 
   100% {
-    opacity: 0.94;
-    transform: translate3d(0, 96px, 0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -1766,6 +1763,116 @@ html {
   to {
     transform: rotate(0deg) scale(1);
   }
+}
+
+.founding-hero-copy {
+  animation: founding-hero-in 1000ms cubic-bezier(0.22, 1, 0.36, 1) 200ms both;
+}
+
+.founding-quote-line {
+  animation: founding-line-grow 900ms 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  transform-origin: center;
+}
+
+.founding-reveal-rise,
+.founding-reveal-left,
+.founding-reveal-right,
+.founding-reveal-scale {
+  opacity: 0;
+  transition:
+    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.founding-reveal-rise {
+  transform: translateY(36px);
+}
+
+.founding-reveal-left {
+  transform: translateX(-42px);
+}
+
+.founding-reveal-right {
+  transform: translateX(42px);
+}
+
+.founding-reveal-scale {
+  transform: scale(0.94);
+}
+
+.founding-reveal-rise.is-visible,
+.founding-reveal-left.is-visible,
+.founding-reveal-right.is-visible,
+.founding-reveal-scale.is-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+.founding-image-frame:hover img,
+.founding-milestone-card:hover img {
+  transform: scale(1.04);
+}
+
+.founding-image-frame img,
+.founding-milestone-card img {
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes founding-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes founding-line-grow {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.vision-page {
+  scroll-behavior: smooth;
+}
+
+.vision-serif {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
+
+.nurture-page {
+  scroll-behavior: smooth;
+}
+
+.nurture-serif {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
+
+.vision-glass-card {
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.vision-belief-card,
+.vision-question-wall,
+.vision-pillar-card,
+.vision-skill-orb {
+  transform-style: preserve-3d;
+}
+
+.vision-future-section {
+  isolation: isolate;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
+import { CampusTourVideo } from "@/components/home/CampusTourVideo";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 // import { FoundationSection } from "@/components/home/FoundationSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { LearningJourneySection } from "@/components/home/LearningJourneySection";
@@ -11,7 +13,6 @@ import { TrustSection } from "@/components/home/TrustSection";
 import {
   // galleryItems,
   infrastructureItems,
-  navLinks,
 } from "@/data/home-content";
 import { useNavbarVisibility } from "@/hooks/use-navbar-visibility";
 
@@ -103,17 +104,15 @@ export default function Home() {
           id="infrastructure"
           className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
         >
-          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-36 sm:px-8 lg:px-14">
+          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-8 sm:px-8 lg:px-14">
             <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-              <div className="infra-story-wordmark relative z-0 min-w-0 pt-2">
+              <div className="infra-story-wordmark relative z-[1] min-w-0 pt-2">
                 <div
                   className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] transition-all duration-300 ease-out max-lg:text-[42px] max-md:text-[34px]"
                 >
                   Learning at
                 </div>
-                <div
-                  className="mt-14 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] transition-all duration-300 ease-out max-xl:text-[144px] max-lg:mt-10 max-lg:text-[118px] max-md:text-[88px]"
-                >
+                <div className="mt-3 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] transition-all duration-300 ease-out max-xl:text-[144px] max-lg:mt-2 max-lg:text-[118px] max-md:text-[88px]">
                   DPS
                 </div>
               </div>
@@ -128,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-            <div className="infra-accordion relative z-20 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-10 max-lg:h-auto max-lg:flex-col">
+            <div className="infra-accordion relative z-20 mt-10 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:h-auto max-lg:flex-col">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 
@@ -195,22 +194,7 @@ export default function Home() {
               <div className="drone-tour-left relative flex h-full bg-white">
                 <div className="drone-tour-video-stack flex h-full w-full flex-col">
                   <div className="drone-tour-video-shell relative h-[360px] overflow-hidden bg-[#05224a] shadow-[0_24px_70px_rgba(5,34,74,0.12)] transition-all duration-700 ease-out md:h-[460px] lg:h-[620px] lg:min-h-[620px]">
-                    <video
-                      className="h-full w-full object-cover"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
-                      aria-label="Drone tour of DPS Gurugram campus"
-                    >
-                      <source
-                        src="https://samplelib.com/lib/preview/mp4/sample-20s.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    <CampusTourVideo />
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#041728]/26 via-transparent to-white/18" />
                   </div>
 
@@ -325,81 +309,7 @@ export default function Home() {
       </section>
       */}
 
-      <footer className="site-footer relative isolate overflow-hidden bg-[#0f6734] px-5 py-14 text-white sm:px-8 lg:px-[74px]">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_8%_12%,rgba(255,212,0,0.12),transparent_25%),radial-gradient(circle_at_92%_8%,rgba(255,255,255,0.08),transparent_24%),linear-gradient(135deg,#136a37_0%,#0f6734_48%,#0a4f28_100%)]" />
-        <div className="footer-leaf-pattern pointer-events-none absolute inset-0 -z-10 opacity-25" />
-
-        <div className="mx-auto max-w-[1720px]">
-          <div className="grid gap-10 lg:grid-cols-3 lg:items-start lg:gap-12">
-            <div>
-              <div className="relative h-[96px] w-[250px] overflow-hidden rounded-[16px] bg-white p-3 shadow-[8px_8px_0_rgba(255,212,0,0.22)]">
-                <Image
-                  src="/logo11.png"
-                  alt="Delhi Public School SPR Gurugram logo"
-                  fill
-                  sizes="250px"
-                  className="object-contain p-3"
-                />
-              </div>
-              <p className="mt-8 max-w-[360px] text-[18px] font-semibold leading-8 text-white">
-                Delhi Public School SPR Gurugram stands out as a future-ready
-                CBSE school for confident learners.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-[30px] font-black uppercase leading-none tracking-normal text-white">
-                Quick Links
-              </h3>
-              <nav
-                className="mt-7 flex flex-col gap-4 text-[18px] font-semibold leading-none text-white"
-                aria-label="Footer navigation"
-              >
-                {navLinks.map(([label, href]) => (
-                  <a
-                    key={label}
-                    href={href}
-                    className="footer-dps-link group inline-flex items-center gap-3 transition hover:text-[#ffd400]"
-                  >
-                    <span className="text-[24px] leading-none text-white/90 transition group-hover:translate-x-1 group-hover:text-[#ffd400]">
-                      &#8250;
-                    </span>
-                    {label}
-                  </a>
-                ))}
-              </nav>
-            </div>
-
-            <div>
-              <h3 className="text-[30px] font-black uppercase leading-none tracking-normal text-white">
-                Get In Touch
-              </h3>
-              <div className="mt-7 grid gap-6 text-[18px] font-semibold leading-7 text-white">
-                <div>
-                  <p className="text-[16px] text-white/80">Address</p>
-                  <p className="mt-1 font-bold">
-                    Sector 68, Gurugram, Haryana, India
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[16px] text-white/80">Phone</p>
-                  <p className="mt-1 font-bold">+91 98765 43210</p>
-                </div>
-                <div>
-                  <p className="text-[16px] text-white/80">Email</p>
-                  <p className="mt-1 font-bold">admissions@dpsgurugram.edu.in</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 h-px bg-white/70" />
-
-          <p className="mt-7 text-center text-[16px] font-semibold text-white/90">
-            &copy; 2026. DPS SPR Gurugram All Rights Reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
