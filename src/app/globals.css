@@ -703,6 +703,106 @@ html {
   animation-delay: 180ms;
 }
 
+.footer-grid-glow {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 82%, transparent 100%);
+}
+
+.footer-cta {
+  animation: footer-cta-rise 860ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.footer-cta::after {
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.2) 48%, transparent 72%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-120%);
+  transition: opacity 300ms ease, transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.footer-cta:hover::after {
+  opacity: 1;
+  transform: translateX(120%);
+}
+
+.footer-brand {
+  animation: footer-panel-in 780ms 80ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.footer-link {
+  position: relative;
+}
+
+.footer-link::after {
+  background: #05b982;
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 340ms cubic-bezier(0.22, 1, 0.36, 1);
+  width: 100%;
+}
+
+.footer-link:hover::after {
+  transform: scaleX(1);
+}
+
+.footer-organic-card {
+  animation: footer-organic-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.footer-contours {
+  background:
+    radial-gradient(circle at 18% 76%, transparent 0 54px, rgba(255, 247, 199, 0.1) 55px 56px, transparent 57px),
+    radial-gradient(circle at 36% 8%, transparent 0 96px, rgba(255, 247, 199, 0.1) 97px 98px, transparent 99px),
+    radial-gradient(circle at 76% 58%, transparent 0 160px, rgba(255, 247, 199, 0.08) 161px 162px, transparent 163px),
+    repeating-linear-gradient(68deg, transparent 0 128px, rgba(255, 247, 199, 0.08) 129px 131px, transparent 132px 250px);
+}
+
+.footer-flower {
+  background:
+    repeating-radial-gradient(ellipse at center, transparent 0 8px, rgba(255, 247, 199, 0.22) 9px 10px, transparent 11px 18px),
+    #05e981;
+  border-radius: 34% 66% 34% 66%;
+  box-shadow: 0 20px 60px rgba(5, 233, 129, 0.28);
+  height: 132px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -18%) rotate(45deg);
+  width: 132px;
+  z-index: 2;
+}
+
+.footer-flower::before,
+.footer-flower::after {
+  background: inherit;
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.footer-flower::before {
+  transform: rotate(60deg);
+}
+
+.footer-flower::after {
+  transform: rotate(120deg);
+}
+
+.footer-social-link {
+  position: relative;
+}
+
 @supports (animation-timeline: view()) {
   .about-section {
     view-timeline-name: --about-section;
@@ -1349,6 +1449,42 @@ html {
   from {
     opacity: 0;
     transform: translateY(40px) scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes footer-cta-rise {
+  from {
+    opacity: 0;
+    transform: translateY(36px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes footer-panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes footer-organic-rise {
+  from {
+    opacity: 0;
+    transform: translateY(42px) scale(0.98);
   }
 
   to {

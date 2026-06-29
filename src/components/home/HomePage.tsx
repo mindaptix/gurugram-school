@@ -322,111 +322,115 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer relative isolate overflow-hidden bg-[#061a33] px-5 pb-8 pt-16 text-white sm:px-8 lg:px-[74px] lg:pt-20">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_8%_15%,rgba(255,212,0,0.16),transparent_28%),radial-gradient(circle_at_88%_12%,rgba(5,185,130,0.16),transparent_26%),linear-gradient(135deg,#061a33_0%,#0b2342_48%,#03101f_100%)]" />
-        <div className="pointer-events-none absolute left-8 top-8 h-px w-[calc(100%-4rem)] bg-[linear-gradient(90deg,transparent,#d8c37a,transparent)]" />
-        <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-tl-full bg-[#05b982]/10 blur-3xl" />
+      <footer className="site-footer relative isolate overflow-hidden bg-[#fff7c7] px-3 pb-5 pt-16 text-[#fff7c7] sm:px-5 lg:px-8">
+        <div className="footer-flower" aria-hidden="true" />
 
-        <div className="mx-auto max-w-[1720px]">
-          <div className="grid overflow-hidden border border-white/12 bg-white/[0.04] shadow-[0_30px_110px_rgba(0,0,0,0.22)] backdrop-blur lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="border-b border-white/12 p-6 sm:p-8 lg:border-b-0 lg:border-r lg:p-10">
-              <div className="relative h-[92px] w-[260px] overflow-hidden bg-white p-3 shadow-[12px_12px_0_rgba(216,195,122,0.34)]">
-                <Image
-                  src="/logo11.png"
-                  alt="Delhi Public School Gurugram logo"
-                  fill
-                  sizes="260px"
-                  className="object-contain p-3"
-                />
+        <div className="footer-organic-card relative mx-auto max-w-[1760px] overflow-hidden rounded-[46px] bg-[#222320] px-6 pb-7 pt-24 shadow-[0_34px_110px_rgba(5,34,74,0.22)] sm:px-10 lg:px-16 lg:pb-9 lg:pt-28">
+          <div className="footer-contours pointer-events-none absolute inset-0 opacity-45" />
+
+          <div className="relative z-10 grid gap-10 lg:grid-cols-[0.8fr_1.05fr_0.85fr] lg:items-end">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-[24px] font-black leading-none tracking-normal text-[#fff7c7]">
+                Contact
+              </h3>
+              <div className="mt-4 grid gap-1 text-[14px] font-semibold leading-6 text-white/78">
+                <p>Gurugram, Haryana, India</p>
+                <p>+91 98765 43210</p>
+                <p>admissions@dpsgurugram.edu.in</p>
               </div>
-              <p className="mt-10 text-[12px] font-black uppercase leading-none tracking-[0.28em] text-[#f3d77b]">
-                Delhi Public School Gurugram
-              </p>
-              <h2 className="mt-5 max-w-[780px] text-[48px] font-black leading-[0.98] tracking-[-0.05em] text-white max-xl:text-4xl max-md:text-3xl">
-                A future-ready campus for confident learners.
-              </h2>
-              <p className="mt-6 max-w-[680px] text-base font-medium leading-8 text-white/68">
-                Nursery to Class 12 CBSE education shaped around academics,
-                values, communication, leadership, and holistic growth.
-              </p>
 
-              <div className="mt-9 flex flex-wrap gap-3">
-                {["CBSE School", "Nursery - XII", "Gurugram Campus"].map((item) => (
-                  <span
+              <div className="mt-8 grid gap-2 text-[14px] font-semibold text-white/70">
+                {["Facebook", "Instagram", "LinkedIn"].map((item) => (
+                  <a
                     key={item}
-                    className="border border-white/14 bg-white/[0.06] px-4 py-2 text-[12px] font-bold uppercase tracking-[0.14em] text-white/78"
+                    href="#tour"
+                    className="footer-social-link group inline-flex w-fit items-center gap-2 transition hover:text-[#05e981]"
                   >
                     {item}
-                  </span>
+                    <span className="text-[#05e981] transition group-hover:translate-x-1 group-hover:-translate-y-1">
+                      &#8599;
+                    </span>
+                  </a>
                 ))}
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-2">
+                <span className="rounded-full bg-[#05e981] px-3 py-1 text-[12px] font-black text-[#14301f]">
+                  CBSE
+                </span>
+                <span className="rounded-full bg-[#fff7c7] px-3 py-1 text-[12px] font-black text-[#222320]">
+                  Nursery - XII
+                </span>
               </div>
             </div>
 
-            <div className="grid">
-              <div className="grid gap-4 border-b border-white/12 p-6 sm:grid-cols-2 sm:p-8 lg:p-10">
-                <div>
-                  <h3 className="text-[12px] font-black uppercase tracking-[0.24em] text-[#f3d77b]">
-                    Explore
-                  </h3>
-                  <div className="mt-5 grid gap-2">
-                    {[
-                      ["About School", "#about"],
-                      ["Learning at DPS", "#infrastructure"],
-                      ["Campus Stories", "#gallery"],
-                      ["Admissions", "#admissions"],
-                    ].map(([label, href]) => (
-                      <a
-                        key={label}
-                        href={href}
-                        className="group flex items-center justify-between border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-white/74 transition hover:border-[#f3d77b]/60 hover:bg-white/[0.08] hover:text-white"
-                      >
-                        {label}
-                        <span className="text-[#f3d77b] transition group-hover:translate-x-1">
-                          &#8594;
-                        </span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-[12px] font-black uppercase tracking-[0.24em] text-[#f3d77b]">
-                    Admissions Desk
-                  </h3>
-                  <div className="mt-5 grid gap-3 text-sm font-medium leading-6 text-white/72">
-                    <p className="border-l-2 border-[#f3d77b] pl-4">
-                      Gurugram, Haryana, India
-                    </p>
-                    <p className="border-l-2 border-[#05b982] pl-4">
-                      +91 98765 43210
-                    </p>
-                    <p className="border-l-2 border-white/25 pl-4">
-                      admissions@dpsgurugram.edu.in
-                    </p>
-                  </div>
-                </div>
+            <div className="order-1 text-center lg:order-2">
+              <div className="relative mx-auto h-[86px] w-[310px] max-w-full overflow-hidden rounded-[10px] bg-[#fffdf7] p-3 shadow-[9px_9px_0_rgba(255,247,199,0.2)]">
+                <Image
+                  src="/logo11.png"
+                  alt="Delhi Public School SPR Gurugram logo"
+                  fill
+                  sizes="310px"
+                  className="object-contain p-3"
+                />
               </div>
+              <h2 className="mt-8 text-[46px] font-black leading-[0.95] tracking-normal text-[#fff7c7] max-md:text-[36px]">
+                Delhi Public School
+                <span className="block">SPR Gurugram</span>
+              </h2>
+              <p className="mt-3 text-[17px] font-semibold italic text-[#fff7c7]/82">
+                Where future-ready learning begins
+              </p>
 
-              <div className="grid gap-4 p-6 sm:p-8 lg:p-10">
-                <p className="text-[12px] font-black uppercase tracking-[0.24em] text-[#05b982]">
-                  Ready to begin?
-                </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a
                   href="#admissions"
-                  className="group inline-flex min-h-[64px] items-center justify-between bg-[#f3d77b] px-6 text-sm font-black uppercase tracking-[0.16em] text-[#061a33] transition hover:-translate-y-1 hover:bg-white"
+                  className="group inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#05e981] px-6 text-[13px] font-black text-[#12301f] transition hover:-translate-y-1 hover:bg-[#fff7c7]"
                 >
                   Apply Now
-                  <span className="ml-6 text-xl transition group-hover:translate-x-1">
+                  <span className="ml-3 grid h-6 w-6 place-items-center rounded-full bg-[#12301f] text-[#05e981] transition group-hover:translate-x-1">
+                    &#8594;
+                  </span>
+                </a>
+                <a
+                  href="#tour"
+                  className="group inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#0b6844] px-6 text-[13px] font-black text-[#fff7c7] transition hover:-translate-y-1 hover:bg-[#0f8154]"
+                >
+                  Schedule Visit
+                  <span className="ml-3 grid h-6 w-6 place-items-center rounded-full bg-[#05e981] text-[#12301f] transition group-hover:translate-x-1">
                     &#8594;
                   </span>
                 </a>
               </div>
             </div>
-          </div>
 
-          <div className="mt-6 flex flex-col gap-3 text-[13px] font-medium text-white/50 sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 Delhi Public School Gurugram. All rights reserved.</p>
-            <p>Designed for a smooth, modern school experience.</p>
+            <div className="order-3 lg:text-left">
+              <h3 className="text-[24px] font-black leading-none tracking-normal text-[#fff7c7]">
+                Quick Links
+              </h3>
+              <div className="mt-5 grid grid-cols-2 gap-x-10 gap-y-2 text-[14px] font-semibold text-white/76">
+                {[
+                  ["Our Vision", "#about"],
+                  ["The Campus", "#infrastructure"],
+                  ["Admissions", "#admissions"],
+                  ["Campus Stories", "#gallery"],
+                  ["School Tour", "#tour"],
+                  ["Contact", "#tour"],
+                ].map(([label, href]) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className="footer-link transition hover:text-[#05e981]"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+
+              <div className="mt-10 inline-flex rounded-[8px] bg-[#fff7c7] px-4 py-3 text-[12px] font-black text-[#222320]">
+                &copy; 2026 DPS SPR Gurugram
+              </div>
+            </div>
           </div>
         </div>
       </footer>
