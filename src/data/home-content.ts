@@ -9,26 +9,22 @@ export const academicPrograms = [
   {
     title: "Early Childhood Centre",
     classes: "Preschool - Grade 2",
-    image:
-      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1400&q=85",
+    image: "/img1.jpeg",
   },
   {
     title: "Elementary School",
     classes: "Grade 3 - 6",
-    image:
-      "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1400&q=85",
+    image: "/img2.jpeg",
   },
   {
     title: "Middle School",
     classes: "Grade 7 - 9",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85",
+    image: "/img3.jpeg",
   },
   {
     title: "High School",
     classes: "Grade 10 - 12",
-    image:
-      "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=85",
+    image: "/img4.jpeg",
   },
 ];
 
@@ -101,6 +97,8 @@ export const aboutCards = [
 export const trustPoints = [
   {
     title: "Academic Excellence & Board Results",
+    detail: "Proven academic success.",
+    image: "/img1.jpeg",
     icon: "A+",
     color: "bg-[#7b18d5]",
     accent: "bg-[#ffc64c]",
@@ -108,20 +106,17 @@ export const trustPoints = [
   },
   {
     title: "Experienced & Qualified Faculty",
+    detail: "Expert teachers, personalized guidance.",
+    image: "/img2.jpeg",
     icon: "T",
     color: "bg-[#05a865]",
     accent: "border-[#ffc64c]",
     text: "text-[#003b73]",
   },
   {
-    title: "Smart Classrooms & Digital Learning",
-    icon: "D",
-    color: "bg-[#f45aa3]",
-    accent: "bg-[#003b73]",
-    text: "text-[#003b73]",
-  },
-  {
     title: "Focus on English Communication",
+    detail: "Building confident communicators.",
+    image: "/img3.jpeg",
     icon: "EN",
     color: "bg-[#ffc64c]",
     accent: "bg-[#7b18d5]",
@@ -129,23 +124,20 @@ export const trustPoints = [
   },
   {
     title: "Sports, Arts & Co-curricular Excellence",
+    detail: "Learning beyond academics.",
+    image: "/girls-learning-more-about-chemistry-class.jpg",
     icon: "S",
     color: "bg-[#096ce8]",
     accent: "border-white",
     text: "text-white",
   },
   {
-    title: "Safe & Secure Campus with CCTV",
-    icon: "C",
-    color: "bg-[#14314a]",
-    accent: "bg-[#ffc64c]",
-    text: "text-white",
-  },
-  {
     title: "Transport Facility Available",
+    detail: "Safe and convenient transport.",
+    image: "/3.png",
     icon: "B",
-    color: "bg-[#ffffff]",
-    accent: "border-[#096ce8]",
+    color: "bg-[#19c37d]",
+    accent: "bg-[#ffd45c]",
     text: "text-[#003b73]",
   },
 ];

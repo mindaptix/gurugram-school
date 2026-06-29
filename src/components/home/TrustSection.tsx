@@ -1,20 +1,44 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { trustPoints } from "@/data/home-content";
 
 export function TrustSection() {
   const trustRailRef = useRef<HTMLDivElement | null>(null);
+  const [activeTrustImage, setActiveTrustImage] = useState(0);
+  const activeTrustPoint = trustPoints[activeTrustImage] ?? trustPoints[0];
+
+  useEffect(() => {
+    trustPoints.forEach((point) => {
+      const image = new window.Image();
+      image.src = point.image;
+    });
+  }, []);
 
   const scrollTrustRail = (direction: "prev" | "next") => {
     const rail = trustRailRef.current;
+    const nextIndex = Math.min(
+      trustPoints.length - 1,
+      Math.max(
+        0,
+        activeTrustImage + (direction === "next" ? 1 : -1),
+      ),
+    );
+
+    setActiveTrustImage(nextIndex);
+
     if (!rail) return;
 
-    const delta = rail.clientWidth * 0.72;
-    rail.scrollBy({
-      left: direction === "next" ? delta : -delta,
-      behavior: "smooth",
+    const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
+    const targetScrollLeft =
+      trustPoints.length > 1
+        ? (maxScrollLeft / (trustPoints.length - 1)) * nextIndex
+        : 0;
+
+    rail.scrollTo({
+      left: targetScrollLeft,
+      behavior: "auto",
     });
   };
 
@@ -35,14 +59,28 @@ export function TrustSection() {
 
         <div className="mt-14 grid gap-4 xl:grid-cols-[1.05fr_1.35fr]">
           <div className="trust-photo relative min-h-[540px] overflow-hidden max-xl:min-h-[400px]">
-            <div
-              className="absolute inset-0 bg-cover bg-center transition duration-700 ease-out hover:scale-105"
-              style={{
-                backgroundImage:
-                  "url(https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&w=1500&q=85)",
-              }}
-            />
+            {trustPoints.map((point, index) => (
+              <div
+                key={point.image}
+                className={`absolute inset-0 bg-cover bg-center transition-opacity duration-150 ease-out ${
+                  activeTrustImage === index
+                    ? "opacity-100"
+                    : "opacity-0"
+                }`}
+                style={{ backgroundImage: `url("${point.image}")` }}
+                aria-hidden={activeTrustImage !== index}
+              />
+            ))}
             <div className="absolute inset-x-0 bottom-0 h-[38%] bg-gradient-to-t from-[#041f3b]/72 via-[#041f3b]/30 to-transparent" />
+            <div className="absolute bottom-6 left-6 max-w-[360px] text-white">
+              <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#ffd45c]">
+                {String(activeTrustImage + 1).padStart(2, "0")} /{" "}
+                {String(trustPoints.length).padStart(2, "0")}
+              </p>
+              <h3 className="mt-3 text-[28px] font-black leading-tight tracking-[-0.03em]">
+                {activeTrustPoint.title}
+              </h3>
+            </div>
           </div>
 
           <div className="min-w-0">
@@ -53,7 +91,11 @@ export function TrustSection() {
               {trustPoints.map((point, index) => (
                 <article
                   key={point.title}
-                  className={`trust-card group relative min-h-[490px] w-[64vw] max-w-[360px] shrink-0 snap-start overflow-hidden ${point.color} ${point.text}`}
+                  className={`trust-card group relative min-h-[490px] w-[64vw] max-w-[360px] shrink-0 snap-start overflow-hidden transition-transform duration-150 ease-out ${
+                    activeTrustImage === index
+                      ? "scale-[1.01]"
+                      : "scale-100"
+                  } ${point.color} ${point.text}`}
                   style={{ animationDelay: `${index * 95}ms` }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-black/10" />
@@ -67,12 +109,12 @@ export function TrustSection() {
                   </div>
 
                   <div className="relative flex min-h-[490px] flex-col justify-end p-7">
-                    <div className="trust-icon mb-4 text-[60px] font-light leading-none tracking-normal">
-                      {point.icon}
-                    </div>
-                    <h3 className="max-w-[240px] text-[21px] font-medium leading-[1.18] tracking-normal">
+                    <h3 className="trust-icon max-w-[300px] text-[34px] font-semibold leading-[1.04] tracking-[-0.03em] max-md:text-[30px]">
                       {point.title}
                     </h3>
+                    <p className="mt-4 max-w-[250px] text-[14px] font-semibold leading-6 opacity-80">
+                      {point.detail}
+                    </p>
                   </div>
                 </article>
               ))}

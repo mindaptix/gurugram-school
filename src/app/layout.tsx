@@ -11,6 +11,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Delhi Public School SPR Gurugram",
   description: "Best CBSE School in Gurugram — Nursery to Class 12",
+  icons: {
+    icon: "/half-logo.png",
+    shortcut: "/half-logo.png",
+    apple: "/half-logo.png",
+  },
 };
 
 export default function RootLayout({
