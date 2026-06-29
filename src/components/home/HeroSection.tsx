@@ -34,13 +34,22 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
             isNavbarVisible ? "translate-y-0" : "-translate-y-[120%]"
           }`}
         >
-          <div className="h-7 overflow-hidden border-t-[3px] border-[#3a251f] bg-[#006b37] text-[#fff200]">
-            <div className="flex h-full w-max animate-[ticker-scroll_30s_linear_infinite] items-center gap-14 whitespace-nowrap text-[13px] font-black uppercase leading-none tracking-normal md:text-[15px]">
+          <div className="h-7 overflow-hidden border-t-[3px] border-[#192F59] bg-[#192F59] text-white">
+            <div className="flex h-full w-max animate-[ticker-scroll_30s_linear_infinite] items-center gap-14 whitespace-nowrap text-[12px] font-medium leading-none tracking-[0.02em] md:text-[13px]">
               {[...announcementItems, ...announcementItems].map((item, index) => (
-                <span key={`${item}-${index}`} className="inline-flex items-center gap-5">
+                <span key={`${item}-${index}`} className="inline-flex items-center gap-2.5">
                   {item}
-                  <span className="grid h-4 w-4 place-items-center rounded-full bg-white text-[11px] leading-none text-[#006b37]">
-                    *
+                  <span className="grid h-4 w-4 place-items-center rounded-full bg-white text-[#192F59]">
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 12 12"
+                      className="h-2.5 w-2.5"
+                    >
+                      <path
+                        d="M6 1.2 7.25 4.75 10.8 6 7.25 7.25 6 10.8 4.75 7.25 1.2 6l3.55-1.25L6 1.2Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </span>
                 </span>
               ))}
@@ -88,7 +97,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
           </div>
 
           <nav
-            className="flex gap-2 overflow-x-auto border-b border-[#d7d2bf] bg-[#fffdf7] px-4 py-1.5 text-[#111827] shadow-xl shadow-[#03192e]/10 xl:hidden"
+            className="flex gap-2 overflow-x-auto border-b border-[#192F59] bg-[#192F59] px-4 py-1.5 text-white shadow-xl shadow-[#03192e]/10 xl:hidden"
             aria-label="Mobile navigation"
           >
             {navLinks.map(([label, href]) => (
