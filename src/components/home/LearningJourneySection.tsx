@@ -4,11 +4,14 @@ export function LearningJourneySection() {
   return (
     <section
       id="academics"
-      className="learning-journey-section relative isolate overflow-hidden bg-[linear-gradient(180deg,#f7fbff_0%,#eaf3ff_24%,#096ce8_58%,#064fb0_100%)] px-5 pb-14 pt-4 text-[#003b73] sm:px-8 lg:px-[74px] lg:pb-16"
+      className="learning-journey-section relative isolate overflow-hidden bg-[#05224a] px-5 pb-16 pt-16 text-white sm:px-8 lg:px-[74px]"
     >
       <div className="relative z-10 mx-auto max-w-[1920px]">
         <div className="program-heading relative z-10 mx-auto text-center">
-          <h2 className="text-[55px] font-[550] leading-none tracking-normal text-[#111111] max-xl:text-5xl max-md:text-4xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#f6c343]">
+            Our Programs
+          </p>
+          <h2 className="mt-4 text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-white max-xl:text-[36px] max-md:text-[28px]">
             Academic Programs from Nursery to Class 12
           </h2>
         </div>

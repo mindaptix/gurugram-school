@@ -21,14 +21,14 @@ export function TrustSection() {
   return (
     <section
       id="trust"
-      className="trust-section relative isolate overflow-hidden bg-white px-5 pb-10 pt-14 text-[#003b73] sm:px-8 lg:px-[18px]"
+      className="trust-section relative isolate overflow-hidden bg-[#f8fafc] px-5 pb-10 pt-16 text-[#05224a] sm:px-8 lg:px-[18px]"
     >
       <div className="mx-auto max-w-[1720px]">
         <div className="trust-heading mx-auto max-w-[1180px] text-center">
-          <p className="text-[16px] font-black uppercase leading-none tracking-[0.26em] text-[#05b982] max-sm:text-[12px]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#006b37]">
             DPS At A Glance
           </p>
-          <h2 className="mt-6 whitespace-nowrap text-[55px] font-bold leading-none tracking-normal text-[#111111] max-xl:text-5xl max-lg:whitespace-normal max-md:text-4xl">
+          <h2 className="mt-4 text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-[#05224a] max-xl:text-[36px] max-lg:whitespace-normal max-md:text-[28px]">
             Why Parents Trust Our DPS School
           </h2>
         </div>

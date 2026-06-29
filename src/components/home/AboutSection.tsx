@@ -4,44 +4,42 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="about-section relative bg-[#f7f3eb] px-5 pb-0 pt-16 sm:px-8 lg:px-[74px] lg:pt-20"
+      className="about-section bg-white px-5 py-16 sm:px-8 lg:px-[74px] lg:py-24"
     >
-      <div className="mx-auto grid max-w-[1280px] gap-10 lg:grid-cols-[340px_1fr] lg:items-center">
-        <div className="relative mx-auto h-[260px] w-[260px] overflow-hidden rounded-full bg-white lg:mx-0">
+      <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-[320px_1fr] lg:items-center">
+        <div className="relative mx-auto h-[280px] w-[280px] overflow-hidden rounded-full shadow-[0_24px_60px_rgba(5,34,74,0.12)] lg:mx-0">
           <Image
             src="/half-logo.png"
             alt="Delhi Public School SPR Gurugram emblem"
             fill
-            sizes="260px"
+            sizes="280px"
             className="object-contain"
           />
         </div>
 
         <div>
-          <p className="text-[16px] font-black uppercase leading-none tracking-[0.24em] text-[#111111] max-sm:text-xs">
-            About Our DPS School
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#006b37]">
+            About Our School
           </p>
 
-          <h2 className="mt-5 max-w-none whitespace-nowrap text-[36px] font-bold leading-[1.08] tracking-[-0.02em] text-[#111111] max-xl:text-3xl max-lg:whitespace-normal max-md:text-2xl">
+          <h2 className="mt-4 text-[38px] font-bold leading-[1.1] tracking-[-0.02em] text-[#05224a] max-xl:text-[32px] max-md:text-[26px]">
             A Legacy of Excellence for Nursery to Class 12
           </h2>
 
-          <p className="mt-6 max-w-[980px] text-[24px] font-medium leading-[1.35] tracking-normal text-[#111111] max-xl:text-2xl max-md:text-xl">
-            We carry the legacy of excellence under Delhi Public School, shaping a Best
-            CBSE school in Gurugram where academics, personality development, values,
-            discipline, and leadership grow together.
+          <p className="mt-5 max-w-[680px] text-[17px] font-normal leading-[1.75] tracking-normal text-[#4b5563]">
+            We carry the legacy of excellence under Delhi Public School, shaping
+            a premier CBSE school in Gurugram where academics, personality
+            development, values, discipline, and leadership grow together.
           </p>
 
           <a
             href="#admissions"
-            className="mt-7 inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#08b985] px-7 text-[13px] font-black uppercase tracking-[0.16em] text-white"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#05224a] px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition duration-300 hover:bg-[#006b37]"
           >
-            Explore Admissions <span className="ml-2 text-base leading-none">&#8594;</span>
+            Explore Admissions <span className="text-base leading-none">&#8594;</span>
           </a>
         </div>
       </div>
-
-      <div className="mt-14 h-2 w-full bg-[linear-gradient(90deg,#05224a,#006b37,#05224a)]" />
     </section>
   );
 }

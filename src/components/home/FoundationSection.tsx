@@ -4,9 +4,9 @@ export function FoundationSection() {
   return (
     <section
       id="foundation"
-      className="foundation-section relative isolate bg-[#f4f5f1] px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
+      className="foundation-section relative isolate bg-white px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
     >
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-[38%] bg-white max-lg:hidden" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-[38%] bg-[#f8fafc] max-lg:hidden" />
 
       <div className="mx-auto grid max-w-[1680px] gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:gap-16">
         <div className="foundation-sticky relative z-10 flex items-center justify-center text-center lg:sticky lg:top-32 lg:self-start lg:pt-6">
@@ -40,7 +40,7 @@ export function FoundationSection() {
               style={{ animationDelay: `${index * 120}ms` }}
             >
               <div
-                className={`foundation-label absolute z-20 grid place-items-center bg-[#f4f5f1] px-5 py-4 text-left ${
+                className={`foundation-label absolute z-20 grid place-items-center bg-white px-5 py-4 text-left ${
                   index % 2 === 0
                     ? "left-0 top-6 min-h-[96px] w-[210px] rounded-br-[22px] max-md:top-0 max-md:w-[200px]"
                     : "left-0 top-5 min-h-[88px] w-[196px] rounded-br-[20px] max-md:top-0 max-md:w-[190px]"
