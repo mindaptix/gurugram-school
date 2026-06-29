@@ -83,6 +83,21 @@ export const programCardThemes = [
   },
 ];
 
+export const aboutCards = [
+  {
+    title: "Holistic Mission",
+    text: "Academic depth, confidence, communication, and character are developed together through a balanced school experience.",
+  },
+  {
+    title: "Admissions Pathway",
+    text: "A trusted Nursery to 12th admission school for families seeking continuity, care, and strong CBSE foundations.",
+  },
+  {
+    title: "English Medium Focus",
+    text: "A Top English medium school environment with daily emphasis on spoken English, presentation, and leadership.",
+  },
+];
+
 export const trustPoints = [
   {
     title: "Academic Excellence & Board Results",
