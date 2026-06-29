@@ -15,13 +15,11 @@ import {
   infrastructureItems,
 } from "@/data/home-content";
 import { useNavbarVisibility } from "@/hooks/use-navbar-visibility";
-import { useSectionFadeOpacity } from "@/hooks/use-section-fade-opacity";
 
 export default function Home() {
   const activeSlide = 0;
   const [activeInfrastructure, setActiveInfrastructure] = useState(2);
   const isNavbarVisible = useNavbarVisibility();
-  const learningAtDpsOpacity = useSectionFadeOpacity("learning-at-dps-section");
 
   return (
     <main className="min-h-screen bg-[#f7fbff] text-[#06264a]">
@@ -35,47 +33,76 @@ export default function Home() {
 
       <FoundationSection />
 
+      <section className="relative isolate overflow-hidden bg-white px-5 py-20 text-[#05224a] sm:px-8 lg:px-[74px]">
+        <div className="relative mx-auto grid max-w-[1580px] gap-8 overflow-hidden bg-[#dff7eb] p-8 shadow-[12px_12px_0_#05224a] md:p-12 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="pointer-events-none absolute left-0 top-0 h-5 w-full bg-[#05b982]" />
+          <div className="pointer-events-none absolute bottom-0 left-0 h-5 w-full bg-[#ffd400]" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-[18px] bg-[#05224a]" />
+          <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 bg-[#05b982]/18 blur-2xl" />
+          <div className="pointer-events-none absolute -bottom-20 left-[38%] h-64 w-64 bg-[#ffd400]/24 blur-2xl" />
+
+          <div className="relative z-10">
+            <p className="w-fit bg-[#05224a] px-4 py-2 text-[13px] font-black uppercase leading-none tracking-[0.26em] text-[#ffd400]">
+              Admissions 2026-27
+            </p>
+            <h2 className="mt-6 max-w-[900px] text-[68px] font-black leading-[0.94] tracking-[-0.05em] text-[#111111] max-xl:text-5xl max-md:text-4xl">
+              Admissions Open for Nursery to Class 12
+            </h2>
+          </div>
+
+          <div className="relative z-10 flex flex-wrap gap-4 lg:max-w-[560px] lg:justify-end">
+            <a
+              href="#apply"
+              className="inline-flex min-h-[64px] items-center justify-center bg-[#05224a] px-8 text-sm font-black uppercase tracking-[0.16em] text-white shadow-[8px_8px_0_#05b982] transition hover:-translate-y-1"
+            >
+              Apply Now <span className="ml-2 text-xl leading-none">&#8594;</span>
+            </a>
+            <a
+              href="#prospectus"
+              className="inline-flex min-h-[64px] items-center justify-center border-2 border-[#05224a] bg-white px-8 text-sm font-black uppercase tracking-[0.16em] text-[#05224a] shadow-[8px_8px_0_rgba(5,34,74,0.16)] transition hover:-translate-y-1"
+            >
+              Download Prospectus
+            </a>
+            <a
+              href="#tour"
+              className="inline-flex min-h-[64px] items-center justify-center border-2 border-[#05b982] bg-white px-8 text-sm font-black uppercase tracking-[0.16em] text-[#00845d] shadow-[8px_8px_0_rgba(5,185,130,0.22)] transition hover:-translate-y-1"
+            >
+              Enquire Now
+            </a>
+          </div>
+        </div>
+      </section>
+
         <section
           id="infrastructure"
           className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
         >
-          <div className="absolute left-0 top-0 h-[14px] w-[58%] bg-[#05b982]" />
           <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-36 sm:px-8 lg:px-14">
             <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-              <div className="infra-story-wordmark min-w-0 pt-2">
+              <div className="infra-story-wordmark relative z-0 min-w-0 pt-2">
                 <div
                   className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] transition-all duration-300 ease-out max-lg:text-[42px] max-md:text-[34px]"
-                  style={{ opacity: learningAtDpsOpacity, transform: `translateY(${(1 - learningAtDpsOpacity) * 40}px)` }}
                 >
                   Learning at
                 </div>
                 <div
                   className="mt-14 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] transition-all duration-300 ease-out max-xl:text-[144px] max-lg:mt-10 max-lg:text-[118px] max-md:text-[88px]"
-                  style={{ opacity: learningAtDpsOpacity, transform: `translateY(${(1 - learningAtDpsOpacity) * 40}px)` }}
                 >
                   DPS
                 </div>
               </div>
 
-            <div className="infra-story-copy relative lg:pt-8">
-              <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#7a7a7a] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
+            <div className="infra-story-copy relative lg:pt-3">
+              <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#111111] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
                 Every child learns differently and our aim is to provide
                 students with the opportunities, experiences, and pathways that
                 best suit their abilities, interests, and aspirations.
-              </p>
-              <p className="mt-8 max-w-[680px] text-[18px] font-medium leading-9 text-[#7a7a7a] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
-                Our approach to teaching and learning is based on a Learning
-                Principles framework that acts as a guide for both our students
-                and teachers. In addition to ensuring a robust academic
-                program, they reflect our focus on social and emotional
-                learning and our belief in the importance of student voice and
-                choice in their own learning.
               </p>
             </div>
           </div>
         </div>
 
-            <div className="infra-accordion relative z-10 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-8 max-lg:h-auto max-lg:flex-col">
+            <div className="infra-accordion relative z-20 mt-8 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white lg:-mt-10 max-lg:h-auto max-lg:flex-col">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 
@@ -85,42 +112,42 @@ export default function Home() {
                 onMouseEnter={() => setActiveInfrastructure(index)}
                 onFocus={() => setActiveInfrastructure(index)}
                 tabIndex={0}
-                className={`infra-card group relative min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-700 ease-out max-lg:min-h-[360px] ${
+                className={`infra-card group relative min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:min-h-[360px] ${
                   isActive ? "flex-[2.7]" : "flex-[0.82]"
                 }`}
                 style={{ animationDelay: `${index * 90}ms` }}
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                   style={{ backgroundImage: `url(${item.image})` }}
                 />
-                <div className="absolute inset-0 bg-[#071d34]/38 transition duration-500 group-hover:bg-[#071d34]/20" />
+                <div className="absolute inset-0 bg-[#071d34]/38 transition-colors duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:bg-[#071d34]/20" />
                 <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-t from-black/78 via-black/42 to-transparent" />
 
-                <div className="relative flex h-full flex-col justify-between p-6 lg:p-7">
+                <div className="relative flex h-full flex-col justify-end p-5 lg:p-6">
                   <h3
-                    className={`max-w-[520px] text-[30px] font-black leading-tight tracking-normal transition duration-500 max-lg:text-3xl ${
+                    className={`max-w-[520px] break-words font-black leading-[1.12] tracking-normal transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:text-3xl ${
                         isActive
-                          ? "translate-y-[225px] text-[56px] max-xl:text-5xl max-lg:translate-y-0"
-                          : "translate-y-0"
+                          ? "text-[34px] max-xl:text-[30px] max-lg:text-3xl"
+                          : "text-[20px] max-xl:text-[18px] max-lg:text-3xl"
                     }`}
                   >
                     {item.title}
                   </h3>
 
                   <div
-                    className={`transition duration-500 ${
+                    className={`mt-4 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                       isActive
                         ? "translate-y-0 opacity-100"
-                        : "translate-y-8 opacity-0 max-lg:opacity-100"
+                        : "translate-y-4 opacity-0 max-lg:translate-y-0 max-lg:opacity-100"
                     }`}
                   >
-                    <p className="max-w-[560px] text-lg font-semibold leading-8 text-white/88">
+                    <p className="max-w-[560px] text-[16px] font-semibold leading-7 text-white/88">
                       {item.detail}
                     </p>
-                    <div className="mt-6 flex items-center gap-5">
+                    <div className="mt-5 flex items-center gap-5">
                       <span className="h-1.5 w-16 bg-[#ffd400]" />
-                      <span className="grid h-20 w-20 place-items-center rounded-full bg-[#003b73] text-[56px] font-light leading-none text-white transition group-hover:rotate-90">
+                      <span className="grid h-16 w-16 place-items-center rounded-full bg-[#003b73] text-[42px] font-light leading-none text-white transition group-hover:rotate-90">
                         +
                       </span>
                     </div>

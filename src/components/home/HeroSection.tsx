@@ -28,8 +28,6 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
             />
           </div>
         ))}
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(2,18,34,0.76)_0%,rgba(2,18,34,0.42)_39%,rgba(2,18,34,0.12)_68%,rgba(2,18,34,0)_100%)]" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[46%] bg-[linear-gradient(0deg,rgba(0,0,0,0.72)_0%,rgba(0,0,0,0.36)_54%,rgba(0,0,0,0)_100%)]" />
 
         <header
           className={`site-navbar fixed inset-x-0 top-0 z-50 transition-transform duration-500 ease-out ${
@@ -107,16 +105,8 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
 
         <div className="relative z-10 flex min-h-screen items-end px-5 pb-8 pt-40 sm:px-8 sm:pb-10 lg:px-14 lg:pb-12 lg:pt-44">
           <div className="grid w-full gap-8 xl:grid-cols-[minmax(0,1fr)_330px] xl:items-end">
-            <div className="hero-copy max-w-[1060px] text-white [text-shadow:0_5px_28px_rgba(0,0,0,0.62)]">
-              <div className="mb-5 flex flex-wrap gap-3">
-                <span className="hero-chip inline-flex items-center rounded-full border border-white/35 bg-white/14 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#fff7b0] backdrop-blur-md">
-                  Admissions 2026-27
-                </span>
-                <span className="hero-chip hero-chip-delay inline-flex items-center rounded-full border border-white/35 bg-white/14 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-white backdrop-blur-md">
-                  Nursery to Grade XII
-                </span>
-              </div>
-              <h1 className="max-w-[980px] text-5xl font-bold leading-[1.08] tracking-normal sm:text-6xl lg:text-[76px] 2xl:text-[82px]">
+            <div className="hero-copy max-w-[1060px] text-white">
+              <h1 className="max-w-[980px] text-[32px] font-bold leading-[1.08] tracking-normal sm:text-[42px] lg:text-[54px]">
                 <span className="block sm:whitespace-nowrap">Best DPS School for Nursery to</span>
                 <span className="block">Class 12 in Gurugram</span>
               </h1>
@@ -125,7 +115,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
               </p>
             </div>
 
-            <div className="hero-actions grid translate-y-6 gap-3 sm:max-w-[420px] xl:ml-auto xl:w-full xl:translate-y-12">
+            <div className="hero-actions grid -translate-y-2 gap-3 sm:max-w-[420px] xl:ml-auto xl:w-full xl:-translate-y-10">
               <a
                 href="#admissions"
                 className="inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#f6c343] px-6 text-sm font-black uppercase tracking-[0.1em] text-[#061a33] transition duration-300 hover:-translate-y-1 hover:bg-white"
