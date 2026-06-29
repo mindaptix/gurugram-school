@@ -33,72 +33,66 @@ export default function Home() {
 
       <section
         id="admissions"
-        className="relative isolate overflow-hidden bg-white px-5 py-20 text-[#05224a] sm:px-8 lg:px-[74px]"
+        className="admission-quick-cta relative isolate overflow-hidden bg-white px-5 py-8 text-white sm:px-8 lg:px-[74px]"
       >
-        <div className="relative mx-auto grid max-w-[1500px] overflow-hidden border border-[#d6bd72]/55 bg-[#071b36] shadow-[0_34px_110px_rgba(5,34,74,0.22)] lg:grid-cols-[1fr_460px]">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_18%,rgba(255,212,0,0.2),transparent_28%),radial-gradient(circle_at_78%_16%,rgba(5,185,130,0.18),transparent_24%),linear-gradient(135deg,rgba(255,255,255,0.08),transparent_46%)]" />
-          <div className="pointer-events-none absolute inset-x-8 top-8 h-px bg-[linear-gradient(90deg,transparent,#d8c37a,transparent)]" />
-          <div className="pointer-events-none absolute inset-x-8 bottom-8 h-px bg-[linear-gradient(90deg,transparent,#d8c37a,transparent)]" />
+        <div className="relative mx-auto max-w-[1500px]">
+          <div className="admission-cta-banner group relative min-h-[280px] overflow-hidden rounded-[12px] bg-[#400080] shadow-[0_28px_90px_rgba(64,0,128,0.24)]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_46%_28%,rgba(49,213,255,0.18),transparent_24%),linear-gradient(110deg,#400080_0%,#400080_52%,#2d005c_100%)]" />
+            <div className="admission-cta-shine pointer-events-none absolute inset-y-0 left-[-24%] w-[34%] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent)]" />
 
-          <div className="relative z-10 flex flex-col justify-center px-7 py-12 md:px-12 lg:px-14 lg:py-16">
-            <div className="flex items-center gap-4">
-              <span className="h-px w-14 bg-[#d8c37a]" />
-              <p className="text-[12px] font-black uppercase leading-none tracking-[0.32em] text-[#f3d77b]">
-                Admissions 2026-27
-              </p>
-            </div>
-            <h2 className="mt-6 max-w-[880px] text-[62px] font-black leading-[0.95] tracking-[-0.055em] text-white max-xl:text-5xl max-md:text-4xl">
-              Admissions Open for Nursery to Class 12
-            </h2>
-            <p className="mt-6 max-w-[660px] text-[17px] font-semibold leading-8 text-white/72">
-              Begin the journey at a future-ready CBSE campus built for academic
-              excellence, confidence, leadership, and character.
-            </p>
-
-            <div className="mt-9 grid max-w-[680px] gap-3 text-white sm:grid-cols-3">
-              {["Nursery - XII", "CBSE Curriculum", "Gurugram Campus"].map((item) => (
-                <div
-                  key={item}
-                  className="border border-white/12 bg-white/[0.06] px-4 py-3 text-[12px] font-black uppercase tracking-[0.16em] text-white/78"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative z-10 border-t border-white/12 bg-white/[0.07] p-4 backdrop-blur md:p-6 lg:border-l lg:border-t-0">
-            <div className="grid h-full gap-3 bg-[#f9f6ea] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.22)]">
-              <div className="border border-[#d8c37a]/55 bg-white px-5 py-5">
-                <p className="text-[11px] font-black uppercase tracking-[0.28em] text-[#a68122]">
-                  Start Here
+            <div className="relative z-10 grid min-h-[280px] items-center gap-6 px-6 py-7 md:px-10 lg:grid-cols-[1.05fr_0.68fr] lg:px-12">
+              <div className="max-w-[860px]">
+                <p className="text-[12px] font-black uppercase tracking-[0.24em] text-white/80">
+                  Admissions 2026-27
                 </p>
-                <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.04em] text-[#071b36]">
-                  Secure your admission enquiry today.
-                </h3>
+                <h2 className="mt-4 max-w-[780px] text-[34px] font-black leading-[0.98] tracking-normal text-white sm:text-[44px] xl:text-[56px]">
+                  Admissions Open:
+                  <span className="block">Nursery to Class 12</span>
+                </h2>
+                <p className="mt-4 max-w-[720px] text-[16px] font-semibold leading-7 text-white/78">
+                  Nursery to Class 12 admissions are open at a future-ready CBSE
+                  campus in Gurugram.
+                </p>
+
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <a
+                    href="#apply"
+                    className="group/btn inline-flex min-h-[52px] items-center justify-center rounded-[8px] bg-white px-7 text-[12px] font-black uppercase tracking-[0.16em] text-[#42007f] shadow-[0_18px_44px_rgba(255,255,255,0.22)] transition duration-500 hover:-translate-y-1 hover:bg-[#ffd400] hover:text-[#111111]"
+                  >
+                    Apply Now
+                    <span className="ml-4 text-xl transition group-hover/btn:translate-x-1">
+                      &#8594;
+                    </span>
+                  </a>
+                  <a
+                    href="#tour"
+                    className="inline-flex min-h-[52px] items-center justify-center rounded-[8px] border border-white/24 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#42007f]"
+                  >
+                    Book Visit
+                  </a>
+                </div>
               </div>
 
-            <a
-              href="#apply"
-              className="group relative inline-flex min-h-[92px] items-center justify-between overflow-hidden bg-[#071b36] px-7 text-sm font-black uppercase tracking-[0.18em] text-white transition duration-300 hover:-translate-y-1 hover:bg-[#031126]"
-            >
-              <span className="absolute inset-x-0 top-0 h-px bg-[#f3d77b]" />
-              <span className="absolute inset-y-0 right-0 w-24 bg-[linear-gradient(135deg,rgba(216,195,122,0.32),transparent)] transition duration-300 group-hover:w-32" />
-              <span>Apply Now</span>
-              <span className="flex h-11 w-11 items-center justify-center border border-[#f3d77b]/70 text-2xl leading-none text-[#f3d77b] transition duration-300 group-hover:translate-x-1">&#8594;</span>
-            </a>
-            <a
-              href="#prospectus"
-              className="inline-flex min-h-[66px] items-center justify-center border border-[#d8c37a]/70 bg-white px-6 text-[12px] font-black uppercase tracking-[0.16em] text-[#071b36] transition duration-300 hover:-translate-y-1 hover:border-[#071b36] hover:bg-[#071b36] hover:text-white"
-            >
-              Download Prospectus
-            </a>
-            <a
-              href="#tour"
-              className="inline-flex min-h-[66px] items-center justify-center border border-[#05b982]/55 bg-white px-6 text-[12px] font-black uppercase tracking-[0.16em] text-[#00845d] transition duration-300 hover:-translate-y-1 hover:bg-[#05b982] hover:text-white"
-            >
-              Enquire Now
-            </a>
+              <div className="relative min-h-[230px] overflow-hidden lg:min-h-[280px]">
+                <Image
+                  src="/young-children-making-diy-project-from-upcycled-materials.jpg"
+                  alt="Happy student exploring creative learning"
+                  fill
+                  sizes="(min-width: 1024px) 540px, 100vw"
+                  className="admission-cta-kid object-cover object-center mix-blend-lighten"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#7b00cf] via-transparent to-transparent lg:hidden" />
+                <div className="admission-cta-ring absolute right-3 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full border-[6px] border-white/70" />
+                <div className="admission-cta-diamond absolute left-8 top-8 h-7 w-7 rotate-45 border-4 border-white/70" />
+                <div className="absolute bottom-6 left-4 rounded-[10px] border border-white/18 bg-white/14 px-4 py-3 shadow-[0_20px_55px_rgba(0,0,0,0.18)] backdrop-blur-md">
+                  <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#ffd400]">
+                    Start Here
+                  </p>
+                  <p className="mt-1.5 text-lg font-black leading-tight text-white">
+                    Secure enquiry today
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
