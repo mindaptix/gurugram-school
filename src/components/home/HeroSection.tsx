@@ -117,8 +117,8 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
           <div className="hero-copy w-full max-w-[820px] text-white">
 
             <div className="mb-5 flex items-center gap-3">
-              <span className="h-px w-10 bg-[#f6c343]" />
-              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#f6c343]">
+              <span className="h-px w-10 bg-[#ffd400]" />
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#ffd400]">
                 Delhi Public School · SPR Gurugram
               </p>
             </div>
@@ -135,7 +135,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
             <div className="hero-actions mt-9 flex flex-wrap gap-3">
               <a
                 href="#admissions"
-                className="inline-flex items-center gap-2 rounded-lg bg-[#f6c343] px-6 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-[#05224a] transition duration-300 hover:bg-white"
+                className="inline-flex items-center gap-2 rounded-lg bg-[#ffd400] px-6 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-[#05224a] transition duration-300 hover:bg-white"
               >
                 Admissions 2026-27
               </a>
@@ -147,7 +147,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
               </a>
               <a
                 href="#apply"
-                className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-6 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white/90 transition duration-300 hover:bg-white/10"
+                className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-white/70 underline-offset-4 transition duration-300 hover:text-white hover:underline"
               >
                 Apply Online
               </a>

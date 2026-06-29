@@ -45,7 +45,7 @@ export function TrustSection() {
   return (
     <section
       id="trust"
-      className="trust-section relative isolate overflow-hidden bg-[#f8fafc] px-5 pb-10 pt-16 text-[#05224a] sm:px-8 lg:px-[18px]"
+      className="trust-section relative isolate overflow-hidden bg-[#fffdf7] px-5 pb-10 pt-16 text-[#05224a] sm:px-8 lg:px-[18px]"
     >
       <div className="mx-auto max-w-[1720px]">
         <div className="trust-heading mx-auto max-w-[1180px] text-center">

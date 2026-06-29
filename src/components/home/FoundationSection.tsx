@@ -4,7 +4,7 @@ export function FoundationSection() {
   return (
     <section
       id="foundation"
-      className="foundation-section relative isolate bg-white px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
+      className="foundation-section relative isolate bg-[#fffdf7] px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
     >
       <div className="pointer-events-none absolute left-0 top-0 h-full w-[38%] bg-[#f8fafc] max-lg:hidden" />
 
@@ -17,16 +17,16 @@ export function FoundationSection() {
             <span className="block text-[88px] text-[#111111] max-xl:text-[68px] max-md:text-[44px]">
               Academic
             </span>
-            <span className="block text-[76px] text-[#05b982] max-xl:text-[60px] max-md:text-[40px]">
+            <span className="block text-[76px] text-[#006b37] max-xl:text-[60px] max-md:text-[40px]">
               Foundation
             </span>
-            <span className="my-5 block text-[34px] leading-none text-[#05b982] max-md:text-[24px]">
+            <span className="my-5 block text-[34px] leading-none text-[#006b37] max-md:text-[24px]">
               For
             </span>
             <span className="block text-[88px] text-[#111111] max-xl:text-[68px] max-md:text-[44px]">
               Future
             </span>
-            <span className="block text-[88px] text-[#05b982] max-xl:text-[68px] max-md:text-[44px]">
+            <span className="block text-[88px] text-[#006b37] max-xl:text-[68px] max-md:text-[44px]">
               Success
             </span>
           </h2>
@@ -69,7 +69,7 @@ export function FoundationSection() {
                 }`}
               >
                 <span
-                  className={`foundation-plus-core grid place-items-center rounded-full bg-[#111111] font-light leading-none text-[#05b982] ${
+                  className={`foundation-plus-core grid place-items-center rounded-full bg-[#111111] font-light leading-none text-[#006b37] ${
                     index === 0 ? "h-[48px] w-[48px] text-[32px]" : "h-[42px] w-[42px] text-[28px]"
                   }`}
                 >

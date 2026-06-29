@@ -739,7 +739,7 @@ html {
 }
 
 .footer-link::after {
-  background: #05b982;
+  background: #006b37;
   bottom: -4px;
   content: "";
   height: 2px;
@@ -770,9 +770,9 @@ html {
 .footer-flower {
   background:
     repeating-radial-gradient(ellipse at center, transparent 0 8px, rgba(255, 247, 199, 0.22) 9px 10px, transparent 11px 18px),
-    #05e981;
+    #006b37;
   border-radius: 34% 66% 34% 66%;
-  box-shadow: 0 20px 60px rgba(5, 233, 129, 0.28);
+  box-shadow: 0 20px 60px rgba(0, 107, 55, 0.28);
   height: 132px;
   left: 50%;
   position: absolute;
@@ -801,6 +801,35 @@ html {
 
 .footer-social-link {
   position: relative;
+}
+
+.footer-leaf-pattern {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 212, 0, 0.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 72% 24%, rgba(255, 255, 255, 0.16) 0 2px, transparent 3px),
+    repeating-linear-gradient(135deg, transparent 0 92px, rgba(255, 255, 255, 0.08) 93px 94px, transparent 95px 180px);
+  background-size: 160px 160px, 190px 190px, 100% 100%;
+}
+
+.footer-dps-link {
+  position: relative;
+}
+
+.footer-dps-link::after {
+  background: #ffd400;
+  bottom: -5px;
+  content: "";
+  height: 2px;
+  left: 32px;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  width: calc(100% - 32px);
+}
+
+.footer-dps-link:hover::after {
+  transform: scaleX(1);
 }
 
 @supports (animation-timeline: view()) {

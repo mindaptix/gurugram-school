@@ -4,13 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
-import { FoundationSection } from "@/components/home/FoundationSection";
+// import { FoundationSection } from "@/components/home/FoundationSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { LearningJourneySection } from "@/components/home/LearningJourneySection";
 import { TrustSection } from "@/components/home/TrustSection";
 import {
-  galleryItems,
+  // galleryItems,
   infrastructureItems,
+  navLinks,
 } from "@/data/home-content";
 import { useNavbarVisibility } from "@/hooks/use-navbar-visibility";
 
@@ -29,15 +30,15 @@ export default function Home() {
 
       <TrustSection />
 
-      <FoundationSection />
+      {/* <FoundationSection /> */}
 
       <section
         id="admissions"
         className="admission-quick-cta relative isolate overflow-hidden bg-white px-5 py-8 text-white sm:px-8 lg:px-[74px]"
       >
         <div className="relative mx-auto max-w-[1500px]">
-          <div className="admission-cta-banner group relative min-h-[280px] overflow-hidden rounded-[12px] bg-[#400080] shadow-[0_28px_90px_rgba(64,0,128,0.24)]">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_46%_28%,rgba(49,213,255,0.18),transparent_24%),linear-gradient(110deg,#400080_0%,#400080_52%,#2d005c_100%)]" />
+          <div className="admission-cta-banner group relative min-h-[280px] overflow-hidden rounded-[12px] bg-[#05224a] shadow-[0_28px_90px_rgba(5,34,74,0.24)]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_46%_28%,rgba(0,107,55,0.22),transparent_24%),linear-gradient(110deg,#05224a_0%,#05224a_52%,#003b73_100%)]" />
             <div className="admission-cta-shine pointer-events-none absolute inset-y-0 left-[-24%] w-[34%] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent)]" />
 
             <div className="relative z-10 grid min-h-[280px] items-center gap-6 px-6 py-7 md:px-10 lg:grid-cols-[1.05fr_0.68fr] lg:px-12">
@@ -57,7 +58,7 @@ export default function Home() {
                 <div className="mt-7 flex flex-wrap gap-3">
                   <a
                     href="#apply"
-                    className="group/btn inline-flex min-h-[52px] items-center justify-center rounded-[8px] bg-white px-7 text-[12px] font-black uppercase tracking-[0.16em] text-[#42007f] shadow-[0_18px_44px_rgba(255,255,255,0.22)] transition duration-500 hover:-translate-y-1 hover:bg-[#ffd400] hover:text-[#111111]"
+                    className="group/btn inline-flex min-h-[52px] items-center justify-center rounded-[8px] bg-[#ffd400] px-7 text-[12px] font-black uppercase tracking-[0.16em] text-[#05224a] shadow-[0_18px_44px_rgba(255,212,0,0.22)] transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#05224a]"
                   >
                     Apply Now
                     <span className="ml-4 text-xl transition group-hover/btn:translate-x-1">
@@ -66,7 +67,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#tour"
-                    className="inline-flex min-h-[52px] items-center justify-center rounded-[8px] border border-white/24 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#42007f]"
+                    className="inline-flex min-h-[52px] items-center justify-center rounded-[8px] border border-white/24 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#05224a]"
                   >
                     Book Visit
                   </a>
@@ -81,7 +82,7 @@ export default function Home() {
                   sizes="(min-width: 1024px) 540px, 100vw"
                   className="admission-cta-kid object-cover object-center mix-blend-lighten"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#7b00cf] via-transparent to-transparent lg:hidden" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#05224a] via-transparent to-transparent lg:hidden" />
                 <div className="admission-cta-ring absolute right-3 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full border-[6px] border-white/70" />
                 <div className="admission-cta-diamond absolute left-8 top-8 h-7 w-7 rotate-45 border-4 border-white/70" />
                 <div className="absolute bottom-6 left-4 rounded-[10px] border border-white/18 bg-white/14 px-4 py-3 shadow-[0_20px_55px_rgba(0,0,0,0.18)] backdrop-blur-md">
@@ -216,7 +217,7 @@ export default function Home() {
                   <div className="px-6 py-10 md:px-10 lg:px-[92px] lg:py-12">
                     <a
                       href="#tour"
-                      className="inline-flex min-h-[58px] items-center justify-center rounded-[18px] border border-[#c51647]/55 bg-white px-8 text-[14px] font-black uppercase tracking-[0.18em] text-[#c51647] transition duration-500 ease-out hover:-translate-y-1 hover:border-[#c51647] hover:bg-[#c51647] hover:text-white"
+                      className="inline-flex min-h-[58px] items-center justify-center rounded-[18px] border border-[#006b37]/55 bg-white px-8 text-[14px] font-black uppercase tracking-[0.18em] text-[#006b37] transition duration-500 ease-out hover:-translate-y-1 hover:border-[#006b37] hover:bg-[#006b37] hover:text-white"
                     >
                       Explore DPS Gurugram
                     </a>
@@ -236,7 +237,7 @@ export default function Home() {
                     />
                   </div>
 
-                  <p className="ml-2 mt-8 text-[15px] font-black uppercase leading-none tracking-[0.28em] text-[#003b73] max-sm:text-[12px]">
+                  <p className="ml-2 mt-8 text-[15px] font-black uppercase leading-none tracking-[0.28em] text-[#006b37] max-sm:text-[12px]">
                     A Unique Location
                   </p>
                   <h2 className="ml-2 mt-6 text-[54px] font-medium leading-[0.96] tracking-normal text-[#0a3b68] max-xl:text-[52px] max-md:text-[42px]">
@@ -260,21 +261,22 @@ export default function Home() {
           </div>
         </section>
 
+      {/* Gallery / Campus Stories — commented out for now
       <section
         id="gallery"
         className="gallery-section relative isolate overflow-hidden bg-[#fffdf7] px-5 py-24 text-[#05224a] sm:px-8 lg:px-[74px] lg:py-32"
       >
-        <div className="absolute inset-x-0 top-0 h-px bg-[#c51647]/35" />
-        <div className="absolute inset-x-0 bottom-0 h-px bg-[#c51647]/35" />
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(255,212,0,0.16),transparent_26%),radial-gradient(circle_at_88%_82%,rgba(5,185,130,0.12),transparent_28%)]" />
+        <div className="absolute inset-x-0 top-0 h-px bg-[#006b37]/25" />
+        <div className="absolute inset-x-0 bottom-0 h-px bg-[#006b37]/25" />
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(255,212,0,0.16),transparent_26%),radial-gradient(circle_at_88%_82%,rgba(0,107,55,0.1),transparent_28%)]" />
 
         <div className="mx-auto max-w-[1760px]">
           <div className="gallery-heading flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-[16px] font-black uppercase leading-none tracking-[0.28em] text-[#05b982] max-sm:text-sm">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#006b37] max-sm:text-[10px]">
                 Gallery / Campus Life
               </p>
-              <h2 className="mt-6 text-[76px] font-black leading-none tracking-[-0.04em] text-[#111111] max-xl:text-6xl max-md:text-5xl">
+              <h2 className="mt-4 text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-[#05224a] max-xl:text-[36px] max-md:text-[28px]">
                 Campus Stories
               </h2>
             </div>
@@ -303,7 +305,7 @@ export default function Home() {
                 </div>
 
                 <div className="relative min-h-[190px] border-t border-[#e8edf2] p-6">
-                  <p className="text-[12px] font-black uppercase tracking-[0.2em] text-[#c51647]">
+                  <p className="text-[12px] font-black uppercase tracking-[0.2em] text-[#006b37]">
                     {item.label}
                   </p>
                   <h3 className="mt-4 text-[22px] font-black leading-tight tracking-normal text-[#05224a]">
@@ -311,7 +313,7 @@ export default function Home() {
                   </h3>
                   <a
                     href="#tour"
-                    className="mt-7 inline-flex w-fit border-b-2 border-[#c51647] pb-1 text-[12px] font-black uppercase tracking-[0.18em] text-[#c51647]"
+                    className="mt-7 inline-flex w-fit border-b-2 border-[#006b37] pb-1 text-[12px] font-black uppercase tracking-[0.18em] text-[#006b37]"
                   >
                     Read More
                   </a>
@@ -321,122 +323,87 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
-      <footer className="site-footer relative isolate overflow-hidden bg-[#fff7c7] px-3 pb-5 pt-16 text-[#fff7c7] sm:px-5 lg:px-8">
-        <div className="footer-flower" aria-hidden="true" />
+      <footer className="site-footer relative isolate overflow-hidden bg-[#0f6734] px-5 py-14 text-white sm:px-8 lg:px-[74px]">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_8%_12%,rgba(255,212,0,0.12),transparent_25%),radial-gradient(circle_at_92%_8%,rgba(255,255,255,0.08),transparent_24%),linear-gradient(135deg,#136a37_0%,#0f6734_48%,#0a4f28_100%)]" />
+        <div className="footer-leaf-pattern pointer-events-none absolute inset-0 -z-10 opacity-25" />
 
-        <div className="footer-organic-card relative mx-auto max-w-[1760px] overflow-hidden rounded-[46px] bg-[#222320] px-6 pb-7 pt-24 shadow-[0_34px_110px_rgba(5,34,74,0.22)] sm:px-10 lg:px-16 lg:pb-9 lg:pt-28">
-          <div className="footer-contours pointer-events-none absolute inset-0 opacity-45" />
-
-          <div className="relative z-10 grid gap-10 lg:grid-cols-[0.8fr_1.05fr_0.85fr] lg:items-end">
-            <div className="order-2 lg:order-1">
-              <h3 className="text-[24px] font-black leading-none tracking-normal text-[#fff7c7]">
-                Contact
-              </h3>
-              <div className="mt-4 grid gap-1 text-[14px] font-semibold leading-6 text-white/78">
-                <p>Gurugram, Haryana, India</p>
-                <p>+91 98765 43210</p>
-                <p>admissions@dpsgurugram.edu.in</p>
-              </div>
-
-              <div className="mt-8 grid gap-2 text-[14px] font-semibold text-white/70">
-                {["Facebook", "Instagram", "LinkedIn"].map((item) => (
-                  <a
-                    key={item}
-                    href="#tour"
-                    className="footer-social-link group inline-flex w-fit items-center gap-2 transition hover:text-[#05e981]"
-                  >
-                    {item}
-                    <span className="text-[#05e981] transition group-hover:translate-x-1 group-hover:-translate-y-1">
-                      &#8599;
-                    </span>
-                  </a>
-                ))}
-              </div>
-
-              <div className="mt-8 flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-[#05e981] px-3 py-1 text-[12px] font-black text-[#14301f]">
-                  CBSE
-                </span>
-                <span className="rounded-full bg-[#fff7c7] px-3 py-1 text-[12px] font-black text-[#222320]">
-                  Nursery - XII
-                </span>
-              </div>
-            </div>
-
-            <div className="order-1 text-center lg:order-2">
-              <div className="relative mx-auto h-[86px] w-[310px] max-w-full overflow-hidden rounded-[10px] bg-[#fffdf7] p-3 shadow-[9px_9px_0_rgba(255,247,199,0.2)]">
+        <div className="mx-auto max-w-[1720px]">
+          <div className="grid gap-10 lg:grid-cols-3 lg:items-start lg:gap-12">
+            <div>
+              <div className="relative h-[96px] w-[250px] overflow-hidden rounded-[16px] bg-white p-3 shadow-[8px_8px_0_rgba(255,212,0,0.22)]">
                 <Image
                   src="/logo11.png"
                   alt="Delhi Public School SPR Gurugram logo"
                   fill
-                  sizes="310px"
+                  sizes="250px"
                   className="object-contain p-3"
                 />
               </div>
-              <h2 className="mt-8 text-[46px] font-black leading-[0.95] tracking-normal text-[#fff7c7] max-md:text-[36px]">
-                Delhi Public School
-                <span className="block">SPR Gurugram</span>
-              </h2>
-              <p className="mt-3 text-[17px] font-semibold italic text-[#fff7c7]/82">
-                Where future-ready learning begins
+              <p className="mt-8 max-w-[360px] text-[18px] font-semibold leading-8 text-white">
+                Delhi Public School SPR Gurugram stands out as a future-ready
+                CBSE school for confident learners.
               </p>
-
-              <div className="mt-8 flex flex-wrap justify-center gap-3">
-                <a
-                  href="#admissions"
-                  className="group inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#05e981] px-6 text-[13px] font-black text-[#12301f] transition hover:-translate-y-1 hover:bg-[#fff7c7]"
-                >
-                  Apply Now
-                  <span className="ml-3 grid h-6 w-6 place-items-center rounded-full bg-[#12301f] text-[#05e981] transition group-hover:translate-x-1">
-                    &#8594;
-                  </span>
-                </a>
-                <a
-                  href="#tour"
-                  className="group inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#0b6844] px-6 text-[13px] font-black text-[#fff7c7] transition hover:-translate-y-1 hover:bg-[#0f8154]"
-                >
-                  Schedule Visit
-                  <span className="ml-3 grid h-6 w-6 place-items-center rounded-full bg-[#05e981] text-[#12301f] transition group-hover:translate-x-1">
-                    &#8594;
-                  </span>
-                </a>
-              </div>
             </div>
 
-            <div className="order-3 lg:text-left">
-              <h3 className="text-[24px] font-black leading-none tracking-normal text-[#fff7c7]">
+            <div>
+              <h3 className="text-[30px] font-black uppercase leading-none tracking-normal text-white">
                 Quick Links
               </h3>
-              <div className="mt-5 grid grid-cols-2 gap-x-10 gap-y-2 text-[14px] font-semibold text-white/76">
-                {[
-                  ["Our Vision", "#about"],
-                  ["The Campus", "#infrastructure"],
-                  ["Admissions", "#admissions"],
-                  ["Campus Stories", "#gallery"],
-                  ["School Tour", "#tour"],
-                  ["Contact", "#tour"],
-                ].map(([label, href]) => (
+              <nav
+                className="mt-7 flex flex-col gap-4 text-[18px] font-semibold leading-none text-white"
+                aria-label="Footer navigation"
+              >
+                {navLinks.map(([label, href]) => (
                   <a
                     key={label}
                     href={href}
-                    className="footer-link transition hover:text-[#05e981]"
+                    className="footer-dps-link group inline-flex items-center gap-3 transition hover:text-[#ffd400]"
                   >
+                    <span className="text-[24px] leading-none text-white/90 transition group-hover:translate-x-1 group-hover:text-[#ffd400]">
+                      &#8250;
+                    </span>
                     {label}
                   </a>
                 ))}
-              </div>
+              </nav>
+            </div>
 
-              <div className="mt-10 inline-flex rounded-[8px] bg-[#fff7c7] px-4 py-3 text-[12px] font-black text-[#222320]">
-                &copy; 2026 DPS SPR Gurugram
+            <div>
+              <h3 className="text-[30px] font-black uppercase leading-none tracking-normal text-white">
+                Get In Touch
+              </h3>
+              <div className="mt-7 grid gap-6 text-[18px] font-semibold leading-7 text-white">
+                <div>
+                  <p className="text-[16px] text-white/80">Address</p>
+                  <p className="mt-1 font-bold">
+                    Sector 68, Gurugram, Haryana, India
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[16px] text-white/80">Phone</p>
+                  <p className="mt-1 font-bold">+91 98765 43210</p>
+                </div>
+                <div>
+                  <p className="text-[16px] text-white/80">Email</p>
+                  <p className="mt-1 font-bold">admissions@dpsgurugram.edu.in</p>
+                </div>
               </div>
             </div>
           </div>
+
+          <div className="mt-12 h-px bg-white/70" />
+
+          <p className="mt-7 text-center text-[16px] font-semibold text-white/90">
+            &copy; 2026. DPS SPR Gurugram All Rights Reserved.
+          </p>
         </div>
       </footer>
     </main>
   );
 }
+
 
 
 

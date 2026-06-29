@@ -8,7 +8,7 @@ export function LearningJourneySection() {
     >
       <div className="relative z-10 mx-auto max-w-[1920px]">
         <div className="program-heading relative z-10 mx-auto text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#f6c343]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#ffd400]">
             Our Programs
           </p>
           <h2 className="mt-4 text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-white max-xl:text-[36px] max-md:text-[28px]">
