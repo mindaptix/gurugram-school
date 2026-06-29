@@ -4,7 +4,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="about-section bg-white px-5 py-16 sm:px-8 lg:px-[74px] lg:py-20"
+      className="about-section relative bg-[#f7f3eb] px-5 pb-0 pt-16 sm:px-8 lg:px-[74px] lg:pt-20"
     >
       <div className="mx-auto grid max-w-[1280px] gap-10 lg:grid-cols-[340px_1fr] lg:items-center">
         <div className="relative mx-auto h-[260px] w-[260px] overflow-hidden rounded-full bg-white lg:mx-0">
@@ -40,6 +40,8 @@ export function AboutSection() {
           </a>
         </div>
       </div>
+
+      <div className="mt-14 h-2 w-full bg-[linear-gradient(90deg,#05224a,#006b37,#05224a)]" />
     </section>
   );
 }
