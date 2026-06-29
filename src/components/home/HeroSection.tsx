@@ -26,6 +26,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
               className="h-full w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             />
+            <div className="absolute inset-0 bg-black/45" />
           </div>
         ))}
 
@@ -112,9 +113,9 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
           </nav>
         </header>
 
-        <div className="relative z-10 flex min-h-screen items-end px-5 pb-8 pt-40 sm:px-8 sm:pb-10 lg:px-14 lg:pb-12 lg:pt-44">
-          <div className="grid w-full gap-8 xl:grid-cols-[minmax(0,1fr)_330px] xl:items-end">
-            <div className="hero-copy max-w-[1060px] text-white">
+        <div className="relative z-10 flex min-h-screen items-center px-5 pb-8 pt-40 sm:px-8 sm:pb-10 lg:px-14 lg:pb-12 lg:pt-44">
+          <div className="grid w-full gap-8 xl:grid-cols-[minmax(0,1fr)_330px] xl:items-center">
+            <div className="hero-copy w-full max-w-[980px] justify-self-start text-left text-white">
               <h1 className="max-w-[980px] text-[32px] font-bold leading-[1.08] tracking-normal sm:text-[42px] lg:text-[54px]">
                 <span className="block sm:whitespace-nowrap">Best DPS School for Nursery to</span>
                 <span className="block">Class 12 in Gurugram</span>
@@ -133,7 +134,7 @@ export function HeroSection({ activeSlide, isNavbarVisible }: HeroSectionProps) 
               </a>
               <a
                 href="#tour"
-                className="inline-flex min-h-[54px] items-center justify-center rounded-full border border-white/50 bg-white/12 px-6 text-sm font-black uppercase tracking-[0.1em] text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#061a33]"
+                className="inline-flex min-h-[54px] items-center justify-center rounded-full border border-[#006b37] bg-[#006b37] px-6 text-sm font-black uppercase tracking-[0.1em] text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#061a33]"
               >
                 Campus Tour
               </a>

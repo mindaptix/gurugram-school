@@ -4,12 +4,12 @@ export function FoundationSection() {
   return (
     <section
       id="foundation"
-      className="foundation-section relative isolate overflow-x-clip bg-[#f4f5f1] px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
+      className="foundation-section relative isolate bg-[#f4f5f1] px-5 py-14 text-[#05224a] sm:px-8 lg:px-[86px] lg:py-20"
     >
-      <div className="absolute left-0 top-0 h-full w-[38%] bg-white max-lg:hidden" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-[38%] bg-white max-lg:hidden" />
 
       <div className="mx-auto grid max-w-[1680px] gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:gap-16">
-        <div className="foundation-sticky relative z-10 flex min-h-[82vh] items-center justify-center text-center lg:sticky lg:top-10 lg:self-start">
+        <div className="foundation-sticky relative z-10 flex items-center justify-center text-center lg:sticky lg:top-32 lg:self-start lg:pt-6">
           <h2 className="w-full max-w-[720px] font-black uppercase leading-[0.86] tracking-[-0.04em]">
             <span className="block text-[88px] text-[#111111] max-xl:text-[68px] max-md:text-[44px]">
               Strong

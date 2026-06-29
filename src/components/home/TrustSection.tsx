@@ -28,7 +28,7 @@ export function TrustSection() {
           <p className="text-[16px] font-black uppercase leading-none tracking-[0.26em] text-[#05b982] max-sm:text-[12px]">
             DPS At A Glance
           </p>
-          <h2 className="mt-6 whitespace-nowrap text-[58px] font-bold leading-none tracking-normal text-[#111111] max-xl:text-5xl max-lg:whitespace-normal max-md:text-4xl">
+          <h2 className="mt-6 whitespace-nowrap text-[55px] font-bold leading-none tracking-normal text-[#111111] max-xl:text-5xl max-lg:whitespace-normal max-md:text-4xl">
             Why Parents Trust Our DPS School
           </h2>
         </div>

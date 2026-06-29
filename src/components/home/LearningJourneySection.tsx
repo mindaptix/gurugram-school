@@ -9,11 +9,8 @@ export function LearningJourneySection() {
       <div className="absolute inset-x-0 top-0 h-[250px] bg-white max-lg:h-[290px] max-md:h-[235px]" />
       <div className="relative z-10 mx-auto max-w-[1920px]">
         <div className="program-heading relative z-10 mx-auto text-center">
-          <p className="text-[18px] font-black uppercase leading-none tracking-[0.26em] text-[#05b982] max-sm:text-[12px]">
-            From Preschool To Grade 12
-          </p>
-          <h2 className="mt-7 text-[72px] font-black leading-none tracking-normal text-[#111111] max-xl:text-6xl max-md:text-4xl">
-            Our Learning Journey
+          <h2 className="text-[55px] font-[550] leading-none tracking-normal text-[#111111] max-xl:text-5xl max-md:text-4xl">
+            Academic Programs from Nursery to Class 12
           </h2>
         </div>
 
