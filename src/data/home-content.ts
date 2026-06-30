@@ -197,8 +197,7 @@ export const infrastructureItems = [
   {
     title: "Science & Computer Labs",
     detail: "Purpose-built labs for experiments, coding, robotics, and research.",
-    image:
-      "https://images.unsplash.com/photo-1581093458791-9f3c3ae986dc?auto=format&fit=crop&w=1500&q=85",
+    image: "/infrastructure-science-lab.jpg",
   },
   {
     title: "Library & Reading Zones",

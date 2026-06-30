@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
 import { AdmissionCtaCard } from "@/components/home/AdmissionCtaCard";
@@ -23,22 +22,6 @@ export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeInfrastructure, setActiveInfrastructure] = useState(2);
   const isNavbarVisible = useNavbarVisibility();
-  const infraSectionRef = useRef<HTMLElement>(null);
-
-  const { scrollYProgress: infraScrollProgress } = useScroll({
-    target: infraSectionRef,
-    offset: ["start 0.85", "end 0.15"],
-  });
-  const dpsRawY = useTransform(infraScrollProgress, [0, 1], [34, 260]);
-  const dpsRawOpacity = useTransform(
-    infraScrollProgress,
-    [0, 0.1, 0.42, 0.68, 0.86],
-    [0, 1, 1, 0.28, 0],
-  );
-  const dpsRawScale = useTransform(infraScrollProgress, [0, 0.32, 0.86], [0.96, 1, 0.94]);
-  const dpsScrollY = useSpring(dpsRawY, { stiffness: 90, damping: 24, mass: 0.4 });
-  const dpsOpacity = useSpring(dpsRawOpacity, { stiffness: 90, damping: 24, mass: 0.4 });
-  const dpsScale = useSpring(dpsRawScale, { stiffness: 90, damping: 24, mass: 0.4 });
 
   useEffect(() => {
     const slideTimer = window.setInterval(() => {
@@ -67,22 +50,18 @@ export default function Home() {
       <FoundationSection />
 
         <section
-          ref={infraSectionRef}
           id="infrastructure"
           className="infrastructure-section relative isolate overflow-visible bg-white pb-14 pt-0 text-white"
         >
           <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-0 sm:px-8 lg:px-14">
             <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
-              <div className="relative min-w-0 overflow-visible pt-2">
+              <div className="relative min-w-0 pt-2 pb-2">
                 <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#006b37] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-white max-lg:text-[42px] max-md:text-[34px]">
                   Learning at
                 </div>
-                <motion.div
-                  className="infra-dps-word relative z-[12] mt-2 [animation:none] text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-1 max-lg:text-[118px] max-md:text-[88px]"
-                  style={{ y: dpsScrollY, opacity: dpsOpacity, scale: dpsScale }}
-                >
+                <div className="infra-dps-word relative z-10 mt-2 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-1 max-lg:text-[118px] max-md:text-[88px]">
                   DPS
-                </motion.div>
+                </div>
               </div>
 
             <div className="infra-story-copy relative z-30 lg:pt-2">
@@ -92,66 +71,66 @@ export default function Home() {
                 best suit their abilities, interests, and aspirations.
               </p>
             </div>
-          </div>
-        </div>
+            </div>
 
-            <div className="infra-accordion relative z-20 -mt-2 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-4 max-lg:h-auto max-lg:flex-col lg:-mt-10 xl:-mt-14">
-          {infrastructureItems.map((item, index) => {
-            const isActive = activeInfrastructure === index;
+            <div className="infra-accordion relative z-20 mt-6 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-4 max-lg:h-auto max-lg:flex-col lg:mt-8">
+              {infrastructureItems.map((item, index) => {
+                const isActive = activeInfrastructure === index;
 
-            return (
-              <article
-                key={item.title}
-                onMouseEnter={() => setActiveInfrastructure(index)}
-                onFocus={() => setActiveInfrastructure(index)}
-                tabIndex={0}
-                className={`infra-card group relative min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:min-h-[360px] ${
-                  isActive ? "flex-[2.7]" : "flex-[0.82]"
-                }`}
-                style={{ animationDelay: `${index * 90}ms` }}
-              >
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
-                  style={{ backgroundImage: `url(${item.image})` }}
-                />
-                <div className="absolute inset-0 bg-[#071d34]/38 transition-colors duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:bg-[#071d34]/20" />
-                <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-t from-black/78 via-black/42 to-transparent" />
-
-                <div className="relative flex h-full flex-col justify-end p-5 lg:p-6">
-                  <h3
-                    className={`max-w-[520px] break-words font-black leading-[1.12] tracking-normal transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:text-3xl ${
-                        isActive
-                          ? "text-[34px] max-xl:text-[30px] max-lg:text-3xl"
-                          : "text-[20px] max-xl:text-[18px] max-lg:text-3xl"
+                return (
+                  <article
+                    key={item.title}
+                    onMouseEnter={() => setActiveInfrastructure(index)}
+                    onFocus={() => setActiveInfrastructure(index)}
+                    tabIndex={0}
+                    className={`infra-card group relative min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:min-h-[360px] ${
+                      isActive ? "flex-[2.7]" : "flex-[0.82]"
                     }`}
+                    style={{ animationDelay: `${index * 90}ms` }}
                   >
-                    {item.title}
-                  </h3>
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
+                      style={{ backgroundImage: `url(${item.image})` }}
+                    />
+                    <div className="absolute inset-0 bg-[#071d34]/38 transition-colors duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:bg-[#071d34]/20" />
+                    <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-t from-black/78 via-black/42 to-transparent" />
 
-                  <div
-                    className={`mt-4 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                      isActive
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-4 opacity-0 max-lg:translate-y-0 max-lg:opacity-100"
-                    }`}
-                  >
-                    <p className="max-w-[560px] text-[16px] font-semibold leading-7 text-white/88">
-                      {item.detail}
-                    </p>
-                    <div className="mt-5 flex items-center gap-5">
-                      <span className="h-1.5 w-16 bg-[#ffd400]" />
-                      <span className="grid h-16 w-16 place-items-center rounded-full bg-[#003b73] text-[42px] font-light leading-none text-white transition group-hover:rotate-90">
-                        +
-                      </span>
+                    <div className="relative flex h-full flex-col justify-end p-5 lg:p-6">
+                      <h3
+                        className={`max-w-[520px] break-words font-black leading-[1.12] tracking-normal transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:text-3xl ${
+                          isActive
+                            ? "text-[34px] max-xl:text-[30px] max-lg:text-3xl"
+                            : "text-[20px] max-xl:text-[18px] max-lg:text-3xl"
+                        }`}
+                      >
+                        {item.title}
+                      </h3>
+
+                      <div
+                        className={`mt-4 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                          isActive
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-4 opacity-0 max-lg:translate-y-0 max-lg:opacity-100"
+                        }`}
+                      >
+                        <p className="max-w-[560px] text-[16px] font-semibold leading-7 text-white/88">
+                          {item.detail}
+                        </p>
+                        <div className="mt-5 flex items-center gap-5">
+                          <span className="h-1.5 w-16 bg-[#ffd400]" />
+                          <span className="grid h-16 w-16 place-items-center rounded-full bg-[#003b73] text-[42px] font-light leading-none text-white transition group-hover:rotate-90">
+                            +
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
 
-      </section>
+        </section>
 
         <section
           id="tour"

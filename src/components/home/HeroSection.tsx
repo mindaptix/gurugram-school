@@ -133,7 +133,7 @@ export function HeroSection({
                 href="/"
                 className="hero-chip relative -ml-6 -mt-5 block w-fit shrink-0 sm:-ml-7 sm:-mt-6 lg:-ml-9 lg:-mt-7"
               >
-                <span className="inline-block w-fit leading-none rounded-sm bg-white p-1 shadow-[0_8px_24px_rgba(0,0,0,0.15)] sm:p-1.5">
+                <span className="inline-block w-fit leading-none rounded-none bg-white p-1 shadow-[0_8px_24px_rgba(0,0,0,0.15)] sm:p-1.5">
                   <Image
                     src="/logo11.png"
                     alt="Delhi Public School SPR Gurugram logo"
@@ -244,38 +244,40 @@ export function HeroSection({
             </a>
           </div>
 
-          <aside className="hero-side-panel relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-3 overflow-hidden pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
+          <aside className="relative grid min-h-[520px] grid-rows-2 gap-3 overflow-visible pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
             <a
               href="#tour"
-              className="hero-side-card group relative isolate flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 shadow-[0_22px_50px_rgba(0,55,30,0.28)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(0,107,55,0.38)]"
+              className="group relative flex min-h-[250px] flex-col overflow-hidden rounded-none border border-white/15 bg-[#287734] p-5 text-white no-underline shadow-[0_20px_44px_rgba(40,119,52,0.35)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_54px_rgba(40,119,52,0.45)] sm:min-h-[270px] sm:p-6"
             >
-              <div
-                className="absolute inset-0 bg-[linear-gradient(145deg,#0a7a42_0%,#006b37_42%,#043d24_100%)]"
+              <span
+                className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full border border-white/25"
                 aria-hidden="true"
               />
-              <div
-                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#ffd400]/20 blur-3xl transition duration-700 group-hover:scale-110"
-                aria-hidden="true"
-              />
-              <div
-                className="pointer-events-none absolute right-5 top-5 grid h-16 w-16 place-items-center rounded-full border border-white/15 bg-white/8 backdrop-blur-sm transition duration-500 group-hover:border-[#ffd400]/50 group-hover:bg-[#ffd400]/15"
-                aria-hidden="true"
-              >
-                <span className="ml-1 block h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-[#ffd400]" />
+              <span className="relative z-10 grid h-11 w-11 place-items-center rounded-full border border-white/30 bg-white/10">
+                <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-white stroke-[1.8]" aria-hidden="true">
+                  <path d="M3 10.5 12 5l9 5.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z" />
+                  <path d="M12 5v4.5" />
+                </svg>
+              </span>
+              <span className="absolute right-5 top-5 z-10 rounded-full border border-white/55 px-3 py-1 text-[0.58rem] font-extrabold uppercase tracking-[0.18em]">
+                Tour
+              </span>
+
+              <div className="relative z-10 mt-auto pt-6">
+                <h3 className="text-[1.05rem] font-extrabold uppercase leading-tight tracking-wide sm:text-[1.15rem]">
+                  Virtual Campus Tour
+                </h3>
+                <p className="mt-3 text-[0.78rem] leading-relaxed text-white/88 sm:text-[0.82rem]">
+                  Walk through our campus from anywhere.
+                </p>
               </div>
 
-              <div className="relative z-10 flex h-full flex-col justify-between p-7 sm:p-8">
-                <div className="mt-auto pr-14">
-                  <h3 className="text-[24px] font-semibold leading-[1.1] text-white sm:text-[28px]">
-                    Virtual
-                    <span className="block">Campus Tour</span>
-                  </h3>
-                  <p className="mt-2 text-[13px] leading-6 text-white/72">
-                    Walk through our campus from anywhere.
-                  </p>
-                </div>
-
-                <span className="absolute bottom-7 right-7 grid h-12 w-12 place-items-center rounded-full border border-white/25 bg-white/10 text-xl text-white backdrop-blur-md transition duration-500 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#003b73] sm:bottom-8 sm:right-8">
+              <div className="relative z-10 mt-auto pb-1 pt-8">
+                <span className="absolute inset-x-0 bottom-[1.85rem] h-px bg-white/40" aria-hidden="true" />
+                <span className="relative mb-8 block text-[0.68rem] font-extrabold uppercase tracking-[0.16em]">
+                  DPS
+                </span>
+                <span className="absolute bottom-[1.85rem] right-0 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full border border-white/35 bg-white/10 text-2xl leading-none transition duration-300 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#287734] sm:h-14 sm:w-14 sm:text-3xl">
                   &rarr;
                 </span>
               </div>
@@ -283,42 +285,38 @@ export function HeroSection({
 
             <a
               href="#admissions"
-              className="hero-side-card group relative isolate flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 shadow-[0_22px_50px_rgba(5,20,45,0.32)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(5,34,74,0.42)]"
+              className="group relative flex min-h-[250px] flex-col overflow-hidden rounded-none border border-white/15 bg-[#22102f] p-5 text-white no-underline shadow-[0_20px_44px_rgba(34,16,47,0.38)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_54px_rgba(34,16,47,0.48)] sm:min-h-[270px] sm:p-6"
             >
-              <div
-                className="absolute inset-0 bg-[linear-gradient(145deg,#0d2f5c_0%,#05224a_48%,#1a0a28_100%)]"
+              <span
+                className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full border border-white/25"
                 aria-hidden="true"
               />
-              <div
-                className="pointer-events-none absolute -left-6 bottom-0 h-36 w-36 rounded-full bg-[#f566aa]/18 blur-3xl transition duration-700 group-hover:scale-110"
-                aria-hidden="true"
-              />
-              <div
-                className="pointer-events-none absolute right-5 top-5 flex flex-col items-center justify-center rounded-full border border-[#ffd400]/35 bg-[#ffd400]/10 px-3 py-2 backdrop-blur-sm transition duration-500 group-hover:scale-105 group-hover:border-[#ffd400]/70"
-                aria-hidden="true"
-              >
-                <span className="text-[9px] font-black uppercase tracking-[0.18em] text-[#ffd400]">
-                  Now
-                </span>
-                <span className="text-[15px] font-black leading-none text-white">Open</span>
+              <span className="relative z-10 grid h-11 w-11 place-items-center rounded-full border border-white/30 bg-white/10">
+                <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-white stroke-[1.8]" aria-hidden="true">
+                  <path d="M12 3 2 8l10 5 10-5-10-5Z" />
+                  <path d="M6 11v4c0 2.2 2.7 4 6 4s6-1.8 6-4v-4" />
+                  <path d="M22 8v5" />
+                </svg>
+              </span>
+              <span className="absolute right-5 top-5 z-10 rounded-full border border-[#ffd400]/55 px-3 py-1 text-[0.58rem] font-extrabold uppercase tracking-[0.18em] text-[#ffd400]">
+                Open
+              </span>
+
+              <div className="relative z-10 mt-auto pt-6">
+                <h3 className="text-[1.05rem] font-extrabold uppercase leading-tight tracking-wide sm:text-[1.15rem]">
+                  Admissions Open
+                </h3>
+                <p className="mt-3 text-[0.78rem] leading-relaxed text-white/88 sm:text-[0.82rem]">
+                  Nursery to Grade XII · CBSE curriculum.
+                </p>
               </div>
 
-              <div className="relative z-10 flex h-full flex-col justify-between p-7 sm:p-8">
-                <p className="text-[10px] font-black uppercase tracking-[0.26em] text-[#f566aa]">
-                  Admissions 2026-27
-                </p>
-
-                <div className="mt-auto pr-14">
-                  <h3 className="text-[24px] font-semibold leading-[1.1] text-white sm:text-[28px]">
-                    Admissions
-                    <span className="block">Open</span>
-                  </h3>
-                  <p className="mt-2 text-[13px] leading-6 text-white/72">
-                    Nursery to Grade XII · CBSE curriculum.
-                  </p>
-                </div>
-
-                <span className="absolute bottom-7 right-7 grid h-12 w-12 place-items-center rounded-full border border-white/25 bg-white/10 text-xl text-white backdrop-blur-md transition duration-500 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#003b73] sm:bottom-8 sm:right-8">
+              <div className="relative z-10 mt-auto pb-1 pt-8">
+                <span className="absolute inset-x-0 bottom-[1.85rem] h-px bg-white/40" aria-hidden="true" />
+                <span className="relative mb-8 block text-[0.68rem] font-extrabold uppercase tracking-[0.16em]">
+                  DPS
+                </span>
+                <span className="absolute bottom-[1.85rem] right-0 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full border border-white/35 bg-white/10 text-2xl leading-none transition duration-300 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#22102f] sm:h-14 sm:w-14 sm:text-3xl">
                   &rarr;
                 </span>
               </div>
