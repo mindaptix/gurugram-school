@@ -244,44 +244,84 @@ export function HeroSection({
             </a>
           </div>
 
-          <aside className="hero-actions relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-2 overflow-hidden pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
+          <aside className="hero-side-panel relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-3 overflow-hidden pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
             <a
               href="#tour"
-              className="group relative isolate flex flex-col justify-between overflow-hidden bg-[#287734] p-7 text-white transition duration-500 hover:brightness-110 sm:p-9"
+              className="hero-side-card group relative isolate flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 shadow-[0_22px_50px_rgba(0,55,30,0.28)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(0,107,55,0.38)]"
             >
-              <span className="absolute right-0 top-0 flex h-44 items-start gap-0 transition duration-700 group-hover:translate-x-2">
-                <span className="h-0 w-0 border-y-[86px] border-l-[86px] border-y-transparent border-l-[#ffc84a] sm:border-y-[96px] sm:border-l-[96px]" />
-                <span className="h-0 w-0 border-y-[86px] border-l-[86px] border-y-transparent border-l-[#ffc84a] sm:border-y-[96px] sm:border-l-[96px]" />
-              </span>
-              <span />
-              <span className="relative flex items-center justify-between gap-4 text-[26px] font-semibold leading-[1.12] tracking-normal sm:text-[30px]">
-                Virtual
-                <br />
-                Campus Tour
-                <span className="text-6xl font-light leading-none transition group-hover:translate-x-2">
+              <div
+                className="absolute inset-0 bg-[linear-gradient(145deg,#0a7a42_0%,#006b37_42%,#043d24_100%)]"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#ffd400]/20 blur-3xl transition duration-700 group-hover:scale-110"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute right-5 top-5 grid h-16 w-16 place-items-center rounded-full border border-white/15 bg-white/8 backdrop-blur-sm transition duration-500 group-hover:border-[#ffd400]/50 group-hover:bg-[#ffd400]/15"
+                aria-hidden="true"
+              >
+                <span className="ml-1 block h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-[#ffd400]" />
+              </div>
+
+              <div className="relative z-10 flex h-full flex-col justify-between p-7 sm:p-8">
+                <div className="mt-auto pr-14">
+                  <h3 className="text-[24px] font-semibold leading-[1.1] text-white sm:text-[28px]">
+                    Virtual
+                    <span className="block">Campus Tour</span>
+                  </h3>
+                  <p className="mt-2 text-[13px] leading-6 text-white/72">
+                    Walk through our campus from anywhere.
+                  </p>
+                </div>
+
+                <span className="absolute bottom-7 right-7 grid h-12 w-12 place-items-center rounded-full border border-white/25 bg-white/10 text-xl text-white backdrop-blur-md transition duration-500 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#003b73] sm:bottom-8 sm:right-8">
                   &rarr;
                 </span>
-              </span>
+              </div>
             </a>
 
             <a
               href="#admissions"
-              className="group relative isolate flex flex-col justify-end overflow-hidden bg-[#22102f] p-7 text-white transition duration-500 hover:brightness-110 sm:p-9"
+              className="hero-side-card group relative isolate flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 shadow-[0_22px_50px_rgba(5,20,45,0.32)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(5,34,74,0.42)]"
             >
-              <span className="absolute -right-7 top-0 grid h-[196px] w-[196px] grid-cols-2 grid-rows-2 transition duration-700 group-hover:rotate-6 sm:h-[220px] sm:w-[220px]">
-                <span className="rounded-br-full bg-[#f566aa]" />
-                <span className="rounded-bl-full bg-[#f566aa]" />
-                <span className="rounded-tr-full bg-[#f566aa]" />
-                <span className="rounded-tl-full bg-[#f566aa]" />
-              </span>
-              <span className="relative flex items-center justify-between gap-4 text-[26px] font-semibold leading-[1.1] tracking-normal sm:text-[30px]">
-                Admissions
-                <br />
-                Open
-                <span className="text-6xl font-light leading-none transition group-hover:translate-x-2">
+              <div
+                className="absolute inset-0 bg-[linear-gradient(145deg,#0d2f5c_0%,#05224a_48%,#1a0a28_100%)]"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute -left-6 bottom-0 h-36 w-36 rounded-full bg-[#f566aa]/18 blur-3xl transition duration-700 group-hover:scale-110"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute right-5 top-5 flex flex-col items-center justify-center rounded-full border border-[#ffd400]/35 bg-[#ffd400]/10 px-3 py-2 backdrop-blur-sm transition duration-500 group-hover:scale-105 group-hover:border-[#ffd400]/70"
+                aria-hidden="true"
+              >
+                <span className="text-[9px] font-black uppercase tracking-[0.18em] text-[#ffd400]">
+                  Now
+                </span>
+                <span className="text-[15px] font-black leading-none text-white">Open</span>
+              </div>
+
+              <div className="relative z-10 flex h-full flex-col justify-between p-7 sm:p-8">
+                <p className="text-[10px] font-black uppercase tracking-[0.26em] text-[#f566aa]">
+                  Admissions 2026-27
+                </p>
+
+                <div className="mt-auto pr-14">
+                  <h3 className="text-[24px] font-semibold leading-[1.1] text-white sm:text-[28px]">
+                    Admissions
+                    <span className="block">Open</span>
+                  </h3>
+                  <p className="mt-2 text-[13px] leading-6 text-white/72">
+                    Nursery to Grade XII · CBSE curriculum.
+                  </p>
+                </div>
+
+                <span className="absolute bottom-7 right-7 grid h-12 w-12 place-items-center rounded-full border border-white/25 bg-white/10 text-xl text-white backdrop-blur-md transition duration-500 group-hover:translate-x-1 group-hover:border-[#ffd400] group-hover:bg-[#ffd400] group-hover:text-[#003b73] sm:bottom-8 sm:right-8">
                   &rarr;
                 </span>
-              </span>
+              </div>
             </a>
           </aside>
         </div>
