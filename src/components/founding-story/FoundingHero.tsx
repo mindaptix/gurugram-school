@@ -3,36 +3,36 @@
 import { useLayoutEffect, useRef } from "react";
 
 import { VisionNavbar } from "@/components/vision/VisionNavbar";
-import { visionHero } from "@/data/vision-content";
-import { gsap, registerVisionGsap } from "@/lib/vision-gsap";
+import { foundingStoryHero } from "@/data/founding-story-content";
+import { gsap, registerFoundingGsap } from "@/lib/founding-gsap";
 
-export function VisionHero() {
+export function FoundingHero() {
   const sectionRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
   const copyRef = useRef<HTMLDivElement>(null);
   const auraRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    registerVisionGsap();
+    registerFoundingGsap();
     const section = sectionRef.current;
     if (!section) return;
 
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-      tl.from(".vision-hero-kicker", {
-        y: 24,
-        opacity: 0,
-        duration: 0.75,
-      })
-        .from(".vision-hero-line", {
-        scaleX: 0,
-        opacity: 0,
-        duration: 1,
-        transformOrigin: "left center",
-      }, "-=0.45")
+      gsap
+        .timeline({ defaults: { ease: "power3.out" } })
+        .from(".founding-hero-kicker", {
+          y: 24,
+          opacity: 0,
+          duration: 0.75,
+        })
+        .from(".founding-hero-line", {
+          scaleX: 0,
+          opacity: 0,
+          duration: 1,
+          transformOrigin: "left center",
+        }, "-=0.45")
         .from(
-          ".vision-title-word",
+          ".founding-title-word",
           {
             yPercent: 105,
             rotateX: -18,
@@ -75,7 +75,7 @@ export function VisionHero() {
         },
       });
 
-      gsap.to(".vision-hero-float", {
+      gsap.to(".founding-hero-float", {
         y: -18,
         opacity: 1,
         duration: 2.4,
@@ -104,54 +104,49 @@ export function VisionHero() {
   return (
     <section
       ref={sectionRef}
-      className="vision-hero relative isolate min-h-[70vh] overflow-hidden"
-      aria-label="Our Vision"
+      className="founding-hero relative isolate min-h-[70vh] overflow-hidden"
+      aria-label="Founding Story"
     >
       <div
         ref={bgRef}
         className="absolute inset-0 scale-105 bg-cover bg-center"
-        style={{ backgroundImage: `url(${visionHero.image})` }}
+        style={{ backgroundImage: `url(${foundingStoryHero.image})` }}
         role="img"
-        aria-label="Aerial view of DPS SPR Gurugram campus"
+        aria-label="DPS SPR Gurugram campus"
       />
-
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.34)_45%,rgba(0,0,0,0.08)_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_30%,rgba(255,212,0,0.2),transparent_30%),linear-gradient(180deg,rgba(0,0,0,0.02)_0%,rgba(0,0,0,0.42)_100%)]" />
       <div ref={auraRef} className="vision-hero-aura pointer-events-none absolute -right-24 top-20 h-[520px] w-[520px] rounded-full border border-[#ffd400]/25" />
-      <div className="vision-hero-float pointer-events-none absolute right-[12%] top-[24%] hidden h-24 w-24 rounded-full border border-white/25 bg-white/8 backdrop-blur-sm lg:block" />
-      <div className="vision-hero-float pointer-events-none absolute right-[30%] top-[58%] hidden h-14 w-14 rounded-full border border-[#ffd400]/35 bg-[#ffd400]/10 backdrop-blur-sm lg:block" />
-      <div className="vision-hero-float pointer-events-none absolute bottom-[18%] right-[8%] hidden h-32 w-32 rounded-full border border-white/18 bg-white/5 backdrop-blur-sm lg:block" />
+      <div className="founding-hero-float pointer-events-none absolute right-[12%] top-[24%] hidden h-24 w-24 rounded-full border border-white/25 bg-white/8 backdrop-blur-sm lg:block" />
+      <div className="founding-hero-float pointer-events-none absolute right-[30%] top-[58%] hidden h-14 w-14 rounded-full border border-[#ffd400]/35 bg-[#ffd400]/10 backdrop-blur-sm lg:block" />
+      <div className="founding-hero-float pointer-events-none absolute bottom-[18%] right-[8%] hidden h-32 w-32 rounded-full border border-white/18 bg-white/5 backdrop-blur-sm lg:block" />
 
       <VisionNavbar />
 
       <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-[1320px] flex-col justify-end px-5 pb-8 pt-28 sm:px-8 sm:pb-10 lg:px-12 lg:pb-12">
-        <div ref={copyRef} className="vision-hero-copy max-w-[980px] text-white">
-          <div className="vision-hero-kicker mb-4 flex items-center gap-3">
-            <span className="vision-hero-line h-px w-12 bg-[#ffd400]" />
+        <div ref={copyRef} className="founding-hero-copy max-w-[980px] text-white">
+          <div className="founding-hero-kicker mb-4 flex items-center gap-3">
+            <span className="founding-hero-line h-px w-12 bg-[#ffd400]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#ffd400]">
-              {visionHero.eyebrow}
+              {foundingStoryHero.eyebrow}
             </p>
           </div>
-
-          <h1
-            className="vision-hero-title text-[38px] font-black leading-[0.98] tracking-[-0.03em] sm:text-[56px] lg:text-[78px]"
-          >
-            {visionHero.title.split(" ").map((word) => (
+          <h1 className="vision-hero-title text-[36px] font-black leading-[0.98] tracking-[-0.03em] sm:text-[54px] lg:text-[74px]">
+            {foundingStoryHero.title.split(" ").map((word) => (
               <span key={word} className="mr-[0.16em] inline-block overflow-hidden pb-2 align-bottom">
-                <span className="vision-title-word inline-block">{word}</span>
+                <span className="founding-title-word inline-block">{word}</span>
               </span>
             ))}
           </h1>
-
           <p
             data-hero-line
             className="mt-4 max-w-[720px] text-[16px] font-medium leading-7 text-white/88 sm:text-[18px] sm:leading-8"
           >
-            {visionHero.subtitle}
+            {foundingStoryHero.subtitle}
           </p>
 
           <div data-hero-line className="mt-5 hidden max-w-[760px] gap-3 sm:grid sm:grid-cols-3">
-            {["Future-ready learning", "Nursery to Class 12", "Holistic CBSE growth"].map((item) => (
+            {["DPS legacy", "Gurugram campus", "Purpose-led beginning"].map((item) => (
               <div
                 key={item}
                 className="vision-hero-stat border border-white/18 bg-white/10 px-4 py-3 text-[11px] font-black uppercase tracking-[0.14em] text-white backdrop-blur-md"

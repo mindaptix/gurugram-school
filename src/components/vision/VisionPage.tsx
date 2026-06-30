@@ -15,7 +15,7 @@ import { WhyAnotherSchool } from "@/components/vision/WhyAnotherSchool";
 
 export default function VisionPage() {
   return (
-    <main className="vision-page min-h-screen bg-white text-[#05224a]">
+    <main className="vision-page min-h-screen bg-[#fffdf7] text-[#1b3b22]">
       <VisionHero />
       <WhyAnotherSchool />
       <WhatWeBelieve />

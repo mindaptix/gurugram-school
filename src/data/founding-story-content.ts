@@ -1,6 +1,6 @@
 export const foundingStoryHero = {
   eyebrow: "Our Heritage",
-  title: "The Founding Story",
+  title: "The Story Behind DPS SPR Gurugram",
   subtitle:
     "From a bold vision in Gurugram to a thriving DPS campus — discover the journey that shaped Delhi Public School SPR Gurugram.",
   image: "/3.png",
@@ -29,28 +29,24 @@ export const milestones = [
     title: "The Idea Takes Shape",
     detail:
       "A group of educators and community leaders envisioned a DPS campus in Gurugram built around holistic CBSE education.",
-    image: "/img2.jpeg",
   },
   {
     year: "Foundation",
     title: "Groundwork & Purpose",
     detail:
       "Land, learning philosophy, and leadership came together to create a school designed for Nursery to Class 12 continuity.",
-    image: "/half-logo.png",
   },
   {
     year: "Growth",
     title: "Campus & Community",
     detail:
       "Classrooms, labs, sports zones, and cultural spaces took shape as families began trusting the school with their children.",
-    image: "/img3.jpeg",
   },
   {
     year: "Today",
     title: "A Future-Ready Campus",
     detail:
       "DPS SPR Gurugram now stands as a vibrant learning community preparing students for academics, character, and life beyond school.",
-    image: "/img4.jpeg",
   },
 ];
 
@@ -59,14 +55,14 @@ export const foundingPillars = [
     title: "Academic Excellence",
     detail:
       "Structured CBSE learning with strong foundations from early years through senior secondary.",
-    accent: "border-[#05224a] bg-[#05224a]/5",
+    accent: "border-[#006b37] bg-[#006b37]/5",
     icon: "01",
   },
   {
     title: "Values & Character",
     detail:
       "Discipline, empathy, and integrity woven into daily school life — not taught in isolation.",
-    accent: "border-[#006b37] bg-[#006b37]/5",
+    accent: "border-[#1b3b22] bg-[#1b3b22]/5",
     icon: "02",
   },
   {
@@ -83,7 +79,7 @@ export const gurugramSection = {
   title: "A School Shaped by Its City",
   detail:
     "Located in Sector 68, our campus reflects the ambition of Gurugram — modern, connected, and deeply invested in nurturing confident young citizens.",
-  image: "/young-children-making-diy-project-from-upcycled-materials.jpg",
+  image: "/3.png",
   highlights: [
     "Future-ready CBSE campus",
     "Nursery to Class 12 pathway",

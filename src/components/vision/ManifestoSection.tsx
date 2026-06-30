@@ -1,70 +1,114 @@
 "use client";
 
-import { AnimatePresence, motion, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
-import { manifestoStatements } from "@/data/vision-content";
+import { manifestoStatements, manifestoVisual } from "@/data/vision-content";
+import { gsap, registerVisionGsap } from "@/lib/vision-gsap";
 
 export function ManifestoSection() {
-  const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: false, margin: "-20%" });
+  const sectionRef = useRef<HTMLElement>(null);
+  const textRef = useRef<HTMLParagraphElement>(null);
+  const bgRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
 
+  useLayoutEffect(() => {
+    registerVisionGsap();
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const ctx = gsap.context(() => {
+      gsap.to(bgRef.current, {
+        scale: 1.1,
+        y: 40,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1.5,
+        },
+      });
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
   useEffect(() => {
-    if (!isInView) return;
+    const section = sectionRef.current;
+    if (!section) return;
 
-    const timer = setInterval(() => {
-      setIndex((current) => (current + 1) % manifestoStatements.length);
-    }, 2800);
+    let timer: ReturnType<typeof setInterval> | undefined;
 
-    return () => clearInterval(timer);
-  }, [isInView]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        timer = setInterval(() => {
+          setIndex((current) => (current + 1) % manifestoStatements.length);
+        }, 3200);
+
+        observer.disconnect();
+      },
+      { threshold: 0.4 },
+    );
+
+    observer.observe(section);
+    return () => {
+      observer.disconnect();
+      if (timer) clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const el = textRef.current;
+    if (!el) return;
+
+    gsap.fromTo(
+      el,
+      { y: 40, opacity: 0, filter: "blur(10px)" },
+      { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out" },
+    );
+  }, [index]);
 
   return (
     <section
-      ref={ref}
-      className="vision-manifesto relative flex min-h-[72vh] items-center justify-center overflow-hidden px-5 py-24 sm:px-8"
+      ref={sectionRef}
+      className="vision-manifesto relative flex min-h-[70vh] items-center justify-center overflow-hidden px-5 py-24 sm:px-8"
       aria-live="polite"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/img4.jpeg)" }}
+        ref={bgRef}
+        className="absolute inset-0 scale-105 bg-cover bg-center"
+        style={{ backgroundImage: `url(${manifestoVisual.image})` }}
+        role="img"
+        aria-label={manifestoVisual.alt}
       />
-      <div className="absolute inset-0 bg-[#03192e]/82" />
-      <motion.div
-        className="pointer-events-none absolute inset-0"
-        animate={{ opacity: [0.3, 0.55, 0.3] }}
-        transition={{ duration: 5, repeat: Infinity }}
-        style={{
-          background:
-            "radial-gradient(circle at 50% 50%, rgba(0,107,55,0.35), transparent 55%)",
-        }}
-      />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.4)_50%,rgba(0,0,0,0.62)_100%)]" />
 
       <div className="relative z-10 mx-auto max-w-[980px] text-center">
-        <AnimatePresence mode="wait">
-          <motion.p
-            key={manifestoStatements[index]}
-            initial={{ opacity: 0, y: 48, filter: "blur(10px)", scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-            exit={{ opacity: 0, y: -36, filter: "blur(8px)", scale: 1.02 }}
-            transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-            className="vision-serif text-[34px] font-semibold leading-[1.2] text-white sm:text-[48px] lg:text-[62px]"
-          >
-            {manifestoStatements[index]}
-          </motion.p>
-        </AnimatePresence>
+        <p className="mb-8 text-[11px] font-black uppercase tracking-[0.28em] text-[#ffd400]">
+          09 · Our Manifesto
+        </p>
+        <p
+          ref={textRef}
+          key={manifestoStatements[index]}
+          className="vision-serif text-[32px] font-semibold leading-[1.2] text-white sm:text-[46px] lg:text-[58px]"
+        >
+          {manifestoStatements[index]}
+        </p>
 
         <div className="mt-10 flex justify-center gap-2">
           {manifestoStatements.map((_, i) => (
-            <motion.span
+            <button
               key={i}
-              className="h-1.5 rounded-full bg-white/30"
-              animate={{
+              type="button"
+              onClick={() => setIndex(i)}
+              className="h-1.5 rounded-full transition-all duration-500"
+              style={{
                 width: i === index ? 32 : 8,
-                backgroundColor: i === index ? "#ffd400" : "rgba(255,255,255,0.3)",
+                backgroundColor: i === index ? "#ffd400" : "rgba(255,255,255,0.28)",
               }}
-              transition={{ duration: 0.4 }}
+              aria-label={`Show statement ${i + 1}`}
             />
           ))}
         </div>

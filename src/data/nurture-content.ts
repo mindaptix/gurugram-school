@@ -1,8 +1,8 @@
 export const nurtureHero = {
-  headline: "What Kind of Human Being Will Your Child Become?",
+  headline: "Nurturing Every Age, Every Stage",
   subheadline:
-    "Every child arrives with unique strengths, interests, questions, and possibilities. Our responsibility is not to decide who children should become. Our responsibility is to help them discover who they can become.",
-  image: "/img3.jpeg",
+    "From the early years to senior school, we nurture curious thinkers, confident communicators, compassionate leaders, and responsible young people ready for the world ahead.",
+  image: "/3.png",
 };
 
 export const graduateProfile = {

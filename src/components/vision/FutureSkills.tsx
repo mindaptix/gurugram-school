@@ -1,71 +1,125 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import Image from "next/image";
+import { useLayoutEffect, useRef } from "react";
 
 import { futureSkills } from "@/data/vision-content";
-import { fadeUp, staggerContainer } from "@/lib/motion";
+import { gsap, initVisionSectionReveal, registerVisionGsap } from "@/lib/vision-gsap";
 
 export function FutureSkills() {
-  const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-10%" });
+  const sectionRef = useRef<HTMLElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    registerVisionGsap();
+    const cleanup = initVisionSectionReveal(sectionRef);
+
+    const section = sectionRef.current;
+    if (!section) return cleanup;
+
+    const ctx = gsap.context(() => {
+      gsap.to(ringRef.current, {
+        rotate: 360,
+        duration: 32,
+        ease: "none",
+        repeat: -1,
+      });
+
+      gsap.fromTo(
+        ".vision-future-photo",
+        { y: 80, opacity: 0, scale: 0.96 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1.15,
+          ease: "power3.out",
+          scrollTrigger: { trigger: ".vision-future-photo", start: "top 82%" },
+        },
+      );
+
+      gsap.fromTo(
+        ".vision-skill-pill",
+        { scale: 0.5, opacity: 0, y: 30 },
+        {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          duration: 0.85,
+          stagger: 0.08,
+          ease: "back.out(1.8)",
+          scrollTrigger: {
+            trigger: ".vision-skills-wrap",
+            start: "top 78%",
+          },
+        },
+      );
+    }, section);
+
+    return () => {
+      cleanup();
+      ctx.revert();
+    };
+  }, []);
 
   return (
     <section
-      ref={ref}
-      className="vision-future-section relative overflow-hidden bg-[#03192e] px-5 py-24 text-white sm:px-8 lg:px-[74px] lg:py-32"
+      ref={sectionRef}
+      className="vision-future-section relative overflow-hidden bg-[#006b37] px-5 py-24 text-white sm:px-8 lg:px-[74px] lg:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,107,55,0.35),transparent_32%),radial-gradient(circle_at_80%_70%,rgba(255,212,0,0.12),transparent_28%)]" />
-      <motion.div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#006b37]/20"
-        animate={{ rotate: 360, scale: [1, 1.04, 1] }}
-        transition={{ rotate: { duration: 40, repeat: Infinity, ease: "linear" }, scale: { duration: 6, repeat: Infinity } }}
+      <div
+        ref={ringRef}
+        className="pointer-events-none absolute right-[-180px] top-[-180px] h-[560px] w-[560px] rounded-full border border-dashed border-[#ffd400]/20"
+        aria-hidden="true"
       />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(255,212,0,0.13),transparent_32%),linear-gradient(135deg,rgba(27,59,34,0.25),transparent_55%)]" />
 
-      <motion.div
-        initial={{ opacity: 0, y: 48 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="relative mx-auto max-w-[900px] text-center"
-      >
-        <h2 className="vision-serif text-[36px] font-semibold leading-[1.08] sm:text-[48px] lg:text-[58px]">
-          {futureSkills.title}
-        </h2>
-        <p className="mx-auto mt-6 max-w-[640px] text-[17px] leading-8 text-white/72">
-          {futureSkills.subtitle}
-        </p>
-      </motion.div>
+      <div className="relative mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-[1fr_0.92fr] lg:gap-16">
+        <div data-vision-reveal>
+          <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#ffd400]">
+            03 - Future Ready
+          </p>
+          <h2 className="vision-serif mt-4 max-w-[720px] text-[36px] font-semibold leading-[1.04] sm:text-[50px] lg:text-[64px]">
+            {futureSkills.title}
+          </h2>
+          <p className="mt-5 max-w-[640px] text-[17px] leading-8 text-white/78">
+            {futureSkills.subtitle}
+          </p>
 
-      <motion.div
-        variants={staggerContainer(0.08, 0.12)}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        className="relative mx-auto mt-16 grid max-w-[1100px] grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6"
-      >
-        {futureSkills.skills.map((skill, index) => (
-          <motion.div
-            key={skill}
-            variants={fadeUp}
-            animate={{
-              y: [0, -10 - (index % 3) * 2, 0],
-            }}
-            transition={{
-              y: { duration: 3.5 + (index % 4) * 0.4, repeat: Infinity, ease: "easeInOut" },
-            }}
-            whileHover={{ scale: 1.08, boxShadow: "0 0 40px rgba(255,212,0,0.35)" }}
-            className="vision-skill-orb group relative flex aspect-square flex-col items-center justify-center rounded-full border border-[#006b37]/40 bg-[#05224a]/60 p-4 text-center backdrop-blur-md"
-          >
-            <motion.span
-              className="absolute inset-2 rounded-full border border-[#ffd400]/20"
-              animate={{ opacity: [0.2, 0.7, 0.2] }}
-              transition={{ duration: 2.8, repeat: Infinity, delay: index * 0.15 }}
-            />
-            <span className="relative text-[13px] font-bold uppercase tracking-[0.12em] text-white sm:text-[14px]">
-              {skill}
-            </span>
-          </motion.div>
-        ))}
-      </motion.div>
+          <div className="vision-skills-wrap mt-12 grid gap-3 sm:grid-cols-2">
+            {futureSkills.skills.map((skill, index) => (
+              <span
+                key={skill}
+                className="vision-skill-pill group inline-flex min-h-[58px] cursor-default items-center justify-between gap-4 rounded-[8px] border border-white/16 bg-white/10 px-5 text-[12px] font-black uppercase tracking-[0.14em] text-white backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:border-[#ffd400]/70 hover:bg-white/15"
+              >
+                {skill}
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#ffd400] text-[11px] text-[#1b3b22] transition duration-500 group-hover:scale-110">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="vision-future-photo relative min-h-[520px] overflow-hidden rounded-[8px] shadow-[0_34px_100px_rgba(0,0,0,0.28)]">
+          <Image
+            src={futureSkills.image}
+            alt="Students building a hands-on project"
+            fill
+            sizes="(min-width: 1024px) 520px, 100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+            <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#ffd400]">
+              {futureSkills.spotlight}
+            </p>
+            <p className="vision-serif mt-3 text-[28px] font-semibold leading-tight sm:text-[34px]">
+              Learning that moves from ideas to action.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
