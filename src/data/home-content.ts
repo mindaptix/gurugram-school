@@ -1,28 +1,18 @@
 export const heroSlides = [
   {
-    image: "/3.png",
-    position: "50% 48%",
-    title: "Best DPS School for Nursery to Class 12 in Gurugram",
-  },
-  {
-    image: "/home%20baaner1.png",
-    position: "84% 50%",
+    image: "/banner1.png",
+    position: "50% 50%",
     title: "DPS SPR Gurugram Campus",
   },
   {
-    image: "/home%20baaner2.png",
-    position: "82% 50%",
+    image: "/banner2.png",
+    position: "50% 50%",
     title: "Learning at DPS SPR Gurugram",
   },
   {
-    image: "/home%20baaner3.png",
-    position: "78% 52%",
+    image: "/banner3.png",
+    position: "50% 50%",
     title: "Excellence in Education",
-  },
-  {
-    image: "/HOME%20BANNER4.png",
-    position: "84% 50%",
-    title: "DPS SPR Gurugram",
   },
 ];
 

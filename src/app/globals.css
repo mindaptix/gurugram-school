@@ -423,6 +423,40 @@ html {
   animation-duration: 10s;
 }
 
+.foundation-stack-card {
+  transform-origin: center top;
+  backface-visibility: hidden;
+}
+
+.foundation-pin-wrap {
+  will-change: transform;
+}
+
+.foundation-stack-viewport {
+  isolation: isolate;
+}
+
+.foundation-scroll-stack .foundation-sticky {
+  transition: opacity 400ms ease;
+}
+
+.foundation-scroll-stack .foundation-scroll {
+  isolation: isolate;
+}
+
+@media (min-width: 1024px) {
+  .foundation-stack-card {
+    box-shadow: 0 28px 70px rgba(5, 34, 74, 0.12);
+  }
+}
+
+@media (max-width: 1023px) {
+  .foundation-stack-viewport .foundation-stack-card {
+    position: relative;
+    inset: auto;
+  }
+}
+
 .foundation-image-card {
   transform: translateZ(0);
 }

@@ -53,18 +53,18 @@ export default function Home() {
           id="infrastructure"
           className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-0 text-white"
         >
-          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-8 sm:px-8 lg:px-14">
-            <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-0 sm:px-8 lg:px-14">
+            <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
               <div className="relative min-w-0 pt-2">
                 <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
                   Learning at
                 </div>
-                <div className="infra-dps-word relative z-[8] mt-3 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-2 max-lg:text-[118px] max-md:text-[88px]">
+                 <div className="infra-dps-word relative z-[8] mt-2 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-1 max-lg:text-[118px] max-md:text-[88px]">
                   DPS
                 </div>
               </div>
 
-            <div className="infra-story-copy relative z-30 lg:pt-3">
+            <div className="infra-story-copy relative z-30 lg:pt-2">
               <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#111111] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
                 Every child learns differently and our aim is to provide
                 students with the opportunities, experiences, and pathways that
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
 
-            <div className="infra-accordion relative z-20 -mt-6 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-4 max-lg:h-auto max-lg:flex-col lg:-mt-14">
+            <div className="infra-accordion relative z-20 -mt-2 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-0 max-lg:h-auto max-lg:flex-col lg:-mt-[7.5rem] xl:-mt-32">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 
