@@ -1,3 +1,5 @@
+export const HERO_SLIDE_DURATION_MS = 5500;
+
 export const heroSlides = [
   {
     image: "/banner1.png",

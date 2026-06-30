@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import { AnimatedReveal } from "@/components/founding-story/AnimatedReveal";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteNavbar } from "@/components/layout/SiteNavbar";
 import {
   foundingCta,
   foundingPillars,
@@ -18,10 +17,9 @@ import {
 export default function FoundingStoryPage() {
   return (
     <main className="min-h-screen bg-[#fffdf7] text-[#05224a]">
-      <SiteNavbar />
 
       {/* Hero */}
-      <section className="founding-hero relative isolate min-h-[78vh] overflow-hidden pt-36 sm:min-h-[82vh] lg:pt-40">
+      <section className="founding-hero relative isolate min-h-[78vh] overflow-hidden sm:min-h-[82vh]">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${foundingStoryHero.image})` }}

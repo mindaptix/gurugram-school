@@ -52,7 +52,7 @@ export function VisionHero() {
   return (
     <section
       ref={ref}
-      className="vision-hero relative isolate flex min-h-screen items-center justify-center overflow-hidden pt-32"
+      className="vision-hero relative isolate flex min-h-screen items-center justify-center overflow-hidden"
       aria-label="Our Vision"
     >
       <motion.div className="absolute inset-0 scale-110" style={{ y: bgY }}>

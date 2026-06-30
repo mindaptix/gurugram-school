@@ -1,7 +1,6 @@
 "use client";
 
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteNavbar } from "@/components/layout/SiteNavbar";
 import { DpsCommitment } from "@/components/vision/DpsCommitment";
 import { FamilyPromises } from "@/components/vision/FamilyPromises";
 import { FutureSkills } from "@/components/vision/FutureSkills";
@@ -17,7 +16,6 @@ import { WhyAnotherSchool } from "@/components/vision/WhyAnotherSchool";
 export default function VisionPage() {
   return (
     <main className="vision-page min-h-screen bg-white text-[#05224a]">
-      <SiteNavbar />
       <VisionHero />
       <WhyAnotherSchool />
       <WhatWeBelieve />

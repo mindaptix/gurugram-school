@@ -1,9 +1,14 @@
 ﻿"use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-import { heroSlides, navLinks } from "@/data/home-content";
+import {
+  HERO_SLIDE_DURATION_MS,
+  heroSlides,
+  navLinks,
+} from "@/data/home-content";
 import { PageIntro } from "./PageIntro";
 
 type HeroSectionProps = {
@@ -12,15 +17,19 @@ type HeroSectionProps = {
   onSlideChange: (slide: number) => void;
 };
 
+const slideEase = [0.22, 1, 0.36, 1] as const;
+
 export function HeroSection({
   activeSlide,
   isNavbarVisible,
   onSlideChange,
 }: HeroSectionProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const previousSlide = (activeSlide - 1 + heroSlides.length) % heroSlides.length;
+  const previousSlide =
+    (activeSlide - 1 + heroSlides.length) % heroSlides.length;
   const nextSlide = (activeSlide + 1) % heroSlides.length;
   const menuLinks = navLinks;
+  const activeSlideData = heroSlides[activeSlide];
 
   return (
     <>
@@ -32,7 +41,7 @@ export function HeroSection({
             isNavbarVisible ? "translate-y-0" : "-translate-y-[120%]"
           }`}
         >
-          <div className="flex h-[70px] w-[min(calc(100vw-24px),420px)] items-center justify-end gap-4 bg-white px-5 text-[#003b73] shadow-[0_18px_45px_rgba(5,34,74,0.1)] sm:h-[88px] sm:gap-6 sm:px-8 lg:w-[420px]">
+          <div className="flex h-[70px] w-[min(calc(100vw-24px),420px)] items-center justify-end gap-4 border border-white/40 bg-white/95 px-5 text-[#003b73] shadow-[0_18px_45px_rgba(5,34,74,0.12)] backdrop-blur-md sm:h-[88px] sm:gap-6 sm:px-8 lg:w-[420px]">
             <a
               href="#gallery"
               aria-label="Search"
@@ -67,59 +76,152 @@ export function HeroSection({
         </header>
 
         <div className="grid min-h-[calc(100vh-24px)] gap-3 overflow-hidden lg:min-h-[calc(100vh-40px)] lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_360px]">
-          <div className="relative min-h-[72vh] overflow-hidden bg-[#09233f] lg:min-h-[calc(100vh-40px)]">
-            {heroSlides.map((slide, index) => (
-              <div
-                key={`${slide.title}-${index}`}
-                className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${
-                  index === activeSlide ? "z-10 opacity-100" : "z-0 opacity-0"
-                }`}
-                aria-hidden={index !== activeSlide}
-              >
-                <Image
-                  src={slide.image}
-                  alt={slide.title}
-                  fill
-                  priority={index === 0}
-                  sizes="(min-width: 1280px) calc(100vw - 400px), (min-width: 1024px) calc(100vw - 380px), 100vw"
-                  className="object-cover transition-transform duration-[1800ms] ease-out"
-                  style={{ objectPosition: slide.position }}
-                />
-              </div>
-            ))}
+          <div className="relative min-h-[72vh] overflow-hidden rounded-sm bg-[#09233f] lg:min-h-[calc(100vh-40px)]">
+            {heroSlides.map((slide, index) => {
+              const isActive = index === activeSlide;
+
+              return (
+                <motion.div
+                  key={slide.image}
+                  className="hero-slide-layer absolute inset-0 overflow-hidden"
+                  initial={false}
+                  animate={{
+                    opacity: isActive ? 1 : 0,
+                    scale: isActive ? 1 : 1.04,
+                  }}
+                  transition={{
+                    opacity: { duration: 1.35, ease: slideEase },
+                    scale: { duration: 1.35, ease: slideEase },
+                  }}
+                  style={{ zIndex: isActive ? 10 : 0 }}
+                  aria-hidden={!isActive}
+                >
+                  <motion.div
+                    className="absolute inset-[-4%]"
+                    initial={false}
+                    animate={{ scale: isActive ? 1.1 : 1 }}
+                    transition={{
+                      duration: isActive ? HERO_SLIDE_DURATION_MS / 1000 : 0.4,
+                      ease: isActive ? "linear" : slideEase,
+                    }}
+                  >
+                    <Image
+                      src={slide.image}
+                      alt={slide.title}
+                      fill
+                      priority={index === 0}
+                      sizes="(min-width: 1280px) calc(100vw - 400px), (min-width: 1024px) calc(100vw - 380px), 100vw"
+                      className="object-cover"
+                      style={{ objectPosition: slide.position }}
+                    />
+                  </motion.div>
+                </motion.div>
+              );
+            })}
 
             <div
-              className="pointer-events-none absolute inset-0 z-20 bg-[linear-gradient(90deg,rgba(3,18,34,0.54)_0%,rgba(3,18,34,0.28)_36%,rgba(3,18,34,0.08)_72%),linear-gradient(180deg,rgba(4,20,38,0.28)_0%,rgba(4,20,38,0.1)_36%,rgba(4,20,38,0.72)_100%)]"
+              className="pointer-events-none absolute inset-0 z-20 bg-[linear-gradient(90deg,rgba(3,18,34,0.72)_0%,rgba(3,18,34,0.38)_42%,rgba(3,18,34,0.12)_78%),linear-gradient(180deg,rgba(4,20,38,0.15)_0%,rgba(4,20,38,0.05)_40%,rgba(4,20,38,0.82)_100%)]"
+              aria-hidden="true"
+            />
+            <div
+              className="hero-grain pointer-events-none absolute inset-0 z-20"
               aria-hidden="true"
             />
 
-            <div className="relative z-30 flex min-h-[72vh] flex-col justify-between px-5 pb-6 pt-24 text-white sm:px-8 sm:pt-28 lg:min-h-[calc(100vh-40px)] lg:px-8 lg:py-6 xl:px-10">
-              <a href="#" className="flex w-fit max-w-[300px] items-center">
-                <span className="relative block h-[78px] w-[210px] shrink-0 bg-white p-3 shadow-[0_18px_45px_rgba(0,0,0,0.18)] sm:h-[92px] sm:w-[250px]">
-                  <Image
-                    src="/logo11.png"
-                    alt="Delhi Public School SPR Gurugram logo"
-                    fill
-                    sizes="250px"
-                    className="object-contain p-3"
-                    priority
-                  />
-                </span>
+            <div className="relative z-30 flex min-h-[72vh] flex-col justify-between px-5 pb-8 pt-24 text-white sm:px-8 sm:pt-28 lg:min-h-[calc(100vh-40px)] lg:px-8 lg:py-8 xl:px-10">
+              <a
+                href="/"
+                className="hero-chip relative -ml-3 block w-fit shrink-0 sm:-ml-4 lg:-ml-6"
+              >
+                <Image
+                  src="/logo11.png"
+                  alt="Delhi Public School SPR Gurugram logo"
+                  width={620}
+                  height={155}
+                  sizes="(min-width: 1024px) 400px, (min-width: 640px) 340px, 280px"
+                  className="h-[76px] w-auto object-contain object-left sm:h-[88px] md:h-[96px] lg:h-[108px]"
+                  priority
+                />
               </a>
 
-              <div className="grid gap-5 pb-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-                <div className="hero-copy max-w-[1040px] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)]">
-                  <h1 className="text-[42px] font-semibold leading-[1.08] tracking-normal sm:text-[62px] lg:text-[76px] xl:text-[86px]">
+              <div className="grid gap-6 pb-2 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+                <div className="hero-copy max-w-[1040px]">
+                  <p className="mb-4 inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.28em] text-[#ffd400] sm:text-[12px]">
+                    <span className="h-px w-10 bg-[#ffd400]" />
+                    Delhi Public School · SPR Gurugram
+                  </p>
+
+                  <h1 className="text-[42px] font-semibold leading-[1.06] tracking-[-0.02em] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)] sm:text-[62px] lg:text-[76px] xl:text-[86px]">
                     Leaders in Inclusive
                     <span className="block">Academic Excellence</span>
                   </h1>
+
+                  <AnimatePresence mode="wait">
+                    <motion.p
+                      key={activeSlideData.title}
+                      initial={{ opacity: 0, y: 18 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -12 }}
+                      transition={{ duration: 0.55, ease: slideEase }}
+                      className="mt-5 max-w-[640px] text-[16px] font-medium leading-8 text-white/88 sm:text-[18px] sm:leading-9"
+                    >
+                      {activeSlideData.title}
+                    </motion.p>
+                  </AnimatePresence>
+
+                  <div className="mt-8 flex flex-wrap items-center gap-4">
+                    <a
+                      href="#admissions"
+                      className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#ffd400] px-7 text-[12px] font-black uppercase tracking-[0.2em] text-[#003b73] transition hover:-translate-y-0.5 hover:bg-white sm:px-8"
+                    >
+                      Apply Now
+                    </a>
+                    <a
+                      href="#tour"
+                      className="inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/55 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.2em] text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white/20 sm:px-8"
+                    >
+                      Campus Tour
+                    </a>
+                  </div>
+
+                  <div className="mt-8 flex items-center gap-4">
+                    <span className="text-[12px] font-black uppercase tracking-[0.24em] text-white/70">
+                      {String(activeSlide + 1).padStart(2, "0")}
+                      <span className="mx-2 text-white/35">/</span>
+                      {String(heroSlides.length).padStart(2, "0")}
+                    </span>
+                    <div className="flex flex-1 items-center gap-2">
+                      {heroSlides.map((slide, index) => (
+                        <button
+                          key={slide.image}
+                          type="button"
+                          onClick={() => onSlideChange(index)}
+                          aria-label={`Go to slide ${index + 1}`}
+                          className="group relative h-[3px] flex-1 overflow-hidden rounded-full bg-white/20"
+                        >
+                          {index < activeSlide ? (
+                            <span className="absolute inset-0 bg-[#ffd400]" />
+                          ) : null}
+                          {index === activeSlide ? (
+                            <span
+                              key={`progress-${activeSlide}`}
+                              className="hero-progress-fill absolute inset-0 bg-[#ffd400]"
+                              style={{
+                                animationDuration: `${HERO_SLIDE_DURATION_MS}ms`,
+                              }}
+                            />
+                          ) : null}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
-                <div className="hero-actions flex gap-3 lg:pb-6">
+                <div className="hero-actions flex items-end gap-3 lg:pb-2">
                   <button
                     type="button"
                     onClick={() => onSlideChange(previousSlide)}
-                    className="grid h-14 w-14 place-items-center rounded-full border border-white/75 bg-white/5 text-4xl font-light leading-none text-white transition hover:bg-white hover:text-[#003b73] sm:h-16 sm:w-16"
+                    className="grid h-14 w-14 place-items-center rounded-full border border-white/30 bg-white/10 text-4xl font-light leading-none text-white backdrop-blur-md transition hover:border-white hover:bg-white hover:text-[#003b73] sm:h-16 sm:w-16"
                     aria-label="Previous hero slide"
                   >
                     <span aria-hidden="true">&lsaquo;</span>
@@ -127,7 +229,7 @@ export function HeroSection({
                   <button
                     type="button"
                     onClick={() => onSlideChange(nextSlide)}
-                    className="grid h-14 w-14 place-items-center rounded-full border border-white/75 bg-white/5 text-4xl font-light leading-none text-white transition hover:bg-white hover:text-[#003b73] sm:h-16 sm:w-16"
+                    className="grid h-14 w-14 place-items-center rounded-full border border-white/30 bg-white/10 text-4xl font-light leading-none text-white backdrop-blur-md transition hover:border-white hover:bg-white hover:text-[#003b73] sm:h-16 sm:w-16"
                     aria-label="Next hero slide"
                   >
                     <span aria-hidden="true">&rsaquo;</span>
@@ -135,12 +237,20 @@ export function HeroSection({
                 </div>
               </div>
             </div>
+
+            <a
+              href="#academics"
+              className="absolute bottom-6 left-1/2 z-30 hidden -translate-x-1/2 flex-col items-center gap-3 text-[10px] font-black uppercase tracking-[0.28em] text-white/70 transition hover:text-white lg:flex"
+            >
+              Scroll
+              <span className="hero-scroll-cue-line block h-10 w-px bg-white/70" />
+            </a>
           </div>
 
           <aside className="hero-actions relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-3 overflow-hidden pt-[calc(70px+12px)] sm:pt-[calc(88px+12px)] lg:min-h-[calc(100vh-40px)]">
             <a
               href="#tour"
-              className="group relative isolate flex flex-col justify-between overflow-hidden bg-[#0644ef] p-7 text-white sm:p-9"
+              className="group relative isolate flex flex-col justify-between overflow-hidden bg-[#287734] p-7 text-white transition duration-500 hover:brightness-110 sm:p-9"
             >
               <span className="absolute right-0 top-0 flex h-44 items-start gap-0 transition duration-700 group-hover:translate-x-2">
                 <span className="h-0 w-0 border-y-[86px] border-l-[86px] border-y-transparent border-l-[#ffc84a] sm:border-y-[96px] sm:border-l-[96px]" />
@@ -159,7 +269,7 @@ export function HeroSection({
 
             <a
               href="#admissions"
-              className="group relative isolate flex flex-col justify-end overflow-hidden bg-[#8518d8] p-7 text-white sm:p-9"
+              className="group relative isolate flex flex-col justify-end overflow-hidden bg-[#22102f] p-7 text-white transition duration-500 hover:brightness-110 sm:p-9"
             >
               <span className="absolute -right-7 top-0 grid h-[196px] w-[196px] grid-cols-2 grid-rows-2 transition duration-700 group-hover:rotate-6 sm:h-[220px] sm:w-[220px]">
                 <span className="rounded-br-full bg-[#f566aa]" />
@@ -208,13 +318,21 @@ export function HeroSection({
 
               <div className="relative z-10 ml-auto mr-[10vw] flex min-h-[calc(100vh-32px)] max-w-[980px] flex-col items-end justify-center px-5 py-28 text-right sm:min-h-[calc(100vh-40px)] sm:px-8 lg:mr-[18vw] lg:px-12 xl:mr-[22vw]">
                 <div className="mb-10 flex flex-wrap justify-end gap-8 text-[13px] font-black uppercase tracking-[0.22em] text-white">
-                  <a href="#tour" onClick={() => setIsMenuOpen(false)} className="inline-flex items-center gap-3">
+                  <a
+                    href="#tour"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="inline-flex items-center gap-3"
+                  >
                     <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#ffc845] text-[#ffc845]">
                       !
                     </span>
                     Visit
                   </a>
-                  <a href="#apply" onClick={() => setIsMenuOpen(false)} className="inline-flex items-center gap-3">
+                  <a
+                    href="#apply"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="inline-flex items-center gap-3"
+                  >
                     <span className="grid h-8 w-8 place-items-center rounded-full border-2 border-[#ffc845] text-[#ffc845]">
                       +
                     </span>
@@ -222,7 +340,10 @@ export function HeroSection({
                   </a>
                 </div>
 
-                <nav className="grid w-full gap-4 text-[30px] font-black leading-none tracking-normal sm:text-[42px] lg:text-[50px]" aria-label="Menu navigation">
+                <nav
+                  className="grid w-full gap-4 text-[30px] font-black leading-none tracking-normal sm:text-[42px] lg:text-[50px]"
+                  aria-label="Menu navigation"
+                >
                   {menuLinks.map(([label, href]) => (
                     <a
                       key={label}

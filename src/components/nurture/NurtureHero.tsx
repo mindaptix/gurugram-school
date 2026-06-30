@@ -15,7 +15,7 @@ export function NurtureHero() {
   return (
     <section
       ref={ref}
-      className="nurture-hero relative isolate flex min-h-screen items-center justify-center overflow-hidden pt-32"
+      className="nurture-hero relative isolate flex min-h-screen items-center justify-center overflow-hidden"
       aria-label="The Child We Nurture"
     >
       <motion.div className="absolute inset-0 scale-105" style={{ y: bgY }}>
