@@ -1,5 +1,6 @@
 export const visionHero = {
-  headline: "Education For The World Ahead",
+  eyebrow: "Our Vision · DPS SPR Gurugram",
+  headline: ["Education For The", "World Ahead"],
   subheadline: "The future cannot be predicted, but children can be prepared.",
   image: "/img3.jpeg",
 };

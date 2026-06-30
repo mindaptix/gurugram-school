@@ -1015,9 +1015,8 @@ html {
   }
 
   .infra-dps-word {
-    animation: infra-dps-hide-behind-cards both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 18% cover 68%;
-    animation-timeline: --infra-section;
+    animation: none;
+    animation-timeline: auto;
   }
 
   .infra-learning-at {

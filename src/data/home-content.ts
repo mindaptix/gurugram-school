@@ -228,6 +228,19 @@ export const admissionSteps = [
   "Admission confirmation and fee formalities",
 ];
 
+export const admissionCta = {
+  eyebrow: "ADMISSIONS 2026-27",
+  title: "Admissions Open:",
+  titleLine2: "Nursery to Class 12",
+  description:
+    "Nursery to Class 12 admissions are open at a future-ready CBSE campus in Gurugram.",
+  image: "/ctaimg2.png",
+  applyLabel: "Apply Now",
+  visitLabel: "Book Visit",
+  applyHref: "#admissions",
+  visitHref: "#tour",
+};
+
 export const importantDates = [
   ["Applications Open", "Now Open"],
   ["Campus Interaction", "Every Week"],

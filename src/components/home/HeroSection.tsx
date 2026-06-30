@@ -35,9 +35,9 @@ export function HeroSection({
     <>
       <PageIntro />
 
-      <section className="home-hero relative min-h-screen overflow-hidden bg-[#f4f6f2] p-3 sm:p-4 lg:p-5">
+      <section className="home-hero relative min-h-screen overflow-hidden bg-[#f4f6f2] p-2 sm:p-2.5 lg:p-3">
         <header
-          className={`site-navbar absolute right-3 top-3 z-50 transition-transform duration-500 ease-out sm:right-4 sm:top-4 lg:right-5 lg:top-5 ${
+          className={`site-navbar absolute right-2 top-1.5 z-50 transition-transform duration-500 ease-out sm:right-3 sm:top-2 lg:right-4 lg:top-2.5 ${
             isNavbarVisible ? "translate-y-0" : "-translate-y-[120%]"
           }`}
         >
@@ -55,7 +55,7 @@ export function HeroSection({
               className="hidden min-h-10 items-center gap-3 border-l border-[#b9b9b9] pl-5 text-[14px] font-black uppercase tracking-[0.18em] text-[#003b73] sm:inline-flex"
             >
               <span className="relative h-6 w-6 rounded-full border-[3px] border-[#003b73] before:absolute before:left-1/2 before:top-[3px] before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#003b73] after:absolute after:bottom-[2px] after:left-1/2 after:h-2 after:w-4 after:-translate-x-1/2 after:rounded-t-full after:border-x-[3px] after:border-t-[3px] after:border-[#003b73]" />
-              My DPS
+              Login
             </a>
 
             <button
@@ -75,8 +75,8 @@ export function HeroSection({
           </div>
         </header>
 
-        <div className="grid min-h-[calc(100vh-24px)] gap-3 overflow-hidden lg:min-h-[calc(100vh-40px)] lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_360px]">
-          <div className="relative min-h-[72vh] overflow-hidden rounded-sm bg-[#09233f] lg:min-h-[calc(100vh-40px)]">
+        <div className="grid min-h-[calc(100vh-16px)] gap-2 overflow-hidden sm:min-h-[calc(100vh-20px)] lg:min-h-[calc(100vh-24px)] lg:grid-cols-[minmax(0,1fr)_292px] xl:grid-cols-[minmax(0,1fr)_304px]">
+          <div className="relative min-h-[72vh] overflow-hidden rounded-sm bg-[#09233f] lg:min-h-[calc(100vh-24px)]">
             {heroSlides.map((slide, index) => {
               const isActive = index === activeSlide;
 
@@ -97,9 +97,9 @@ export function HeroSection({
                   aria-hidden={!isActive}
                 >
                   <motion.div
-                    className="absolute inset-[-4%]"
+                    className="absolute inset-[-8%]"
                     initial={false}
-                    animate={{ scale: isActive ? 1.1 : 1 }}
+                    animate={{ scale: isActive ? 1.12 : 1 }}
                     transition={{
                       duration: isActive ? HERO_SLIDE_DURATION_MS / 1000 : 0.4,
                       ease: isActive ? "linear" : slideEase,
@@ -110,7 +110,7 @@ export function HeroSection({
                       alt={slide.title}
                       fill
                       priority={index === 0}
-                      sizes="(min-width: 1280px) calc(100vw - 400px), (min-width: 1024px) calc(100vw - 380px), 100vw"
+                      sizes="(min-width: 1280px) calc(100vw - 340px), (min-width: 1024px) calc(100vw - 320px), 100vw"
                       className="object-cover"
                       style={{ objectPosition: slide.position }}
                     />
@@ -128,32 +128,34 @@ export function HeroSection({
               aria-hidden="true"
             />
 
-            <div className="relative z-30 flex min-h-[72vh] flex-col justify-between px-5 pb-8 pt-24 text-white sm:px-8 sm:pt-28 lg:min-h-[calc(100vh-40px)] lg:px-8 lg:py-8 xl:px-10">
+            <div className="relative z-30 flex min-h-[72vh] flex-col justify-between px-5 pb-8 pt-24 text-white sm:px-8 sm:pt-28 lg:min-h-[calc(100vh-24px)] lg:px-8 lg:py-8 xl:px-10">
               <a
                 href="/"
-                className="hero-chip relative -ml-3 block w-fit shrink-0 sm:-ml-4 lg:-ml-6"
+                className="hero-chip relative -ml-6 -mt-5 block w-fit shrink-0 sm:-ml-7 sm:-mt-6 lg:-ml-9 lg:-mt-7"
               >
-                <Image
-                  src="/logo11.png"
-                  alt="Delhi Public School SPR Gurugram logo"
-                  width={620}
-                  height={155}
-                  sizes="(min-width: 1024px) 400px, (min-width: 640px) 340px, 280px"
-                  className="h-[76px] w-auto object-contain object-left sm:h-[88px] md:h-[96px] lg:h-[108px]"
-                  priority
-                />
+                <span className="inline-block w-fit leading-none rounded-sm bg-white p-1 shadow-[0_8px_24px_rgba(0,0,0,0.15)] sm:p-1.5">
+                  <Image
+                    src="/logo11.png"
+                    alt="Delhi Public School SPR Gurugram logo"
+                    width={620}
+                    height={155}
+                    sizes="(min-width: 1024px) 320px, (min-width: 640px) 280px, 240px"
+                    className="block h-[52px] w-auto object-contain object-left sm:h-[60px] md:h-[66px] lg:h-[74px]"
+                    priority
+                  />
+                </span>
               </a>
 
               <div className="grid gap-6 pb-2 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
                 <div className="hero-copy max-w-[1040px]">
-                  <p className="mb-4 inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.28em] text-[#ffd400] sm:text-[12px]">
+                  <p className="mb-2 inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.28em] text-[#ffd400] sm:mb-3 sm:text-[12px]">
                     <span className="h-px w-10 bg-[#ffd400]" />
                     Delhi Public School · SPR Gurugram
                   </p>
 
-                  <h1 className="text-[42px] font-semibold leading-[1.06] tracking-[-0.02em] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)] sm:text-[62px] lg:text-[76px] xl:text-[86px]">
+                  <h1 className="text-[42px] font-semibold leading-[0.92] tracking-[-0.02em] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)] sm:text-[62px] sm:leading-[0.9] lg:text-[76px] xl:text-[86px]">
                     Leaders in Inclusive
-                    <span className="block">Academic Excellence</span>
+                    <span className="-mt-1 block sm:-mt-2">Academic Excellence</span>
                   </h1>
 
                   <AnimatePresence mode="wait">
@@ -163,13 +165,13 @@ export function HeroSection({
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -12 }}
                       transition={{ duration: 0.55, ease: slideEase }}
-                      className="mt-5 max-w-[640px] text-[16px] font-medium leading-8 text-white/88 sm:text-[18px] sm:leading-9"
+                      className="mt-3 max-w-[640px] text-[16px] font-medium leading-7 text-white/88 sm:mt-4 sm:text-[18px] sm:leading-8"
                     >
                       {activeSlideData.title}
                     </motion.p>
                   </AnimatePresence>
 
-                  <div className="mt-8 flex flex-wrap items-center gap-4">
+                  <div className="mt-6 flex flex-wrap items-center gap-4">
                     <a
                       href="#admissions"
                       className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#ffd400] px-7 text-[12px] font-black uppercase tracking-[0.2em] text-[#003b73] transition hover:-translate-y-0.5 hover:bg-white sm:px-8"
@@ -184,13 +186,8 @@ export function HeroSection({
                     </a>
                   </div>
 
-                  <div className="mt-8 flex items-center gap-4">
-                    <span className="text-[12px] font-black uppercase tracking-[0.24em] text-white/70">
-                      {String(activeSlide + 1).padStart(2, "0")}
-                      <span className="mx-2 text-white/35">/</span>
-                      {String(heroSlides.length).padStart(2, "0")}
-                    </span>
-                    <div className="flex flex-1 items-center gap-2">
+                  <div className="mt-8 flex items-center">
+                    <div className="flex w-full max-w-[420px] items-center gap-2">
                       {heroSlides.map((slide, index) => (
                         <button
                           key={slide.image}
@@ -247,7 +244,7 @@ export function HeroSection({
             </a>
           </div>
 
-          <aside className="hero-actions relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-3 overflow-hidden pt-[calc(70px+12px)] sm:pt-[calc(88px+12px)] lg:min-h-[calc(100vh-40px)]">
+          <aside className="hero-actions relative grid min-h-[420px] grid-rows-[1fr_1fr] gap-2 overflow-hidden pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
             <a
               href="#tour"
               className="group relative isolate flex flex-col justify-between overflow-hidden bg-[#287734] p-7 text-white transition duration-500 hover:brightness-110 sm:p-9"

@@ -7,13 +7,14 @@ export function AboutSection() {
       className="about-section bg-white px-5 py-16 sm:px-8 lg:px-[74px] lg:py-24"
     >
       <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-[320px_1fr] lg:items-center">
-        <div className="relative mx-auto h-[280px] w-[280px] overflow-hidden rounded-full shadow-[0_24px_60px_rgba(5,34,74,0.12)] lg:mx-0">
+        <div className="relative mx-auto w-fit lg:mx-0">
           <Image
             src="/half-logo.png"
             alt="Delhi Public School SPR Gurugram emblem"
-            fill
+            width={400}
+            height={400}
             sizes="280px"
-            className="object-contain"
+            className="h-[220px] w-auto object-contain sm:h-[250px] lg:h-[280px]"
           />
         </div>
 

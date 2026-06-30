@@ -14,6 +14,7 @@ export function WhyAnotherSchool() {
 
   return (
     <section
+      id="why-another-school"
       ref={ref}
       className="relative overflow-hidden bg-[#fffdf7] px-5 py-24 sm:px-8 lg:px-[74px] lg:py-32"
     >
