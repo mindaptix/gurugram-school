@@ -1,29 +1,43 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
+import { AdmissionCtaCard } from "@/components/home/AdmissionCtaCard";
 import { CampusTourVideo } from "@/components/home/CampusTourVideo";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-// import { FoundationSection } from "@/components/home/FoundationSection";
+import { FoundationSection } from "@/components/home/FoundationSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { LearningJourneySection } from "@/components/home/LearningJourneySection";
 import { TrustSection } from "@/components/home/TrustSection";
 import {
   // galleryItems,
+  heroSlides,
   infrastructureItems,
 } from "@/data/home-content";
 import { useNavbarVisibility } from "@/hooks/use-navbar-visibility";
 
 export default function Home() {
-  const activeSlide = 0;
+  const [activeSlide, setActiveSlide] = useState(0);
   const [activeInfrastructure, setActiveInfrastructure] = useState(2);
   const isNavbarVisible = useNavbarVisibility();
 
+  useEffect(() => {
+    const slideTimer = window.setInterval(() => {
+      setActiveSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+    }, 5500);
+
+    return () => window.clearInterval(slideTimer);
+  }, []);
+
   return (
     <main className="min-h-screen bg-[#f7fbff] text-[#06264a]">
-      <HeroSection activeSlide={activeSlide} isNavbarVisible={isNavbarVisible} />
+      <HeroSection
+        activeSlide={activeSlide}
+        isNavbarVisible={isNavbarVisible}
+        onSlideChange={setActiveSlide}
+      />
 
       <AboutSection />
 
@@ -31,93 +45,26 @@ export default function Home() {
 
       <TrustSection />
 
-      {/* <FoundationSection /> */}
+      <FoundationSection />
 
-      <section
-        id="admissions"
-        className="admission-quick-cta relative isolate overflow-hidden bg-white px-5 py-8 text-white sm:px-8 lg:px-[74px]"
-      >
-        <div className="relative mx-auto max-w-[1500px]">
-          <div className="admission-cta-banner group relative min-h-[280px] overflow-hidden rounded-[12px] bg-[#05224a] shadow-[0_28px_90px_rgba(5,34,74,0.24)]">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_46%_28%,rgba(0,107,55,0.22),transparent_24%),linear-gradient(110deg,#05224a_0%,#05224a_52%,#003b73_100%)]" />
-            <div className="admission-cta-shine pointer-events-none absolute inset-y-0 left-[-24%] w-[34%] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent)]" />
-
-            <div className="relative z-10 grid min-h-[280px] items-center gap-6 px-6 py-7 md:px-10 lg:grid-cols-[1.05fr_0.68fr] lg:px-12">
-              <div className="max-w-[860px]">
-                <p className="text-[12px] font-black uppercase tracking-[0.24em] text-white/80">
-                  Admissions 2026-27
-                </p>
-                <h2 className="mt-4 max-w-[780px] text-[34px] font-black leading-[0.98] tracking-normal text-white sm:text-[44px] xl:text-[56px]">
-                  Admissions Open:
-                  <span className="block">Nursery to Class 12</span>
-                </h2>
-                <p className="mt-4 max-w-[720px] text-[16px] font-semibold leading-7 text-white/78">
-                  Nursery to Class 12 admissions are open at a future-ready CBSE
-                  campus in Gurugram.
-                </p>
-
-                <div className="mt-7 flex flex-wrap gap-3">
-                  <a
-                    href="#apply"
-                    className="group/btn inline-flex min-h-[52px] items-center justify-center rounded-[8px] bg-[#ffd400] px-7 text-[12px] font-black uppercase tracking-[0.16em] text-[#05224a] shadow-[0_18px_44px_rgba(255,212,0,0.22)] transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#05224a]"
-                  >
-                    Apply Now
-                    <span className="ml-4 text-xl transition group-hover/btn:translate-x-1">
-                      &#8594;
-                    </span>
-                  </a>
-                  <a
-                    href="#tour"
-                    className="inline-flex min-h-[52px] items-center justify-center rounded-[8px] border border-white/24 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.16em] text-white backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:bg-white hover:text-[#05224a]"
-                  >
-                    Book Visit
-                  </a>
-                </div>
-              </div>
-
-              <div className="relative min-h-[230px] overflow-hidden lg:min-h-[280px]">
-                <Image
-                  src="/young-children-making-diy-project-from-upcycled-materials.jpg"
-                  alt="Happy student exploring creative learning"
-                  fill
-                  sizes="(min-width: 1024px) 540px, 100vw"
-                  className="admission-cta-kid object-cover object-center mix-blend-lighten"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#05224a] via-transparent to-transparent lg:hidden" />
-                <div className="admission-cta-ring absolute right-3 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full border-[6px] border-white/70" />
-                <div className="admission-cta-diamond absolute left-8 top-8 h-7 w-7 rotate-45 border-4 border-white/70" />
-                <div className="absolute bottom-6 left-4 rounded-[10px] border border-white/18 bg-white/14 px-4 py-3 shadow-[0_20px_55px_rgba(0,0,0,0.18)] backdrop-blur-md">
-                  <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#ffd400]">
-                    Start Here
-                  </p>
-                  <p className="mt-1.5 text-lg font-black leading-tight text-white">
-                    Secure enquiry today
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AdmissionCtaCard />
 
         <section
           id="infrastructure"
-          className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-8 text-white"
+          className="infrastructure-section relative isolate overflow-hidden bg-white pb-14 pt-0 text-white"
         >
           <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-8 sm:px-8 lg:px-14">
             <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-              <div className="infra-story-wordmark relative z-[1] min-w-0 pt-2">
-                <div
-                  className="w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] transition-all duration-300 ease-out max-lg:text-[42px] max-md:text-[34px]"
-                >
+              <div className="relative min-w-0 pt-2">
+                <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
                   Learning at
                 </div>
-                <div className="mt-3 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] transition-all duration-300 ease-out max-xl:text-[144px] max-lg:mt-2 max-lg:text-[118px] max-md:text-[88px]">
+                <div className="infra-dps-word relative z-[8] mt-3 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-2 max-lg:text-[118px] max-md:text-[88px]">
                   DPS
                 </div>
               </div>
 
-            <div className="infra-story-copy relative lg:pt-3">
+            <div className="infra-story-copy relative z-30 lg:pt-3">
               <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#111111] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
                 Every child learns differently and our aim is to provide
                 students with the opportunities, experiences, and pathways that
@@ -127,7 +74,7 @@ export default function Home() {
           </div>
         </div>
 
-            <div className="infra-accordion relative z-20 mt-10 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:h-auto max-lg:flex-col">
+            <div className="infra-accordion relative z-20 -mt-6 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-4 max-lg:h-auto max-lg:flex-col lg:-mt-14">
           {infrastructureItems.map((item, index) => {
             const isActive = activeInfrastructure === index;
 

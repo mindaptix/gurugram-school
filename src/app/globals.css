@@ -74,21 +74,25 @@ html {
   inset: 0;
   position: absolute;
   transform: translateX(-105%);
+  z-index: 1;
 }
 
 .intro-panel-green {
   animation-delay: 120ms;
   background: #006b37;
+  z-index: 1;
 }
 
 .intro-panel-gold {
   animation-delay: 330ms;
   background: #ffd400;
+  z-index: 2;
 }
 
 .intro-panel-cream {
   animation-delay: 560ms;
   background: #fffdf7;
+  z-index: 3;
 }
 
 .intro-content {
@@ -101,6 +105,14 @@ html {
   justify-content: center;
   position: absolute;
   text-align: center;
+  z-index: 10;
+}
+
+.intro-logo {
+  display: block;
+  height: auto;
+  margin-bottom: 1.75rem;
+  width: min(92vw, 620px);
 }
 
 .intro-kicker {
@@ -480,14 +492,22 @@ html {
 }
 
 .infra-story-wordmark,
+.infra-learning-at,
+.infra-dps-word,
 .infra-story-copy {
   will-change: transform, opacity;
 }
 
-.infra-story-wordmark {
+.infra-learning-at,
+.infra-story-copy {
+  position: relative;
+  z-index: 30;
+}
+
+.infra-dps-word {
   position: relative;
   will-change: transform;
-  z-index: 1;
+  z-index: 8;
 }
 
 .drone-tour-video-shell,
@@ -602,8 +622,11 @@ html {
 }
 
 .admission-cta-banner:hover {
-  box-shadow: 0 42px 130px rgba(80, 0, 145, 0.34);
-  transform: translateY(-8px);
+  box-shadow: 0 42px 130px rgba(0, 107, 55, 0.22);
+}
+
+.admission-cta-backdrop {
+  animation: admission-cta-backdrop 7s ease-in-out infinite;
 }
 
 .admission-cta-shine {
@@ -954,9 +977,17 @@ html {
   }
 
   .infra-story-wordmark {
-    animation: infra-heading-unified both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 35% cover 82%;
+    animation: none;
+  }
+
+  .infra-dps-word {
+    animation: infra-dps-hide-behind-cards both cubic-bezier(0.22, 1, 0.36, 1);
+    animation-range: entry 18% cover 68%;
     animation-timeline: --infra-section;
+  }
+
+  .infra-learning-at {
+    animation: none;
   }
 
   .infra-story-copy {
@@ -1089,8 +1120,8 @@ html {
     transform: translateY(28px) scale(0.96);
   }
 
-  45%,
-  82% {
+  35%,
+  88% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
@@ -1434,6 +1465,17 @@ html {
   }
 }
 
+@keyframes admission-cta-backdrop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
 @keyframes admission-shine-pass {
   0%,
   18% {
@@ -1701,16 +1743,16 @@ html {
   }
 }
 
-@keyframes infra-heading-unified {
+@keyframes infra-dps-hide-behind-cards {
   0%,
-  45% {
+  32% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, 88px, 0);
+    transform: translate3d(0, calc(100% + 2.75rem), 0);
   }
 }
 

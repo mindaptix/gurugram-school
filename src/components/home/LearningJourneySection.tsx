@@ -4,7 +4,7 @@ export function LearningJourneySection() {
   return (
     <section
       id="academics"
-      className="learning-journey-section relative isolate overflow-hidden bg-[#05224a] px-5 pb-16 pt-16 text-white sm:px-8 lg:px-[74px]"
+      className="learning-journey-section relative isolate overflow-hidden bg-[#0064EC] px-5 pb-16 pt-16 text-white sm:px-8 lg:px-[74px]"
     >
       <div className="relative z-10 mx-auto max-w-[1920px]">
         <div className="program-heading relative z-10 mx-auto text-center">
