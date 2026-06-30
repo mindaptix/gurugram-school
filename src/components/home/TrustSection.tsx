@@ -67,11 +67,14 @@ export function TrustSection() {
                     ? "opacity-100"
                     : "opacity-0"
                 }`}
-                style={{ backgroundImage: `url("${point.image}")` }}
+                style={{
+                  backgroundImage: `url("${point.image}")`,
+                  backgroundPosition: point.imagePosition ?? "center center",
+                }}
                 aria-hidden={activeTrustImage !== index}
               />
             ))}
-            <div className="absolute inset-x-0 bottom-0 h-[38%] bg-gradient-to-t from-[#041f3b]/72 via-[#041f3b]/30 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-[38%] bg-gradient-to-t from-[#041f3b]/68 via-[#041f3b]/24 to-transparent" />
             <div className="absolute bottom-6 left-6 max-w-[360px] text-white">
               <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#ffd45c]">
                 {String(activeTrustImage + 1).padStart(2, "0")} /{" "}

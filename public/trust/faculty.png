@@ -1,0 +1,1554 @@
+
+
+
+
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="Head1"><title>
+	Best CBSE and ICSE Schools in India | Podar International School
+</title><meta name='Keywords' content='international school,international schools,Best School in Worli,list of international schools,Best School in Mumbai,CIE schools india,best international schools,top international schools,best school,top schools in india,nursery school,top school' /> 
+ <meta name='Description' content='Looking for top English medium schools in India? Podar International School offers award-winning CBSE and ICSE education. Enroll your child to the nearest campus today!' /><link rel="canonical" href="https://www.podareducation.org" /><meta name="facebook-domain-verification" content="wjdq5buri2mdphpo6khl9do2024e6g" /><meta name="google-site-verification" content="4ejbuOL0RtV6OYasRmDnzSJ1j43zbOVoZ1nKdzlarAE" /><link rel="icon" href="images/logo.png" type="image/gif" /><meta charset="utf-8" /><meta content="width=device-width; initial-scale=1.0;" name="viewport" /><meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" /><meta name="robots" content="index, follow" />
+    
+    
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N826MV4');</script>
+<!-- End Google Tag Manager -->
+
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous" defer></script>
+    
+    <script src="/assets/js/carousel/slick.min.js" defer></script>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/search.js"></script>
+
+
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('networkVideoModal');
+            const playerContainer = document.getElementById('youtube-player-container');
+            let player;
+
+            modal.addEventListener('show.bs.modal', function () {
+                if (!player) {
+                    const tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    const firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    window.onYouTubeIframeAPIReady = function () {
+                        player = new YT.Player('youtube-player-container', {
+                            height: '550',
+                            width: '560',
+                            videoId: 'xVQ07fARZA4',
+                            playerVars: {
+                                'rel': 0
+                            }
+                        });
+                    }
+                } else {
+                    player.playVideo();
+                }
+            });
+
+            modal.addEventListener('hide.bs.modal', function () {
+                if (player) {
+                    player.pauseVideo();
+                }
+            });
+        });
+    </script>
+
+    <!-- Meta Pixel Code added on 19th september 2025 -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1555450752262529');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1555450752262529&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script type="application/ld+json">
+     {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Podar Education Network",
+        "alternateName": "Podar International School",
+        "url": "https://www.podareducation.org/",
+        "logo": "https://www.podareducation.org/assets/images/podar-logo-3x.webp",
+        "sameAs": [
+          "https://www.facebook.com/podargroupofschools/",
+          "https://www.instagram.com/podargroupofschools/?hl=en",
+          "https://www.youtube.com/channel/UCCvN-nw89aKX95l-NC_jWRw",
+          "https://www.linkedin.com/company/podar-education-network-pvt-ltd/?originalSubdomain=in",
+          "https://www.podareducation.org/",
+          "https://x.com/podarindia?s=21&t=0XbrIgd0lktjjB9uk3kJEQ"
+        ],
+        "description": "Educating 2,50,000 students through 149 Podar International Schools + 122 Podar Partner Schools, Podar Education Network has established itself as a leader in the education sector. Established in 1927, Podar Education Network’s aim is not just to impart knowledge but to foster the growth of responsible, well-rounded, and lifelong learners who can contribute positively to society.",
+        "telephone": "022 43330000",
+        "email": "admissions@podar.org",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dr. Ambedkar Road",
+          "addressLocality": "85, Podar Centre, Chamarbaug Post Office Lane",
+          "postalCode": "400012",
+          "addressCountry": "India"
+        }
+     }
+    </script>
+
+
+
+    <!-- Youtube Script start ---->
+    <script>
+
+        var player;
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0";
+        function onYouTubeIframeAPIReady() {
+            alert(this.dataset.id);
+            player = new YT.Player(this.dataset.id, {
+                events: { 'onStateChange': onPlayerStateChange }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded",
+            function () {
+                var div, n,
+                    v = document.getElementsByClassName("youtube-player");
+                for (n = 0; n < v.length; n++) {
+                    div = document.createElement("div");
+                    div.setAttribute("data-id", v[n].dataset.id);
+                    div.innerHTML = labnolThumb(v[n].dataset.id);
+                    div.onclick = labnolIframe;
+                    v[n].appendChild(div);
+                }
+            });
+
+        function labnolThumb(id) {
+            var thumb = '<img src="https://i.ytimg.com/vi/ID/maxresdefault.jpg" alt="Health and Safety of Students at Podar Education">',
+                play = '<div class="play"></div>';
+            return thumb.replace("ID", id) + play;
+        }
+
+        function labnolIframe() {
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("id", "player1");
+            //var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0&controls=0&enablejsapi=1";
+            var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0&enablejsapi=1";
+            iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            iframe.setAttribute("allow", "autoplay; encrypted-media");
+            this.parentNode.replaceChild(iframe, this);
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));;
+
+          if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                  let lazyImage = entry.target;
+                  lazyImage.src = lazyImage.dataset.src;
+                  lazyImage.srcset = lazyImage.dataset.srcset;
+                  lazyImage.classList.remove("lazy");
+                  lazyImageObserver.unobserve(lazyImage);
+                }
+              });
+            });
+
+            lazyImages.forEach(function(lazyImage) {
+              lazyImageObserver.observe(lazyImage);
+            });
+          }
+        });
+
+    </script>
+    <!--- Youtube script end--->
+
+    <!-- Chatbox CSS start -->
+    <style type="text/css">
+        /******** Fresh Chat CSS *******/
+
+        #engt-external-close-button {
+            background-color: #2d509b;
+            border: none;
+            color: white; /*padding: 0;*/
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px; /*margin: 4px 2px;*/
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            right: 25px;
+            top: -8px;
+            outline: none;
+        }
+
+        engt-container.engt-acquire .engt-launcher-button {
+            background-image: url(https://s3.ap-south-1.amazonaws.com/branding-resources/images/engt.gif);
+            background-repeat: no-repeat;
+        }
+
+        engt-container .engt-launcher-button, #engt-offline-container .engt-launcher-button {
+            width: 170px !important;
+        }
+    </style>
+    <!-- Chatbox CSS end -->
+
+
+
+    <script type="text/javascript">
+
+        const validateEmail = (email) => {
+            return email.match(
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+
+        function validate() {
+
+
+            var stateID = "ddlstate2";
+            if (document.getElementById(stateID).selectedIndex == "0") {
+                document.getElementById(stateID).focus();
+                alert("Please select State.");
+                return false;
+            }
+
+            var ctyID = "ddlcity2";
+            if (document.getElementById(ctyID).selectedIndex == "0") {
+                document.getElementById(ctyID).focus();
+                alert("Please select City.");
+                return false;
+            }
+
+            var schID = "ddlSchool1";
+            if (document.getElementById(schID).selectedIndex == "0") {
+                document.getElementById(schID).focus();
+                alert("Please select a School.");
+                return false;
+            }
+
+            var txtName = "txtName";
+            if (document.getElementById(txtName).value == "") {
+                document.getElementById(txtName).focus();
+                alert("Please Enter First Name");
+                return false;
+            }
+
+            var txtLName = "txtlastname1";
+            if (document.getElementById(txtLName).value == "") {
+                document.getElementById(txtLName).focus();
+                alert("Please Enter Last Name");
+                return false;
+            }
+
+            var standardID = "ddlStandard1";
+            if (document.getElementById(standardID).selectedIndex == "0") {
+                document.getElementById(standardID).focus();
+                alert("Please select standard.");
+                return false;
+            }
+
+            var email = "txtEmail1";
+            if (document.getElementById(email).value == "") {
+                document.getElementById(email).focus();
+                alert("Please Enter Email ID");
+                return false;
+            }
+            else {
+                if (!validateEmail(document.getElementById(email).value)) {
+                    document.getElementById(email).focus();
+                    alert("Please Enter Proper Email ID");
+                    return false;
+                }
+            }
+
+            var txtPhoneNo = "txtPhoneNo";
+            if (document.getElementById(txtPhoneNo).value == "") {
+                document.getElementById(txtPhoneNo).focus();
+                alert("Please Enter contact number");
+                return false;
+            }
+            else {
+                if ($("#txtPhoneNo").val().length != 10) {
+                    document.getElementById(txtPhoneNo).focus();
+                    alert("Please Enter 10 Digit Mobile number");
+                    return false;
+                }
+
+            }
+
+            var txtCaptcha = "txtCaptcha";
+            if (document.getElementById(txtCaptcha).value == "") {
+                document.getElementById(txtCaptcha).focus();
+                alert("Please Enter Captcha");
+                return false;
+            }
+
+            var captchavalue = $("#txtCaptcha").val();
+            var captcharesult = false;
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: "/ImageVerify.aspx/verifycaptchaForShortEnquriy",
+                data: "{ captchavalue:'" + captchavalue + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.d == "false") {
+                        captcharesult = false;
+                    }
+                    else {
+                        captcharesult = true;
+                    }
+
+                },
+                failure: function (response) {
+                    alert('There was an error.');
+                    return false;
+                }
+            });
+
+
+            if (captcharesult == false) {
+                document.getElementById(txtCaptcha).focus();
+                alert("Invalid Verification Code!");
+                return false;
+            }
+
+
+            var var1 = document.getElementById('ctl00_ddlstate2').selectedOptions[0].innerHTML + "|" + document.getElementById('ctl00_ddlcity2').selectedOptions[0].innerHTML + "|" + document.getElementById('ctl00_ddlSchool1').selectedOptions[0].innerHTML + "|" + document.getElementById('ctl00_ddlStandard1').selectedOptions[0].innerHTML;
+
+            //alert(var1);
+            //alert(document.title);
+
+            window.dataLayer = window.dataLayer || [];
+            //window.dataLayer.push({
+            //    'event': 'dl - enquire submit',
+            //    'cta_location': 'School Admission Process Details - Podar International School',         // this should be replaced with values based on each event
+            //    'additional_info': var1,         // this should be replaced with values based on each event
+            //    'school_location': ''         // this should be replaced with values based on each event
+            //});
+
+            dataLayer.push({
+                'event': 'lead_submission',
+                'enhanced_conversion_data': {
+                    "email": document.getElementById(email).value, /* Change yourEmailVariable to the datalayer variable name where you are storing the user’s email data. Do the same for the other variables below. Make sure the values aren't hashed. */
+                    "phone_number": document.getElementById(txtPhoneNo).value /* Phone Number must be collected in the E.164 format, which means it must be 11 to 15 digits including a plus sign (+) prefix and country code with no dashes, parentheses, or spaces. Example: ‘+11231234567’ */
+                }
+            });
+
+
+
+            return true;
+        }
+
+        function validatestate2(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('ddlstate2').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('ddlstate2').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validateSchool1(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('ddlSchool1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('ddlSchool1').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validateffname1(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('txtffname1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('txtffname1').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validatelname1(source, args) {
+            //            alert(args.Value);
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('txtlastname1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('txtlastname1').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validategender1(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('drpgender1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('drpgender1').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validatestandard1(source, args) {
+            if ((args.Value == "") || (args.Value == "0")) {
+                args.IsValid = false;
+                document.getElementById('ddlStandard1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('ddlStandard1').style.borderColor = "#bebebe";
+            }
+        }
+        function validatestream1(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('ddlStream1').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('ddlStream1').style.borderColor = "#bebebe";
+            }
+        }
+        function validatePhoneNo(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('txtPhoneNo').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('txtPhoneNo').style.borderColor = "#bebebe";
+            }
+
+        }
+
+        function validateName(source, args) {
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('txtName').style.borderColor = "#EE2D35";
+            }
+            else {
+                args.IsValid = true;
+                document.getElementById('txtName').style.borderColor = "#bebebe";
+            }
+        }
+
+        function validateEmail1(source, args) {
+
+            if (args.Value == "") {
+                args.IsValid = false;
+                document.getElementById('txtEmail1').style.borderColor = "#EE2D35";
+            }
+            else {
+                //                alert(args.Value);
+                var x = args.Value;
+                var atpos = x.indexOf("@");
+                var dotpos = x.lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                    args.IsValid = false;
+                    document.getElementById('txtEmail1').style.borderColor = "#EE2D35";
+                    document.getElementById('RequiredFieldValidator26').style.display = "none";
+
+                }
+                else {
+                    args.IsValid = true;
+                    document.getElementById('txtEmail1').style.borderColor = "#bebebe";
+                }
+            }
+        }
+
+        function ISNumeric(event) {
+            if (event.charCode >= 48 && event.charCode <= 57) {
+            }
+            else {
+                event.preventDefault();
+
+            }
+        }
+        function ClearError(controlname) {
+            $("#" + controlname + "").text('');
+        }
+
+    </script>
+
+    
+</head>
+<link rel="stylesheet" type="text/css" href="../assets/css/homepage.css" as="style" onload="this.rel='stylesheet'">
+<link rel="stylesheet" type="text/css" href="../assets/css/admission-enquiry-form.css" as="style" onload="this.rel='stylesheet'">
+
+<body class="homepage">
+    
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N826MV4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Head start -->
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+    function searchclick() {
+        //alert('Hello alert');
+        //alert(window.location.host);
+        var hdnid = document.getElementById("hdnCID");
+        //alert(hdnid.value);
+        if (hdnid.value != "") {
+            if (hdnid.value == ("http://" + window.location.host)) {
+
+            }
+            else {
+                window.open(hdnid.value);
+                document.getElementById('hdnCID').value = '';
+            }
+        }
+        else {
+            alert("SEARCH YOUR SCHOOL");
+        }
+
+    }
+</script>
+
+<script type='text/javascript'>
+
+    function DownloadBrochureGoogleTag() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'dl - download brochure',
+            'cta_location': 'global navigation',         // this should be replaced with values based on each event
+            'additional_info': '',         // this should be replaced with values based on each event
+            'school_location': ''         // this should be replaced with values based on each event
+        });
+    }
+
+
+    function EnquireNowGoogleTag() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'dl - enquire now',
+            'cta_location': 'global navigation',         // this should be replaced with values based on each event
+            'additional_info': '',         // this should be replaced with values based on each event
+            'school_location': ''         // this should be replaced with values based on each event
+        });
+    }
+
+</script>
+<!-- Old Content Start  -->
+<header id="header1_headermainsite" class="fixed-top">
+    <div class="utility_nav desktopOnly">
+        <div class="container d-flex justify-content-between">
+            <div class="left-side d-flex justify-content-between">
+                <a class="d-flex justify-content-between text-white" href="https://www.podareducation.org/brochure/corporate" onclick="return DownloadBrochureGoogleTag()" target="_blank">
+                    <span class="custom-icon cust-ico-download mr-1">
+                        <img src="../assets/images/icons/icon-download.png" alt="download icon" />
+                    </span>
+                    Download Brochure 
+                </a>
+                
+            </div>
+            <div id="header1_pnlmain" class="right-side d-flex justify-content-between">
+                <form action="" class="form-inline my-2 my-lg-0 d-flex justify-content-between" id="search">
+                    <input class="form-control" id="headerSearch" type="search" placeholder="Search Podar school near you" aria-label="Search" />
+                    <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <a class="btn-secondary" href="/admissions#enquiryForm" onclick="return EnquireNowGoogleTag()">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="utility_nav tabsBelow fixed-bottom notScrolled">
+        <div class="un-content d-flex justify-content-between">
+            <a class="search" href="/locations">
+                <div class="icon adjustHeight">
+                    <img src="../assets/images/icons/icon-search-black.png" alt="search icon" loading="lazy" />
+                </div>
+                <span>SEARCH SCHOOL</span>
+            </a>
+            <a class="enquiry" href="/admissions#enquiryForm" onclick="return EnquireNowGoogleTag()">
+                <div class="icon">
+                    <img src="/assets/images/icons/icon-enquire-now.png" alt="enquire now - click to open a form" loading="lazy" />
+                </div>
+                <span>ENQUIRE NOW</span>
+            </a>
+            <a class="admission" href="/admissions">
+                <div class="icon">
+                    <img src="/assets/images/icons/icon-admissions.png" alt="icon for admissions at podar education - process of enrollment and welcoming new students" loading="lazy" />
+                </div>
+                <span>ADMISSIONS</span>
+            </a>
+            <a class="more d-none" href="javascript:;">
+                <div class="icon adjustHeight">
+                    <img src="/assets/images/icons/icon-more.png" alt="three dot icons" loading="lazy" />
+                </div>
+                <span>MORE</span>
+            </a>
+            <div class="moreContent">
+                <a href="https://www.podareducation.org/brochure/corporate/" target="_blank" onclick="return DownloadBrochureGoogleTag()">DOWNLOAD BROCHURE</a>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a href="https://www.podareducation.org" id="header1_corpologoa" class="navbar-brand corporate">
+                    <img src="assets/images/podar-logo-3x.png" id="header1_corpologodestop" class="desktopOnly" alt="Logo of Podar Education Network" />
+                    <img src="assets/images/podar-logo-3x.png" id="header1_corpologotab" class="tabsBelow" alt="Logo of Podar Education Network" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class='navbar-nav'><li class='nav-item'><a class='nav-link' href='https://www.podareducation.org'>Home</a></li><li class='nav-item dropdown'> <a href ='JavaScript:void(0);' class='nav-link dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About Podar<i class='icon-down-arrow pl-2'></i></a><ul class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'><li  ><a href='/about-podar-education-network' class='dropdown-item'> About Us <span class='icon'></span></a></li><li  ><a href= '/about-podar-education-network#chairmans-message' class='dropdown-item'>Chairman's Message <span class='icon'></span></a></li><li  ><a href='/podar-initiatives' class='dropdown-item'> Podar Initiatives <span class='icon'></span></a></li><li  ><a href='/news-all' class='dropdown-item'> News <span class='icon'></span></a></li><li  ><a href='/achievements-and-awards' class='dropdown-item'> Awards <span class='icon'></span></a></li><li  ><a href='/podar-song' class='dropdown-item'> School Song <span class='icon'></span></a></li><li  ><a href='/social-outreach' class='dropdown-item'> Social Outreach <span class='icon'></span></a></li><li  ><a href= 'https://www.podareducation.org/brochure/corporate' class='dropdown-item' target='_blank'>School Brochure <span class='icon'></span></a></li></ul></li><li class='nav-item dropdown'> <a href ='JavaScript:void(0);' class='nav-link dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Why Podar<i class='icon-down-arrow pl-2'></i></a><ul class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'><li class='has-subnav' ><a class='dropdown-item'> The Right Curriculum <span class='icon'></span></a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'><a class='dropdown-item' href='/digital-learning-at-podar'> Digital Learning</a><a class='dropdown-item' href='/innovation-lab-at-podar'> Innovation Lab</a><a class='dropdown-item' href='/innovative-academic-program-at-podar'> Innovative Academic Programs</a><a class='dropdown-item' href='/art-curriculum-at-podar'> Art Curriculum</a><a class='dropdown-item' href='/thematic-learning-program'> Thematic Learning Program</a><a class='dropdown-item' href='/blog-top-5-essential-life-skills-to-help-your-child-succeed'> Podar Innovation Center</a></div></li><li  ><a href='/the-right-faculty' class='dropdown-item'> The Right Faculty <span class='icon'></span></a></li><li class='has-subnav' ><a class='dropdown-item'> The Right Environment <span class='icon'></span></a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'><a class='dropdown-item' href='/school-infrastructure'> School Infrastructure</a><a class='dropdown-item' href='/our-labs'> Our Labs</a><a class='dropdown-item' href='/transport-policy'> Transport Policy</a></div></li><li  ><a href='/the-right-approach' class='dropdown-item'> The Right Approach <span class='icon'></span></a></li><li  ><a href='/the-right-skills' class='dropdown-item'> The Right Skills <span class='icon'></span></a></li></ul></li><li class='nav-item dropdown'> <a href ='JavaScript:void(0);' class='nav-link dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Admissions<i class='icon-down-arrow pl-2'></i></a><ul class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'><li  ><a href= '/admissions' class='dropdown-item'>Admissions for AY 2026-27<span class='icon'></span></a></li><li  ><a href='/inter-podar-transfer' class='dropdown-item'> Inter Podar Transfer <span class='icon'></span></a></li><li  ><a href='/fee-structure' class='dropdown-item'> Fee Structure <span class='icon'></span></a></li><li  ><a href='/army' class='dropdown-item'> Army Scholarship Programme <span class='icon'></span></a></li></ul></li><li class='nav-item'><a href='/locations' class='nav-link'>Locations</a></li></li><li class='nav-item'><a href='http://careers.podareducation.org/' target='_blank' class='nav-link'>Careers</a></li><li class='nav-item'><a href='/blog' class='nav-link'>Blogs</a></li></li><li class='nav-item'><a href='/podar-student-alumni-community' class='nav-link'>Alumni</a></li></li><li class='nav-item'><a href='/contact-us' class='nav-link'>Contact Us</a></li></li></ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+    <!-- Head end -->
+
+
+    <!-- banner start -->
+    <div class='banner carousel slide' id='homepage-banner' data-ride='carousel'><div class='heroBanner d-flex justify-content-around slick-slider' id='heroBanner'><div class='animatingBanner'> <div class='boy'> <img class='lazy desktopOnly' src='../assets/images/banner/mainboy-v1.webp'  data-src='../assets/images/banner/mainboy-v1.webp' data-srcset='../assets/images/banner/mainboy-v1.webp' alt='home page banner view' /> <img class='lazy tabsBelow' src='../assets/images/banner/mainboy-v1-tabs.webp' data-src='../assets/images/banner/mainboy-v1-tabs.webp' data-srcset='../assets/images/banner/mainboy-v1-tabs.webp' alt='home page banner view' />   <div class='elements desktopOnly'>   	   </div>	   <div class='elements tabsBelow'>	   </div>	 </div><div class='carousel-caption d-none d-md-block'><h1 > 99 Years Of Nurturing <br>Creative Thinkers<br> </h1> <a class='btn btn-light' href='https://www.podareducation.org/admissions#onlineApplicationForm'>Admissions Open for AY 2026-27</a> </div> </div></div></div>
+    <!-- banner end -->
+    <!-- Aboutus start -->
+    <section class="podar-network">
+        <div class="container">
+            <div class="bg-icons">
+                <div class="icon1 icon">
+                    <img class="lazy" src="assets/images/icons/icon-hat-gradient.webp" data-src="assets/images/icons/icon-hat-gradient.webp" data-srcset="assets/images/icons/icon-hat-gradient.webp"  alt="icon hat icon" />
+                </div>
+                <div class="icon2 icon">
+                    <img src="assets/images/icons/icon-testtube.webp" class="lazy" data-src="assets/images/icons/icon-testtube.webp" data-srcset="assets/images/icons/icon-testtube.webp" alt="icon testtube icon" />
+                </div>
+            </div>
+            <div class="connector"></div>
+            <div class="title gradient-text text-center">
+                Podar<br>
+                Education Network
+            </div>
+            <div class="description text-center">More Than Grades</div>
+
+            <div class="card homeCard noTrim w-100 d-flex flex-row">
+                <a class="video-pop" href="" data-bs-toggle="modal" data-bs-target="#networkVideoModal">
+                    <img class="card-img-top lazy" src="assets/images/pdar-network.webp" data-src="assets/images/pdar-network.webp" data-srcset="assets/images/pdar-network.webp" alt="video thumbnail">
+                </a>
+                <div class="card-body">
+                     <div class='card-text'><p>Educating 2,75,000 students through 165 Podar International Schools + 135 Podar Partner Schools, Podar Education Network has established itself as a leader in the education sector. Established in 1927, Podar Education Network’s aim is not just to impart knowledge but to foster the growth of responsible, well-rounded, and lifelong learners who can contribute positively to society.</p></div><a href=/about-podar-education-network> Read More <span class='custom-icon cust-ico-download mr-1'><img class='lazy' src='/assets/images/icons/icon-right-arrow.png' data-src='/assets/images/icons/icon-right-arrow.png' data-srcset='/assets/images/icons/icon-right-arrow.png' alt='right arrow icon'></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Popup start -->
+    <div class="modal fade" id="networkVideoModal" tabindex="-1" aria-labelledby="networkVideoModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="youtube-player-container" class="ratio ratio-16x9">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Popup End -->
+    <!-- Aboutus End -->
+    <section id="yellowband_divYellowBand" class="counters align-items-center d-flex">
+      <div class="container d-flex text-center">
+        <div class="counterBox">
+          <div class="counterTitle">99</div>
+          <div class="ccounterDescription">Years Of Experience</div>
+        </div>
+        <div class="counterBox">
+          <div class="counterTitle">165</div>
+          <div class="ccounterDescription">Podar International Schools</div>
+        </div>
+        <div class="counterBox">
+          <div class="counterTitle">135</div>
+          <div class="ccounterDescription">Podar Partner Schools</div>
+        </div>
+        <div class="counterBox">
+          <div class="counterTitle">400</div>
+          <div class="ccounterDescription">Podar Preschools</div>
+        </div>
+        <div class="counterBox">
+          <div class="counterTitle">2,75,000</div>
+          <div class="ccounterDescription">Students</div>
+        </div>
+        <!-- <div class="counterBox">
+          <div class="counterTitle">8,000</div>
+          <div class="ccounterDescription">Staff Members</div>
+        </div>
+        <div class="counterBox d-none">
+          <div class="counterTitle">1,200+</div>
+          <div class="ccounterDescription">School Buses</div>
+        </div> -->
+      </div>
+</section>
+
+
+
+    <!-- Aboutus End -->
+    <div id="test"></div>
+
+    <!-- Short Enquiry Form Start -->
+    <form method="post" action="./" id="form2" class="needs-validation" novalidate="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwNzczMTgzNTgPZBYcAgEPZBYGZg9kFgJmDxYCHgRUZXh0BUBCZXN0IENCU0UgYW5kIElDU0UgU2Nob29scyBpbiBJbmRpYSB8IFBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sZAIBDxYCHwAF6QM8bWV0YSBuYW1lPSdLZXl3b3JkcycgY29udGVudD0naW50ZXJuYXRpb25hbCBzY2hvb2wsaW50ZXJuYXRpb25hbCBzY2hvb2xzLEJlc3QgU2Nob29sIGluIFdvcmxpLGxpc3Qgb2YgaW50ZXJuYXRpb25hbCBzY2hvb2xzLEJlc3QgU2Nob29sIGluIE11bWJhaSxDSUUgc2Nob29scyBpbmRpYSxiZXN0IGludGVybmF0aW9uYWwgc2Nob29scyx0b3AgaW50ZXJuYXRpb25hbCBzY2hvb2xzLGJlc3Qgc2Nob29sLHRvcCBzY2hvb2xzIGluIGluZGlhLG51cnNlcnkgc2Nob29sLHRvcCBzY2hvb2wnIC8+IAogPG1ldGEgbmFtZT0nRGVzY3JpcHRpb24nIGNvbnRlbnQ9J0xvb2tpbmcgZm9yIHRvcCBFbmdsaXNoIG1lZGl1bSBzY2hvb2xzIGluIEluZGlhPyBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBvZmZlcnMgYXdhcmQtd2lubmluZyBDQlNFIGFuZCBJQ1NFIGVkdWNhdGlvbi4gRW5yb2xsIHlvdXIgY2hpbGQgdG8gdGhlIG5lYXJlc3QgY2FtcHVzIHRvZGF5IScgLz5kAgIPFgIfAAU+PGxpbmsgcmVsPSJjYW5vbmljYWwiIGhyZWY9Imh0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZyIgLz5kAgQPZBYEAgEPZBYEAgEPFgIeBGhyZWYFHmh0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZxYEAgEPFgIeA3NyYwUhfi9hc3NldHMvaW1hZ2VzL3BvZGFyLWxvZ28tM3gucG5nZAIDDxYCHwIFIX4vYXNzZXRzL2ltYWdlcy9wb2Rhci1sb2dvLTN4LnBuZ2QCAw8WAh8ABZUhPHVsIGNsYXNzPSduYXZiYXItbmF2Jz48bGkgY2xhc3M9J25hdi1pdGVtJz48YSBjbGFzcz0nbmF2LWxpbmsnIGhyZWY9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZyc+SG9tZTwvYT48L2xpPjxsaSBjbGFzcz0nbmF2LWl0ZW0gZHJvcGRvd24nPiA8YSBocmVmID0nSmF2YVNjcmlwdDp2b2lkKDApOycgY2xhc3M9J25hdi1saW5rIGRyb3Bkb3duLXRvZ2dsZScgZGF0YS10b2dnbGU9J2Ryb3Bkb3duJyBhcmlhLWhhc3BvcHVwPSd0cnVlJyBhcmlhLWV4cGFuZGVkPSdmYWxzZSc+QWJvdXQgUG9kYXI8aSBjbGFzcz0naWNvbi1kb3duLWFycm93IHBsLTInPjwvaT48L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51JyBhcmlhLWxhYmVsbGVkYnk9J25hdmJhckRyb3Bkb3duTWVudUxpbmsnPjxsaSAgPjxhIGhyZWY9Jy9hYm91dC1wb2Rhci1lZHVjYXRpb24tbmV0d29yaycgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nPiBBYm91dCBVcyA8c3BhbiBjbGFzcz0naWNvbic+PC9zcGFuPjwvYT48L2xpPjxsaSAgPjxhIGhyZWY9ICcvYWJvdXQtcG9kYXItZWR1Y2F0aW9uLW5ldHdvcmsjY2hhaXJtYW5zLW1lc3NhZ2UnIGNsYXNzPSdkcm9wZG93bi1pdGVtJz5DaGFpcm1hbidzIE1lc3NhZ2UgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48bGkgID48YSBocmVmPScvcG9kYXItaW5pdGlhdGl2ZXMnIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gUG9kYXIgSW5pdGlhdGl2ZXMgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48bGkgID48YSBocmVmPScvbmV3cy1hbGwnIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gTmV3cyA8c3BhbiBjbGFzcz0naWNvbic+PC9zcGFuPjwvYT48L2xpPjxsaSAgPjxhIGhyZWY9Jy9hY2hpZXZlbWVudHMtYW5kLWF3YXJkcycgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nPiBBd2FyZHMgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48bGkgID48YSBocmVmPScvcG9kYXItc29uZycgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nPiBTY2hvb2wgU29uZyA8c3BhbiBjbGFzcz0naWNvbic+PC9zcGFuPjwvYT48L2xpPjxsaSAgPjxhIGhyZWY9Jy9zb2NpYWwtb3V0cmVhY2gnIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gU29jaWFsIE91dHJlYWNoIDxzcGFuIGNsYXNzPSdpY29uJz48L3NwYW4+PC9hPjwvbGk+PGxpICA+PGEgaHJlZj0gJ2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9icm9jaHVyZS9jb3Jwb3JhdGUnIGNsYXNzPSdkcm9wZG93bi1pdGVtJyB0YXJnZXQ9J19ibGFuayc+U2Nob29sIEJyb2NodXJlIDxzcGFuIGNsYXNzPSdpY29uJz48L3NwYW4+PC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nbmF2LWl0ZW0gZHJvcGRvd24nPiA8YSBocmVmID0nSmF2YVNjcmlwdDp2b2lkKDApOycgY2xhc3M9J25hdi1saW5rIGRyb3Bkb3duLXRvZ2dsZScgZGF0YS10b2dnbGU9J2Ryb3Bkb3duJyBhcmlhLWhhc3BvcHVwPSd0cnVlJyBhcmlhLWV4cGFuZGVkPSdmYWxzZSc+V2h5IFBvZGFyPGkgY2xhc3M9J2ljb24tZG93bi1hcnJvdyBwbC0yJz48L2k+PC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudScgYXJpYS1sYWJlbGxlZGJ5PSduYXZiYXJEcm9wZG93bk1lbnVMaW5rJz48bGkgY2xhc3M9J2hhcy1zdWJuYXYnID48YSBjbGFzcz0nZHJvcGRvd24taXRlbSc+IFRoZSBSaWdodCBDdXJyaWN1bHVtIDxzcGFuIGNsYXNzPSdpY29uJz48L3NwYW4+PC9hPjxkaXYgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnIGFyaWEtbGFiZWxsZWRieT0nbmF2YmFyRHJvcGRvd25NZW51TGluayc+PGEgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nIGhyZWY9Jy9kaWdpdGFsLWxlYXJuaW5nLWF0LXBvZGFyJz4gRGlnaXRhbCBMZWFybmluZzwvYT48YSBjbGFzcz0nZHJvcGRvd24taXRlbScgaHJlZj0nL2lubm92YXRpb24tbGFiLWF0LXBvZGFyJz4gSW5ub3ZhdGlvbiBMYWI8L2E+PGEgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nIGhyZWY9Jy9pbm5vdmF0aXZlLWFjYWRlbWljLXByb2dyYW0tYXQtcG9kYXInPiBJbm5vdmF0aXZlIEFjYWRlbWljIFByb2dyYW1zPC9hPjxhIGNsYXNzPSdkcm9wZG93bi1pdGVtJyBocmVmPScvYXJ0LWN1cnJpY3VsdW0tYXQtcG9kYXInPiBBcnQgQ3VycmljdWx1bTwvYT48YSBjbGFzcz0nZHJvcGRvd24taXRlbScgaHJlZj0nL3RoZW1hdGljLWxlYXJuaW5nLXByb2dyYW0nPiBUaGVtYXRpYyBMZWFybmluZyBQcm9ncmFtPC9hPjxhIGNsYXNzPSdkcm9wZG93bi1pdGVtJyBocmVmPScvYmxvZy10b3AtNS1lc3NlbnRpYWwtbGlmZS1za2lsbHMtdG8taGVscC15b3VyLWNoaWxkLXN1Y2NlZWQnPiBQb2RhciBJbm5vdmF0aW9uIENlbnRlcjwvYT48L2Rpdj48L2xpPjxsaSAgPjxhIGhyZWY9Jy90aGUtcmlnaHQtZmFjdWx0eScgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nPiBUaGUgUmlnaHQgRmFjdWx0eSA8c3BhbiBjbGFzcz0naWNvbic+PC9zcGFuPjwvYT48L2xpPjxsaSBjbGFzcz0naGFzLXN1Ym5hdicgPjxhIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gVGhlIFJpZ2h0IEVudmlyb25tZW50IDxzcGFuIGNsYXNzPSdpY29uJz48L3NwYW4+PC9hPjxkaXYgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnIGFyaWEtbGFiZWxsZWRieT0nbmF2YmFyRHJvcGRvd25NZW51TGluayc+PGEgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nIGhyZWY9Jy9zY2hvb2wtaW5mcmFzdHJ1Y3R1cmUnPiBTY2hvb2wgSW5mcmFzdHJ1Y3R1cmU8L2E+PGEgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nIGhyZWY9Jy9vdXItbGFicyc+IE91ciBMYWJzPC9hPjxhIGNsYXNzPSdkcm9wZG93bi1pdGVtJyBocmVmPScvdHJhbnNwb3J0LXBvbGljeSc+IFRyYW5zcG9ydCBQb2xpY3k8L2E+PC9kaXY+PC9saT48bGkgID48YSBocmVmPScvdGhlLXJpZ2h0LWFwcHJvYWNoJyBjbGFzcz0nZHJvcGRvd24taXRlbSc+IFRoZSBSaWdodCBBcHByb2FjaCA8c3BhbiBjbGFzcz0naWNvbic+PC9zcGFuPjwvYT48L2xpPjxsaSAgPjxhIGhyZWY9Jy90aGUtcmlnaHQtc2tpbGxzJyBjbGFzcz0nZHJvcGRvd24taXRlbSc+IFRoZSBSaWdodCBTa2lsbHMgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48L3VsPjwvbGk+PGxpIGNsYXNzPSduYXYtaXRlbSBkcm9wZG93bic+IDxhIGhyZWYgPSdKYXZhU2NyaXB0OnZvaWQoMCk7JyBjbGFzcz0nbmF2LWxpbmsgZHJvcGRvd24tdG9nZ2xlJyBkYXRhLXRvZ2dsZT0nZHJvcGRvd24nIGFyaWEtaGFzcG9wdXA9J3RydWUnIGFyaWEtZXhwYW5kZWQ9J2ZhbHNlJz5BZG1pc3Npb25zPGkgY2xhc3M9J2ljb24tZG93bi1hcnJvdyBwbC0yJz48L2k+PC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudScgYXJpYS1sYWJlbGxlZGJ5PSduYXZiYXJEcm9wZG93bk1lbnVMaW5rJz48bGkgID48YSBocmVmPSAnL2FkbWlzc2lvbnMnIGNsYXNzPSdkcm9wZG93bi1pdGVtJz5BZG1pc3Npb25zIGZvciBBWSAyMDI2LTI3PHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48bGkgID48YSBocmVmPScvaW50ZXItcG9kYXItdHJhbnNmZXInIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gSW50ZXIgUG9kYXIgVHJhbnNmZXIgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48bGkgID48YSBocmVmPScvZmVlLXN0cnVjdHVyZScgY2xhc3M9J2Ryb3Bkb3duLWl0ZW0nPiBGZWUgU3RydWN0dXJlIDxzcGFuIGNsYXNzPSdpY29uJz48L3NwYW4+PC9hPjwvbGk+PGxpICA+PGEgaHJlZj0nL2FybXknIGNsYXNzPSdkcm9wZG93bi1pdGVtJz4gQXJteSBTY2hvbGFyc2hpcCBQcm9ncmFtbWUgPHNwYW4gY2xhc3M9J2ljb24nPjwvc3Bhbj48L2E+PC9saT48L3VsPjwvbGk+PGxpIGNsYXNzPSduYXYtaXRlbSc+PGEgaHJlZj0nL2xvY2F0aW9ucycgY2xhc3M9J25hdi1saW5rJz5Mb2NhdGlvbnM8L2E+PC9saT48L2xpPjxsaSBjbGFzcz0nbmF2LWl0ZW0nPjxhIGhyZWY9J2h0dHA6Ly9jYXJlZXJzLnBvZGFyZWR1Y2F0aW9uLm9yZy8nIHRhcmdldD0nX2JsYW5rJyBjbGFzcz0nbmF2LWxpbmsnPkNhcmVlcnM8L2E+PC9saT48bGkgY2xhc3M9J25hdi1pdGVtJz48YSBocmVmPScvYmxvZycgY2xhc3M9J25hdi1saW5rJz5CbG9nczwvYT48L2xpPjwvbGk+PGxpIGNsYXNzPSduYXYtaXRlbSc+PGEgaHJlZj0nL3BvZGFyLXN0dWRlbnQtYWx1bW5pLWNvbW11bml0eScgY2xhc3M9J25hdi1saW5rJz5BbHVtbmk8L2E+PC9saT48L2xpPjxsaSBjbGFzcz0nbmF2LWl0ZW0nPjxhIGhyZWY9Jy9jb250YWN0LXVzJyBjbGFzcz0nbmF2LWxpbmsnPkNvbnRhY3QgVXM8L2E+PC9saT48L2xpPjwvdWw+ZAIEDxYCHgdWaXNpYmxlaBYCAgIPFgIfAQUeaHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnFgICAQ8WAh8CBSF+L2Fzc2V0cy9pbWFnZXMvcG9kYXItbG9nby0zeC5wbmdkAgYPZBYCZg8WAh8ABfUHPGRpdiBjbGFzcz0nYmFubmVyIGNhcm91c2VsIHNsaWRlJyBpZD0naG9tZXBhZ2UtYmFubmVyJyBkYXRhLXJpZGU9J2Nhcm91c2VsJz48ZGl2IGNsYXNzPSdoZXJvQmFubmVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kIHNsaWNrLXNsaWRlcicgaWQ9J2hlcm9CYW5uZXInPjxkaXYgY2xhc3M9J2FuaW1hdGluZ0Jhbm5lcic+IDxkaXYgY2xhc3M9J2JveSc+IDxpbWcgY2xhc3M9J2xhenkgZGVza3RvcE9ubHknIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9iYW5uZXIvbWFpbmJveS12MS53ZWJwJyAgZGF0YS1zcmM9Jy4uL2Fzc2V0cy9pbWFnZXMvYmFubmVyL21haW5ib3ktdjEud2VicCcgZGF0YS1zcmNzZXQ9Jy4uL2Fzc2V0cy9pbWFnZXMvYmFubmVyL21haW5ib3ktdjEud2VicCcgYWx0PSdob21lIHBhZ2UgYmFubmVyIHZpZXcnIC8+IDxpbWcgY2xhc3M9J2xhenkgdGFic0JlbG93JyBzcmM9Jy4uL2Fzc2V0cy9pbWFnZXMvYmFubmVyL21haW5ib3ktdjEtdGFicy53ZWJwJyBkYXRhLXNyYz0nLi4vYXNzZXRzL2ltYWdlcy9iYW5uZXIvbWFpbmJveS12MS10YWJzLndlYnAnIGRhdGEtc3Jjc2V0PScuLi9hc3NldHMvaW1hZ2VzL2Jhbm5lci9tYWluYm95LXYxLXRhYnMud2VicCcgYWx0PSdob21lIHBhZ2UgYmFubmVyIHZpZXcnIC8+ICAgPGRpdiBjbGFzcz0nZWxlbWVudHMgZGVza3RvcE9ubHknPiAgIAkgICA8L2Rpdj4JICAgPGRpdiBjbGFzcz0nZWxlbWVudHMgdGFic0JlbG93Jz4JICAgPC9kaXY+CSA8L2Rpdj48ZGl2IGNsYXNzPSdjYXJvdXNlbC1jYXB0aW9uIGQtbm9uZSBkLW1kLWJsb2NrJz48aDEgPiA5OSBZZWFycyBPZiBOdXJ0dXJpbmcgPGJyPkNyZWF0aXZlIFRoaW5rZXJzPGJyPiA8L2gxPiA8YSBjbGFzcz0nYnRuIGJ0bi1saWdodCcgaHJlZj0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL2FkbWlzc2lvbnMjb25saW5lQXBwbGljYXRpb25Gb3JtJz5BZG1pc3Npb25zIE9wZW4gZm9yIEFZIDIwMjYtMjc8L2E+IDwvZGl2PiA8L2Rpdj48L2Rpdj48L2Rpdj5kAggPFgIfAAXZBSA8ZGl2IGNsYXNzPSdjYXJkLXRleHQnPjxwPkVkdWNhdGluZyAyLDc1LDAwMCBzdHVkZW50cyB0aHJvdWdoIDE2NSBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbHMgKyAxMzUgUG9kYXIgUGFydG5lciBTY2hvb2xzLCBQb2RhciBFZHVjYXRpb24gTmV0d29yayBoYXMgZXN0YWJsaXNoZWQgaXRzZWxmIGFzIGEgbGVhZGVyIGluIHRoZSBlZHVjYXRpb24gc2VjdG9yLiBFc3RhYmxpc2hlZCBpbiAxOTI3LCBQb2RhciBFZHVjYXRpb24gTmV0d29ya+KAmXMgYWltIGlzIG5vdCBqdXN0IHRvIGltcGFydCBrbm93bGVkZ2UgYnV0IHRvIGZvc3RlciB0aGUgZ3Jvd3RoIG9mIHJlc3BvbnNpYmxlLCB3ZWxsLXJvdW5kZWQsIGFuZCBsaWZlbG9uZyBsZWFybmVycyB3aG8gY2FuIGNvbnRyaWJ1dGUgcG9zaXRpdmVseSB0byBzb2NpZXR5LjwvcD48L2Rpdj48YSBocmVmPS9hYm91dC1wb2Rhci1lZHVjYXRpb24tbmV0d29yaz4gUmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIGNsYXNzPSdsYXp5JyBzcmM9Jy9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tcmlnaHQtYXJyb3cucG5nJyBkYXRhLXNyYz0nL2Fzc2V0cy9pbWFnZXMvaWNvbnMvaWNvbi1yaWdodC1hcnJvdy5wbmcnIGRhdGEtc3Jjc2V0PScvYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLXJpZ2h0LWFycm93LnBuZycgYWx0PSdyaWdodCBhcnJvdyBpY29uJz48L3NwYW4+PC9hPmQCDA9kFgJmDxYCHwNnZAIOD2QWAgIBD2QWAgIDD2QWAmYPZBYMAg4PEA8WBh4NRGF0YVRleHRGaWVsZAULdmNTdGF0ZU5hbWUeDkRhdGFWYWx1ZUZpZWxkBQppbnRTdGF0ZUlEHgtfIURhdGFCb3VuZGdkEBUMBVN0YXRlDkFuZGhyYSBQcmFkZXNoBUJpaGFyDENoaGF0dGlzZ2FyaANHb2EHR3VqYXJhdAlLYXJuYXRha2EOTWFkaHlhIFByYWRlc2gLTWFoYXJhc2h0cmEGUHVuamFiCVRlbGFuZ2FuYQtXZXN0IEJlbmdhbBUMATAEMTI2OAQxMjcxBDEyNzMEMTI3NwQxMjc4BDEyODMEMTI4NgQxMjg3BDEyOTQEMTI5OQQxMzAxFCsDDGdnZ2dnZ2dnZ2dnZxYBZmQCFQ8QZBAVAQRDaXR5FQEBMBQrAwFnFgFmZAIcDxBkEBUBBlNjaG9vbBUBATAUKwMBZxYBZmQCMw8QDxYCHwZnZBAVAQhTdGFuZGFyZBUBATAUKwMBZxYBZmQCOQ8WAh8DaBYCAgIPEGRkFgBkAlUPD2QWAh4Fc3R5bGUFoiB3aWR0aDogMTE1cHg7IGJhY2tncm91bmQtaW1hZ2U6IHVybChkYXRhOmltYWdlL3BuZztiYXNlNjQsUjBsR09EbGhjZ0F5QVBjQUFBQUFBQUFBTXdBQVpnQUFtUUFBekFBQS93QXJBQUFyTXdBclpnQXJtUUFyekFBci93QlZBQUJWTXdCVlpnQlZtUUJWekFCVi93Q0FBQUNBTXdDQVpnQ0FtUUNBekFDQS93Q3FBQUNxTXdDcVpnQ3FtUUNxekFDcS93RFZBQURWTXdEVlpnRFZtUURWekFEVi93RC9BQUQvTXdEL1pnRC9tUUQvekFELy96TUFBRE1BTXpNQVpqTUFtVE1BekRNQS96TXJBRE1yTXpNclpqTXJtVE1yekRNci96TlZBRE5WTXpOVlpqTlZtVE5WekROVi96T0FBRE9BTXpPQVpqT0FtVE9BekRPQS96T3FBRE9xTXpPcVpqT3FtVE9xekRPcS96UFZBRFBWTXpQVlpqUFZtVFBWekRQVi96UC9BRFAvTXpQL1pqUC9tVFAvekRQLy8yWUFBR1lBTTJZQVptWUFtV1lBekdZQS8yWXJBR1lyTTJZclptWXJtV1lyekdZci8yWlZBR1pWTTJaVlptWlZtV1pWekdaVi8yYUFBR2FBTTJhQVptYUFtV2FBekdhQS8yYXFBR2FxTTJhcVptYXFtV2FxekdhcS8yYlZBR2JWTTJiVlptYlZtV2JWekdiVi8yYi9BR2IvTTJiL1ptYi9tV2IvekdiLy81a0FBSmtBTTVrQVpwa0FtWmtBekprQS81a3JBSmtyTTVrclpwa3JtWmtyekprci81bFZBSmxWTTVsVlpwbFZtWmxWekpsVi81bUFBSm1BTTVtQVpwbUFtWm1BekptQS81bXFBSm1xTTVtcVpwbXFtWm1xekptcS81blZBSm5WTTVuVlpwblZtWm5WekpuVi81bi9BSm4vTTVuL1pwbi9tWm4vekpuLy84d0FBTXdBTTh3QVpzd0FtY3dBek13QS84d3JBTXdyTTh3clpzd3JtY3dyek13ci84eFZBTXhWTTh4VlpzeFZtY3hWek14Vi84eUFBTXlBTTh5QVpzeUFtY3lBek15QS84eXFBTXlxTTh5cVpzeXFtY3lxek15cS84elZBTXpWTTh6VlpzelZtY3pWek16Vi84ei9BTXovTTh6L1pzei9tY3ovek16Ly8vOEFBUDhBTS84QVp2OEFtZjhBelA4QS8vOHJBUDhyTS84clp2OHJtZjhyelA4ci8vOVZBUDlWTS85Vlp2OVZtZjlWelA5Vi8vK0FBUCtBTS8rQVp2K0FtZitBelArQS8vK3FBUCtxTS8rcVp2K3FtZitxelArcS8vL1ZBUC9WTS8vVlp2L1ZtZi9WelAvVi8vLy9BUC8vTS8vL1p2Ly9tZi8velAvLy93QUFBQUFBQUFBQUFBQUFBQ0g1QkFFQUFQd0FMQUFBQUFCeUFESUFBQWovQUlrcEUwaHdvTUdDQ0E4cVRNaHdvY09HRUI5S2pFalJvTEpvKzZKUnlNZ1JvOGVPSUQrS0RKbHhHQ2lUSmttT2pKYUVaQ2FWSFlkNWxBbHpKVXhpTC9mcDNNbVJKMGFmUEh2dS9EazBxTTVreElZUmV6S01weTZqT244U00wbzA2czZwVllWYUJlcHpZTVpHSHV2cFhKWlI3RDZ5MGN5aVZWdDJiRnVTd1lSR3cwbE00TXUwR01sMkpKWlhaNzIrKy81eVRLcUpwbGk4Z2N0aVBDeVlyRktpT1g5SzNqcTVaMlhKWWpYNUpmcHhKeWFkZFQvVk5heVRKa2lySjBlRENucVo4bGFkeXBTNTNZY3o4T0swYlhIclpwejdzRlcrVnZYMk9zMFpkQ1psbWdndTFwbUpibE9Rd0hlZm5hMjNPa2RObVFUMzFHeVpzdS9jVWIvci81NzZkakxiN2xXaklVWEp2U2hSNE4zai85UXJWWGI1ZlVwbjgrWW8yTWJzdG5wRk5VeHkvSUUzMzFiRWFKSk1ZY2paUnhzb3hFRFkza2ROV1plWVhvSnA1MXR6ay8wRXl6NHZPYk5QWWVhbHQwOFZuUjFTVkYyeUZXZVZXU09PMXQ0K0VOTFcyVDdHSEpWY1VuekJSNVFTclZrVnpWTmVUV2RiUmkvUTlweVNsYTIxazI4ejFSYk5jMDZtRlZxQ3lVU2xUVlIxV1dWYVpkQXBvMVJoYjhWeUpHTTVESldnWEVCRmc5eGdMNW5WUm9jOTFZVVZUL0NCRnFGV0xuWTJsNUhXWmVXbVZCRU8ySlNMbTlFbVcyTnVGWGVuRk1TSWR0eVpaVW1Kbm8ybkNla2JmVVhweEYxV2duMUVucUE4M25ZYW1TWWVHYUJvKy9nQjIxUUsxdjhGNFlDdjZjYmNUZ0ZHUTRlUnVJWG5sbUNrSVVaVWdKRVJ0eFdHR0Exa0txZERhYWVacU1ySTR1WXdzU25EeVZSaWNPYWJqOXAxQ2hpWWY1cW4yRyttZHNyc1QvVTA5NXFSVmhqWms3b2NpWGJuUjVvTXRHWjN3MmpZNkg2bWhrcmJQdUtZcXUxZ3ZvUlg3bksyeGlad3B3WDJaSW1kWENaRkZXZzcxdVdta0d6V3FoTUJmcFVVRFI1UFpvUkZwek1LbFd1ekl4NDZVSDYydGd3YWhKK2dsNkMvSEhGaWxUTE5rUW5vdmp0alBDck4vR0YwYUlhSTdZT0xoY2tTOHcxSURDYW5sRHdTTUJBMUJacTh4K2MrWWg2c0ZkWXBEMVNzYS85ZHQ4OER2dHJLWlh3YUc1bkphb0w2WklrRWNNZGR4RjQwT1pwVHR5TDVxQk9FaE8zL3gyazBWSURtYTA5NUhEbmliSFFWUnBoU09kRkdIbHJ1MFdiSkJLZm9CTFVFY0NpRnMxZWhKcUlpYlRGUEo5WjNkM0tGczEyREM1bWdYWFkyRittVlNKM09FeWdOdXJjbXVvaU51Yy9rb2RDNHp6dzhjQ0NYU1R3aUplcW5RV2RFREtOemJTNFF0VHVlWHUrQXhHU3BreVBydnRkOHZRck9lR05zR0R0T0ZDK1VlNlNQR1JYVVdGVzlWejEvMHVtSEZoOXI5VjNTS1NEV3hDdFR4RndqRFNaUXZaUGFDUXM2OVpUcHpHVm9wWG1XVlN4QmdWT1lCV3JDT3lBUHBDWUJ5ajNyR0hFekFteUVJWUVpeEM0YVVJT0RSeTVYd1R2d0pCaHhrNEFKT1hJUXBNaklZa0k1RkVtMDh4NzRsT0ZxK29BRUJhS0JFUlJPb0hlN1MyRUYvM3MzRERNSThRZ1pBUjdWR2dRSnpGWFBpQ244SVVhZ21NSTc4S2g3eVpqTEo2ckZwdVlGaFZtY2d0ZU5EdlMycU1YdERqMkUyd3FCSVFRNEVPTVNFbWpnUHM0bng5MVJEbXZDNE1FT28vRzJDY0JCVEdhZzJodmpDQ0ZsNUhGL1F2SGVQaXF3SHAzUmlGRTl5WlZZRkdZV1Jnbm1mQ2tVbms3T2w0a1ZSZ01ZRGRRSEQveklJaFNhTUJvb1JDSXFPMGlNZk5oZ2gwblU0MGtDQ2FFOHhoRlJDalJMWjVMRG9FZ2V5eW82aTRZM1VuVytEYmlKUExHc0FBOTF3cnQ1bU1HWXlsZ1FCNHN3RlRxZVFoK1RPOFVnRWJtUFBCb3pIendvUWluaXhvVC9yUTQ0VTRFU1Y0eGpweTdzd3dlR0kxUjZ0RU1XYUlEQm1NcmpEdFEwcVA4VGFPandGSzdFcDA1UUNBZkZXWUlCZDVBSEF5SkkwQVFwNDN6S0JGN2NtckFUL3d5RldzZFJYS013dHBydHNDNDNYZUpJZ0xTVGp6UlVZQm52MFFRSEkxZ1BhMElVTWRrVUNDanlXQUhlNlFRWnJFU0tQNy9KQXdsb01pUG5NNEtmL3FXODQ5UmxSM2dDbTVLNFE4bWtJR2RBWXNvSVBaNUpKM0JLZ0o4b05HWU9mYm9QQjZCUW1Uc1pCaHZnUmdHK29SQVhwNmlYRDN2WHhGTzIxSWdVOWRaRjFqbWw1R1QwT2ZZcnlhajRaSmRBS281QlNvR2pFSnNnbGlmME5HNC9CQWtLci9xL1pGQXhoWE96S2dYaEJ0WXFFWFdNNjZMUlVYWDNtN2xHTGlyWTFDU2RNQm0zQ3RpcmlHVHRxSkhBdVFIUUNXUWZUYVNzTXRDWEhHei9JaGFJUHVHWXh4SlR0THl1U0tPZ3lBbmtOclZPS2FRS2FrVzRpMWJPaVJ3NzFZdCt6NTBBL2d5Q3RaS0pCRWE3V2w2dHptTkF0R0drZm9ucVZXK2ZCQml5bUpJMlNDRkpUN1lZUG1vbEJVSW5PWWxtYnBlb2p2aG1OVWp6cFZJbGM2OGJhVXdza09zVVRrK1prWUY4cDEzcTh1OUkwbnVWYU1Kd0VwU3FrM2ZxR3hZajBSQnJpMHBVbGNUQ2lwNzhKVU1nZXRzS2dZblhJdkVrd0pTSkVIMi95ektNaFlwS3Q4SmRZdUpEck9oNGwyR1NpY2RIZ0pGWXdIZ0t2R0ZCMTdnTXQ0OHdpQWw1MDNMYThpYWpOOXA4QnlSRSt3MVd6aE5sNlJBbERNVFJKVWN1Y1pIOHVHdW9GMTRmdFFZVFRRaWxkendadWVHZ1ZOV3hFbmtLL3hSenU1VC83TVczb3piWHVTeHluVkpHTTVCWlFValBPMnJPVTBmelAycmRlWFBKYVJDRDNydG5GdzdJaFVncFRHb1k1eGF2OUdzMi9mUHYxV2lVUmZVV0tTdXUrY2hUT3l2RE1UZFBJQ0t4ajRJemxnbk5QTm5OMlRQV2Q2M0xFeXdpV1Q3NHkxT0g2RmZnNkdBVW1YbksxR3RlZTVzbzR3bzhGQmFRWjkrZ2tmRGhhWDZ1K3pFTXcxZWNBL0tGd2R5Uk5DQ21QQ3lSdWlXNHNaNk9Yc1pnR1JvZXhzdHBZMHovOWxFSEhZbEpHYUpaa0ZiSThtUVcvazhaT05ESzZSNTNiQVRkQ1pLZi9iQitIK1B0Ri9uM1pOL3RxSWtJUXhjeHJZWm1GTEpYUnJEMzNYeTZoajczSWpkUkFINWgwaUdLM2h2L2xvWDNjUWxNbzIxRnFjclpySHVJOTludXdDaFpMVHEyWkFJdzVNbGNvVHZuTWhoUXRGeXVrZE1wR21Kb2s2ZW9aNUNtSUhVcmkrQ1ZoVnZ0N0Y3dC9NdnJBbm5ZTEl1d2paNkdQcFZjTlZETURJb0Z5YVRlZU1NYWVjd2loSzRWeHE2cW9kWXd1bkRGTWJsM1FZVHhHcGJxQXZjeDJldTVleWFRNGY3RzIwc1JwV1MrL0FqUmtySnVVR2ZzeG0yaks4TXlCYTRaRjhoQ1I5cnJnUXBVbWRoYzBjN3ZWZkg3S2xiSVF2V1p6OXh6SWN3Y092ZlRlYjJRdi81clhWeW5ZdGNaTmRLUlJzbnJLaVpvdXFqWTdRa2FSa0FBQURzPWQCEA9kFgoCAQ8WAh8ABSlJbmZvcm1hdGlvbiBvbiBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbGQCAw8WAh8ABfMBPGEgY2xhc3M9J2NvdW50ZXJCb3gnIGhyZWY9Jy9hZG1pc3Npb25zJz48ZGl2IGNsYXNzPSdjb3VudGVySWNvbiBhZGpIZWlnaHQnPiA8aW1nIHNyYz0vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLWFkbWlzc2lvbi5wbmcgYWx0PSdwb2RhciBlZHVjYXRpb24gc2Nob29sIC0gYWRtaXNzaW9uIHByb2Nlc3MnIC8+PC9kaXY+PGRpdiBjbGFzcz0nY2NvdW50ZXJEZXNjcmlwdGlvbic+QWRtaXNzaW9uIFByb2Nlc3M8L2Rpdj48L2E+ZAIFDxYCHwAF0wE8YSBjbGFzcz0nY291bnRlckJveCcgaHJlZj0nL2ZlZS1zdHJ1Y3R1cmUnPjxkaXYgY2xhc3M9J2NvdW50ZXJJY29uIGFkakhlaWdodCc+PGltZyBzcmMgPSAnLi4vLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLWZlZS5wbmcnIGFsdD0nZmVlcyBpY29uJyAvPjwvZGl2PjxkaXYgY2xhc3M9J2Njb3VudGVyRGVzY3JpcHRpb24nPkZlZSBTdHJ1Y3R1cmU8L2Rpdj48L2E+ZAIHDxYCHwAF0wE8YSBjbGFzcz0nY291bnRlckJveCcgaHJlZj0nL2xvY2F0aW9ucyc+PGRpdiBjbGFzcz0nY291bnRlckljb24gYWRqSGVpZ2h0Jz4gPGltZyBzcmM9L2Fzc2V0cy9pbWFnZXMvaWNvbnMvTE9jYXRpb24taWNvbi5wbmcgYWx0PSdMb2NhdGlvbiBNYXJrZXIgSWNvbicgLz48L2Rpdj48ZGl2IGNsYXNzPSdjY291bnRlckRlc2NyaXB0aW9uJz5Mb2NhdGlvbnM8L2Rpdj48L2E+ZAIJDxYCHwAF3wE8YSBjbGFzcz0nY291bnRlckJveCcgaHJlZj0nL2FkbWlzc2lvbnMjZW5xdWlyeUZvcm0nPjxkaXYgY2xhc3M9J2NvdW50ZXJJY29uIGFkakhlaWdodCc+IDxpbWcgc3JjPS9hc3NldHMvaW1hZ2VzL2ljb25zL2VucXVpcnktZm9ybS5wbmcgYWx0PSdlbnF1aXJlIGZvcm0gaWNvbicgLz48L2Rpdj48ZGl2IGNsYXNzPSdjY291bnRlckRlc2NyaXB0aW9uJz5FbnF1aXJ5IEZvcm08L2Rpdj48L2E+ZAIUD2QWAmYPFgIfAAXuLDxzZWN0aW9uIGNsYXNzPSdsYXRlc3RfbmV3cycgc3R5bGU9J2JhY2tncm91bmQ6IHRyYW5zcGFyZW50IGxpbmVhci1ncmFkaWVudCgyNzVkZWcsIHJnYmEoMTMxLCA0MSwgMTUwLCAwLjEwOTgwMzkyMTYpIDAlLCByZ2JhKDIyMCwgMTE4LCAzLCAwLjEyOTQxMTc2NDcpIDEwMCUgKSAwJSAwJSBuby1yZXBlYXQgcGFkZGluZy1ib3g7Jz48ZGl2IGNsYXNzPSdjb250YWluZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGZsZXgtY29sdW1uJz48ZGl2IGNsYXNzPSd0aXRsZV9wdXJwbGVfMzBweCB0ZXh0LWNlbnRlcic+UG9kYXIgSW5pdGlhdGl2ZXM8L2Rpdj48ZGl2IGNsYXNzPSdjYXJkc0JveCBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCBsYXRlc3ROZXdzIHNsaWNrLXNsaWRlcicgPjxkaXY+PGRpdiBjbGFzcz0nY2FyZCcgc3R5bGU9J2JhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlZmVmZWY7IGFsaWduLWl0ZW1zOiBzdHJldGNoOyBoZWlnaHQ6IDUyMHB4Oyc+PGltZyBzcmM9Jy9VcGxvYWRzL1ZlbnR1cmUvMjAyMy05LTEwLS0xNi0yNy01Ni0zNzdfcG9kYXItaW50ZXJuYXRvbmFsLXNjaG9vbHMud2VicCcgYWx0PSdQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCcgaGVpZ2h0PSczNTBweCcgc3R5bGU9J29iamVjdC1maXQ6IGNvdmVyOyBib3JkZXItcmFkaXVzOiAxMHB4Oyc+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgZC1mbGV4IGZsZXgtY29sdW1uIGp1c3RpZnktY29udGVudC1iZXR3ZWVuJz48aDU+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2w8L2g1PjxwIGNsYXNzPSdjYXJkLXRleHQnPlNjaG9vbHMgKGZyb20gTnVyc2VyeSB0byBHcmFkZSAxMikgb3BlcmF0ZWQgYW5kIG1hbmFnZWQgY29tcGxldGVseSBieSBQb2RhciBFZHVjYXRpb24gTmV0d29yay48L3A+PGEgY2xhc3M9J2xpbmstdGV4dCcgaHJlZj0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL2xvY2F0aW9ucyc+UmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PjxkaXY+PGRpdiBjbGFzcz0nY2FyZCcgc3R5bGU9J2JhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlZmVmZWY7IGFsaWduLWl0ZW1zOiBzdHJldGNoOyBoZWlnaHQ6IDUyMHB4Oyc+PGltZyBzcmM9Jy9VcGxvYWRzL1ZlbnR1cmUvMjAyMy04LTI1LS0xNy0zOS01NS0yMDNfcG9kYXItaW5pdGlhdGl2ZXMtcG9kYXItc21hcnRlci1zY2hvb2xzLndlYnAnIGFsdD0nUG9kYXIgU21hcnRlciBTY2hvb2xzJyBoZWlnaHQ9JzM1MHB4JyBzdHlsZT0nb2JqZWN0LWZpdDogY292ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHg7Jz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCBkLWZsZXggZmxleC1jb2x1bW4ganVzdGlmeS1jb250ZW50LWJldHdlZW4nPjxoNT5Qb2RhciBTbWFydGVyIFNjaG9vbDwvaDU+PHAgY2xhc3M9J2NhcmQtdGV4dCc+Q29tcGxldGUgYWxsLXJvdW5kIGFzc2lzdGFuY2UgdG8gcGFydG5lcnMgaW4gc3RhcnRpbmcgYSBzY2hvb2wgb3IgdXBncmFkaW5nIHRoZWlyIGV4aXN0aW5nIHNjaG9vbC48L3A+PGEgY2xhc3M9J2xpbmstdGV4dCcgaHJlZj0naHR0cHM6Ly93d3cucG9kYXJzbWFydGVyc2Nob29scy5jb20vJz5SZWFkIE1vcmUgPHNwYW4gY2xhc3M9J2N1c3RvbS1pY29uIGN1c3QtaWNvLWRvd25sb2FkIG1yLTEnPjxpbWcgc3JjPScuLi9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tb3JhbmdlLWFycm93LnBuZycgYWx0PSdhcnJvdyBpY29uJyAvPjwvc3Bhbj48L2E+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdj48ZGl2IGNsYXNzPSdjYXJkJyBzdHlsZT0nYmFja2dyb3VuZDogI2ZmZmZmZjsgYm9yZGVyOiAxcHggc29saWQgI2VmZWZlZjsgYWxpZ24taXRlbXM6IHN0cmV0Y2g7IGhlaWdodDogNTIwcHg7Jz48aW1nIHNyYz0nL1VwbG9hZHMvVmVudHVyZS8yMDIwLTExLTUtLTE2LTgtMzUtNzUzX3BvZGFyanVtYm9raWRzLndlYnAnIGFsdD0nUG9kYXIgUHJlcCBTY2hvb2xzIGluIEluZGlhJyBoZWlnaHQ9JzM1MHB4JyBzdHlsZT0nb2JqZWN0LWZpdDogY292ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHg7Jz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCBkLWZsZXggZmxleC1jb2x1bW4ganVzdGlmeS1jb250ZW50LWJldHdlZW4nPjxoNT5Qb2RhciBQcmVwPC9oNT48cCBjbGFzcz0nY2FyZC10ZXh0Jz5UaGUgcmVub3duZWQgUHJlc2Nob29sIEJyYW5kIG9mIFBvZGFyIEVkdWNhdGlvbiBOZXR3b3JrIGRlbGl2ZXJpbmcgUXVhbGl0eSBFZHVjYXRpb24gZnJvbSBQbGF5Z3JvdXAgKEFnZSAyKSB0byBTZW5pb3IgS2cgKEFnZSA1KS48L3A+PGEgY2xhc3M9J2xpbmstdGV4dCcgaHJlZj0naHR0cHM6Ly9wb2RhcnByZXAuY29tLyc+UmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PjxkaXY+PGRpdiBjbGFzcz0nY2FyZCcgc3R5bGU9J2JhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlZmVmZWY7IGFsaWduLWl0ZW1zOiBzdHJldGNoOyBoZWlnaHQ6IDUyMHB4Oyc+PGltZyBzcmM9Jy9VcGxvYWRzL1ZlbnR1cmUvMjAyMC0xMS01LS0xNi0xMS0zMS0zNjdfYm9ybnNtYXJ0LndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgTW90aGVyIFRvZGRsZXJzIFByb2dyYW0nIGhlaWdodD0nMzUwcHgnIHN0eWxlPSdvYmplY3QtZml0OiBjb3ZlcjsgYm9yZGVyLXJhZGl1czogMTBweDsnPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IGQtZmxleCBmbGV4LWNvbHVtbiBqdXN0aWZ5LWNvbnRlbnQtYmV0d2Vlbic+PGg1PkJvcm4gU21hcnQ8L2g1PjxwIGNsYXNzPSdjYXJkLXRleHQnPkEgcHJlbWllciBNb3RoZXIgVG9kZGxlciBwcm9ncmFtIGZvciBjaGlsZHJlbiBhZ2VkIDAtMyB5ZWFycy4gQm9ybiBTbWFydCBpcyBhIGNvbGxlY3Rpb24gb2YgYWdlIGFwcHJvcHJpYXRlIGFjdGl2aXRpZXMgZm9yIG5ldyBwYXJlbnRzLjwvcD48YSBjbGFzcz0nbGluay10ZXh0JyBocmVmPSdodHRwOi8vd3d3LmJvcm4tc21hcnQuY29tLyc+UmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PjxkaXY+PGRpdiBjbGFzcz0nY2FyZCcgc3R5bGU9J2JhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlZmVmZWY7IGFsaWduLWl0ZW1zOiBzdHJldGNoOyBoZWlnaHQ6IDUyMHB4Oyc+PGltZyBzcmM9Jy9VcGxvYWRzL1ZlbnR1cmUvMjAyMC0xMS01LS0xNi04LTU3LTE1Nl9wb2RhcndvcmxkY29sbGVnZS53ZWJwJyBhbHQ9J1BvZGFyIFdvcmxkIENvbGxlZ2UgJyBoZWlnaHQ9JzM1MHB4JyBzdHlsZT0nb2JqZWN0LWZpdDogY292ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHg7Jz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCBkLWZsZXggZmxleC1jb2x1bW4ganVzdGlmeS1jb250ZW50LWJldHdlZW4nPjxoNT5Qb2RhciBXb3JsZCBDb2xsZWdlPC9oNT48cCBjbGFzcz0nY2FyZC10ZXh0Jz5TdHVkZW50cyBjYW4gb2J0YWluIGEgcHJlc3RpZ2lvdXMgVW5kZXJncmFkdWF0ZSBvciBHcmFkdWF0ZSBkZWdyZWUgZnJvbSB0aGUgVW5pdmVyc2l0eSBvZiBMb25kb24gb3IgdGhlIFVuaXZlcnNpdHkgb2YgV29sdmVyaGFtcHRvbiB3aGlsZSBzdHVkeWluZyBpbiBJbmRpYS4gPC9wPjxhIGNsYXNzPSdsaW5rLXRleHQnIGhyZWY9J2h0dHA6Ly93d3cucG9kYXJ3b3JsZGNvbGxlZ2Uub3JnLyc+UmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PjxkaXY+PGRpdiBjbGFzcz0nY2FyZCcgc3R5bGU9J2JhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlZmVmZWY7IGFsaWduLWl0ZW1zOiBzdHJldGNoOyBoZWlnaHQ6IDUyMHB4Oyc+PGltZyBzcmM9Jy9VcGxvYWRzL1ZlbnR1cmUvMjAyMC0xMS01LS0xNi05LTE4LTQxM19wb2Rhcmluc3RpdHV0ZW9mZWR1Y2F0aW9uLndlYnAnIGFsdD0nUG9kYXIgVGVhY2hlciBUcmFpbmluZyBJbnN0aXR1dGUgRWR1Y2F0aW9uJyBoZWlnaHQ9JzM1MHB4JyBzdHlsZT0nb2JqZWN0LWZpdDogY292ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHg7Jz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCBkLWZsZXggZmxleC1jb2x1bW4ganVzdGlmeS1jb250ZW50LWJldHdlZW4nPjxoNT5Qb2RhciBJbnN0aXR1dGUgb2YgRWR1Y2F0aW9uPC9oNT48cCBjbGFzcz0nY2FyZC10ZXh0Jz5UaGUgYXdhcmQgd2lubmluZyBUZWFjaGVyIFRyYWluaW5nIEluc3RpdHV0ZSBtYW5hZ2VkIGJ5IFBvZGFyIEVkdWNhdGlvbiBOZXR3b3JrLiBDb3Vyc2VzIGluY2x1ZGUgRUNDRUQgYW5kIENBQ0hFLjwvcD48YSBjbGFzcz0nbGluay10ZXh0JyBocmVmPSdodHRwOi8vd3d3LnBvZGFyaW5zdGl0dXRlLmNvbS8nPlJlYWQgTW9yZSA8c3BhbiBjbGFzcz0nY3VzdG9tLWljb24gY3VzdC1pY28tZG93bmxvYWQgbXItMSc+PGltZyBzcmM9Jy4uL2Fzc2V0cy9pbWFnZXMvaWNvbnMvaWNvbi1vcmFuZ2UtYXJyb3cucG5nJyBhbHQ9J2Fycm93IGljb24nIC8+PC9zcGFuPjwvYT48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2PjxkaXYgY2xhc3M9J2NhcmQnIHN0eWxlPSdiYWNrZ3JvdW5kOiAjZmZmZmZmOyBib3JkZXI6IDFweCBzb2xpZCAjZWZlZmVmOyBhbGlnbi1pdGVtczogc3RyZXRjaDsgaGVpZ2h0OiA1MjBweDsnPjxpbWcgc3JjPScvVXBsb2Fkcy9WZW50dXJlLzIwMjAtMTEtNS0tMTYtOC02LTE5NV9wb2RhcnNtYXJ0dG91cnMud2VicCcgYWx0PSdQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBTbWFydCBUb3VycycgaGVpZ2h0PSczNTBweCcgc3R5bGU9J29iamVjdC1maXQ6IGNvdmVyOyBib3JkZXItcmFkaXVzOiAxMHB4Oyc+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgZC1mbGV4IGZsZXgtY29sdW1uIGp1c3RpZnktY29udGVudC1iZXR3ZWVuJz48aDU+U21hcnQgVG91cnM8L2g1PjxwIGNsYXNzPSdjYXJkLXRleHQnPkJyb2FkZW5pbmcgeW91bmcgbWluZHMgdGhyb3VnaCBzYWZlLCBlZHVjYXRpdmUgYW5kIHdlbGwtY3VyYXRlZCBzdHVkZW50IHRvdXJzLjwvcD48YSBjbGFzcz0nbGluay10ZXh0JyBocmVmPSdodHRwOi8vc21hcnQtdG91cnMub3JnLyc+UmVhZCBNb3JlIDxzcGFuIGNsYXNzPSdjdXN0b20taWNvbiBjdXN0LWljby1kb3dubG9hZCBtci0xJz48aW1nIHNyYz0nLi4vYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PiA8L2Rpdj4gPC9kaXY+PC9zZWN0aW9uPmQCFg9kFgJmDxYCHwAFxVY8ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjYtNi0xNi0tMTEtNTctMzctNTA1X3BvZGFyZWR1Y2F0aW9ubmV0d29ya19hd2FyZDMxX0VUX0VkdWNhdGlvbl9FeGNlbGxlbmNlX0F3YXJkc18yMDI2LndlYnAnIGFsdD0nUG9kYXIgRWR1Y2F0aW9uIE5ldHdvcmsgaXMgaG9ub3VyZWQgd2l0aCB0aGUgRVQgRWR1Y2F0aW9uIEV4Y2VsbGVuY2UgQXdhcmRzIDIwMjYnICxsb2FkaW5nPSdsYXp5JyAvPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IHRleHQtY2VudGVyJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5Qb2RhciBFZHVjYXRpb24gTmV0d29yayBpcyBob25vdXJlZCB3aXRoIHRoZSBFVCBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZHMgMjAyNjwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjUtMTItMjctLTEwLTM5LTEyLTc5OV9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQzMF9QaW9uZWVyaW5nX0VkdWNhdGlvbl9FeGNlbGxlbmNlX0F3YXJkXzIwMjVfMjAyNi53ZWJwJyBhbHQ9J1BvZGFyIEludGVybmF0aW9uYWwgU2Nob29sIGlzIGhvbm91cmVkIHdpdGggdGhlIFBpb25lZXJpbmcgRWR1Y2F0aW9uIEV4Y2VsbGVuY2UgQXdhcmQgMjAyNeKAkzI2JyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgaXMgaG9ub3VyZWQgd2l0aCB0aGUgUGlvbmVlcmluZyBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZCAyMDI14oCTMjY8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDI1LTEwLTktLTE3LTQyLTE1LTg5N19wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyOV9FVF9FZGdlX1ByZXN0aWdpb3VzX0xlYXJuaW5nX0luc3RpdHV0ZXNfb2ZfSW5kaWFfMjAyNS53ZWJwJyBhbHQ9J1BvZGFyIEludGVybmF0aW9uYWwgU2Nob29sIEhvbm9yZWQgYXMgSW5kaWEncyBQcmVzdGlnaW91cyBMZWFybmluZyBJbnN0aXR1dGUgMjAyNSBieSBFVCBFZGdlJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgSG9ub3JlZCBhcyBJbmRpYSdzIFByZXN0aWdpb3VzIExlYXJuaW5nIEluc3RpdHV0ZSAyMDI1IGJ5IEVUIEVkZ2U8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDI1LTItMjYtLTE0LTMwLTM1LTU5N19wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyOF9UaGVfTW9zdF9UcnVzdGVkX0VkdWNhdGlvbl9CcmFuZF9ieV9CaWdfSW1wYWN0X0F3YXJkc18yMDI1LndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgd2FzIGF3YXJkZWQgYXMgdGhlIE1vc3QgVHJ1c3RlZCBFZHVjYXRpb24gQnJhbmQgYnkgQmlnIEltcGFjdCBBd2FyZHMgMjAyNScgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sIHdhcyBhd2FyZGVkIGFzIHRoZSBNb3N0IFRydXN0ZWQgRWR1Y2F0aW9uIEJyYW5kIGJ5IEJpZyBJbXBhY3QgQXdhcmRzIDIwMjU8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDI0LTEwLTIxLS0xMy0xMC0yOC04Ml9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyN19Nb3N0UmVzcGVjdGVkRWR1Y2F0aW9uQnJhbmRpbkluZGlhMjAyNC0yNS53ZWJwJyBhbHQ9J1BvZGFyIEludGVybmF0aW9uYWwgU2Nob29scyB3YXMgYXdhcmRlZCBhcyB0aGUgTW9zdCBSZXNwZWN0ZWQgRWR1Y2F0aW9uIEJyYW5kIGluIEluZGlhIDIwMjQtMjUgYnkgRWR1Y2F0aW9uIFdvcmxkJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2xzIHdhcyBhd2FyZGVkIGFzIHRoZSBNb3N0IFJlc3BlY3RlZCBFZHVjYXRpb24gQnJhbmQgaW4gSW5kaWEgMjAyNC0yNSBieSBFZHVjYXRpb24gV29ybGQ8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDI0LTQtMi0tMTQtMjQtNDQtNzg0X3BvZGFyZWR1Y2F0aW9ubmV0d29ya19hd2FyZDI2X01vc3RUcnVzdGVkQnJhbmRzb2ZJbmRpYTIwMjQtMjUud2VicCcgYWx0PSdQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCB3YXMgYXdhcmRlZCB0aGUgTW9zdCBUcnVzdGVkIEJyYW5kcyBvZiBJbmRpYSAyMDI0LTI1IGJ5IE1hcmtzbWVuIERhaWx5JyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgd2FzIGF3YXJkZWQgdGhlIE1vc3QgVHJ1c3RlZCBCcmFuZHMgb2YgSW5kaWEgMjAyNC0yNSBieSBNYXJrc21lbiBEYWlseTwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjQtNC0yLS0xNC0yNC05LTExOV9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyNV9CZXN0RWR1Y2F0aW9uQnJhbmRzMjAyNGJ5VGhlRWNvbm9taWNUaW1lcy53ZWJwJyBhbHQ9J1BvZGFyIEVkdWNhdGlvbiBOZXR3b3JrIGhhcyBiZWVuIHJlY29nbmlzZWQgYXMgdGhlIEJlc3QgRWR1Y2F0aW9uIEJyYW5kcyAyMDI0IGJ5IFRoZSBFY29ub21pYyBUaW1lcycgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIEVkdWNhdGlvbiBOZXR3b3JrIGhhcyBiZWVuIHJlY29nbmlzZWQgYXMgdGhlIEJlc3QgRWR1Y2F0aW9uIEJyYW5kcyAyMDI0IGJ5IFRoZSBFY29ub21pYyBUaW1lczwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjMtMTAtMTEtLTE2LTI1LTM2LTMxMF9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyNF9NaW1hbXNhZ3JvdXBhd2FyZDIwMjMud2VicCcgYWx0PSdQb2RhciBFZHVjYXRpb24gTmV0d29yayAtIENoYWluIG9mIFNjaG9vbHMgd2l0aCBIaWdoZXN0IE51bWJlciBvZiBTdHVkZW50cyAoTXVtYmFpIFJlZ2lvbikgMjAyMycgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIEVkdWNhdGlvbiBOZXR3b3JrIC0gQ2hhaW4gb2YgU2Nob29scyB3aXRoIEhpZ2hlc3QgTnVtYmVyIG9mIFN0dWRlbnRzIChNdW1iYWkgUmVnaW9uKSAyMDIzPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMy0xMC01LS0xNC01LTM3LTc3N19wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyM19Nb3N0VHJ1c3RlZEJyYW5kb2Z0aGVOYXRpb24yMDIzLndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgLSBNb3N0IFRydXN0ZWQgQnJhbmQgb2YgdGhlIE5hdGlvbiAyMDIzIGJ5IFRoZSBCcmFuZCBTdG9yeScgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sIC0gTW9zdCBUcnVzdGVkIEJyYW5kIG9mIHRoZSBOYXRpb24gMjAyMyBieSBUaGUgQnJhbmQgU3Rvcnk8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDIzLTktMjctLTE3LTUwLTE4LTgzNl9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyMl9MZWFkaW5nUHJlU2Nob29sQ2hhaW5BcmRvckNvbW1NZWRpYTIwMjMud2VicCcgYWx0PSdQb2RhciBQcmVwIC0gTGVhZGluZyBQcmVzY2hvb2wgQ2hhaW4gKE5hdGlvbmFsKSAyMDIzIGJ5IEFyZG9yQ29tbSBNZWRpYScgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIFByZXAgLSBMZWFkaW5nIFByZXNjaG9vbCBDaGFpbiAoTmF0aW9uYWwpIDIwMjMgYnkgQXJkb3JDb21tIE1lZGlhPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMy05LTI2LS04LTU1LTQ3LTc5MF9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyMl9Qcm9taXNpbmdTY2hvb2xTaWxpY29uSW5kaWEyMDIzLndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2w6IEhvbm9yZWQgQW1vbmcgSW5kaWEncyBUb3AgMTAgTW9zdCBQcm9taXNpbmcgSW50ZXJuYXRpb25hbCBTY2hvb2xzIGJ5IFNpbGljb24gSW5kaWEgMjAyMycgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sOiBIb25vcmVkIEFtb25nIEluZGlhJ3MgVG9wIDEwIE1vc3QgUHJvbWlzaW5nIEludGVybmF0aW9uYWwgU2Nob29scyBieSBTaWxpY29uIEluZGlhIDIwMjM8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDIzLTgtMjYtLTEwLTE1LTE1LTQ2MF9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyMV9JbmRpYXNNb3N0UmVzcGVjdGVkRWR1Y2F0aW9uQnJhbmQyMDIzLndlYnAnIGFsdD0nVGhlIEVjb25vbWljIFRpbWVzIEJlc3QgRWR1Y2F0aW9uIEJyYW5kcyBBd2FyZCAyMDIzJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+VGhlIEVjb25vbWljIFRpbWVzIEJlc3QgRWR1Y2F0aW9uIEJyYW5kcyBBd2FyZCAyMDIzPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMy04LTI2LS0xMC0xMS01Ny01MjdfcG9kYXJlZHVjYXRpb25uZXR3b3JrX2F3YXJkMjFfSW5kaWFzTW9zdFJlc3BlY3RlZEVkdWNhdGlvbkJyYW5kMjAyMi53ZWJwJyBhbHQ9J0luZGlhJ3MgTW9zdCBSZXNwZWN0ZWQgRWR1Y2F0aW9uIEJyYW5kIDIwMjInICxsb2FkaW5nPSdsYXp5JyAvPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IHRleHQtY2VudGVyJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5JbmRpYSdzIE1vc3QgUmVzcGVjdGVkIEVkdWNhdGlvbiBCcmFuZCAyMDIyPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMi03LTE0LS05LTQ1LTMwLTQzNF9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQyMF9CZXN0RWR1Y2F0aW9uQnJhbmRzMjAyMi53ZWJwJyBhbHQ9J1RoZSBFY29ub21pYyBUaW1lcyBCZXN0IEVkdWNhdGlvbiBCcmFuZHMgQXdhcmQgMjAyMiAnICxsb2FkaW5nPSdsYXp5JyAvPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IHRleHQtY2VudGVyJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5UaGUgRWNvbm9taWMgVGltZXMgQmVzdCBFZHVjYXRpb24gQnJhbmRzIEF3YXJkIDIwMjIgPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMi00LTI4LS0xMi01OS01LTc4N19wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQxOV9lNG1QcmlkZW9mSW5kaWFUaGVCZXN0b2ZCaGFyYXRBd2FyZDIwMjIud2VicCcgYWx0PSdlNG0gUHJpZGUgb2YgSW5kaWEgLSBUaGUgQmVzdCBvZiBCaGFyYXTigJkgQXdhcmQgMjAyMicgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPmU0bSBQcmlkZSBvZiBJbmRpYSAtIFRoZSBCZXN0IG9mIEJoYXJhdOKAmSBBd2FyZCAyMDIyPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMi0yLTUtLTE0LTU1LTQ0LTY0NV9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQxOF9JbmRpYXNNb3N0UmVzcGVjdGVkRWFybHlDaGlsZGhvb2RFZHVjYXRpb25CcmFuZDIwMjIud2VicCcgYWx0PSdJbmRpYSdzIE1vc3QgUmVzcGVjdGVkIEVhcmx5IENoaWxkaG9vZCBFZHVjYXRpb24gQnJhbmQgLSBUaGUgRWR1Y2F0aW9uIFdvcmxkIC0gMjEtMjInICxsb2FkaW5nPSdsYXp5JyAvPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IHRleHQtY2VudGVyJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5JbmRpYSdzIE1vc3QgUmVzcGVjdGVkIEVhcmx5IENoaWxkaG9vZCBFZHVjYXRpb24gQnJhbmQgLSBUaGUgRWR1Y2F0aW9uIFdvcmxkIC0gMjEtMjI8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDIyLTEtMTYtLTIwLTI4LTktMTI3X3BvZGFyZWR1Y2F0aW9ubmV0d29ya19hd2FyZDE3X01vc3RSZXNwZWN0ZWRFZHVjYXRpb25CcmFuZGluSW5kaWEyMDIyLndlYnAnIGFsdD0nVGhlIE1vc3QgUmVzcGVjdGVkIEVkdWNhdGlvbiBCcmFuZCBpbiBJbmRpYSAtIFRoZSBFZHVjYXRpb24gV29ybGQgLSAyMS0yMicgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPlRoZSBNb3N0IFJlc3BlY3RlZCBFZHVjYXRpb24gQnJhbmQgaW4gSW5kaWEgLSBUaGUgRWR1Y2F0aW9uIFdvcmxkIC0gMjEtMjI8L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nY2FyZCBhbGlnbi1pdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGp1c3RpZnktY29udGVudC1hcm91bmQnPjxpbWcgc3JjPSdodHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvVXBsb2Fkcy9Bd2FyZC8yMDIyLTEtMjAtLTE1LTExLTMzLTY0N19wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQxNl9MZWFkaW5nU2Nob29sQ2hhaW5OYXRpb25hbDIwMjIud2VicCcgYWx0PSdMZWFkaW5nIFNjaG9vbCBDaGFpbiAoTmF0aW9uYWwpIDIwMjIgLSBBcmRvckNvbW0gTWVkaWEgR3JvdXAgLSAyMDIyJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+TGVhZGluZyBTY2hvb2wgQ2hhaW4gKE5hdGlvbmFsKSAyMDIyIC0gQXJkb3JDb21tIE1lZGlhIEdyb3VwIC0gMjAyMjwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjEtNy01LS0xMi0xMS01OC00NTJfcG9kYXJlZHVjYXRpb25uZXR3b3JrX2F3YXJkMTRfUEVOTW9zdERpc3Rpbmd1aXNoZWRJbnRTY2hvb2xOZXR3b3JrT2ZUaGVZZWFyLndlYnAnIGFsdD0nTW9zdCBEaXN0aW5ndWlzaGVkIEludGVybmF0aW9uYWwgU2Nob29sIE5ldHdvcmsgb2YgdGhlIFllYXIgLSBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZHMgLSAyMDIwLTIxJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+TW9zdCBEaXN0aW5ndWlzaGVkIEludGVybmF0aW9uYWwgU2Nob29sIE5ldHdvcmsgb2YgdGhlIFllYXIgLSBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZHMgLSAyMDIwLTIxPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmQgYWxpZ24taXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtYXJvdW5kJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvQXdhcmQvMjAyMS03LTUtLTEyLTEwLTQxLTgzNl9wb2RhcmVkdWNhdGlvbm5ldHdvcmtfYXdhcmQxNV9QSktCZXN0UHJlU2Nob29sT2ZUaGVZZWFyMjAyMDIwMjEud2VicCcgYWx0PSdCZXN0IFByZS1zY2hvb2wgQnJhbmQgb2YgdGhlIFllYXIgLSBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZHMgLSAyMDIwLTIxJyAsbG9hZGluZz0nbGF6eScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCB0ZXh0LWNlbnRlcic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+QmVzdCBQcmUtc2Nob29sIEJyYW5kIG9mIHRoZSBZZWFyIC0gRWR1Y2F0aW9uIEV4Y2VsbGVuY2UgQXdhcmRzIC0gMjAyMC0yMTwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjAtMTEtNi0tMTAtNDMtMTktNTUyX3BvZGFyZWR1Y2F0aW9ubmV0d29ya19hd2FyZDEzX1BKS2Jlc3RwcmVzY2hvb2xvZnRoZXllYXIyMDIwLndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgQXdhcmRzIC0gQmVzdCBQcmVzY2hvb2wgb2YgdGhlIFllYXIgLSBHbG9iYWwgU2Nob29sIEF3YXJkcyAtIDIwMjAtMjEnICxsb2FkaW5nPSdsYXp5JyAvPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IHRleHQtY2VudGVyJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5CZXN0IFByZXNjaG9vbCBvZiB0aGUgWWVhciAtIEdsb2JhbCBTY2hvb2wgQXdhcmRzIC0gMjAyMC0yMTwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkIGFsaWduLWl0ZW1zLWNlbnRlciB0ZXh0LWNlbnRlciBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL0F3YXJkLzIwMjAtMTEtNi0tMTAtNDMtNDItNjFfcG9kYXJlZHVjYXRpb25uZXR3b3JrX2F3YXJkMTJfb3V0c3RhbmRpbmdlZHVuZXR3b3JrLndlYnAnIGFsdD0nUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgQXdhcmRzIC0gT3V0c3RhbmRpbmcgRWR1Y2F0aW9uYWwgTmV0d29yayBpbiBJbmRpYSAtICBUaGUgRWNvbm9taWNzIFRpbWVzIC0gMjAyMC0yMScgLGxvYWRpbmc9J2xhenknIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgdGV4dC1jZW50ZXInPjxwIGNsYXNzPSdjYXJkLXRleHQnPk91dHN0YW5kaW5nIEVkdWNhdGlvbmFsIE5ldHdvcmsgaW4gSW5kaWEgLSAgVGhlIEVjb25vbWljcyBUaW1lcyAtIDIwMjAtMjE8L3A+PC9kaXY+PC9kaXY+ZAIcD2QWAmYPFgQfAAXJDDxzZWN0aW9uIGNsYXNzPSdsaWZlX2F0X3BvZGFyIGVtcG93ZXIgZXhwcmVzcyc+PGRpdiBjbGFzcz0nY29udGFpbmVyIHRleHQtY2VudGVyIGZsZXggZmxleC1jb2x1bW4ganVzdGlmeS1jb250ZW50LWNlbnRlcic+PGRpdiBjbGFzcz0nY2FyZHNCb3ggZC1mbGV4IGV4cHJlc3Mgc2xpY2stc2xpZGVyJz48ZGl2IGNsYXNzPSdjYXJkV3JhcHBlcic+PGRpdiBjbGFzcz0nY2FyZCc+PGltZyBzcmM9Jy9VcGxvYWRzL0dhbGxlcnkvMjAyMy03LTExLS0xNS0yMy0xNy0yMTBfZm9vdGVyZ2FsbGVyeS1tYWluc2l0ZS0xMDA3MjAyMy0xLmpwZycgYWx0PSdJbm5vdmF0aW9uIExhYicgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCc+PGg1IGNsYXNzPSdjYXJkLXRpdGxlJz48L2g1PjwvZGl2PjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmRXcmFwcGVyJz48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0nL1VwbG9hZHMvR2FsbGVyeS8yMDIzLTctMTAtLTE4LTEyLTEzLTY5MV9mb290ZXJnYWxsZXJ5LW1haW5zaXRlLTEwMDcyMDIzLTMuanBnJyBhbHQ9J0tpZHMgYXQgUG9kYXInIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQnPjxoNSBjbGFzcz0nY2FyZC10aXRsZSc+PC9oNT48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkV3JhcHBlcic+PGRpdiBjbGFzcz0nY2FyZCc+PGltZyBzcmM9Jy9VcGxvYWRzL0dhbGxlcnkvMjAyMy03LTExLS0xNS0yNC02LTE0Nl9mb290ZXJnYWxsZXJ5LW1haW5zaXRlLTEwMDcyMDIzLTIuanBnJyBhbHQ9JzNEIFByaW50ZXInIC8+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQnPjxoNSBjbGFzcz0nY2FyZC10aXRsZSc+PC9oNT48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdjYXJkV3JhcHBlcic+PGRpdiBjbGFzcz0nY2FyZCc+PGltZyBzcmM9Jy9VcGxvYWRzL0dhbGxlcnkvMjAyMy03LTExLS0xNS0yNy0zLTIwOV9mb290ZXJnYWxsZXJ5LW1haW5zaXRlLTEwMDcyMDIzLTQuanBnJyBhbHQ9J0ludGVncmF0ZWQgTGlicmFyeScgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCc+PGg1IGNsYXNzPSdjYXJkLXRpdGxlJz48L2g1PjwvZGl2PjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmRXcmFwcGVyJz48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0nL1VwbG9hZHMvR2FsbGVyeS8yMDIzLTctMTAtLTE4LTEzLTU1LTkwOV9mb290ZXJnYWxsZXJ5LW1haW5zaXRlLTEwMDcyMDIzLTYuanBnJyBhbHQ9J1BvZGFyIFByZXAgU2VjdGlvbicgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCc+PGg1IGNsYXNzPSdjYXJkLXRpdGxlJz48L2g1PjwvZGl2PjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J2NhcmRXcmFwcGVyJz48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0nL1VwbG9hZHMvR2FsbGVyeS8yMDIzLTctMTEtLTE1LTI4LTM4LTYyOF9mb290ZXJnYWxsZXJ5LW1haW5zaXRlLTEwMDcyMDIzLTUuanBnJyBhbHQ9J0NvbXB1dGVyIExhYicgLz48ZGl2IGNsYXNzPSdjYXJkLWJvZHkgdGV4dC1zdGFydCc+PGg1IGNsYXNzPSdjYXJkLXRpdGxlJz48L2g1PjwvZGl2PjwvZGl2PjwvZGl2PjwvZGl2PjwvZGl2Pjwvc2VjdGlvbj4fA2hkAiAPZBYCZg8WAh8ABc0WPHNlY3Rpb24gY2xhc3M9J2xhdGVzdF9uZXdzJz48ZGl2IGNsYXNzPSdjb250YWluZXIgdGV4dC1jZW50ZXIgZC1mbGV4IGZsZXgtY29sdW1uJz48ZGl2IGNsYXNzPSd0aXRsZV9wdXJwbGVfMzBweCB0ZXh0LWNlbnRlcic+TGF0ZXN0IE5ld3M8L2Rpdj48ZGl2IGNsYXNzPSdjYXJkc0JveCBkLWZsZXgganVzdGlmeS1jb250ZW50LWFyb3VuZCBsYXRlc3ROZXdzIHNsaWNrLXNsaWRlcicgaWQ9J2xhdGVzdE5ld3MnPjxkaXY+PGRpdiBjbGFzcz0nY2FyZCc+PGltZyBzcmM9J2h0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9VcGxvYWRzL05ld3MvMjAyNi02LTE2LS0xMS01MC01OC0yNzZfdHJhbnNmb3JtYXRpb25hbGsxMnNjaG9vbG5ldHdvcmthd2FyZDIwMjZfY29ycG9yYXRlXzE2MDYyMDI2LndlYnAnIGFsdD0nUG9kYXIgRWR1Y2F0aW9uIE5ldHdvcmsgd2lucyB0aGUgJ1RyYW5zZm9ybWF0aW9uYWwgS+KAkzEyIFNjaG9vbCBOZXR3b3JrJyBBd2FyZCBhdCB0aGUgRVQgRWR1Y2F0aW9uIEV4Y2VsbGVuY2UgQXdhcmRzIC0gMjAyNic+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgZC1mbGV4IGZsZXgtY29sdW1uIGp1c3RpZnktY29udGVudC1iZXR3ZWVuJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5Qb2RhciBFZHVjYXRpb24gTmV0d29yayB3aW5zIHRoZSAnVHJhbnNmb3JtYXRpb25hbCBL4oCTMTIgU2Nob29sIE5ldHdvcmsnIEF3YXJkIGF0IHRoZSBFVCBFZHVjYXRpb24gRXhjZWxsZW5jZSBBd2FyZHMgLSAyMDI2PC9wPjxhIGNsYXNzPSdsaW5rLXRleHQnIGhyZWY9Jy9wb2Rhcm5ld3MvMzkwNjQnPlJlYWQgTW9yZSA8c3BhbiBjbGFzcz0nY3VzdG9tLWljb24gY3VzdC1pY28tZG93bmxvYWQgbXItMSc+PGltZyBzcmM9Jy9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tb3JhbmdlLWFycm93LnBuZycgYWx0PSdhcnJvdyBpY29uJyAvPjwvc3Bhbj48L2E+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdj48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvTmV3cy8yMDI2LTQtMjktLTEwLTM0LTctMTQxX3BvZGFyLWludGVybmF0aW9uYWwtc2Nob29sLWNic2UtcmVzdWx0cy0yMDI1LTIwMjYtdGh1bWIud2VicCcgYWx0PSdPdXRzdGFuZGluZyBSZXN1bHRzIGluIHRoZSBHcmFkZSAxMCBDQlNFIEJvYXJkIGV4YW1zIDIwMjUtMjYnPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IGQtZmxleCBmbGV4LWNvbHVtbiBqdXN0aWZ5LWNvbnRlbnQtYmV0d2Vlbic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+T3V0c3RhbmRpbmcgUmVzdWx0cyBpbiB0aGUgR3JhZGUgMTAgQ0JTRSBCb2FyZCBleGFtcyAyMDI1LTI2PC9wPjxhIGNsYXNzPSdsaW5rLXRleHQnIGhyZWY9Jy9wb2Rhcm5ld3MvMzkwMDUnPlJlYWQgTW9yZSA8c3BhbiBjbGFzcz0nY3VzdG9tLWljb24gY3VzdC1pY28tZG93bmxvYWQgbXItMSc+PGltZyBzcmM9Jy9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tb3JhbmdlLWFycm93LnBuZycgYWx0PSdhcnJvdyBpY29uJyAvPjwvc3Bhbj48L2E+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdj48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvTmV3cy8yMDI2LTUtNS0tMTctNDUtMzYtOTg3X25hdGlvbmFsbGV2ZWxhYmFjdXNjb21wZXRpdGlvbjIwMjZfdWpqYWluXzA1MDUyMDI2LndlYnAnIGFsdD0nQWFyb2hpIFNldGhpIENyb3duZWQgIkNoYW1waW9uIG9mIENoYW1waW9ucyIgYXQgTmF0aW9uYWwgQWJhY3VzIENvbXBldGl0aW9uIC0gMjAyNic+PGRpdiBjbGFzcz0nY2FyZC1ib2R5IHRleHQtc3RhcnQgZC1mbGV4IGZsZXgtY29sdW1uIGp1c3RpZnktY29udGVudC1iZXR3ZWVuJz48cCBjbGFzcz0nY2FyZC10ZXh0Jz5BYXJvaGkgU2V0aGkgQ3Jvd25lZCAiQ2hhbXBpb24gb2YgQ2hhbXBpb25zIiBhdCBOYXRpb25hbCBBYmFjdXMgQ29tcGV0aXRpb24gLSAyMDI2PC9wPjxhIGNsYXNzPSdsaW5rLXRleHQnIGhyZWY9Jy9wb2Rhcm5ld3MvMzkwMTAnPlJlYWQgTW9yZSA8c3BhbiBjbGFzcz0nY3VzdG9tLWljb24gY3VzdC1pY28tZG93bmxvYWQgbXItMSc+PGltZyBzcmM9Jy9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tb3JhbmdlLWFycm93LnBuZycgYWx0PSdhcnJvdyBpY29uJyAvPjwvc3Bhbj48L2E+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdj48ZGl2IGNsYXNzPSdjYXJkJz48aW1nIHNyYz0naHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL1VwbG9hZHMvTmV3cy8yMDI1LTktMjQtLTE2LTM4LTQzLTcxOF9jYnNlbmF0aW9uYWxhdGhsZXRpY21lZXQyMDI1X3NoaXZhbW9nZ2FfdmlkeWFuYWdhcl8yNDA5MjAyNS53ZWJwJyBhbHQ9J1BvZGFyIEludGVybmF0aW9uYWwgU2Nob29sLCBTaGl2YW1vZ2dhIFdpbnMgQ0JTRSBVLTE3IEdpcmxz4oCZIE5hdGlvbmFsIENoYW1waW9uc2hpcCAyMDI14oCTMjYnPjxkaXYgY2xhc3M9J2NhcmQtYm9keSB0ZXh0LXN0YXJ0IGQtZmxleCBmbGV4LWNvbHVtbiBqdXN0aWZ5LWNvbnRlbnQtYmV0d2Vlbic+PHAgY2xhc3M9J2NhcmQtdGV4dCc+UG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wsIFNoaXZhbW9nZ2EgV2lucyBDQlNFIFUtMTcgR2lybHPigJkgTmF0aW9uYWwgQ2hhbXBpb25zaGlwIDIwMjXigJMyNjwvcD48YSBjbGFzcz0nbGluay10ZXh0JyBocmVmPScvcG9kYXJuZXdzLzM4NzQ0Jz5SZWFkIE1vcmUgPHNwYW4gY2xhc3M9J2N1c3RvbS1pY29uIGN1c3QtaWNvLWRvd25sb2FkIG1yLTEnPjxpbWcgc3JjPScvYXNzZXRzL2ltYWdlcy9pY29ucy9pY29uLW9yYW5nZS1hcnJvdy5wbmcnIGFsdD0nYXJyb3cgaWNvbicgLz48L3NwYW4+PC9hPjwvZGl2PjwvZGl2PjwvZGl2PiA8L2Rpdj4gPC9kaXY+PC9zZWN0aW9uPmQCIw9kFgJmDxYCHwAFmAM8YSBjbGFzcz0nY291bnRlckJveCcgaHJlZj0nL2Fib3V0LXBvZGFyLWVkdWNhdGlvbi1uZXR3b3JrJyBvbmNsaWNrPVF1aWNrTGlua0dvb2dsZVRhZygnQWJvdXQmbmJzcDtVcycpPjxkaXYgY2xhc3M9J2NvdW50ZXJJY29uIGFkakhlaWdodCc+PGltZyBzcmM9ICcuLi8uLi9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tdGVzdGltb25pYWxzLnBuZycgY2xhc3M9J2xhenknIGRhdGEtc3JjPScuLi8uLi9hc3NldHMvaW1hZ2VzL2ljb25zL2ljb24tdGVzdGltb25pYWxzLnBuZycgZGF0YS1zcmNzZXQ9Jy4uLy4uL2Fzc2V0cy9pbWFnZXMvaWNvbnMvaWNvbi10ZXN0aW1vbmlhbHMucG5nJyBhbHQ9J3N0YXIgaWNvbicgLz48L2Rpdj48ZGl2IGNsYXNzPSdjY291bnRlckRlc2NyaXB0aW9uJz5BYm91dCBVczwvZGl2PjwvYT5kAiUPZBYCAgIPFgIfAAX8UDxkaXYgY2xhc3M9ImFjY29yZGlvbi1pdGVtIj4NCjxoNCBjbGFzcz0iYWNjb3JkaW9uLWhlYWRlciIgaWQ9ImhlYWRpbmcwIj48YnV0dG9uIGNsYXNzPSJhY2NvcmRpb24tYnV0dG9uIGNvbGxhcHNlZCIgdHlwZT0iYnV0dG9uIiBkYXRhLWJzLXRvZ2dsZT0iY29sbGFwc2UiIGRhdGEtYnMtdGFyZ2V0PSIjY29sbGFwc2UwIiBhcmlhLWV4cGFuZGVkPSJmYWxzZSIgYXJpYS1jb250cm9scz0iY29sbGFwc2UwIj48c3Bhbj5Qcm92aWRlIGRldGFpbHMgYWJvdXQgUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2w/PC9zcGFuPjwvYnV0dG9uPjwvaDQ+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24tY29sbGFwc2UgY29sbGFwc2UiIGlkPSJjb2xsYXBzZTAiIGFyaWEtbGFiZWxsZWRieT0iaGVhZGluZzAiIGRhdGEtYnMtcGFyZW50PSIjYWNjb3JkaW9uIj4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1ib2R5Ij4NCjxwPldlbGNvbWUgdG8gUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2whIEFzIHBhcmVudHMgYW5kIGd1YXJkaWFucywgeW91IHdhbnQgdG8gZ2l2ZSB5b3VyIGNoaWxkcmVuIHRoZSBiZXN0IG9mIGV2ZXJ5dGhpbmctIHF1YWxpdHkgZWR1Y2F0aW9uLCBhIHNhZmUgYW5kIG51cnR1cmluZyBlbnZpcm9ubWVudCBhbmQgbWVhbnMgdG8gbGl2ZSBhIHdlbGwtYmFsYW5jZWQsIGhvbGlzdGljIGxpZmUuIEJ5IGVucm9sbGluZyB5b3VyIGNoaWxkcmVuIGF0IFBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sLCB5b3Ugd2lsbCBiZSB0YWtpbmcgdGhlIGZpcnN0IHN0ZXAgdG93YXJkcyBhIGJyaWdodCBmdXR1cmUgZm9yIHlvdXIgY2hpbGRyZW4uPC9wPg0KPHA+V2l0aCA5OSB5ZWFycyBvZiBleHBlcnRpc2UgaW4gdGhlIGZpZWxkIG9mIGxlYXJuaW5nLCBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBpcyBjb25zaWRlcmVkIGFtb25nIHRoZSBiZXN0IENCU0UsIElDU0UgYW5kIEludGVybmF0aW9uYWwgc2Nob29scyBpbiBJbmRpYS4gVGhlIFBvZGFyIGdyb3VwIGhhcyB1bmRlciBpdHMgd2luZ3M6PC9wPg0KPHVsPg0KICAgICA8bGk+QSBjb21iaW5lZCBzdHVkZW50IHN0cmVuZ3RoIG9mIG1vcmUgdGhhbiAyLDc1LDAwMDwvbGk+DQogICAgIDxsaT5TdXBwb3J0IG9mIDgsMDAwIGRlZGljYXRlZCBhbmQgbG95YWwgc3RhZmYgbWVtYmVycy48L2xpPg0KPC91bD4NCjxwPk9mZmVyaW5nIGxlYXJuaW5nIHByb2dyYW1zIGZyb20gcHJlLXByaW1hcnkgdG8gY2xhc3MgMTIsIHdlJiM4MjE3O3JlIGFtb25nIHRoZSBiZXN0IGFuZCBhbGwtZW5jb21wYXNzaW5nIHNjaG9vbHMgaW4gSW5kaWEuIENvbnNpZGVyZWQgYW1vbmcgdGhlIHBpb25lZXJzIG9mIGVkdWNhdGlvbiBpbiBJbmRpYSwgUG9kYXIgb2ZmZXJzIGEgcGxldGhvcmEgb2YgZWR1Y2F0aW9uYWwgc3RyZWFtcyBzdWNoIGFzOjwvcD4NCjx1bD4NCiAgICAgPGxpPkNlbnRyYWwgQm9hcmQgb2YgU2Vjb25kYXJ5IEVkdWNhdGlvbiAoQ0JTRSk8L2xpPg0KICAgICA8bGk+Q291bmNpbCBmb3IgdGhlIEluZGlhbiBTY2hvb2wgQ2VydGlmaWNhdGUgRXhhbWluYXRpb25zIChDSVNDRSk8L2xpPg0KICAgICA8bGk+U2Vjb25kYXJ5IFNjaG9vbCBDZXJ0aWZpY2F0ZSAoU1NDKTwvbGk+DQogICAgIDxsaT5DYW1icmlkZ2UgKElHQ1NFKTwvbGk+DQogICAgIDxsaT5JbnRlcm5hdGlvbmFsIEJhY2NhbGF1cmVhdGUgKElCKTwvbGk+DQo8L3VsPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KPGg0IGNsYXNzPSJhY2NvcmRpb24taGVhZGVyIiBpZD0iaGVhZGluZzEiPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24gY29sbGFwc2VkIiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdG9nZ2xlPSJjb2xsYXBzZSIgZGF0YS1icy10YXJnZXQ9IiNjb2xsYXBzZTEiIGFyaWEtZXhwYW5kZWQ9ImZhbHNlIiBhcmlhLWNvbnRyb2xzPSJjb2xsYXBzZTEiPjxzcGFuPldoeSBDaG9vc2UgUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2w/PC9zcGFuPjwvYnV0dG9uPjwvaDQ+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24tY29sbGFwc2UgY29sbGFwc2UiIGlkPSJjb2xsYXBzZTEiIGFyaWEtbGFiZWxsZWRieT0iaGVhZGluZzEiIGRhdGEtYnMtcGFyZW50PSIjYWNjb3JkaW9uIj4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1ib2R5Ij4NCjxwPldlIGJlbGlldmUgaW4gaG9saXN0aWMgbGVhcm5pbmcuIFdoaWxlIHdlIHdhbnQgeW91ciBjaGlsZCB0byBleGNlbCBpbiBhY2FkZW1pY3MsIHdlIGFsc28gZG9uJiM4MjE3O3Qgd2FudCB0aGVtIHRvIGRpbWluaXNoIHRoZWlyIHBhc3Npb24uIE91ciBqb2IsIGFzIGFuIGVkdWNhdGlvbmFsIGluc3RpdHV0ZSwgaXMgdG8gcHJlcGFyZSB0aGUgeW91bmcgbWluZHMgb2YgdG9kYXkgZm9yIGEgYnJpZ2h0IHRvbW9ycm93LiBIZW5jZSwgd2UgZm9jdXMgb24gY3JlYXRpbmcgYWxsLXJvdW5kZXJzLjwvcD4NCjxwPlRoYW5rcyB0byB0aGUgdmFyaWV0eSBvZiBib2FyZHMgb2ZmZXJlZCwgYXMgcGFyZW50cyB5b3UgaGF2ZSB0aGUgY2hvaWNlIHRvIHNlbGVjdCBiZXR3ZWVuIG11bHRpcGxlIG9wdGlvbnMsIGFsbCB1bmRlciBvbmUgdW1icmVsbGEuIFBvZGFyIGlzIGNvbnNpZGVyZWQgYW1vbmcgdGhlIGJlc3QgQ0JTRSBzY2hvb2xzIGluIEluZGlhLCBhbmQgdGhlIGJlc3QgSUNTRSBzY2hvb2xzIGluIEluZGlhIGluIGFkZGl0aW9uIHRvIGhvbGRpbmcgaXRzIHBvc2l0aW9uIGFtb25nIHRoZSB0b3AgaW50ZXJuYXRpb25hbCBzY2hvb2xzIGluIEluZGlhLiBXaHkgc28/IEJlY2F1c2Ugb2YgdGhlIHF1YWxpdHkgb2YgZWR1Y2F0aW9uIHdlIHByb3ZpZGUuIE91ciBpbm5vdmF0aXZlIGxlYXJuaW5nIG1ldGhvZHMsIGVxdWFsIGZvY3VzIG9uIGFjYWRlbWljcyBhbmQgZXh0cmFjdXJyaWN1bGFyLCBhbmQgYSBzdHJvbmcgY3VycmljdWx1bSBhbGwgdG9nZXRoZXIgYXJlIGEgcGVyZmVjdCBjb21iaW5hdGlvbiBmb3IgZ3Jvd3RoIGFuZCBzdWNjZXNzLjwvcD4NCjxwPlRocm91Z2ggdGhlIFBvZGFyIElubm92YXRpb24gY2VudGVyLCA4MCsgYWNhZGVtaWNpYW5zIGhhdmUgY29tZSB0b2dldGhlciB0byBjcmVhdGUgYSBjdXJyaWN1bHVtIGFuZCBjb250ZW50IGJhc2VkIG9uIHRoZSBndWlkZWxpbmVzIG9mIHZhcmlvdXMgYm9hcmRzIGluY2x1ZGluZyBDQlNFLCBJQ1NFLCBDQUlFIGFuZCB0aGUgTWFoYXJhc2h0cmEgU3RhdGUgQm9hcmQuIEFwYXJ0IGZyb20gb2ZmZXJpbmcgYSBzdHJvbmcgc3lsbGFidXMgYW5kIGN1cnJpY3VsdW0sIHRoZSBQSUMgYWxzbyBvZmZlcnMgZmFjaWxpdGllcyBhbmQgcHJvZ3JhbXMgc3VjaCBhcyByZW1lZGlhbCBsZWFybmluZyB0aGF0IGhlbHAgdGVhY2hlcnMgaW4gYXNzaXN0aW5nIHN0dWRlbnRzIHRvIGNvcGUgd2l0aCBkaWZmaWN1bHQgY29uY2VwdHMsIHN5bXBob25pYywgbWF0aCBneW0sIG1hdGggbGFiIGFuZCBsaWZlIHNraWxscyB0aGF0IGFyZSBhcHByb3ByaWF0ZSBmb3IgdGhlaXIgZnV0dXJlIGFuZCBoZWxwIHRoZW0gaW4gYmVjb21pbmcgaW5kZXBlbmRlbnQuPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KPGg0IGNsYXNzPSJhY2NvcmRpb24taGVhZGVyIiBpZD0iaGVhZGluZzIiPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24gY29sbGFwc2VkIiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdG9nZ2xlPSJjb2xsYXBzZSIgZGF0YS1icy10YXJnZXQ9IiNjb2xsYXBzZTIiIGFyaWEtZXhwYW5kZWQ9ImZhbHNlIiBhcmlhLWNvbnRyb2xzPSJjb2xsYXBzZTIiPjxzcGFuPldoYXQgU2V0cyBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBBcGFydD88L3NwYW4+PC9idXR0b24+PC9oND4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb2xsYXBzZSBjb2xsYXBzZSIgaWQ9ImNvbGxhcHNlMiIgYXJpYS1sYWJlbGxlZGJ5PSJoZWFkaW5nMiIgZGF0YS1icy1wYXJlbnQ9IiNhY2NvcmRpb24iPg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPg0KPHA+V2hlbiB3ZSBjYWxsIG91cnNlbHZlcyBwaW9uZWVycyBhbmQgY2hlZXJsZWFkZXJzIG9mIGVkdWNhdGlvbiBpbiBJbmRpYSwgd2UgdGFrZSB0aG9zZSBtb25pa2VycyBzZXJpb3VzbHkuIFdlIHdhbnQgdG8gbWFrZSBsZWFybmluZyBhY2Nlc3NpYmxlIHRvIGFsbCwgYW5kIGZvciB0aGF0IHdlIHdpbGwgaGF2ZSB0byBzcHJlYWQgb3VyIHdpbmdzLiBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBpcyBwcmVzZW50IGFjcm9zcyB0aGUgbGVuZ3RoIGFuZCBicmVhZHRoIG9mIHRoZSBjb3VudHJ5IHRocm91Z2ggbXVsdGlwbGUgYnJhbmNoZXMuIFRoaXMgbWFrZXMgZWR1Y2F0aW9uIGFjY2Vzc2libGUgdG8gZXZlcnlvbmUuPC9wPg0KPHA+QmVzaWRlcywgd2UgYWxzbyB1bmRlcnN0YW5kIHRoYXQgaW4gdG9kYXkmIzgyMTc7cyBkYXkgYW5kIGFnZSwgbW9zdCBwYXJlbnRzIGFyZSBhbHNvIGNoYXNpbmcgdGhlaXIgb3duIGNhcmVlcnMgd2hpbGUgdHJ5aW5nIHRvIGdpdmUgdGhlaXIga2lkcyB0aGUgYmVzdCBxdWFsaXR5IG9mIGxpZmUgYW5kIGVkdWNhdGlvbi4gVG8gYWlkIHRoZW0gaW4gdGhlaXIgam91cm5leSBhbmQgbm90IHN0b3AgdGhlbSBmcm9tIHJlYWxpemluZyB0aGVpciBkcmVhbXMsIHRoZSBwcmVzZW5jZSBvZiBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBpbiB2YXJpb3VzIHBhcnRzIG9mIHRoZSBjb3VudHJ5IGdpdmVzIGl0IGFuIGVkZ2UuIElmIHlvdSYjODIxNztyZSBhIHBhcmVudCBpbiBhIHRyYW5zZmVyYWJsZSBqb2IsIGVucm9sbGluZyB5b3VyIGNoaWxkIGluIG91ciBzY2hvb2wgd2lsbCBoZWxwIHlvdSBwaWNrIHVwIHRoZSBuZXh0IGJlc3Qgb3Bwb3J0dW5pdHkgYXMgd2UgaGF2ZSBicmFuY2hlcyBhY3Jvc3MgbXVsdGlwbGUgY2l0aWVzIGFuZCBzdGF0ZXMuIE9uY2UgeW91ciBjaGlsZCBpcyBhIHBhcnQgb2YgdGhlIFBvZGFyIEVkdWNhdGlvbiBOZXR3b3JrLCBpdCB3aWxsIGJlIGVhc2llciBmb3IgeW91IHRvIHJlLWVucm9sbCB0aGVtIGluIGEgaGFzc2xlLWZyZWUgbWFubmVyIGluIG9uZSBvZiB0aGUgdG9wIHNjaG9vbHMgaW4gSW5kaWEuPC9wPg0KPHA+VGhlIGljaW5nIG9uIHRoZSBjYWtlLCBuZWVkbGVzcyB0byBzYXksIGlzIHRoZSBQb2RhciBJbm5vdmF0aW9uIENlbnRyZSB0aGF0IGhlbHBzIGJpbmQgdXMgYWxsLiBBIGNlbnRyYWxpemVkIGxlYXJuaW5nIGNlbnRyZSBtYWtlcyB0aGUgam9iIGVhc2llciBmb3IgdGhlIHRlYWNoZXJzLCBzdHVkZW50cywgYW5kIHBhcmVudHMuIEFkZCB0byBpdCBvdXIgc3Ryb25nIHBhcmVudC10ZWFjaGVyIGNvbW11bml0eSB0aGF0IGNvbWVzIHRvZ2V0aGVyIG9mdGVuIHRvIGVuc3VyZSB0aGV5JiM4MjE3O3JlIG9uIHRoZSBzYW1lIHBhZ2UgYW5kIHRvIGRpc2N1c3MgYWxsIHRoZSBkaWZmZXJlbnQgd2F5cyB0aGV5IGNhbiBtYWtlIHNjaG9vbCBsaWZlIGVhc3kgYW5kIGZ1biBmb3IgY2hpbGRyZW4uPC9wPg0KPHA+SW4gc3VtbWF0aW9uLCBhdCBQb2Rhcjo8L3A+DQo8dWw+DQogICAgIDxsaT5XZSYjODIxNztyZSB0ZWNobm9sb2d5IGZpcnN0PC9saT4NCiAgICAgPGxpPkhhdmUgc3RhdGUtb2YtdGhlLWFydCBpbmZyYXN0cnVjdHVyZTwvbGk+DQogICAgIDxsaT5IYXZlIHByb3Zpc2lvbnMgZm9yIEluZG9vciBhbmQgb3V0ZG9vciBnYW1lczwvbGk+DQogICAgIDxsaT5IYXZlIGEgc3RyZXNzLWZyZWUgYW5kIGNsZWFuIGVudmlyb25tZW50PC9saT4NCiAgICAgPGxpPldlbGwtZXF1aXBwZWQsIHZlbnRpbGF0ZWQsIGFuZCBzcGFjaW91cyBjbGFzc3Jvb21zPC9saT4NCjwvdWw+DQo8cD5BbmQgc28gbXVjaCBtb3JlLjwvcD4NCjxwPkZvciB0aG9zZSBpbnRlcmVzdGVkIGluIGFkbWl0dGluZyB0aGVpciBraWRzIHRvIG91ciBzY2hvb2wsIG91ciBhZG1pc3Npb24gcHJvY2VzcyBpcyBzd2lmdCBhbmQgZWFzeS4gUGxlYXNlIHZpc2l0IGh0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9hZG1pc3Npb25zIGZvciBtb3JlIGluZm9ybWF0aW9uLjwvcD4NCjwhLS0NCjxwPlBvZGFyIEludGVybmF0aW9uYWwgaXMgY29uc2lkZXJlZCBhbW9uZyB0aGUgdG9wIEluZGlhbiBzY2hvb2xzIG9mIHRvZGF5J3MgdGltZXMsIGFuZCBoYXMgYSB3aWRlIHByZXNlbmNlIGFyb3VuZCB0aGUgY291bnRyeS4gV2UgaGF2ZSBzY2hvb2xzIGluIHNvbWUgb2YgdGhlIHRvcCBJbmRpYW4gY2l0aWVzIHN1Y2ggYXM6PC9wPg0KPHVsPg0KICAgICA8bGk+PGEgaHJlZj0iL3NjaG9vbHMtaW4tbXVtYmFpIj5TY2hvb2xzIGluIE11bWJhaTwvYT48L2xpPg0KICAgICA8bGk+PGEgaHJlZj0iL3NjaG9vbHMtaW4tbXVtYmFpIj5TY2hvb2xzIGluIFB1bmU8L2E+PC9saT4NCiAgICAgPGxpPjxhIGhyZWY9Ii9zY2hvb2xzLWluLW11bWJhaSI+U2Nob29scyBpbiBOYWdwdXI8L2E+PC9saT4NCiAgICAgPGxpPjxhIGhyZWY9Ii9zY2hvb2xzLWluLW11bWJhaSI+U2Nob29scyBpbiBDaGhhdHJhcGF0aSBTYW1iaGFqaSBOYWdhcjwvYT48L2xpPg0KICAgICA8bGk+PGEgaHJlZj0iL3NjaG9vbHMtaW4tbXVtYmFpIj5TY2hvb2xzIGluIE5hc2hpazwvYT48L2xpPg0KICAgICA8bGk+PGEgaHJlZj0iL3NjaG9vbHMtaW4tbXVtYmFpIj5TY2hvb2xzIGluIFRoYW5lPC9hPjwvbGk+DQogICAgIDxsaT48YSBocmVmPSIvc2Nob29scy1pbi1tdW1iYWkiPlNjaG9vbHMgaW4gTmF2aSBNdW1iYWk8L2E+PC9saT4NCiAgICAgPGxpPjxhIGhyZWY9Ii9zY2hvb2xzLWluLW11bWJhaSI+U2Nob29scyBpbiBBaG1lZGFiYWQ8L2E+PC9saT4NCiAgICAgPGxpPjxhIGhyZWY9Ii9zY2hvb2xzLWluLW11bWJhaSI+U2Nob29scyBpbiBCZW5nYWx1cnU8L2E+PC9saT4NCjwvdWw+DQotLT4NCjxwPkFwYXJ0IGZyb20gdGhlc2UsIHdlJ3JlIHByZXNlbnQgaW4gbXVsdGlwbGUgb3RoZXIgbG9jYXRpb25zIGFjcm9zcyB0aGUgY291bnRyeS48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24taXRlbSI+DQo8aDQgY2xhc3M9ImFjY29yZGlvbi1oZWFkZXIiIGlkPSJoZWFkaW5nMyI+PGJ1dHRvbiBjbGFzcz0iYWNjb3JkaW9uLWJ1dHRvbiBjb2xsYXBzZWQiIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLWJzLXRhcmdldD0iI2NvbGxhcHNlMyIgYXJpYS1leHBhbmRlZD0iZmFsc2UiIGFyaWEtY29udHJvbHM9ImNvbGxhcHNlMyI+PHNwYW4+SXMgUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2wgcHJpdmF0ZT88L3NwYW4+PC9idXR0b24+PC9oND4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb2xsYXBzZSBjb2xsYXBzZSIgaWQ9ImNvbGxhcHNlMyIgYXJpYS1sYWJlbGxlZGJ5PSJoZWFkaW5nMyIgZGF0YS1icy1wYXJlbnQ9IiNhY2NvcmRpb24iPg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPg0KPHA+WWVzLiBBbGwgUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2xzIGluIEluZGlhIGFyZSBwcml2YXRlbHkgb3duZWQgYW5kIG1hbmFnZWQuPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KPGg0IGNsYXNzPSJhY2NvcmRpb24taGVhZGVyIiBpZD0iaGVhZGluZzQiPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24gY29sbGFwc2VkIiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdG9nZ2xlPSJjb2xsYXBzZSIgZGF0YS1icy10YXJnZXQ9IiNjb2xsYXBzZTQiIGFyaWEtZXhwYW5kZWQ9ImZhbHNlIiBhcmlhLWNvbnRyb2xzPSJjb2xsYXBzZTQiPjxzcGFuPldoaWNoIGJvYXJkIGRvZXMgUG9kYXIgc2Nob29sIGhhdmU/PC9zcGFuPjwvYnV0dG9uPjwvaDQ+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24tY29sbGFwc2UgY29sbGFwc2UiIGlkPSJjb2xsYXBzZTQiIGFyaWEtbGFiZWxsZWRieT0iaGVhZGluZzQiIGRhdGEtYnMtcGFyZW50PSIjYWNjb3JkaW9uIj4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1ib2R5Ij4NCjxwPlRoZSBQb2RhciBOZXR3b3JrIG9mIFNjaG9vbHMgcHJvdmlkZXMgYSBkaXZlcnNlIHJhbmdlIG9mIGVkdWNhdGlvbmFsIG9wcG9ydHVuaXRpZXMsIGluY2x1ZGluZyB0aGUgQ2VudHJhbCBCb2FyZCBvZiBTZWNvbmRhcnkgRWR1Y2F0aW9uIChDQlNFKSwgdGhlIENvdW5jaWwgZm9yIHRoZSBJbmRpYW4gU2Nob29sIENlcnRpZmljYXRlIEV4YW1pbmF0aW9ucyAoQ0lTQ0UpLCB0aGUgU2Vjb25kYXJ5IFNjaG9vbCBDZXJ0aWZpY2F0ZSAoU1NDKSwgQ2FtYnJpZGdlIChJR0NTRSksIGFuZCB0aGUgSW50ZXJuYXRpb25hbCBCYWNjYWxhdXJlYXRlIChJQikuPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KPGg0IGNsYXNzPSJhY2NvcmRpb24taGVhZGVyIiBpZD0iaGVhZGluZzUiPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24gY29sbGFwc2VkIiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdG9nZ2xlPSJjb2xsYXBzZSIgZGF0YS1icy10YXJnZXQ9IiNjb2xsYXBzZTUiIGFyaWEtZXhwYW5kZWQ9ImZhbHNlIiBhcmlhLWNvbnRyb2xzPSJjb2xsYXBzZTUiPjxzcGFuPkhvdyBtYW55IGJyYW5jaGVzIGFyZSB0aGVyZSBvZiBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbCBpbiBJbmRpYT88L3NwYW4+PC9idXR0b24+PC9oND4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb2xsYXBzZSBjb2xsYXBzZSIgaWQ9ImNvbGxhcHNlNSIgYXJpYS1sYWJlbGxlZGJ5PSJoZWFkaW5nNSIgZGF0YS1icy1wYXJlbnQ9IiNhY2NvcmRpb24iPg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPg0KPHA+VGhlcmUgYXJlIDE2NSBQb2RhciBJbnRlcm5hdGlvbmFsIFNjaG9vbHMgbG9jYXRlZCBhbGwgb3ZlciB0aGUgY291bnRyeS48L3A+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24taXRlbSI+DQo8aDQgY2xhc3M9ImFjY29yZGlvbi1oZWFkZXIiIGlkPSJoZWFkaW5nNiI+PGJ1dHRvbiBjbGFzcz0iYWNjb3JkaW9uLWJ1dHRvbiBjb2xsYXBzZWQiIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLWJzLXRhcmdldD0iI2NvbGxhcHNlNiIgYXJpYS1leHBhbmRlZD0iZmFsc2UiIGFyaWEtY29udHJvbHM9ImNvbGxhcHNlNiI+PHNwYW4+V2hvIGlzIHRoZSBvd25lciAvIFRydXN0ZWUgb2YgUG9kYXIgSW50ZXJuYXRpb25hbCBTY2hvb2w/PC9zcGFuPjwvYnV0dG9uPjwvaDQ+DQo8ZGl2IGNsYXNzPSJhY2NvcmRpb24tY29sbGFwc2UgY29sbGFwc2UiIGlkPSJjb2xsYXBzZTYiIGFyaWEtbGFiZWxsZWRieT0iaGVhZGluZzYiIGRhdGEtYnMtcGFyZW50PSIjYWNjb3JkaW9uIj4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1ib2R5Ij4NCjxwPkRyLiBQYXZhbiBQb2RhciBpcyB0aGUgQ2hhaXJtYW4gb2YgUG9kYXIgRWR1Y2F0aW9uIE5ldHdvcmsuPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KPGg0IGNsYXNzPSJhY2NvcmRpb24taGVhZGVyIiBpZD0iaGVhZGluZzciPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24gY29sbGFwc2VkIiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdG9nZ2xlPSJjb2xsYXBzZSIgZGF0YS1icy10YXJnZXQ9IiNjb2xsYXBzZTciIGFyaWEtZXhwYW5kZWQ9ImZhbHNlIiBhcmlhLWNvbnRyb2xzPSJjb2xsYXBzZTciPjxzcGFuPkhvdyBjYW4gSSBnZXQgYWRtaXNzaW9uIGluIFBvZGFyIHNjaG9vbD88L3NwYW4+PC9idXR0b24+PC9oND4NCjxkaXYgY2xhc3M9ImFjY29yZGlvbi1jb2xsYXBzZSBjb2xsYXBzZSIgaWQ9ImNvbGxhcHNlNyIgYXJpYS1sYWJlbGxlZGJ5PSJoZWFkaW5nNyIgZGF0YS1icy1wYXJlbnQ9IiNhY2NvcmRpb24iPg0KPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPg0KPHA+VGhlIGFkbWlzc2lvbiBwcm9jZXNzIGlzIHNpbXBsZS4gQWRtaXNzaW9ucyBhcmUgb24gYSBmaXJzdCBjb21lIGZpcnN0IHNlcnZlIGJhc2lzIGluIFBvZGFyIEludGVybmF0aW9uYWwgU2Nob29sLiBSZXF1ZXN0aW5nIHlvdSB0byBwbGVhc2UgY29udGFjdCB0aGUgc2Nob29sIG9mZmljZSBmb3IgbW9yZSBpbmZvcm1hdGlvbiAtIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnBvZGFyZWR1Y2F0aW9uLm9yZy9sb2NhdGlvbnMiIHRhcmdldD0iX2JsYW5rIj5odHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvbG9jYXRpb25zPC9hPi4gQWRtaXNzaW9ucyBhcmUgYWxzbyBhdmFpbGFibGUgb25saW5lLiBQbGVhc2UgdmlzaXQgPGEgaHJlZj0iaHR0cHM6Ly93d3cucG9kYXJlZHVjYXRpb24ub3JnL2FkbWlzc2lvbnMiIHRhcmdldD0iX2JsYW5rIj5odHRwczovL3d3dy5wb2RhcmVkdWNhdGlvbi5vcmcvYWRtaXNzaW9uczwvYT4gZm9yIG1vcmUgaW5mb3JtYXRpb24uPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KZAInD2QWBGYPFgIfAAW9AzxwPlBvZGFyIENlbnRyZSwgODUsIENoYW1hcmJhdWcgUG9zdCBPZmZpY2UgTGFuZSw8YnIgLz4NCkRyLiBBbWJlZGthciBSb2FkLCBQYXJlbC48YnIgLz4NCk11bWJhaSAtIDQwMDAxMi4gTWFoYXJhc2h0cmEuIEluZGlhPC9wPg0KPHA+PHN0cm9uZz5FbWFpbCBBZGRyZXNzPC9zdHJvbmc+IDogPGEgaHJlZj0iJiMxMDk7JiM5NzsmIzEwNTsmIzEwODsmIzExNjsmIzExMTsmIzU4OyYjOTc7JiMxMDA7JiMxMDk7JiMxMDU7JiMxMTU7JiMxMTU7JiMxMDU7JiMxMTE7JiMxMTA7JiMxMTU7JiM2NDsmIzExMjsmIzExMTsmIzEwMDsmIzk3OyYjMTE0OyYjNDY7JiMxMTE7JiMxMTQ7JiMxMDM7Ij5hZG1pc3Npb25zQHBvZGFyLm9yZzwvYT48YnIgLz4NCjxzdHJvbmc+VGVsZXBob25lIE5vPC9zdHJvbmc+IDogPGEgaHJlZj0idGVsOjAyMiA0MzMzMDAwMCI+MDIyIDQzMzMwMDAwPC9hPjwvcD5kAgEPFgQfAQUiaHR0cHM6Ly93YS5tZS85MTg4NzkwODg3OTA/dGV4dD1IaR8DZ2RkstykCftsN8dxJ+Pqm5Up8jSF2ap+vo80eggStRclJtI=" />
+
+
+<script src="/ScriptResource.axd?d=oCbH4pJBdMHNDHEYu2dtWOrUtR-3lYnXeXmDt9NwdmcT9P6b3mrnZeuvd17lnhUDrrZVWU1qsrKN5buPgMJX0HEjJ4TdL2cBkdkygRKeSzIUT3vwX27tsIqQXcXfBtuqw8WKFQFRo9mZN43_D8wtNkP44hENBx57efyx_F2X_HDiwIjH9UtvS4u1i5z4CCjz0&amp;t=ffffffffc820c398" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+
+        <div class="admissionHomeEnquiryForm position-relative enquiry-form pt-5" id="enquiryForm">
+            <div class="container">
+                <div id="Panel3">
+	
+
+
+                    <h3 class="brand-purple text-center">Enquiry Form</h3>
+                    <p class="fs-25 text-center m-auto d-none">Ask your query and we will get in touch With you soon</p>
+                    <p class="fs-25 text-center m-auto">
+                        Complete the form for more information, and our team will contact you soon.
+                    </p>
+                    <div class="form-wrapper">
+                        <div class="form-body">
+
+                            
+
+                            <div id="UpdatePanel1">
+		
+                                    <input type="hidden" name="hdn_sch_id" id="hdn_sch_id" />
+                                    <input type="hidden" name="hdn_acy_id" id="hdn_acy_id" />
+                                    <input type="hidden" name="hdn_brd_id" id="hdn_brd_id" />
+                                    <input type="hidden" name="hdn_brd_name" id="hdn_brd_name" />
+                                    <input type="hidden" name="hdn_stu_id" id="hdn_stu_id" />
+                                    <input type="hidden" name="hdn_stu_flag" id="hdn_stu_flag" />
+
+                                    <div class="form-inputs-wrapper">
+                                        <div class="form-inputs-inner">
+                                            <div class="input-wrapper">
+                                                
+                                                <select name="ddlstate2" id="ddlstate2" class="form-select" required="yes" placeholder="State">
+			<option selected="selected" value="0">State</option>
+			<option value="1268">Andhra Pradesh</option>
+			<option value="1271">Bihar</option>
+			<option value="1273">Chhattisgarh</option>
+			<option value="1277">Goa</option>
+			<option value="1278">Gujarat</option>
+			<option value="1283">Karnataka</option>
+			<option value="1286">Madhya Pradesh</option>
+			<option value="1287">Maharashtra</option>
+			<option value="1294">Punjab</option>
+			<option value="1299">Telangana</option>
+			<option value="1301">West Bengal</option>
+
+		</select>
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+
+                                            <div class="input-wrapper">
+                                                
+                                                <select name="ddlcity2" id="ddlcity2" placeholder="City" class="form-select" required="yes">
+			<option selected="selected" value="0">City</option>
+
+		</select>
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+
+                                            <div class="input-wrapper">
+                                                
+                                                <select name="ddlSchool1" id="ddlSchool1" placeholder="School" class="form-select" required="yes">
+			<option selected="selected" value="0">School</option>
+
+		</select>
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+                                            <div class="input-wrapper">
+                                                
+                                                <input name="txtName" type="text" id="txtName" class="form-control" required="yes" pattern="[A-Za-z]" placeholder="Student&#39;s First Name" />
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+                                            <div class="input-wrapper">
+                                                
+                                                
+                                                <input name="txtlastname1" type="text" id="txtlastname1" class="form-control" required="yes" pattern="[A-Za-z]" placeholder="Student&#39;s Last Name" />
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+                                            <div class="input-wrapper">
+                                                
+                                                
+                                                <select name="ddlStandard1" id="ddlStandard1" placeholder="Std." class="form-select" required="yes">
+			<option selected="selected" value="0">Standard</option>
+
+		</select>
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                            </div>
+
+                                            
+
+                                            <div class="input-wrapper">
+                                                
+                                                
+                                                <input name="txtEmail1" type="text" id="txtEmail1" class="form-control" required="yes" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" placeholder="Email" onchange="CheckEmail(this)" />
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="input-wrapper">
+                                                
+                                                
+                                                <input name="txtPhoneNo" type="text" maxlength="10" id="txtPhoneNo" onkeypress="ISNumeric(event);" placeholder="Mobile Number" class="form-control" required="yes" pattern="[0-9]{10,10}" />
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="input-wrapper">
+                                                
+                                                
+                                                <input name="txtCaptcha" type="text" id="txtCaptcha" class="form-control" autocomplete="off" required="yes" placeholder="Enter Captcha" />
+                                                <span class="valid-feedback">Looks good!</span>
+                                                <span class="invalid-feedback">Please make a valid entry</span>
+                                                
+
+                                                <div class="d-flex">
+                                                    <img id="imgCaptcha" class="pt-2 m-0" src="" style="width: 115px; background-image: url(data:image/png;base64,R0lGODlhcgAyAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAPwALAAAAAByADIAAAj/AIkpE0hwoMGCCA8qTMhwocOGEB9KjEjRoLJo+6JRyMgRo8eOID+KDJlxGCiTJkmOjJaEZCaVHYd5lAlzJUxiL/fp3MmRJ0afPHvu/Dk0qM5kxIYRezKMpy6jOn8SM0o06s6pVYVaBepzYMZGHuvpXJZR7D6y0cyiVVt2bFuSwYRGw0lM4Mu0GMl2JJZXZ72++/5yTKqJpli8gctiPCyYrFKiOX9K3jq5Z2XJYjX5JfpxJyaddT/VNayTJkirJ0eDCnqZ8ladypS53Ycz8OK0bXHrZpz7sFW+VvX2Os0ZdCZlmggu1pmJblOQwHefna23OkdNmQT31GyZsu/cUb/r/576djLb7lWjIUXJvShR4N3j/9QrVXb5fUpn8+Yo2MbstnpFNUxy/IE331bEaJJMYcjZRxsoxEDY3kdNWZeYXoJp51tzk/0Eyz4vObNPYealt08VnR1SVF2yFWeVWSOO1t4+ENLW2T7GHJVcUnzBR5QSrVkVzVNeTWdbRi/Q9pySla21k28z1RbNc06mFVqCyUSlTVR1WWVaZdApo1Rhb8VyJGM5DJWgXEBFg9xgL5nVRoc91YUVT/CBFqFWLnY2l5HWZeWmVBEO2JSLm9EmW2NuFXenFMSIdtyZZUmJno2nCekbfUXpxF1Wgn1EnqA83nYamSYeGaBo+/gB21QK1v8F4YCv6cbcTgFGQ4eRuIXnlmCkIUZUgJERtxWGGA1kKqdDaaeZqMrI4uYwsSnDyVRicOabj9p1ChiYf5qn2G+mdsrsT/U095qRVhjZk7ociXbnR5oMtGZ3w2jY6H6mhkrbPuKYqu1gvoRX7nK2xiZwpwX2ZImdXCZFFWg71uWmkGzWqhMBfpUUDR5PZoRFpzMKlWuzIx46UH62tgwahJ+gl6C/HHFilTLNkQnovjtjPCrN/GF0aIaI7YOLhckS8w1IDCanlDwSMBA1BZq8x+c+Yh6sFdYpD1Ssa/9dt88DvtrKZXwaG5nJaoL6ZIkEcMddxF40OZpTtyL5qBOEhO3/x2k0VIDma095HDnibHQVRphSOdFGHlru0WbJBKfoBLUEcCiFs1ehJqIibTFPJ9Z3d3KFs12DC5mgXXY2F+mVSJ3OEygNurcmuoiNuc/kodC4zzw8cCCXSTwiJeqnQWdEDKNzbS4QtTueXu+AxGSpkyPrvtd8vQrOeGNsGDtOFC+Ue6SPGRXUWFW9Vz1/0umHFh9r9V3SKSDWxCtTxFwjDSZQvZPaCQs69ZTpzGVopXmWVSxBgVOYBWrCOyAPpCYByj3rGHEzAmyEIYEixC4aUIODRy5XwTvwJBhxk4AJOXIQpMjIYkI5FEm08x74lOFq+oAEBaKBERROoHe7S2EF/3s3DDMI8QgZAR7VGgQJzFXPiCn8IUagmMI78Kh7yZjLJ6rFpuYFhVmcgteNDvS2qMXtDj2E2wqBIQQ4EOMSEmjgPs4nx91RDmvC4MEOo/G2CcBBTGag2hvjCCFl5HF/QvHePiqwHp3RiFE9yZVYFGYWRgnmfCkUnk7Ol4kVRgMYDdQHD/zIIhSaMBooRCIqO0iMfNhgh0nU40kCCaE8xhFRCjRLZ5LDoEgeyyo6i4Y3UnW+DbiJPLGsAA91wrt5mMGYylgQB4swFTqeQh+TO8UgEbmPPBozHzwoQinixoT/rQ44U4ESV4xjpy7swweGI1R6tEMWaIDBmMrjDtQ0qP8TaOjwFK7Ep05QCAfFWYIBd5AHAyJI0AQp43zKBF7cmrAT/wyFWsdRXKMwtprtsC43XeJIgLSTjzRUYBnv0QQHI1gPa0IUMdkUCCjyWAHe6QQZrESKP7/JAwloMiPnM4Kf/qW849RlR3gCm5K4Q8mkIGdAYsoIPZ5JJ3BKgJ8oNGYOfboPB6BQmTsZBhvgRgG+oRAXp6iXD3vXxFO21IgU9dZF1jml5GT0OfYryaj4ZJdAKo5BSoGjEJsglif0NG4/BAkKr/q/ZFAxhXOzKgXhBtYqEXWM66LRUXX3m7lGLirY1CSdMBm3CtiriGTtqJHAuQHQCWQfTaSsMtCXHGz/IhaIPuGYxxJTtLyuSKOgyAnkNrVOKaQKakW4i1bOiRw71Yt+z50A/gyCtZKJBEa7Wl6tzmNAtGGkfonqVW+fBBiymJI2SCFJT7YYPmolBUInOYlmbpeojvhmNUjzpVIlc68baUwskOsUTk+ZkYF8p13q8u9I0nuVaMJwEpSqk3fqGxYj0RBri0pUlcTCip78JUMgetsKgYnXIvEkwJSJEH2/yzKMhYpKt8JdYuJDrOh4l2GSicdHgJFYwHgKvGFB17gMt48wiAl503La8iajN9p8ByRE+w1WzhNl6RAlDMTRJUcucZH8uGuoF14ftQYTTQildzwZueGgVNWxEnkK/xRzu5T/7MW3ozbXuSxynVJGM5BZQUjPO2rOU0fzP2rdeXPJaRCD3rtnFw7IhUgpTGoY5xav9Gs2/fPv1WiURfUWKSuu+chTOyvDMTdPICKxj4IzlgnNPNnN2TPWd63LEywiWT74y1OH6Ffg6GAUmXnK1Gtee5so4wo8FBaQZ9+gkfDhaX6u+zEMw1ecA/KFwdyRNCCmPCyRuiW4sZ6OXsZgGRoexstpY0z/9lEHHYlJGaJZkFbI8mQW/k8ZONDK6R53bATdCZKf/bB+H+PtF/n3ZN/tqIkIQxcxrYZmFLJXRrD33Xy6hj73IjdRAH5h0iGK3hv/loX3cQlMo21FqcrZrHuI99nuwChZLTq2ZAIw5MlcoTvnMhhQtFyukdMpGmJok6eoZ5CmIHUri+CVhVvt7F7t/MvrAnnYLIuwjZ6GPpVcNVDMDIoFyaTeeMMaecwihK4Vxq6qodYwunDFMbl3QYTxGpbqAvcx2eu5eyaQ4f7G20sRpWS+/AjRkrJuUGfsxm2jK8MyBa4ZF8hCR9rrgQpUmdhc0c7vVfH7KlbIQvWZz9xzIcwcOvfTeb2Qv/5rXVynYtcZNdKRRsnrKiZouqjY7QkaRkAAADs=" />
+                                                    <a id="btnRefresh" class="mt-3 ms-2" href="javascript:__doPostBack(&#39;btnRefresh&#39;,&#39;&#39;)">                                                        
+                                                        <img src="/assets/images/reload.png" style="width: 20px" alt="captcha reload button"> </a>
+                                                    <span id="lblCaptchaMsg" class="text-danger" style="display:inline-block;"></span>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="w-100 d-flex justify-content-center form-buttons" style="margin-bottom: 10px!important;">
+                                            <input type="submit" name="enquiryForm1" value="Send enquiry" onclick="javascript:return validate();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;enquiryForm1&quot;, &quot;&quot;, true, &quot;cpod1&quot;, &quot;&quot;, false, false))" id="enquiryForm1" class="btn" />
+
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-center mt-1" align="center">
+                                            <u><a class="mt-6 brand-purple" target="_blank" href="https://www.podareducation.org/terms-and-conditions">By clicking send enquiry you agree to the data policy Terms & Conditions.</a></u>
+                                        </div>
+                                    </div>
+
+                                
+	</div>
+                            <input type="hidden" name="hdn_ProspectID" id="hdn_ProspectID" />
+
+                        </div>
+                    </div>
+                
+</div>
+                
+            </div>
+
+        </div>
+
+        <!-- Google Script start ---->
+        <script type="text/javascript">
+
+            function sendEnquiryEvent(state, school, std, stuid) {
+                //alert("test");               
+
+                //var s = "";
+                //console.log($("#enquiryForm"));
+                //$("#txtCaptcha")
+                //console.log($(s).offset().top);
+                //console.log($("yellowband").outerHeight(!0));
+                var t = ($("#enquiryForm").offset().top + $('#enquiryForm').outerHeight() + 100);
+                $("html,body").animate({
+                    scrollTop: t
+                })
+
+                window.dataLayer.push({
+                    'event': 'event dl send enquiry submit',
+                    'eventCategory': 'enquiry form',
+                    'eventAction': 'successful submit',
+                    'eventLabel': state + '-' + school + '-' + std,  // dynamic values <> based on user selection of form fields
+                    'cd-leadid': stuid // this value of lead id should be same as the one getting sent to backend lms
+                });
+            }
+
+            function scrollToShortEnquiry() {
+
+                var t = ($("#enquiryForm").offset().top + $('#enquiryForm').outerHeight() + 100);
+
+                $("html,body").animate({
+                    scrollTop: t
+                })
+            }
+        </script>
+        <!-- Google Script end ---->
+    </form>
+    <!-- Short Enquiry Form End -->
+
+
+    <!-- lookingfor start -->
+    
+<section class="quicklinks">
+    <div class="container text-center">
+        <div class="counters align-items-center d-flex counter-icon-boxes justify-content-center">
+            <div class="quicklinks-inner d-flex text-center flex-column">
+
+                <div class="counter-title fs-25" style="text-transform: none;">
+                    Information on Podar International School
+                </div>
+
+
+
+                <div class="d-flex justify-content-center flex-wrap">
+
+                    <a class='counterBox' href='/admissions'><div class='counterIcon adjHeight'> <img src=/assets/images/icons/icon-admission.png alt='podar education school - admission process' /></div><div class='ccounterDescription'>Admission Process</div></a>
+                    <a class='counterBox' href='/fee-structure'><div class='counterIcon adjHeight'><img src = '../../assets/images/icons/icon-fee.png' alt='fees icon' /></div><div class='ccounterDescription'>Fee Structure</div></a>
+                    <a class='counterBox' href='/locations'><div class='counterIcon adjHeight'> <img src=/assets/images/icons/LOcation-icon.png alt='Location Marker Icon' /></div><div class='ccounterDescription'>Locations</div></a>
+                    <a class='counterBox' href='/admissions#enquiryForm'><div class='counterIcon adjHeight'> <img src=/assets/images/icons/enquiry-form.png alt='enquire form icon' /></div><div class='ccounterDescription'>Enquiry Form</div></a>
+
+
+                    
+                    
+                    
+                    
+
+                    
+
+
+                    
+
+
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- lookingfor End -->
+    <!-- lifeatpodar start -->
+    
+<section class="life_at_podar">
+ <div class="container text-center">
+        <div class="title_purple_30px text-center">A Glimpse into a Student’s Journey at Podar</div>
+        <div class="description text-center d-none">A Podar School Adapts To Become</div>
+        <div class="cardsBox d-flex justify-content-around life_at_podar slick-slider">
+
+
+         <div>
+            <div class="card"><img src="../../assets/images/student life/integrated-learning-program.webp" alt="podar education integrated learning program - creativity and social responsibility" />
+              <div class="card-body text-start">
+                <h5 class="card-title">Integrated Learning Program </h5>
+                <p class="card-text">Theme-based, hands-on modules connecting subjects to real-world issues, building critical thinking, creativity, collaboration, research, and social responsibility.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="card"><img src="../../assets/images/student life/digital-skills-and-coding.webp" alt="podar education school students performing digital skills and coding" />
+              <div class="card-body text-start">
+                <h5 class="card-title">Digital Skills & Coding</h5>
+                <p class="card-text">Coding starts in preschool, progressing from playful blocks to advanced programming, robotics, AI, and app development—building creativity, logic, and future-ready digital skills.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="card"><img src="../../assets/images/student life/innovation-lab.webp" alt="podar education innovation lab - focusing on creativity and technological exploration." />
+              <div class="card-body text-start">
+                <h5 class="card-title">Innovation Labs</h5>
+                <p class="card-text">Hands-on STEM playground with robotics, electronics, engineering, and coding, encouraging design thinking, problem-solving, teamwork, and innovation through exciting real-world projects.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="card"><img src="../../assets/images/student life/remedial-learning.webp" alt="students engaging in remedial learning at podar education school" />
+              <div class="card-body text-start">
+                <h5 class="card-title">Remedial Learning</h5>
+                <p class="card-text">Personalised support to bridge learning gaps, reinforce foundations, and build student confidence, ensuring every child keeps pace and thrives academically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card"><img src="../../assets/images/student life/symphonics.webp" alt="podar education school students performing in a symphonics music program" />
+              <div class="card-body text-start">
+                <h5 class="card-title">Symphonics</h5>
+                <p class="card-text">Phonics-based English foundation program using stories and multi-sensory learning to build early literacy, vocabulary, writing, and confident communication skills. Pre-school to Grade 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card"><img src="../../assets/images/student life/podar-model-united-nations.webp" alt="podar education school students debate global issues while developing international awareness" />
+              <div class="card-body text-start">
+                <h5 class="card-title">Podar Model United Nations</h5>
+                <p class="card-text">Annual UN simulation where students debate global issues, fostering leadership, diplomacy, research, teamwork, and public speaking while developing international awareness.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+
+          
+
+
+        </div><a class="btn" href="/the-right-students-life">ENTER THE STUDENTS JOURNEY</a>
+      </div>     
+</section>
+    <!-- lifeatpodar End -->
+    <!--PodarInitiatives start -->
+    <section class='latest_news' style='background: transparent linear-gradient(275deg, rgba(131, 41, 150, 0.1098039216) 0%, rgba(220, 118, 3, 0.1294117647) 100% ) 0% 0% no-repeat padding-box;'><div class='container text-center d-flex flex-column'><div class='title_purple_30px text-center'>Podar Initiatives</div><div class='cardsBox d-flex justify-content-around latestNews slick-slider' ><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2023-9-10--16-27-56-377_podar-internatonal-schools.webp' alt='Podar International School' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Podar International School</h5><p class='card-text'>Schools (from Nursery to Grade 12) operated and managed completely by Podar Education Network.</p><a class='link-text' href='https://www.podareducation.org/locations'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2023-8-25--17-39-55-203_podar-initiatives-podar-smarter-schools.webp' alt='Podar Smarter Schools' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Podar Smarter School</h5><p class='card-text'>Complete all-round assistance to partners in starting a school or upgrading their existing school.</p><a class='link-text' href='https://www.podarsmarterschools.com/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2020-11-5--16-8-35-753_podarjumbokids.webp' alt='Podar Prep Schools in India' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Podar Prep</h5><p class='card-text'>The renowned Preschool Brand of Podar Education Network delivering Quality Education from Playgroup (Age 2) to Senior Kg (Age 5).</p><a class='link-text' href='https://podarprep.com/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2020-11-5--16-11-31-367_bornsmart.webp' alt='Podar International School Mother Toddlers Program' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Born Smart</h5><p class='card-text'>A premier Mother Toddler program for children aged 0-3 years. Born Smart is a collection of age appropriate activities for new parents.</p><a class='link-text' href='http://www.born-smart.com/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2020-11-5--16-8-57-156_podarworldcollege.webp' alt='Podar World College ' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Podar World College</h5><p class='card-text'>Students can obtain a prestigious Undergraduate or Graduate degree from the University of London or the University of Wolverhampton while studying in India. </p><a class='link-text' href='http://www.podarworldcollege.org/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2020-11-5--16-9-18-413_podarinstituteofeducation.webp' alt='Podar Teacher Training Institute Education' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Podar Institute of Education</h5><p class='card-text'>The award winning Teacher Training Institute managed by Podar Education Network. Courses include ECCED and CACHE.</p><a class='link-text' href='http://www.podarinstitute.com/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card' style='background: #ffffff; border: 1px solid #efefef; align-items: stretch; height: 520px;'><img src='/Uploads/Venture/2020-11-5--16-8-6-195_podarsmarttours.webp' alt='Podar International School Smart Tours' height='350px' style='object-fit: cover; border-radius: 10px;'><div class='card-body text-start d-flex flex-column justify-content-between'><h5>Smart Tours</h5><p class='card-text'>Broadening young minds through safe, educative and well-curated student tours.</p><a class='link-text' href='http://smart-tours.org/'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='../assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div> </div> </div></section>
+    <!--PodarInitiatives End -->
+
+
+    <!-- achievements Start -->
+    
+
+<section class='achievements'>
+    <div class='container d-flex flex-column'>
+        
+        <div class="title title_purple_30px text-center pb-1">Our Achievements</div>
+        <div class="counter-title fs-25 text-center pb-5">We are honoured to be recognised for our commitment to quality</div>
+
+        <div class='cardsBox d-flex justify-content-center'>
+            <div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2026-6-16--11-57-37-505_podareducationnetwork_award31_ET_Education_Excellence_Awards_2026.webp' alt='Podar Education Network is honoured with the ET Education Excellence Awards 2026' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar Education Network is honoured with the ET Education Excellence Awards 2026</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2025-12-27--10-39-12-799_podareducationnetwork_award30_Pioneering_Education_Excellence_Award_2025_2026.webp' alt='Podar International School is honoured with the Pioneering Education Excellence Award 2025–26' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School is honoured with the Pioneering Education Excellence Award 2025–26</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2025-10-9--17-42-15-897_podareducationnetwork_award29_ET_Edge_Prestigious_Learning_Institutes_of_India_2025.webp' alt='Podar International School Honored as India's Prestigious Learning Institute 2025 by ET Edge' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School Honored as India's Prestigious Learning Institute 2025 by ET Edge</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2025-2-26--14-30-35-597_podareducationnetwork_award28_The_Most_Trusted_Education_Brand_by_Big_Impact_Awards_2025.webp' alt='Podar International School was awarded as the Most Trusted Education Brand by Big Impact Awards 2025' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School was awarded as the Most Trusted Education Brand by Big Impact Awards 2025</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2024-10-21--13-10-28-82_podareducationnetwork_award27_MostRespectedEducationBrandinIndia2024-25.webp' alt='Podar International Schools was awarded as the Most Respected Education Brand in India 2024-25 by Education World' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International Schools was awarded as the Most Respected Education Brand in India 2024-25 by Education World</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2024-4-2--14-24-44-784_podareducationnetwork_award26_MostTrustedBrandsofIndia2024-25.webp' alt='Podar International School was awarded the Most Trusted Brands of India 2024-25 by Marksmen Daily' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School was awarded the Most Trusted Brands of India 2024-25 by Marksmen Daily</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2024-4-2--14-24-9-119_podareducationnetwork_award25_BestEducationBrands2024byTheEconomicTimes.webp' alt='Podar Education Network has been recognised as the Best Education Brands 2024 by The Economic Times' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar Education Network has been recognised as the Best Education Brands 2024 by The Economic Times</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-10-11--16-25-36-310_podareducationnetwork_award24_Mimamsagroupaward2023.webp' alt='Podar Education Network - Chain of Schools with Highest Number of Students (Mumbai Region) 2023' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar Education Network - Chain of Schools with Highest Number of Students (Mumbai Region) 2023</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-10-5--14-5-37-777_podareducationnetwork_award23_MostTrustedBrandoftheNation2023.webp' alt='Podar International School - Most Trusted Brand of the Nation 2023 by The Brand Story' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School - Most Trusted Brand of the Nation 2023 by The Brand Story</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-9-27--17-50-18-836_podareducationnetwork_award22_LeadingPreSchoolChainArdorCommMedia2023.webp' alt='Podar Prep - Leading Preschool Chain (National) 2023 by ArdorComm Media' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar Prep - Leading Preschool Chain (National) 2023 by ArdorComm Media</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-9-26--8-55-47-790_podareducationnetwork_award22_PromisingSchoolSiliconIndia2023.webp' alt='Podar International School: Honored Among India's Top 10 Most Promising International Schools by Silicon India 2023' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Podar International School: Honored Among India's Top 10 Most Promising International Schools by Silicon India 2023</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-8-26--10-15-15-460_podareducationnetwork_award21_IndiasMostRespectedEducationBrand2023.webp' alt='The Economic Times Best Education Brands Award 2023' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>The Economic Times Best Education Brands Award 2023</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2023-8-26--10-11-57-527_podareducationnetwork_award21_IndiasMostRespectedEducationBrand2022.webp' alt='India's Most Respected Education Brand 2022' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>India's Most Respected Education Brand 2022</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2022-7-14--9-45-30-434_podareducationnetwork_award20_BestEducationBrands2022.webp' alt='The Economic Times Best Education Brands Award 2022 ' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>The Economic Times Best Education Brands Award 2022 </p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2022-4-28--12-59-5-787_podareducationnetwork_award19_e4mPrideofIndiaTheBestofBharatAward2022.webp' alt='e4m Pride of India - The Best of Bharat’ Award 2022' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>e4m Pride of India - The Best of Bharat’ Award 2022</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2022-2-5--14-55-44-645_podareducationnetwork_award18_IndiasMostRespectedEarlyChildhoodEducationBrand2022.webp' alt='India's Most Respected Early Childhood Education Brand - The Education World - 21-22' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>India's Most Respected Early Childhood Education Brand - The Education World - 21-22</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2022-1-16--20-28-9-127_podareducationnetwork_award17_MostRespectedEducationBrandinIndia2022.webp' alt='The Most Respected Education Brand in India - The Education World - 21-22' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>The Most Respected Education Brand in India - The Education World - 21-22</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2022-1-20--15-11-33-647_podareducationnetwork_award16_LeadingSchoolChainNational2022.webp' alt='Leading School Chain (National) 2022 - ArdorComm Media Group - 2022' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Leading School Chain (National) 2022 - ArdorComm Media Group - 2022</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2021-7-5--12-11-58-452_podareducationnetwork_award14_PENMostDistinguishedIntSchoolNetworkOfTheYear.webp' alt='Most Distinguished International School Network of the Year - Education Excellence Awards - 2020-21' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Most Distinguished International School Network of the Year - Education Excellence Awards - 2020-21</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2021-7-5--12-10-41-836_podareducationnetwork_award15_PJKBestPreSchoolOfTheYear20202021.webp' alt='Best Pre-school Brand of the Year - Education Excellence Awards - 2020-21' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Best Pre-school Brand of the Year - Education Excellence Awards - 2020-21</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2020-11-6--10-43-19-552_podareducationnetwork_award13_PJKbestpreschooloftheyear2020.webp' alt='Podar International School Awards - Best Preschool of the Year - Global School Awards - 2020-21' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Best Preschool of the Year - Global School Awards - 2020-21</p></div></div><div class='card align-items-center text-center d-flex justify-content-around'><img src='https://www.podareducation.org/Uploads/Award/2020-11-6--10-43-42-61_podareducationnetwork_award12_outstandingedunetwork.webp' alt='Podar International School Awards - Outstanding Educational Network in India -  The Economics Times - 2020-21' ,loading='lazy' /><div class='card-body text-start text-center'><p class='card-text'>Outstanding Educational Network in India -  The Economics Times - 2020-21</p></div></div>
+        </div>
+        <a class='link-text' href='/achievements-and-awards'>View All<span class='custom-icon verticle_icon cust-ico-download mr-1'>
+            <img src='../assets/images/icons/icon-orange-arrow.png' alt='click to view all Podar International Achievements' loading='lazy' /></span>
+        </a>
+    </div>
+</section>
+
+    <!-- Awards Start -->
+    
+    <!-- Awards End -->
+    <!-- achievements End -->
+    <!--alumni  start -->
+    
+    <!--alumni  End -->
+    <!--quotes start -->
+    
+ <section class="quotes">
+      <div class="container">
+        <div class="quote">
+          <p class="add-spark">Other things that we care at Podar</p>
+          <div class="title"><span>We Don’t Take Interviews</span><span class="ms-5">We Don’t Take Donations</span></div><br><br>
+          <p>Because we believe that your child is our responsibility</p>
+          <div class="title">We Groom, We <span class="brand-orange">Nurture</span></div>
+        </div>
+      </div>
+    </section>
+    <!--quotes End -->
+    <!--gallary start -->
+    
+    <!--gallary End -->
+    <!--innovation start -->
+    
+ <section class="innovation d-none">
+      <div class="container text-center">
+        <div class="title_30px text-center">Podar Innovation Centre</div>
+        <div class="cardsBox d-flex justify-content-center">
+          <div class="card d-flex align-items-center">
+            <div class="image"><img src="../../assets/images/icons/icon-teacher.png" alt="Teacher icon",loading="lazy" /></div>
+            <div class="card-body text-start">
+              <h5 class="card-title">Teacher Training</h5>
+            </div>
+          </div>
+          <div class="card d-flex align-items-center">
+            <div class="image"><img src="../../assets/images/icons/icon-innovation.png" alt="Innovation icon",loading="lazy" /></div>
+            <div class="card-body text-start">
+              <h5 class="card-title">Innovation Lab</h5>
+            </div>
+          </div>
+          <div class="card d-flex align-items-center">
+            <div class="image"><img src="../../assets/images/icons/icon-teaching-methodology.png" alt="Teaching methodology",loading="lazy" /></div>
+            <div class="card-body text-start">
+              <h5 class="card-title">Teaching Methodology</h5>
+            </div>
+          </div>
+          <div class="card d-flex align-items-center d-none">
+            <div class="image"><img src="../../assets/images/icons/icon-innovation.png" alt="Innovation icon",loading="lazy" /></div>
+            <div class="card-body text-start">
+              <h5 class="card-title">Innovation Lab</h5>
+            </div>
+          </div>
+        </div><a class="btn-tertiary" href="/podar-innovation-center">View All</a>
+      </div>
+    </section>
+    <!--innovation End -->
+    <!--latest_news start -->
+    <section class='latest_news'><div class='container text-center d-flex flex-column'><div class='title_purple_30px text-center'>Latest News</div><div class='cardsBox d-flex justify-content-around latestNews slick-slider' id='latestNews'><div><div class='card'><img src='https://www.podareducation.org/Uploads/News/2026-6-16--11-50-58-276_transformationalk12schoolnetworkaward2026_corporate_16062026.webp' alt='Podar Education Network wins the 'Transformational K–12 School Network' Award at the ET Education Excellence Awards - 2026'><div class='card-body text-start d-flex flex-column justify-content-between'><p class='card-text'>Podar Education Network wins the 'Transformational K–12 School Network' Award at the ET Education Excellence Awards - 2026</p><a class='link-text' href='/podarnews/39064'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='/assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card'><img src='https://www.podareducation.org/Uploads/News/2026-4-29--10-34-7-141_podar-international-school-cbse-results-2025-2026-thumb.webp' alt='Outstanding Results in the Grade 10 CBSE Board exams 2025-26'><div class='card-body text-start d-flex flex-column justify-content-between'><p class='card-text'>Outstanding Results in the Grade 10 CBSE Board exams 2025-26</p><a class='link-text' href='/podarnews/39005'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='/assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card'><img src='https://www.podareducation.org/Uploads/News/2026-5-5--17-45-36-987_nationallevelabacuscompetition2026_ujjain_05052026.webp' alt='Aarohi Sethi Crowned "Champion of Champions" at National Abacus Competition - 2026'><div class='card-body text-start d-flex flex-column justify-content-between'><p class='card-text'>Aarohi Sethi Crowned "Champion of Champions" at National Abacus Competition - 2026</p><a class='link-text' href='/podarnews/39010'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='/assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div><div><div class='card'><img src='https://www.podareducation.org/Uploads/News/2025-9-24--16-38-43-718_cbsenationalathleticmeet2025_shivamogga_vidyanagar_24092025.webp' alt='Podar International School, Shivamogga Wins CBSE U-17 Girls’ National Championship 2025–26'><div class='card-body text-start d-flex flex-column justify-content-between'><p class='card-text'>Podar International School, Shivamogga Wins CBSE U-17 Girls’ National Championship 2025–26</p><a class='link-text' href='/podarnews/38744'>Read More <span class='custom-icon cust-ico-download mr-1'><img src='/assets/images/icons/icon-orange-arrow.png' alt='arrow icon' /></span></a></div></div></div> </div> </div></section>
+    <!-- News Start -->
+    
+    <!-- News End -->
+    <!--latest_news  End -->
+    <!--quicklinks start -->
+    
+<script type="text/javascript"> 
+
+
+    function QuickLinkGoogleTag(event) {
+        //alert(event);
+        //console.log(event);
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'dl - quick links',
+            'cta_location': 'Best CBSE Schools in India | International Schools in India - Podar International School',         // this should be replaced with values based on each event
+            'additional_info': event,         // this should be replaced with values based on each event
+            'school_location': ''         // this should be replaced with values based on each event
+        });
+    }
+</script>
+
+
+<section class="quicklinks">
+    <div class="container text-center">
+        <div class="counters align-items-center d-flex counter-icon-boxes justify-content-center">
+            <div class="quicklinks-inner d-flex text-center flex-column">
+                <div class="counter-title fs-25">Quick Links</div>
+                <div class="d-flex justify-content-center flex-wrap">
+
+
+                    <a class='counterBox' href='/about-podar-education-network' onclick=QuickLinkGoogleTag('About&nbsp;Us')><div class='counterIcon adjHeight'><img src= '../../assets/images/icons/icon-testimonials.png' class='lazy' data-src='../../assets/images/icons/icon-testimonials.png' data-srcset='../../assets/images/icons/icon-testimonials.png' alt='star icon' /></div><div class='ccounterDescription'>About Us</div></a>
+                    
+                    
+                    <a class="counterBox" href="/podar-initiatives" onclick="return QuickLinkGoogleTag('Podar Initiatives')">
+                        <div class="counterIcon adjHeight">
+                            <img src="../../assets/images/icons/icon-social-outreach.png" alt="podar initiative icon" loading="lazy"/>
+                        </div>
+                        <div class="ccounterDescription">
+                            Podar
+                            <br />
+                            Initiatives
+                        </div>
+                    </a>
+                    
+                    <a class="counterBox" href="/transport-policy" onclick="return QuickLinkGoogleTag('Transport Policy')">
+                        <div class="counterIcon adjHeight">
+                            <img src="../../assets/images/icons/transport-policy.png" alt="podar education school - transport icon" loading="lazy"/>
+                        </div>
+                        <div class="ccounterDescription">
+                            Transport
+                            <br />
+                            Policy
+                        </div>
+                    </a>
+                    <a class="counterBox" href="http://careers.podareducation.org/" target="_blank" onclick="return QuickLinkGoogleTag('Careers')"> 
+                        <div class="counterIcon adjHeight">
+                            <img src="../../assets/images/icons/icon-globe.png" alt="global outreach and international exposure at podar education school" loading="lazy"/>
+                        </div>
+                        <div class="ccounterDescription">
+                            Careers                           
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--quicklinks End -->
+    <!--faq start -->
+    
+<section class="faq-section">
+            <div class="container">
+                
+                <p class="title_purple_30px text-center">Frequently Asked Questions</p>
+                <div class="accordion accordion-flush" id="accordion">
+                <div class="accordion-item">
+<h4 class="accordion-header" id="heading0"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0"><span>Provide details about Podar International School?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse0" aria-labelledby="heading0" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>Welcome to Podar International School! As parents and guardians, you want to give your children the best of everything- quality education, a safe and nurturing environment and means to live a well-balanced, holistic life. By enrolling your children at Podar International School, you will be taking the first step towards a bright future for your children.</p>
+<p>With 99 years of expertise in the field of learning, Podar International School is considered among the best CBSE, ICSE and International schools in India. The Podar group has under its wings:</p>
+<ul>
+     <li>A combined student strength of more than 2,75,000</li>
+     <li>Support of 8,000 dedicated and loyal staff members.</li>
+</ul>
+<p>Offering learning programs from pre-primary to class 12, we&#8217;re among the best and all-encompassing schools in India. Considered among the pioneers of education in India, Podar offers a plethora of educational streams such as:</p>
+<ul>
+     <li>Central Board of Secondary Education (CBSE)</li>
+     <li>Council for the Indian School Certificate Examinations (CISCE)</li>
+     <li>Secondary School Certificate (SSC)</li>
+     <li>Cambridge (IGCSE)</li>
+     <li>International Baccalaureate (IB)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1"><span>Why Choose Podar International School?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse1" aria-labelledby="heading1" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>We believe in holistic learning. While we want your child to excel in academics, we also don&#8217;t want them to diminish their passion. Our job, as an educational institute, is to prepare the young minds of today for a bright tomorrow. Hence, we focus on creating all-rounders.</p>
+<p>Thanks to the variety of boards offered, as parents you have the choice to select between multiple options, all under one umbrella. Podar is considered among the best CBSE schools in India, and the best ICSE schools in India in addition to holding its position among the top international schools in India. Why so? Because of the quality of education we provide. Our innovative learning methods, equal focus on academics and extracurricular, and a strong curriculum all together are a perfect combination for growth and success.</p>
+<p>Through the Podar Innovation center, 80+ academicians have come together to create a curriculum and content based on the guidelines of various boards including CBSE, ICSE, CAIE and the Maharashtra State Board. Apart from offering a strong syllabus and curriculum, the PIC also offers facilities and programs such as remedial learning that help teachers in assisting students to cope with difficult concepts, symphonic, math gym, math lab and life skills that are appropriate for their future and help them in becoming independent.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><span>What Sets Podar International School Apart?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>When we call ourselves pioneers and cheerleaders of education in India, we take those monikers seriously. We want to make learning accessible to all, and for that we will have to spread our wings. Podar International School is present across the length and breadth of the country through multiple branches. This makes education accessible to everyone.</p>
+<p>Besides, we also understand that in today&#8217;s day and age, most parents are also chasing their own careers while trying to give their kids the best quality of life and education. To aid them in their journey and not stop them from realizing their dreams, the presence of Podar International School in various parts of the country gives it an edge. If you&#8217;re a parent in a transferable job, enrolling your child in our school will help you pick up the next best opportunity as we have branches across multiple cities and states. Once your child is a part of the Podar Education Network, it will be easier for you to re-enroll them in a hassle-free manner in one of the top schools in India.</p>
+<p>The icing on the cake, needless to say, is the Podar Innovation Centre that helps bind us all. A centralized learning centre makes the job easier for the teachers, students, and parents. Add to it our strong parent-teacher community that comes together often to ensure they&#8217;re on the same page and to discuss all the different ways they can make school life easy and fun for children.</p>
+<p>In summation, at Podar:</p>
+<ul>
+     <li>We&#8217;re technology first</li>
+     <li>Have state-of-the-art infrastructure</li>
+     <li>Have provisions for Indoor and outdoor games</li>
+     <li>Have a stress-free and clean environment</li>
+     <li>Well-equipped, ventilated, and spacious classrooms</li>
+</ul>
+<p>And so much more.</p>
+<p>For those interested in admitting their kids to our school, our admission process is swift and easy. Please visit https://www.podareducation.org/admissions for more information.</p>
+<!--
+<p>Podar International is considered among the top Indian schools of today's times, and has a wide presence around the country. We have schools in some of the top Indian cities such as:</p>
+<ul>
+     <li><a href="/schools-in-mumbai">Schools in Mumbai</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Pune</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Nagpur</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Chhatrapati Sambhaji Nagar</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Nashik</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Thane</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Navi Mumbai</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Ahmedabad</a></li>
+     <li><a href="/schools-in-mumbai">Schools in Bengaluru</a></li>
+</ul>
+-->
+<p>Apart from these, we're present in multiple other locations across the country.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><span>Is Podar International School private?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>Yes. All Podar International Schools in India are privately owned and managed.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><span>Which board does Podar school have?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse4" aria-labelledby="heading4" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>The Podar Network of Schools provides a diverse range of educational opportunities, including the Central Board of Secondary Education (CBSE), the Council for the Indian School Certificate Examinations (CISCE), the Secondary School Certificate (SSC), Cambridge (IGCSE), and the International Baccalaureate (IB).</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><span>How many branches are there of Podar International School in India?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse5" aria-labelledby="heading5" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>There are 165 Podar International Schools located all over the country.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><span>Who is the owner / Trustee of Podar International School?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse6" aria-labelledby="heading6" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>Dr. Pavan Podar is the Chairman of Podar Education Network.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h4 class="accordion-header" id="heading7"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7"><span>How can I get admission in Podar school?</span></button></h4>
+<div class="accordion-collapse collapse" id="collapse7" aria-labelledby="heading7" data-bs-parent="#accordion">
+<div class="accordion-body">
+<p>The admission process is simple. Admissions are on a first come first serve basis in Podar International School. Requesting you to please contact the school office for more information - <a href="https://www.podareducation.org/locations" target="_blank">https://www.podareducation.org/locations</a>. Admissions are also available online. Please visit <a href="https://www.podareducation.org/admissions" target="_blank">https://www.podareducation.org/admissions</a> for more information.</p>
+</div>
+</div>
+</div>
+
+                    
+                </div>
+            </div>
+</section>
+
+    <!--faq End -->
+
+    <!-- footer start -->
+    
+<script type="text/javascript">
+    //    if (hasBorderRadius()) { // 1
+    //        $("img.roundedCorners").each(function () { // 2
+    //            $(this).wrap('<div class="roundedCorners" />'); // 3
+    //            var imgSrc = $(this).attr("src"); // 4
+    //            var imgHeight = $(this).height(); // 4
+    //            var imgWidth = $(this).width(); // 4
+    //            $(this).parent()
+    //      .css("background-image", "url(" + imgSrc + ")")
+    //      .css("background-repeat", "no-repeat")
+    //      .css("height", imgHeight + "px")
+    //      .css("width", imgWidth + "px"); // 5
+    //            $(this).remove(); // 6
+    //        });
+    //    }
+    //document.getElementById("getDynamicYear").textContent = new Date().getFullYear();
+</script>
+<footer>
+    <div class="container podar-state-cities">
+        <p class="podar-state-cities-heading">Podar Schools In</p>
+        <p class="podar-state-cities-list">
+            <a href="https://www.podareducation.org/schools-in-andhrapradesh" target="_blank">Andhra Pradesh</a> |            
+            <a href="https://www.podareducation.org/schools-in-bihar" target="_blank">Bihar</a> |            
+            <a href="https://www.podareducation.org/schools-in-chhattisgarh" target="_blank">Chhattisgarh</a> |            
+            <a href="https://www.podareducation.org/schools-in-goa" target="_blank">Goa</a> |            
+            <a href="https://www.podareducation.org/schools-in-gujarat" target="_blank">Gujarat</a> |            
+            <a href="https://www.podareducation.org/schools-in-karnataka" target="_blank">Karnataka</a> |            
+            <a href="https://www.podareducation.org/schools-in-madhyapradesh" target="_blank">Madhya Pradesh</a> |            
+            <a href="https://www.podareducation.org/schools-in-maharashtra" target="_blank">Maharashtra</a> |            
+            <a href="https://www.podareducation.org/schools-in-punjab" target="_blank">Punjab</a> |            
+            <a href="https://www.podareducation.org/schools-in-telangana" target="_blank">Telangana</a> |            
+            <a href="https://www.podareducation.org/schools-in-westbengal" target="_blank">West Bengal</a>
+        </p>
+
+    </div>
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="left-side w-60">
+            
+            <p class="title" style="font-size: 22px; font-weight: 500;">Contact Us</p>
+
+            <p>Podar Centre, 85, Chamarbaug Post Office Lane,<br />
+Dr. Ambedkar Road, Parel.<br />
+Mumbai - 400012. Maharashtra. India</p>
+<p><strong>Email Address</strong> : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#109;&#105;&#115;&#115;&#105;&#111;&#110;&#115;&#64;&#112;&#111;&#100;&#97;&#114;&#46;&#111;&#114;&#103;">admissions@podar.org</a><br />
+<strong>Telephone No</strong> : <a href="tel:022 43330000">022 43330000</a></p>
+            
+        </div>
+        <div class="right-side w-40">
+            
+            <p class="title" style="font-size: 22px; font-weight: 500;">Quick Links</p>
+            <div class="footer-links d-flex">
+                <div class="col d-flex flex-column">
+                    <a href="/about-podar-education-network">About Us </a>
+                    <a href="/the-right-students-life">Why Podar </a>
+                    <a href="https://www.podareducation.org/brochure/corporate" target="_blank">Download Brochure </a>
+                    <a href="/transport-policy">Transport Policy </a>
+                    <a href="http://careers.podareducation.org/" target="_blank">Careers</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    
+                    <a href="/admissions">Admissions </a>
+                    
+                    <a href="/locations">Locations </a>
+                    
+                    <a href="/faqs">FAQs </a>
+                    <a href="/blog" target="_blank">Blogs</a>
+                </div>
+            </div>
+        </div>
+        <div class="social_links w-100 d-flex justify-content-center">
+            <a href="https://www.facebook.com/podargroupofschools/" aria-label="faccebook" target="_blank">
+                <img src="/assets/images/icons/icon-faccebook.png" alt="facebook icon" loading="lazy"></a>
+            <a href="https://twitter.com/PodarIndia" aria-label="twitter" target="_blank">
+                <img src="/assets/images/icons/icon-twitter.png" alt="twitter icon" loading="lazy"></a>
+            <a href="https://www.linkedin.com/company/podar-education-network-pvt-ltd/" aria-label="linkedin" target="_blank">
+                <img src="/assets/images/icons/icon-linkedin.png" alt="podar educationa linkedin profile link" loading="lazy"></a>
+            <a href="https://www.instagram.com/podargroupofschools/" aria-label="instagram" target="_blank">
+                <img src="/assets/images/icons/icon-instagram.png" alt="instagram icon" loading="lazy"></a>
+            <a href="https://www.youtube.com/channel/UCCvN-nw89aKX95l-NC_jWRw" aria-label="youtube" target="_blank">
+                <img src="/assets/images/icons/icon-youtube.png" alt="youtube icon - click to open podar education youtube channel" loading="lazy"></a>
+
+        </div>
+        <div class="copyrights w-100 d-flex justify-content-center">
+            <p>@Copyright 2026.</p>
+            <a href="/privacypolicy" target="_blank">Privacy Policy </a>
+            <a href="/terms-and-conditions" target="_blank">Terms & Conditions</a>
+        </div>
+        
+        
+    </div>
+</footer>
+<!-- Footer Start -->
+
+<!-- Footer End -->
+
+
+
+
+
+<!--Start of Fresh Chat Script-->
+
+
+
+<a href="https://wa.me/918879088790?text=Hi" id="footercontrol_whatsappLink" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp" width="50" height="50">
+</a>
+
+<img id="haptikimg" onclick="openChat()" src="https://www.podareducation.org/images/podar-education-network-admission-open.png?w=72&h=72" class="haptik-custom-icon" alt="live chat icon">
+<style>
+    .haptik-custom-icon {
+        position: fixed;
+        right: 1%;
+        /*bottom: 1%;*/
+        bottom: 2%;
+        /*padding: 30px;*/
+        width: 65px;
+        height: 65px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .haptik-custom-icon {
+            position: fixed;
+            right: 1%;
+            /*bottom: 1%;*/
+            bottom: 20%;
+            /*padding: 30px;*/
+            width: 65px;
+            height: 65px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 12%;
+        right: 1.5%;
+        z-index: 100;
+    }
+
+        .whatsapp-float img {
+            cursor: pointer;
+        }
+
+
+
+</style>
+
+<script>
+    function openChat() {
+        HaptikSDK.show()
+    }
+</script>
+<script>
+    function closeChat() {
+        HaptikSDK.hide()
+    }
+</script>
+
+<script>
+    //window.haptikInitSettings = {
+    //    "business-id": "6533",
+    //    "client-id": "3472d79345c12abc847a96323b14a4ad7fafe8c1",
+    //    "base-url": "https://staging.hellohaptik.com/",
+    //    "custom-button": true
+    //};
+    //Live
+    window.haptikInitSettings = {
+        "business-id": "6533",
+        "client-id": "9e42c607efd94562a57a68c6f250f78f1803858a",
+        "base-url": "https://api.haptikapi.com",
+        "custom-button": true
+    };
+</script>
+<script
+    type="text/javascript"
+    charset="UTF-8"
+    src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js">
+</script>
+
+<!--End of Fresh Chat Script-->
+
+
+
+
+
+    <!-- footer End -->
+    
+
+
+
+    
+
+</body>
+</html>
+

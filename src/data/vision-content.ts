@@ -3,12 +3,12 @@ export const visionHero = {
   title: "Education For The World Ahead",
   subtitle:
     "The future cannot be predicted, but children can be prepared. At DPS SPR Gurugram, we nurture curious, compassionate learners ready for what comes next.",
-  image: "/3.png",
+  image: "/vision/hero.jpg",
 };
 
 export const whyAnotherSchool = {
   title: "Why Another School?",
-  image: "/kids-with-globe-class.jpg",
+  image: "/vision/why-school.jpg",
   body: [
     "The world is changing faster than ever - technology, careers, communities, and the skills children need are evolving every year.",
     "Parents are no longer asking only about marks. They are asking deeper questions about happiness, identity, confidence, and readiness for a world we cannot yet fully imagine.",
@@ -26,7 +26,7 @@ export const whyAnotherSchool = {
 
 export const beliefs = {
   title: "We Believe Every Child Is Unique",
-  image: "/children-giving-high-five.jpg",
+  image: "/vision/beliefs.jpg",
   caption: "Individual attention, joyful participation, and learning that notices each child.",
   items: [
     {
@@ -61,7 +61,7 @@ export const futureSkills = {
   title: "The Future We Are Preparing For",
   subtitle:
     "We prepare learners not only for examinations, but for complexity, change, and contribution.",
-  image: "/young-children-making-diy-project-from-upcycled-materials.jpg",
+  image: "/vision/future-skills.jpg",
   spotlight: "From inquiry to invention",
   skills: [
     "Curiosity",
@@ -76,7 +76,7 @@ export const futureSkills = {
 };
 
 export const knowledgeComparison = {
-  image: "/smiling-schoolchildren-examining-globe.jpg",
+  image: "/vision/knowledge.jpg",
   traditional: {
     label: "Traditional Success",
     items: ["Marks", "Exams", "Grades", "Memorisation"],
@@ -90,7 +90,7 @@ export const knowledgeComparison = {
 
 export const dpsCommitment = {
   quote: "What Is Best For Children?",
-  image: "/girls-learning-more-about-chemistry-class.jpg",
+  image: "/vision/commitment.jpg",
   pillars: [
     {
       title: "Classrooms",
@@ -113,7 +113,7 @@ export const dpsCommitment = {
 
 export const schoolExperience = {
   title: "The School Experience We Envision",
-  image: "/medium-shot-kids-learning-school.jpg",
+  image: "/vision/experience.jpg",
   items: [
     {
       text: "A school where questions are welcomed",
@@ -139,7 +139,7 @@ export const schoolExperience = {
 };
 
 export const visionMission = {
-  image: "/young-sporty-couple-man-woman-standing-together-holding-trophy-showing-thumbs-up-standing-green-wall.jpg",
+  image: "/vision/mission.jpg",
   vision: {
     title: "Our Vision",
     text: "To nurture confident, compassionate, and capable learners who thrive in a changing world - rooted in academic excellence, strong values, and holistic development from Nursery to Class 12.",
@@ -152,7 +152,7 @@ export const visionMission = {
 
 export const familyPromises = {
   title: "For Every Family Who Joins Us",
-  image: "/two-study-girl-talking-each-other-park.jpg",
+  image: "/vision/family.jpg",
   promises: [
     {
       title: "We Will Know Your Child",
@@ -182,8 +182,8 @@ export const manifestoStatements = [
 ];
 
 export const manifestoVisual = {
-  image: "/drawing-classroom.jpg",
-  alt: "Students learning creatively at DPS SPR Gurugram",
+  image: "/vision/manifesto.jpg",
+  alt: "Indian students learning in a classroom at DPS SPR Gurugram",
 };
 
 export const visionCta = {

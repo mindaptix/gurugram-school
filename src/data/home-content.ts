@@ -4,17 +4,17 @@ export const heroSlides = [
   {
     image: "/banner1.png",
     position: "50% 50%",
-    title: "DPS SPR Gurugram Campus",
+    title: "Nursery to Grade XII",
   },
   {
     image: "/banner2.png",
     position: "50% 50%",
-    title: "Learning at DPS SPR Gurugram",
+    title: "CBSE Curriculum",
   },
   {
     image: "/banner3.png",
     position: "50% 50%",
-    title: "Excellence in Education",
+    title: "Future Ready Education",
   },
 ];
 
@@ -111,7 +111,8 @@ export const trustPoints = [
   {
     title: "Academic Excellence & Board Results",
     detail: "Proven academic success.",
-    image: "/img1.jpeg",
+    image: "/ACADMIC EXCELLENACHE.jpeg",
+    imagePosition: "center center",
     icon: "A+",
     color: "bg-[#05224a]",
     accent: "bg-[#ffd400]",
@@ -120,7 +121,8 @@ export const trustPoints = [
   {
     title: "Experienced & Qualified Faculty",
     detail: "Expert teachers, personalized guidance.",
-    image: "/img2.jpeg",
+    image: "/FACTLY.jpeg",
+    imagePosition: "center center",
     icon: "T",
     color: "bg-[#006b37]",
     accent: "bg-[#ffd400]",
@@ -129,7 +131,8 @@ export const trustPoints = [
   {
     title: "Focus on English Communication",
     detail: "Building confident communicators.",
-    image: "/img3.jpeg",
+    image: "/ENGLISH - COMMUNICATION.jpeg",
+    imagePosition: "center center",
     icon: "EN",
     color: "bg-[#ffd400]",
     accent: "bg-[#006b37]",
@@ -138,7 +141,8 @@ export const trustPoints = [
   {
     title: "Sports, Arts & Co-curricular Excellence",
     detail: "Learning beyond academics.",
-    image: "/girls-learning-more-about-chemistry-class.jpg",
+    image: "/SPORTS.jpeg",
+    imagePosition: "center center",
     icon: "S",
     color: "bg-[#003b73]",
     accent: "bg-[#ffd400]",
@@ -147,7 +151,8 @@ export const trustPoints = [
   {
     title: "Transport Facility Available",
     detail: "Safe and convenient transport.",
-    image: "/3.png",
+    image: "/TRANSPORT.jpg",
+    imagePosition: "center center",
     icon: "B",
     color: "bg-[#006b37]",
     accent: "bg-[#ffd400]",

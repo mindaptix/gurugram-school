@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
@@ -29,7 +29,16 @@ export default function Home() {
     target: infraSectionRef,
     offset: ["start 0.85", "end 0.15"],
   });
-  const dpsScrollY = useTransform(infraScrollProgress, [0, 1], [0, 260]);
+  const dpsRawY = useTransform(infraScrollProgress, [0, 1], [34, 260]);
+  const dpsRawOpacity = useTransform(
+    infraScrollProgress,
+    [0, 0.1, 0.42, 0.68, 0.86],
+    [0, 1, 1, 0.28, 0],
+  );
+  const dpsRawScale = useTransform(infraScrollProgress, [0, 0.32, 0.86], [0.96, 1, 0.94]);
+  const dpsScrollY = useSpring(dpsRawY, { stiffness: 90, damping: 24, mass: 0.4 });
+  const dpsOpacity = useSpring(dpsRawOpacity, { stiffness: 90, damping: 24, mass: 0.4 });
+  const dpsScale = useSpring(dpsRawScale, { stiffness: 90, damping: 24, mass: 0.4 });
 
   useEffect(() => {
     const slideTimer = window.setInterval(() => {
@@ -65,12 +74,12 @@ export default function Home() {
           <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-0 sm:px-8 lg:px-14">
             <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
               <div className="relative min-w-0 overflow-visible pt-2">
-                <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#ffd400] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-[#111111] max-lg:text-[42px] max-md:text-[34px]">
+                <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#006b37] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-white max-lg:text-[42px] max-md:text-[34px]">
                   Learning at
                 </div>
                 <motion.div
                   className="infra-dps-word relative z-[12] mt-2 [animation:none] text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-1 max-lg:text-[118px] max-md:text-[88px]"
-                  style={{ y: dpsScrollY }}
+                  style={{ y: dpsScrollY, opacity: dpsOpacity, scale: dpsScale }}
                 >
                   DPS
                 </motion.div>

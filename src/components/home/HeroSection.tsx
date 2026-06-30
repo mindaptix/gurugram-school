@@ -153,9 +153,9 @@ export function HeroSection({
                     Delhi Public School · SPR Gurugram
                   </p>
 
-                  <h1 className="text-[42px] font-semibold leading-[0.92] tracking-[-0.02em] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)] sm:text-[62px] sm:leading-[0.9] lg:text-[76px] xl:text-[86px]">
-                    Leaders in Inclusive
-                    <span className="-mt-1 block sm:-mt-2">Academic Excellence</span>
+                  <h1 className="text-[32px] font-semibold leading-[0.94] tracking-[-0.02em] [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_28px_rgba(0,0,0,0.55)] sm:text-[44px] sm:leading-[0.92] md:text-[50px] lg:text-[56px] xl:text-[62px]">
+                    <span className="block sm:whitespace-nowrap">Preparing Children for Life,</span>
+                    <span className="mt-2 block sm:mt-3 sm:whitespace-nowrap">Not Just Exams</span>
                   </h1>
 
                   <AnimatePresence mode="wait">
@@ -176,13 +176,13 @@ export function HeroSection({
                       href="#admissions"
                       className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#ffd400] px-7 text-[12px] font-black uppercase tracking-[0.2em] text-[#003b73] transition hover:-translate-y-0.5 hover:bg-white sm:px-8"
                     >
-                      Apply Now
+                      Apply for Admission
                     </a>
                     <a
                       href="#tour"
                       className="inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/55 bg-white/10 px-7 text-[12px] font-black uppercase tracking-[0.2em] text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white/20 sm:px-8"
                     >
-                      Campus Tour
+                      Download Prospectus
                     </a>
                   </div>
 
@@ -237,7 +237,7 @@ export function HeroSection({
 
             <a
               href="#academics"
-              className="absolute bottom-6 left-1/2 z-30 hidden -translate-x-1/2 flex-col items-center gap-3 text-[10px] font-black uppercase tracking-[0.28em] text-white/70 transition hover:text-white lg:flex"
+              className="absolute bottom-6 left-[58%] z-30 hidden -translate-x-1/2 flex-col items-center gap-3 text-[10px] font-black uppercase tracking-[0.28em] text-white/70 transition hover:text-white lg:flex"
             >
               Scroll
               <span className="hero-scroll-cue-line block h-10 w-px bg-white/70" />
