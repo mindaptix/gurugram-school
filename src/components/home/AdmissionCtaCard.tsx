@@ -4,7 +4,7 @@ export function AdmissionCtaCard() {
   return (
     <section
       id="admissions"
-      className="admission-quick-cta relative z-30 -mb-2 mt-12 scroll-mt-24 overflow-visible bg-[#fffdf7] px-5 pb-0 pt-0 sm:-mb-3 sm:mt-14 sm:px-8 lg:-mb-4 lg:mt-20 lg:px-[74px] xl:mt-24"
+      className="admission-quick-cta relative z-30 -mb-2 mt-16 scroll-mt-24 overflow-visible bg-[#fffdf7] px-5 pb-0 pt-0 sm:-mb-3 sm:mt-20 sm:px-8 lg:-mb-4 lg:mt-28 lg:px-[74px] xl:mt-32"
     >
       <div className="mx-auto max-w-[1500px]">
         <article className="admission-cta-panel relative overflow-visible rounded-[24px] bg-[#006232] shadow-[0_22px_70px_rgba(0,98,50,0.22)] sm:rounded-[28px]">

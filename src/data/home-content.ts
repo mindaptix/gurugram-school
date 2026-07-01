@@ -1,20 +1,42 @@
 export const HERO_SLIDE_DURATION_MS = 5500;
 
+export const virtualTourCard = {
+  image: "/bannernew4.png",
+  video: "/dpsvideo1.mp4",
+};
+
+export const heroAdmissionCard = {
+  image: "/admisiso.jpg",
+};
+
 export const heroSlides = [
   {
-    image: "/banner1.png",
-    position: "50% 50%",
-    title: "Nursery to Grade XII",
+    image: "/bannernew7.png",
+    position: "50% 44%",
+    headline: ["Delhi Public School", "SPR Gurugram"],
+    title:
+      "A world-class CBSE campus with modern infrastructure for Nursery to Grade XII.",
   },
   {
-    image: "/banner2.png",
-    position: "50% 50%",
-    title: "CBSE Curriculum",
+    image: "/bannernew4.png",
+    position: "50% 48%",
+    headline: ["Learning Beyond", "the Classroom"],
+    title:
+      "Amphitheatre, playgrounds, and open green spaces for holistic development.",
   },
   {
-    image: "/banner3.png",
-    position: "50% 50%",
-    title: "Future Ready Education",
+    image: "/bannernew3.png",
+    position: "50% 48%",
+    headline: ["Where Champions", "Are Nurtured"],
+    title:
+      "Expansive sports fields and courts for fitness, teamwork, and discipline.",
+  },
+  {
+    image: "/bannernew6.png",
+    position: "50% 48%",
+    headline: ["Preparing Children for Life,", "Not Just Exams"],
+    title:
+      "A safe, vibrant, and future-ready environment for every learner.",
   },
 ];
 
