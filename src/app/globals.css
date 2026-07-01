@@ -141,6 +141,17 @@ html {
   width: min(66vw, 520px);
 }
 
+.home-hero {
+  --hero-pad: clamp(0.5rem, 1.1vw, 0.75rem);
+  --hero-sidebar: clamp(248px, 19vw, 320px);
+  --hero-height: calc(100dvh - clamp(12px, 1.4vw, 16px));
+  --hero-banner-min: clamp(420px, 72dvh, 700px);
+  --hero-headline: clamp(1.875rem, 3.6vw + 0.45rem, 4.25rem);
+  --hero-subtitle: clamp(0.8125rem, 0.5vw + 0.7rem, 1.125rem);
+  --hero-eyebrow: clamp(0.625rem, 0.3vw + 0.55rem, 0.75rem);
+  --hero-logo-h: clamp(3rem, 4.8vw, 4.625rem);
+}
+
 .home-hero .hero-slide-layer img {
   height: 100% !important;
   object-fit: cover !important;
@@ -149,14 +160,71 @@ html {
 }
 
 .home-hero .hero-layout {
-  height: calc(100vh - 15.9px);
-  max-height: calc(100vh - 15.9px);
+  height: var(--hero-height);
+  max-height: var(--hero-height);
+}
+
+.home-hero .hero-banner {
+  min-height: var(--hero-banner-min);
+}
+
+.home-hero .hero-headline {
+  font-size: var(--hero-headline);
+}
+
+.home-hero .hero-subtitle {
+  font-size: var(--hero-subtitle);
+}
+
+.home-hero .hero-eyebrow {
+  font-size: var(--hero-eyebrow);
+}
+
+.home-hero .hero-logo {
+  height: var(--hero-logo-h);
+}
+
+@media (min-width: 1024px) {
+  .home-hero .hero-layout {
+    grid-template-columns: minmax(0, 1fr) var(--hero-sidebar);
+  }
+
+  .home-hero .hero-aside {
+    padding-top: calc(62px + 8px);
+  }
 }
 
 @media (max-width: 1023px) {
   .home-hero .hero-layout {
     height: auto;
     max-height: none;
+  }
+
+  .home-hero .hero-aside {
+    min-height: clamp(320px, 40vh, 460px);
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-hero {
+    --hero-sidebar: clamp(280px, 18vw, 336px);
+  }
+}
+
+.hero-progress-fill {
+  animation: hero-progress-grow linear forwards;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+@keyframes hero-progress-grow {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }
 
@@ -469,6 +537,27 @@ html {
 
 .trust-scan {
   animation: trust-scan-pass 5.2s ease-in-out infinite;
+}
+
+.about-school-section {
+  opacity: 1;
+}
+
+.about-school-section.about-awaiting-scroll [data-about-item],
+.about-school-section.about-awaiting-scroll [data-about-reveal] {
+  opacity: 0;
+}
+
+.about-school-section [data-about-item],
+.about-school-section [data-about-reveal] {
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-school-section [data-about-item],
+  .about-school-section [data-about-reveal] {
+    will-change: auto;
+  }
 }
 
 .about-copy {

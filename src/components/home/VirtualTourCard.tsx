@@ -181,16 +181,16 @@ export function VirtualTourCard() {
         />
 
         <div className="relative z-10 flex h-full flex-col p-4 sm:p-5">
-          <span className="inline-flex w-fit items-center rounded-full bg-white px-3.5 py-1.5 text-[0.72rem] font-extrabold uppercase tracking-[0.18em] text-[#006b37] sm:text-[0.78rem]">
+          <span className="inline-flex w-fit items-center rounded-full bg-white px-3 py-1.5 text-[clamp(0.65rem,1.8vw,0.78rem)] font-extrabold uppercase tracking-[0.16em] text-[#006b37] sm:px-3.5 sm:tracking-[0.18em]">
             Campus Tour
           </span>
 
           <div className="mt-auto space-y-4 pt-4">
             <div>
-              <h3 className="text-[1.22rem] font-bold uppercase leading-tight tracking-wide text-white sm:text-[1.38rem]">
+              <h3 className="text-[clamp(1.05rem,2.8vw,1.38rem)] font-bold uppercase leading-tight tracking-wide text-white">
                 Virtual Campus Tour
               </h3>
-              <p className="mt-2.5 text-[0.95rem] font-medium leading-relaxed text-white/90 sm:text-[1.02rem]">
+              <p className="mt-2 text-[clamp(0.82rem,2.2vw,1.02rem)] font-medium leading-relaxed text-white/90 sm:mt-2.5">
                 Walk through our campus from anywhere.
               </p>
             </div>

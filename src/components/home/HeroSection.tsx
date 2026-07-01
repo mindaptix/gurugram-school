@@ -38,13 +38,13 @@ export function HeroSection({
     <>
       <PageIntro />
 
-      <section className="home-hero relative bg-[#f4f6f2] p-2 sm:p-2.5 lg:p-3">
+      <section className="home-hero relative bg-[#f4f6f2] p-[var(--hero-pad)]">
         <header
           className={`site-navbar absolute right-2 top-1.5 z-50 transition-transform duration-500 ease-out sm:right-3 sm:top-2 lg:right-4 lg:top-2.5 ${
             isNavbarVisible ? "translate-y-0" : "-translate-y-[120%]"
           }`}
         >
-          <div className="flex h-[54px] w-fit min-w-[236px] items-center justify-end gap-3 border border-white/45 bg-white/95 px-4 text-[#003b73] shadow-[0_14px_34px_rgba(5,34,74,0.13)] backdrop-blur-md sm:h-[62px] sm:min-w-[286px] sm:gap-4 sm:px-5">
+          <div className="flex h-[54px] w-fit min-w-[min(100%,220px)] items-center justify-end gap-2 border border-white/45 bg-white/95 px-3 text-[#003b73] shadow-[0_14px_34px_rgba(5,34,74,0.13)] backdrop-blur-md sm:h-[62px] sm:min-w-[286px] sm:gap-4 sm:px-5">
             <a
               href="#admissions"
               className="hidden min-h-9 items-center gap-2.5 text-[12px] font-black uppercase tracking-[0.16em] text-[#003b73] transition hover:text-[#006b37] sm:inline-flex sm:text-[13px]"
@@ -70,8 +70,8 @@ export function HeroSection({
           </div>
         </header>
 
-        <div className="hero-layout grid gap-2 lg:grid-cols-[minmax(0,1fr)_292px] lg:items-stretch lg:h-[calc(100vh-15.9px)] xl:grid-cols-[minmax(0,1fr)_304px]">
-          <div className="relative min-h-[73vh] w-full lg:h-full lg:min-h-0">
+        <div className="hero-layout grid gap-2 lg:items-stretch">
+          <div className="hero-banner relative w-full lg:h-full lg:min-h-0">
             <div className="relative h-full min-h-[inherit] w-full overflow-hidden rounded-sm bg-[#d8e6f2]">
               {heroSlides.map((slide, index) => {
                 const isActive = index === activeSlide;
@@ -132,17 +132,19 @@ export function HeroSection({
                     width={620}
                     height={155}
                     sizes="(min-width: 1024px) 320px, (min-width: 640px) 280px, 240px"
-                    className="block h-[52px] w-auto object-contain object-left sm:h-[60px] md:h-[66px] lg:h-[74px]"
+                    className="hero-logo block w-auto object-contain object-left"
                     priority
                   />
                 </span>
               </Link>
 
-              <div className="pointer-events-none grid gap-4 pb-9 pl-4 pr-4 sm:pb-10 sm:pl-5 sm:pr-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-5 lg:pb-11 lg:pl-6 lg:pr-6 xl:pl-8 xl:pr-8">
-                <div className="hero-copy pointer-events-auto max-w-[1040px]">
-                  <p className="mb-3 inline-flex w-fit items-center gap-3 rounded-full bg-white px-3.5 py-1.5 text-[11px] font-black uppercase tracking-[0.28em] text-[#006b37] sm:mb-4 sm:text-[12px]">
-                    <span className="h-px w-10 bg-[#006b37]" />
-                    Delhi Public School · SPR Gurugram
+              <div className="pointer-events-none grid gap-3 pb-7 pl-3 pr-3 sm:gap-4 sm:pb-8 sm:pl-4 sm:pr-5 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-5 lg:pb-10 lg:pl-6 lg:pr-6 xl:pl-8 xl:pr-8">
+                <div className="hero-copy pointer-events-auto min-w-0 max-w-[1040px]">
+                  <p className="hero-eyebrow mb-2.5 inline-flex w-fit max-w-full items-center gap-2 rounded-full bg-white px-3 py-1.5 font-black uppercase tracking-[0.22em] text-[#006b37] sm:mb-3 sm:gap-3 sm:px-3.5 sm:tracking-[0.28em]">
+                    <span className="hidden h-px w-8 bg-[#006b37] sm:block sm:w-10" />
+                    <span className="max-sm:text-[0.62rem] max-sm:tracking-[0.14em]">
+                      Delhi Public School · SPR Gurugram
+                    </span>
                   </p>
 
                   <AnimatePresence mode="wait">
@@ -152,12 +154,12 @@ export function HeroSection({
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -14 }}
                       transition={{ duration: 0.55, ease: slideEase }}
-                      className="text-[36px] font-bold leading-[0.94] tracking-[-0.02em] text-white sm:text-[48px] sm:leading-[0.92] md:text-[54px] lg:text-[60px] xl:text-[68px]"
+                      className="hero-headline font-bold leading-[0.94] tracking-[-0.02em] text-white"
                     >
-                      <span className="block sm:whitespace-nowrap">
+                      <span className="block lg:whitespace-nowrap">
                         {activeSlideData.headline[0]}
                       </span>
-                      <span className="mt-1 block sm:mt-1.5 sm:whitespace-nowrap">
+                      <span className="mt-1 block sm:mt-1.5 lg:whitespace-nowrap">
                         {activeSlideData.headline[1]}
                       </span>
                     </motion.h1>
@@ -170,29 +172,29 @@ export function HeroSection({
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -12 }}
                       transition={{ duration: 0.55, ease: slideEase, delay: 0.05 }}
-                      className="mt-3 whitespace-nowrap text-[14px] font-medium leading-snug text-white/90 sm:mt-4 sm:text-[17px] lg:text-[18px]"
+                      className="hero-subtitle mt-2.5 font-medium leading-snug text-white/90 sm:mt-3 lg:mt-4 lg:whitespace-nowrap"
                     >
                       {activeSlideData.title}
                     </motion.p>
                   </AnimatePresence>
 
-                  <div className="mt-3 flex flex-wrap items-center gap-3">
+                  <div className="mt-2.5 flex flex-wrap items-center gap-2.5 sm:mt-3 sm:gap-3">
                     <a
                       href="#admissions"
-                      className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#ffd400] px-6 text-[12px] font-black uppercase tracking-[0.18em] text-[#003b73] shadow-[0_8px_24px_rgba(255,212,0,0.35)] transition hover:-translate-y-0.5 hover:bg-[#003b73] hover:text-white sm:min-h-[52px] sm:px-8"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-[#ffd400] px-5 text-[11px] font-black uppercase tracking-[0.16em] text-[#003b73] shadow-[0_8px_24px_rgba(255,212,0,0.35)] transition hover:-translate-y-0.5 hover:bg-[#003b73] hover:text-white sm:min-h-[48px] sm:px-6 sm:text-[12px] sm:tracking-[0.18em] lg:min-h-[52px] lg:px-8"
                     >
                       Apply for Admission
                     </a>
                     <a
                       href="#tour"
-                      className="inline-flex min-h-[48px] items-center justify-center rounded-full border-2 border-[#003b73] bg-[#003b73] px-6 text-[12px] font-black uppercase tracking-[0.18em] text-white transition hover:-translate-y-0.5 hover:border-[#006b37] hover:bg-[#006b37] sm:min-h-[52px] sm:px-8"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-full border-2 border-[#003b73] bg-[#003b73] px-5 text-[11px] font-black uppercase tracking-[0.16em] text-white transition hover:-translate-y-0.5 hover:border-[#006b37] hover:bg-[#006b37] sm:min-h-[48px] sm:px-6 sm:text-[12px] sm:tracking-[0.18em] lg:min-h-[52px] lg:px-8"
                     >
                       Download Prospectus
                     </a>
                   </div>
 
-                  <div className="mt-4 flex w-full max-w-[420px] translate-y-2.5 items-center sm:translate-y-3">
-                    <div className="flex w-full items-center gap-2">
+                  <div className="mt-3 flex w-full max-w-[420px] items-center gap-3 sm:mt-4 lg:max-w-none lg:translate-y-2.5 lg:pr-4 xl:translate-y-3">
+                    <div className="flex min-w-0 flex-1 items-center gap-2">
                       {heroSlides.map((slide, index) => (
                         <button
                           key={slide.image}
@@ -216,10 +218,29 @@ export function HeroSection({
                         </button>
                       ))}
                     </div>
+
+                    <div className="hero-actions pointer-events-auto flex shrink-0 items-center gap-2 lg:hidden">
+                      <button
+                        type="button"
+                        onClick={() => onSlideChange(previousSlide)}
+                        className="grid h-10 w-10 place-items-center rounded-full border border-white/55 bg-white/10 text-2xl font-light leading-none text-white backdrop-blur-md transition hover:border-white hover:bg-white hover:text-[#003b73] sm:h-11 sm:w-11 sm:text-3xl"
+                        aria-label="Previous hero slide"
+                      >
+                        <span aria-hidden="true">&lsaquo;</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => onSlideChange(nextSlide)}
+                        className="grid h-10 w-10 place-items-center rounded-full border border-white/55 bg-white/10 text-2xl font-light leading-none text-white backdrop-blur-md transition hover:border-white hover:bg-white hover:text-[#003b73] sm:h-11 sm:w-11 sm:text-3xl"
+                        aria-label="Next hero slide"
+                      >
+                        <span aria-hidden="true">&rsaquo;</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
 
-                <div className="hero-actions pointer-events-auto flex translate-y-2.5 items-end gap-2 sm:translate-y-3 lg:gap-2.5">
+                <div className="hero-actions pointer-events-auto hidden translate-y-2.5 items-end gap-2 lg:flex sm:translate-y-3 lg:gap-2.5">
                   <button
                     type="button"
                     onClick={() => onSlideChange(previousSlide)}
@@ -250,7 +271,7 @@ export function HeroSection({
             </div>
           </div>
 
-          <aside className="relative grid h-full min-h-0 grid-rows-[minmax(0,1fr)_minmax(0,0.94fr)] gap-2.5 overflow-hidden pt-[calc(54px+8px)] sm:pt-[calc(62px+8px)] lg:h-full">
+          <aside className="hero-aside relative grid h-full min-h-0 grid-cols-1 grid-rows-[minmax(0,1fr)_minmax(0,0.94fr)] gap-2.5 overflow-hidden md:grid-cols-2 md:grid-rows-1 lg:grid-cols-1 lg:grid-rows-[minmax(0,1fr)_minmax(0,0.94fr)] lg:h-full">
             <div className="min-h-0 overflow-hidden">
               <VirtualTourCard />
             </div>
@@ -266,13 +287,13 @@ export function HeroSection({
                   width={520}
                   height={520}
                   sizes="(min-width: 1024px) 280px, 50vw"
-                  className="hero-admission-badge h-auto w-[88%] max-w-[210px] object-contain mix-blend-multiply sm:max-w-[228px]"
+                  className="hero-admission-badge h-auto w-[clamp(168px,78%,228px)] object-contain mix-blend-multiply"
                   draggable={false}
                 />
               </div>
 
               <div className="relative z-10 mt-auto shrink-0 border-t border-[#003b73]/10 pt-3">
-                <p className="pr-10 text-[0.84rem] font-semibold leading-snug text-[#003b73] sm:text-[0.92rem]">
+                <p className="pr-8 text-[clamp(0.8rem,2.6vw,0.92rem)] font-semibold leading-snug text-[#003b73] sm:pr-10">
                   Nursery to Grade XII · CBSE curriculum.
                 </p>
 
