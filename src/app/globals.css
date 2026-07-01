@@ -614,6 +614,8 @@ html {
 .infra-card {
   filter: saturate(0.95);
   min-width: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .infra-card:hover,
@@ -651,22 +653,33 @@ html {
   z-index: 30;
 }
 
-.infra-dps-word {
+.infra-stage {
   position: relative;
-  will-change: transform;
-  z-index: 5;
 }
 
-.drone-tour-video-shell,
-.drone-tour-intro,
-.drone-tour-map {
-  will-change: transform, opacity;
+.infra-cards-wrap {
+  position: relative;
+}
+
+.infra-dps-behind-cards {
+  z-index: 0;
 }
 
 .infra-accordion {
-  isolation: isolate;
   position: relative;
-  z-index: 30;
+  transform-origin: center top;
+  z-index: 10;
+}
+
+.infra-dps-word {
+  pointer-events: none;
+  will-change: transform;
+}
+
+.infra-learning-at {
+  position: relative;
+  z-index: 40;
+  transform-origin: left center;
 }
 
 .contact-section {
@@ -1129,7 +1142,6 @@ html {
 
   .infra-dps-word {
     animation: none;
-    animation-timeline: auto;
   }
 
   .infra-learning-at {
@@ -1137,21 +1149,16 @@ html {
   }
 
   .infra-story-copy {
-    animation: infra-copy-settle both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 4% cover 40%;
-    animation-timeline: --infra-section;
+    animation: none;
   }
 
-  .infra-card:nth-child(odd) {
-    animation: section-slide-left both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 18% cover 48%;
-    animation-timeline: --infra-section;
+  .infra-accordion {
+    animation: none;
   }
 
+  .infra-card:nth-child(odd),
   .infra-card:nth-child(even) {
-    animation: section-slide-right both cubic-bezier(0.22, 1, 0.36, 1);
-    animation-range: entry 18% cover 48%;
-    animation-timeline: --infra-section;
+    animation: none;
   }
 
   .contact-detail {
@@ -1891,14 +1898,32 @@ html {
 
 @keyframes infra-dps-hide-behind-cards {
   0%,
-  32% {
+  46% {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  78% {
+    opacity: 1;
+    transform: translate3d(0, 8.5rem, 0) scale(0.99);
+  }
+
+  100% {
+    opacity: 0.82;
+    transform: translate3d(0, 12rem, 0) scale(0.99);
+  }
+}
+
+@keyframes infra-learning-reveal {
+  0%,
+  42% {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0) scale(0.96);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(0, calc(100% + 2.75rem), 0);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -1911,6 +1936,23 @@ html {
   36% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes infra-cards-rise {
+  0% {
+    opacity: 0.18;
+    transform: translate3d(0, 92px, 0);
+  }
+
+  38% {
+    opacity: 0.72;
+    transform: translate3d(0, 30px, 0);
   }
 
   100% {

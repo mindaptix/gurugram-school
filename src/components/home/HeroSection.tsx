@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 import {
@@ -41,34 +42,26 @@ export function HeroSection({
             isNavbarVisible ? "translate-y-0" : "-translate-y-[120%]"
           }`}
         >
-          <div className="flex h-[70px] w-[min(calc(100vw-24px),420px)] items-center justify-end gap-4 border border-white/40 bg-white/95 px-5 text-[#003b73] shadow-[0_18px_45px_rgba(5,34,74,0.12)] backdrop-blur-md sm:h-[88px] sm:gap-6 sm:px-8 lg:w-[420px]">
-            <a
-              href="#gallery"
-              aria-label="Search"
-              className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#f4f7fb] transition hover:bg-[#e9f0f7] sm:h-12 sm:w-12"
-            >
-              <span className="relative block h-5 w-5 rounded-full border-[3px] border-[#003b73] after:absolute after:-bottom-1.5 after:-right-1 after:h-2.5 after:w-[3px] after:rotate-[-45deg] after:rounded-full after:bg-[#003b73]" />
-            </a>
-
+          <div className="flex h-[54px] w-fit min-w-[236px] items-center justify-end gap-3 border border-white/45 bg-white/95 px-4 text-[#003b73] shadow-[0_14px_34px_rgba(5,34,74,0.13)] backdrop-blur-md sm:h-[62px] sm:min-w-[286px] sm:gap-4 sm:px-5">
             <a
               href="#admissions"
-              className="hidden min-h-10 items-center gap-3 border-l border-[#b9b9b9] pl-5 text-[14px] font-black uppercase tracking-[0.18em] text-[#003b73] sm:inline-flex"
+              className="hidden min-h-9 items-center gap-2.5 text-[12px] font-black uppercase tracking-[0.16em] text-[#003b73] transition hover:text-[#006b37] sm:inline-flex sm:text-[13px]"
             >
-              <span className="relative h-6 w-6 rounded-full border-[3px] border-[#003b73] before:absolute before:left-1/2 before:top-[3px] before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-[#003b73] after:absolute after:bottom-[2px] after:left-1/2 after:h-2 after:w-4 after:-translate-x-1/2 after:rounded-t-full after:border-x-[3px] after:border-t-[3px] after:border-[#003b73]" />
+              <span className="relative h-5 w-5 rounded-full border-[2.5px] border-current before:absolute before:left-1/2 before:top-[3px] before:h-1.5 before:w-1.5 before:-translate-x-1/2 before:rounded-full before:bg-current after:absolute after:bottom-[2px] after:left-1/2 after:h-1.5 after:w-3.5 after:-translate-x-1/2 after:rounded-t-full after:border-x-[2.5px] after:border-t-[2.5px] after:border-current" />
               Login
             </a>
 
             <button
               type="button"
               onClick={() => setIsMenuOpen(true)}
-              className="inline-flex min-h-10 items-center gap-3 border-l border-[#b9b9b9] pl-5 text-[14px] font-black uppercase tracking-[0.18em] text-[#003b73]"
+              className="inline-flex min-h-9 items-center gap-2.5 border-l border-[#c9c9c9] pl-3 text-[12px] font-black uppercase tracking-[0.16em] text-[#003b73] transition hover:text-[#006b37] sm:pl-4 sm:text-[13px]"
               aria-label="Open menu"
               aria-expanded={isMenuOpen}
             >
-              <span className="grid gap-1.5">
-                <span className="block h-[2px] w-7 bg-[#003b73]" />
-                <span className="block h-[2px] w-7 bg-[#003b73]" />
-                <span className="block h-[2px] w-7 bg-[#003b73]" />
+              <span className="grid gap-1.5" aria-hidden="true">
+                <span className="block h-[2px] w-6 bg-current" />
+                <span className="block h-[2px] w-6 bg-current" />
+                <span className="block h-[2px] w-6 bg-current" />
               </span>
               Menu
             </button>
@@ -129,7 +122,7 @@ export function HeroSection({
             />
 
             <div className="relative z-30 flex min-h-[72vh] flex-col justify-between px-5 pb-8 pt-24 text-white sm:px-8 sm:pt-28 lg:min-h-[calc(100vh-24px)] lg:px-8 lg:py-8 xl:px-10">
-              <a
+              <Link
                 href="/"
                 className="hero-chip relative -ml-6 -mt-5 block w-fit shrink-0 sm:-ml-7 sm:-mt-6 lg:-ml-9 lg:-mt-7"
               >
@@ -144,7 +137,7 @@ export function HeroSection({
                     priority
                   />
                 </span>
-              </a>
+              </Link>
 
               <div className="grid gap-6 pb-2 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
                 <div className="hero-copy max-w-[1040px]">
@@ -244,7 +237,7 @@ export function HeroSection({
             </a>
           </div>
 
-          <aside className="relative grid min-h-[520px] grid-rows-2 gap-3 overflow-visible pt-[calc(70px+8px)] sm:pt-[calc(88px+8px)] lg:min-h-[calc(100vh-24px)]">
+          <aside className="relative grid min-h-[520px] grid-rows-2 gap-3 overflow-visible pt-[calc(54px+8px)] sm:pt-[calc(62px+8px)] lg:min-h-[calc(100vh-24px)]">
             <a
               href="#tour"
               className="group relative flex min-h-[250px] flex-col overflow-hidden rounded-none border border-white/15 bg-[#287734] p-5 text-white no-underline shadow-[0_20px_44px_rgba(40,119,52,0.35)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_54px_rgba(40,119,52,0.45)] sm:min-h-[270px] sm:p-6"

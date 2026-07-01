@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import { AboutSection } from "@/components/home/AboutSection";
 import { AdmissionCtaCard } from "@/components/home/AdmissionCtaCard";
@@ -17,11 +17,19 @@ import {
   infrastructureItems,
 } from "@/data/home-content";
 import { useNavbarVisibility } from "@/hooks/use-navbar-visibility";
+import { gsap, registerVisionGsap, ScrollTrigger } from "@/lib/vision-gsap";
 
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [activeInfrastructure, setActiveInfrastructure] = useState(2);
+  const [activeInfrastructure, setActiveInfrastructure] = useState(0);
   const isNavbarVisible = useNavbarVisibility();
+  const infrastructureRef = useRef<HTMLElement>(null);
+  const infraLearningAtRef = useRef<HTMLDivElement>(null);
+  const infraDpsRef = useRef<HTMLDivElement>(null);
+  const infraDpsDesktopRef = useRef<HTMLDivElement>(null);
+  const infraCopyRef = useRef<HTMLDivElement>(null);
+  const infraCardsWrapRef = useRef<HTMLDivElement>(null);
+  const infraCardsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const slideTimer = window.setInterval(() => {
@@ -29,6 +37,128 @@ export default function Home() {
     }, 5500);
 
     return () => window.clearInterval(slideTimer);
+  }, []);
+
+  useLayoutEffect(() => {
+    registerVisionGsap();
+
+    const section = infrastructureRef.current;
+    const learningAt = infraLearningAtRef.current;
+    const dpsMobile = infraDpsRef.current;
+    const dps = infraDpsDesktopRef.current;
+    const copy = infraCopyRef.current;
+    const cardsWrap = infraCardsWrapRef.current;
+    const cards = infraCardsRef.current;
+
+    if (!section || !learningAt || !dps || !copy || !cardsWrap || !cards) return;
+
+    const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
+
+      mm.add("(min-width: 1024px)", () => {
+        gsap.set([learningAt, copy], { y: 72, opacity: 0 });
+        gsap.set(dps, { y: 80, opacity: 1 });
+        gsap.set(cards, { y: 48, opacity: 0 });
+        gsap.set(cardsWrap, { marginTop: 24 });
+
+        const timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top 98%",
+            end: "top 18%",
+            scrub: 1.65,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        timeline.to([learningAt, copy], {
+          y: 0,
+          opacity: 1,
+          duration: 0.16,
+          stagger: 0.04,
+          ease: "power3.out",
+        });
+        timeline.to(
+          dps,
+          { y: 0, duration: 0.14, ease: "power3.out" },
+          "-=0.12",
+        );
+        timeline.to(
+          cards,
+          { y: 0, opacity: 1, duration: 0.12, ease: "power3.out" },
+          "-=0.1",
+        );
+
+        timeline.to({}, { duration: 0.34 });
+
+        timeline.addLabel("hide", ">");
+
+        timeline.to(
+          dps,
+          {
+            y: 240,
+            duration: 0.5,
+            ease: "power1.inOut",
+          },
+          "hide",
+        );
+        timeline.to(
+          cardsWrap,
+          {
+            marginTop: -120,
+            duration: 0.5,
+            ease: "power1.inOut",
+          },
+          "hide",
+        );
+      });
+
+      mm.add("(max-width: 1023px)", () => {
+        const mobileDps = dpsMobile ?? dps;
+        gsap.set([learningAt, mobileDps, copy, cards], { clearProps: "all" });
+
+        gsap.fromTo(
+          [learningAt, copy, mobileDps],
+          { y: 64, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            stagger: 0.1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 88%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+
+        gsap.fromTo(
+          cards,
+          { y: 48, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.9,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: cards,
+              start: "top 92%",
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+      });
+    }, section);
+
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener("load", refresh);
+
+    return () => {
+      window.removeEventListener("load", refresh);
+      ctx.revert();
+    };
   }, []);
 
   return (
@@ -50,30 +180,54 @@ export default function Home() {
       <FoundationSection />
 
         <section
+          ref={infrastructureRef}
           id="infrastructure"
-          className="infrastructure-section relative isolate overflow-visible bg-white pb-14 pt-0 text-white"
+          className="infrastructure-section relative overflow-hidden bg-white pb-14 pt-0 text-white"
         >
-          <div id="learning-at-dps-section" className="infra-story relative z-0 mx-auto max-w-[1720px] px-5 pb-0 sm:px-8 lg:px-14">
-            <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
-              <div className="relative min-w-0 pt-2 pb-2">
-                <div className="infra-learning-at relative z-30 w-fit rounded-[16px] bg-[#006b37] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-white max-lg:text-[42px] max-md:text-[34px]">
-                  Learning at
-                </div>
-                <div className="infra-dps-word relative z-10 mt-2 text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#003b73] max-xl:text-[144px] max-lg:mt-1 max-lg:text-[118px] max-md:text-[88px]">
-                  DPS
+          <div id="learning-at-dps-section" className="infra-story relative w-full bg-white">
+            <div className="infra-stage relative w-full">
+              <div className="mx-auto max-w-[1720px] px-5 sm:px-8 lg:px-14">
+                <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
+                  <div className="relative min-w-0 overflow-visible pt-2">
+                    <div
+                      ref={infraLearningAtRef}
+                      className="infra-learning-at relative z-40 w-fit rounded-[16px] bg-[#003b73] px-4 py-2 text-[54px] font-normal leading-none tracking-normal text-white max-lg:text-[42px] max-md:text-[34px]"
+                    >
+                      Learning at
+                    </div>
+                    <div
+                      ref={infraDpsDesktopRef}
+                      className="infra-dps-word pointer-events-none relative z-10 mt-6 hidden text-[176px] font-black leading-[0.92] tracking-[-0.05em] text-[#006b37] max-xl:text-[144px] lg:block"
+                    >
+                      DPS
+                    </div>
+                  </div>
+
+                  <div ref={infraCopyRef} className="infra-story-copy relative z-30 lg:pt-2">
+                    <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#111111] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
+                      Every child learns differently and our aim is to provide
+                      students with the opportunities, experiences, and pathways
+                      that best suit their abilities, interests, and aspirations.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-            <div className="infra-story-copy relative z-30 lg:pt-2">
-              <p className="max-w-[630px] text-[18px] font-medium leading-9 text-[#111111] max-lg:max-w-none max-lg:text-[16px] max-lg:leading-8">
-                Every child learns differently and our aim is to provide
-                students with the opportunities, experiences, and pathways that
-                best suit their abilities, interests, and aspirations.
-              </p>
-            </div>
-            </div>
+              <div
+                ref={infraDpsRef}
+                className="infra-dps-word pointer-events-none relative z-0 mx-5 mt-6 text-[118px] font-black leading-[0.92] tracking-[-0.05em] text-[#006b37] max-lg:sm:mx-8 max-md:mx-5 max-md:text-[88px] lg:hidden"
+              >
+                DPS
+              </div>
 
-            <div className="infra-accordion relative z-20 mt-6 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:mt-4 max-lg:h-auto max-lg:flex-col lg:mt-8">
+              <div
+                ref={infraCardsWrapRef}
+                className="infra-cards-wrap relative z-20 mt-8 max-lg:mt-6 lg:mt-6"
+              >
+                <div
+                  ref={infraCardsRef}
+                  className="infra-accordion relative z-10 flex h-[500px] w-full gap-1 overflow-hidden border-y-[4px] border-white bg-white max-lg:h-auto max-lg:flex-col"
+                >
               {infrastructureItems.map((item, index) => {
                 const isActive = activeInfrastructure === index;
 
@@ -83,7 +237,7 @@ export default function Home() {
                     onMouseEnter={() => setActiveInfrastructure(index)}
                     onFocus={() => setActiveInfrastructure(index)}
                     tabIndex={0}
-                    className={`infra-card group relative min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:min-h-[360px] ${
+                    className={`infra-card relative z-10 group min-w-0 cursor-pointer overflow-hidden outline-none transition-[flex,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] max-lg:min-h-[360px] ${
                       isActive ? "flex-[2.7]" : "flex-[0.82]"
                     }`}
                     style={{ animationDelay: `${index * 90}ms` }}
@@ -127,9 +281,15 @@ export default function Home() {
                   </article>
                 );
               })}
+                </div>
+              </div>
             </div>
-          </div>
 
+            <div
+              className="pointer-events-none hidden h-[28vh] max-h-[280px] lg:block"
+              aria-hidden="true"
+            />
+          </div>
         </section>
 
         <section
